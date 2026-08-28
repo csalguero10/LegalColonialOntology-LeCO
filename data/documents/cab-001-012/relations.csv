@@ -1,0 +1,20 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0012,cab-001-012_s001,cab-001-012_cab-001-012_s001_r001,cab-001-012_s001,invokesConcept,Real Servicio,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s002,cab-001-012_cab-001-012_s002_r001,Francisco Martinez,presentsOrRequests,Petition,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s002,cab-001-012_cab-001-012_s002_r002,cab-001-012_s002,containsLegalAct,petition,explicit,high,Expresión: petición,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s002,cab-001-012_cab-001-012_s002_r003,cab-001-012_s002,containsLegalAct,land_grant,explicit,high,Expresión: adjudicación,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s002,cab-001-012_cab-001-012_s002_r004,cab-001-012_s002,containsLegalAct,decision,explicit,high,Expresión: acordó,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r001,orden,isMentionedIn,cab-001-012_s003,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r002,Cabildo/autoridad competente,ordersOrPerforms,Proclamation,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r003,orden,concernsCategory,vecinos,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r004,cab-001-012_s003,containsLegalAct,decision,explicit,high,Expresión: acordó,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r005,cab-001-012_s003,containsLegalAct,penalty,explicit,high,Expresión: pena,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r006,cab-001-012_s003,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s003,cab-001-012_cab-001-012_s003_r007,cab-001-012_s003,containsLegalAct,proclamation,explicit,high,Expresión: pregonar,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s004,cab-001-012_cab-001-012_s004_r001,cab-001-012_s004,containsLegalAct,approval,explicit,high,Expresión: aprobaron,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s004,cab-001-012_cab-001-012_s004_r002,cab-001-012_s004,containsLegalAct,collection,explicit,high,Expresión: cobrar,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s005,cab-001-012_cab-001-012_s005_r001,cab-001-012_s005,containsLegalAct,proclamation,explicit,high,Expresión: pregón,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s006,cab-001-012_cab-001-012_s006_r001,Juan de Orozco,holdsOrPerformsRole,Alcalde Ordinario,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s006,cab-001-012_cab-001-012_s006_r002,Cabildo,grantsPowerTo,Juan de Orozco,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s006,cab-001-012_cab-001-012_s006_r003,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d0012/
+co-ahrb-cab-001-d0012,cab-001-012_s006,cab-001-012_cab-001-012_s006_r004,cab-001-012_s006,containsLegalAct,grant_of_power,explicit,high,Expresión: poder,https://zasqua.org/co-ahrb-cab-001-d0012/

@@ -1,0 +1,41 @@
+{
+  "artifact": "metadata",
+  "record_uri": "https://zasqua.org/co-ahrb-cab-001-d008/",
+  "title": null,
+  "unit_type": "unidad documental",
+  "date": "1547",
+  "date_asserted_in_scope_and_content": "20 de Diciembre 1547",
+  "reference_code": "co-ahrb-cab-001-d008",
+  "local_identifier": "cab-001-008",
+  "repository": "Archivo Histórico Regional de Boyacá",
+  "original_location": "Tunja, Colombia",
+  "extent": null,
+  "language": "es",
+  "material_note": "Manuscrito. Original",
+  "finding_aid": "Índices del Archivo Histórico Regional de Boyacá. Libros de Cabildos.",
+  "related_entities": [],
+  "places": [],
+  "access_note": "El registro indica que el documento no cuenta con copia digital disponible y que debe consultarse en el repositorio de origen.",
+  "metadata_last_updated": null,
+  "metadata_format": "METS",
+  "working_transcription_source": "Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion",
+  "methodological_note": "Los campos del catálogo se mantienen separados de las inferencias semánticas y jurídicas construidas para este piloto.",
+  "catalog_verification_status": "schema_restored_catalog_fields_pending_direct_verification",
+  "working_data": {
+    "transcription_status": "available",
+    "dates_explicit_in_text": [
+      "20 de Diciembre 1547"
+    ],
+    "related_entities_from_working_annotations": [
+      "Cabildo Justicia y Regimiento",
+      "Cabildo",
+      "Martin de San Juan",
+      "Pedro Gómez"
+    ],
+    "places_from_working_annotations": [
+      "Tunja",
+      "Nuevo Reino de Granada"
+    ],
+    "note": "Este bloque contiene datos derivados del texto/anotación de trabajo y no sustituye campos del catálogo de Zasqua."
+  }
+}

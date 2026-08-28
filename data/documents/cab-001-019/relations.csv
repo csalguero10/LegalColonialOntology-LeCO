@@ -1,0 +1,14 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0019,cab-001-019_s001,cab-001-019_cab-001-019_s001_r001,Real Provisión,isMentionedIn,cab-001-019_s001,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s001,cab-001-019_cab-001-019_s001_r002,Cabildo/autoridad reunida,readsOrReceives,Real Provisión,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s001,cab-001-019_cab-001-019_s001_r003,Consejos Justicia y Regimiento,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s001,cab-001-019_cab-001-019_s001_r004,cab-001-019_s001,containsLegalAct,reading,explicit,high,Expresión: leyó,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s002,cab-001-019_cab-001-019_s002_r001,Juan Gómez,holdsOrPerformsRole,Procurador,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s003,cab-001-019_cab-001-019_s003_r001,Real Provisión,isMentionedIn,cab-001-019_s003,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s003,cab-001-019_cab-001-019_s003_r002,cab-001-019_s003,containsLegalAct,fine,explicit,high,Expresión: multa,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s004,cab-001-019_cab-001-019_s004_r001,Gonzalo Suárez,holdsOrPerformsRole,capitan,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s004,cab-001-019_cab-001-019_s004_r002,Gonzalo Suárez,performsAct,Appeal,inferred,medium,La relación se deriva de la construcción verbal de apelación; validar sujeto gramatical.,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s004,cab-001-019_cab-001-019_s004_r003,Cabildo,grantsPowerTo,Gonzalo Suárez,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s004,cab-001-019_cab-001-019_s004_r004,cab-001-019_s004,containsLegalAct,power_of_representation,explicit,high,Expresión: poder de representación,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s004,cab-001-019_cab-001-019_s004_r005,cab-001-019_s004,containsLegalAct,appeal,explicit,high,Expresión: apele,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019_s004,cab-001-019_cab-001-019_s004_r006,cab-001-019_s004,containsLegalAct,supplication,explicit,high,Expresión: suplique,https://zasqua.org/co-ahrb-cab-001-d019/

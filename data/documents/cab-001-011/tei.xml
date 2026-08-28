@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-011">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-011</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d0011/">
+                    https://zasqua.org/co-ahrb-cab-001-d0011/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-011_acta">
+                <seg xml:id="cab-001-011_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-011_cab-001-011_s001_a001" type="historicalPlace">Tunja</placeName>,
+                    el día <date xml:id="cab-001-011_cab-001-011_s001_a002" type="sourceDate">16 de
+                    Mayo 1548</date>, se reunieron los miembros del <orgName
+                        xml:id="cab-001-011_cab-001-011_s001_a003" type="cabildo">Cabildo Justicia y
+                    Regimiento</orgName> quienes <rs xml:id="cab-001-011_cab-001-011_s001_a004"
+                        type="legal_or_procedural_act" subtype="decision">acordaron</rs> <rs
+                        xml:id="cab-001-011_cab-001-011_s001_a005" type="legal_or_procedural_act"
+                        subtype="prohibition">prohibir</rs> a los <term
+                        xml:id="cab-001-011_cab-001-011_s001_a006"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    de la ciudad permitir andar a los ganados por la calles y la plaza de la misma
+                    su <rs xml:id="cab-001-011_cab-001-011_s001_a007" type="legal_or_procedural_act"
+                        subtype="penalty">pena</rs>, de $2 tomines.</seg>
+                <seg xml:id="cab-001-011_s002" type="juridical_discursive_segment">Se <rs
+                        xml:id="cab-001-011_cab-001-011_s002_a001" type="legal_or_procedural_act"
+                        subtype="order_event">ordenó</rs> <rs
+                        xml:id="cab-001-011_cab-001-011_s002_a002" type="legal_or_procedural_act"
+                        subtype="proclamation">pregonar</rs> en toda la ciudad lo acordado sobre los
+                    ganados y la probición de dejarlos sueltos.</seg>
+                <seg xml:id="cab-001-011_s003" type="juridical_discursive_segment">En este <orgName
+                        xml:id="cab-001-011_cab-001-011_s003_a001" type="cabildo">Cabildo</orgName>
+                    los señores capitulares autoriza efectuar el <rs
+                        xml:id="cab-001-011_cab-001-011_s003_a002" type="legal_or_procedural_act"
+                        subtype="collection">cobro</rs> de los propios de la ciudad en el valle de <placeName
+                        xml:id="cab-001-011_cab-001-011_s003_a003" type="historicalPlace">Cerinza</placeName>,
+                    donde estan los <term xml:id="cab-001-011_cab-001-011_s003_a004"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">Indios</term> de <placeName
+                        xml:id="cab-001-011_cab-001-011_s003_a005" type="historicalPlace">Honzaga</placeName>
+                    .</seg>
+                <seg xml:id="cab-001-011_s004" type="juridical_discursive_segment">En está reunión,
+                    dijo <persName xml:id="cab-001-011_cab-001-011_s004_a001"
+                        type="historicalPerson">Hernán Suarez de Villalobos</persName> <rs
+                        xml:id="cab-001-011_cab-001-011_s004_a002" type="role_or_office"
+                        subtype="office_or_procedural_role">Regidor</rs>, que las <rs
+                        xml:id="cab-001-011_cab-001-011_s004_a003" type="legal_or_procedural_act"
+                        subtype="penalty">penas</rs> que se impusieran en el <orgName
+                        xml:id="cab-001-011_cab-001-011_s004_a004" type="cabildo">Cabildo</orgName>,
+                    debian hacerse cumplir tanto por los <term
+                        xml:id="cab-001-011_cab-001-011_s004_a005"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">naturales</term> como por los <term
+                        xml:id="cab-001-011_cab-001-011_s004_a006"
+                        type="historical_social_legal_category" subtype="colonial_social_category">
+                    colonos</term> <term xml:id="cab-001-011_cab-001-011_s004_a007"
+                        type="historical_social_legal_category" subtype="colonial_social_category">
+                    Españoles</term>, al infringir las <rs
+                        xml:id="cab-001-011_cab-001-011_s004_a008" type="normative_source"
+                        subtype="laws">leyes</rs> establecidas.</seg>
+                <seg xml:id="cab-001-011_s005" type="juridical_discursive_segment">Don <persName
+                        xml:id="cab-001-011_cab-001-011_s005_a001" type="historicalPerson">Juan de
+                    Horozco</persName>, <rs xml:id="cab-001-011_cab-001-011_s005_a002"
+                        type="role_or_office" subtype="office_or_procedural_role">Regidor</rs>
+                    estuvo de acuerdo con la propuesta, sugiriendo un plazo de nueve días para el
+                    pago de sus deudas, en el caso de los propios.</seg>
+                <seg xml:id="cab-001-011_s006" type="juridical_discursive_segment">Los Señores
+                    capituladores, no se mostraron de acuerdo con la propuesta, por considerar
+                    diferentes las condiciones entre los <term
+                        xml:id="cab-001-011_cab-001-011_s006_a001"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">naturales</term> y los colonnos.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

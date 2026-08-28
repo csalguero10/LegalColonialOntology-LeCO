@@ -1,0 +1,17 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0016,cab-001-016_s001,cab-001-016_cab-001-016_s001_r001,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s001,cab-001-016_cab-001-016_s001_r002,cab-001-016_s001,invokesConcept,Real Servicio,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s002,cab-001-016_cab-001-016_s002_r001,orden,isMentionedIn,cab-001-016_s002,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s002,cab-001-016_cab-001-016_s002_r002,Juan de Orozco,holdsOrPerformsRole,Gobernador,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s002,cab-001-016_cab-001-016_s002_r003,Cabildo/autoridad reunida,readsOrReceives,orden,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s002,cab-001-016_cab-001-016_s002_r004,cab-001-016_s002,containsLegalAct,reading,explicit,high,Expresión: leyó,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s002,cab-001-016_cab-001-016_s002_r005,cab-001-016_s002,containsLegalAct,obedience,explicit,high,Expresión: acató,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s002,cab-001-016_cab-001-016_s002_r006,cab-001-016_s002,containsLegalAct,execution,explicit,high,Expresión: ejecutar,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s003,cab-001-016_cab-001-016_s003_r001,Baltazar Gómez de Avila,presentsOrRequests,Petition,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s003,cab-001-016_cab-001-016_s003_r002,cab-001-016_s003,containsLegalAct,presentation,explicit,high,Expresión: presentó,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s003,cab-001-016_cab-001-016_s003_r003,cab-001-016_s003,containsLegalAct,petition,explicit,high,Expresión: petición,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s004,cab-001-016_cab-001-016_s004_r001,cab-001-016_s004,containsLegalAct,approval,explicit,high,Expresión: aprobó,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s004,cab-001-016_cab-001-016_s004_r002,cab-001-016_s004,containsLegalAct,order_event,explicit,high,Expresión: mandó,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s004,cab-001-016_cab-001-016_s004_r003,cab-001-016_s004,containsLegalAct,auction_award,explicit,high,Expresión: rematar,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s006,cab-001-016_cab-001-016_s006_r001,titulo,isMentionedIn,cab-001-016_s006,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d016/
+co-ahrb-cab-001-d0016,cab-001-016_s006,cab-001-016_cab-001-016_s006_r002,cab-001-016_s006,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d016/

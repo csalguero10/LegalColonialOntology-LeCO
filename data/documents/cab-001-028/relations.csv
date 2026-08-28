@@ -1,0 +1,5 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0028,cab-001-028_s003,cab-001-028_cab-001-028_s003_r001,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028_s003,cab-001-028_cab-001-028_s003_r002,cab-001-028_s003,invokesConcept,Real Servicio,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028_s004,cab-001-028_cab-001-028_s004_r001,Justicia y Regimiento,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028_s004,cab-001-028_cab-001-028_s004_r002,cab-001-028_s004,invokesConcept,bien de esta República,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d028/

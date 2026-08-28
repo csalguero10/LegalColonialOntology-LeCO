@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-006">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-006</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d006/">
+                    https://zasqua.org/co-ahrb-cab-001-d006/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-006_acta">
+                <seg xml:id="cab-001-006_s001" type="juridical_discursive_segment">Don <persName
+                        xml:id="cab-001-006_cab-001-006_s001_a001" type="historicalPerson">Pedro de
+                    Colmenares</persName> y <persName xml:id="cab-001-006_cab-001-006_s001_a002"
+                        type="historicalPerson">Alonso Tellez</persName> informan al Consejode
+                    Indias sobre la situación de los <term
+                        xml:id="cab-001-006_cab-001-006_s001_a003"
+                        type="historical_social_legal_category" subtype="historical_status_category">
+                    descubridores</term> y <term xml:id="cab-001-006_cab-001-006_s001_a004"
+                        type="historical_social_legal_category" subtype="office_status_category">
+                    comendaderos</term> de la ciudad deTunja, para que cumplan las <rs
+                        xml:id="cab-001-006_cab-001-006_s001_a005" type="normative_source"
+                        subtype="new_laws">nuevas leyes</rs>, ante los motines de <term
+                        xml:id="cab-001-006_cab-001-006_s001_a006"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">Indios</term>, la perpetuidad de
+                    los repartimintos del Reino,el pago de las mitas, comprar negros para que ayuden
+                    a abrir el camino para el desembarco del <placeName
+                        xml:id="cab-001-006_cab-001-006_s001_a007" type="historicalPlace">Rio Grande</placeName>
+                    de este reino.</seg>
+                <seg xml:id="cab-001-006_s002" type="juridical_discursive_segment"><rs
+                        xml:id="cab-001-006_cab-001-006_s002_a001" type="legal_or_procedural_act"
+                        subtype="appointment">Nombrar</rs> <rs
+                        xml:id="cab-001-006_cab-001-006_s002_a002" type="role_or_office"
+                        subtype="office_or_procedural_role">regidores</rs> perpetuos a personas
+                    hábiles, idónes que sean pobladores y <term
+                        xml:id="cab-001-006_cab-001-006_s002_a003"
+                        type="historical_social_legal_category" subtype="historical_status_category">
+                    descubridores</term> del <placeName xml:id="cab-001-006_cab-001-006_s002_a004"
+                        type="historicalPlace">Nuevo Reino</placeName>.</seg>
+                <seg xml:id="cab-001-006_s003" type="juridical_discursive_segment">Hacer relación de <term
+                        xml:id="cab-001-006_cab-001-006_s003_a001" type="historical_concept"
+                        subtype="majesty">su majestad</term> de la cantidad de oro,espadas, Piedras
+                    preciosas producidas en este reino, para que por medio de la <orgName
+                        xml:id="cab-001-006_cab-001-006_s003_a002" type="audiencia">Real Audencia</orgName>
+                    se entregue el informe, agregando las tierras mas fertiles de los <term
+                        xml:id="cab-001-006_cab-001-006_s003_a003"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">Indigenas</term> ó <term
+                        xml:id="cab-001-006_cab-001-006_s003_a004"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">naturales</term>.</seg>
+                <seg xml:id="cab-001-006_s004" type="juridical_discursive_segment">Por cuanto en los
+                    confines y términos de la ciudad de <placeName
+                        xml:id="cab-001-006_cab-001-006_s004_a001" type="historicalPlace">Tunja</placeName>
+                    y sus provincias y poblaciones de <term
+                        xml:id="cab-001-006_cab-001-006_s004_a002"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">Indios</term> hay guerras entre
+                    ellos con los <term xml:id="cab-001-006_cab-001-006_s004_a003"
+                        type="historical_social_legal_category" subtype="ethnohistorical_category">
+                    Caribes</term> los cuales comen carne humana, para que estos sean <rs
+                        xml:id="cab-001-006_cab-001-006_s004_a004" type="legal_or_procedural_act"
+                        subtype="punishment">castigados</rs> por los <term
+                        xml:id="cab-001-006_cab-001-006_s004_a005"
+                        type="historical_social_legal_category" subtype="colonial_social_category">
+                    españoles</term>.</seg>
+                <seg xml:id="cab-001-006_s005" type="juridical_discursive_segment">Por cuanto es <term
+                        xml:id="cab-001-006_cab-001-006_s005_a001" type="historical_concept"
+                        subtype="custom">costumbre</term> de los gobernantes del Reino y de las
+                    justicias, se pregona las <rs xml:id="cab-001-006_cab-001-006_s005_a002"
+                        type="legal_or_procedural_act" subtype="penalty">penas</rs> contra los <term
+                        xml:id="cab-001-006_cab-001-006_s005_a003"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">Indios</term>, Suspenderlos, <rs
+                        xml:id="cab-001-006_cab-001-006_s005_a004" type="legal_or_procedural_act"
+                        subtype="punishment">castigarlos</rs> por causar problemas con los <term
+                        xml:id="cab-001-006_cab-001-006_s005_a005"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    de la ciudad dónde se fiel cumplimiento a esta <rs
+                        xml:id="cab-001-006_cab-001-006_s005_a006" type="normative_source"
+                        subtype="real_provision">carta Real Provisión</rs>.</seg>
+                <seg xml:id="cab-001-006_s006" type="juridical_discursive_segment">Finalmente;
+                    seguir autorizando los <rs xml:id="cab-001-006_cab-001-006_s006_a001"
+                        type="legal_or_procedural_act" subtype="repartimiento">repartimientos</rs>
+                    de tierras e <term xml:id="cab-001-006_cab-001-006_s006_a002"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">Indios</term> a los primeros <term
+                        xml:id="cab-001-006_cab-001-006_s006_a003"
+                        type="historical_social_legal_category" subtype="historical_status_category">
+                    descubridores</term> y <term xml:id="cab-001-006_cab-001-006_s006_a004"
+                        type="historical_social_legal_category" subtype="historical_status_category">
+                    conquistadores</term> del <placeName xml:id="cab-001-006_cab-001-006_s006_a005"
+                        type="historicalPlace">Nuevo Reino de Granada</placeName>.</seg>
+                <seg xml:id="cab-001-006_s007" type="juridical_discursive_segment">Los miembros del <orgName
+                        xml:id="cab-001-006_cab-001-006_s007_a001" type="cabildo">Cabildo</orgName> <rs
+                        xml:id="cab-001-006_cab-001-006_s007_a002" type="legal_or_procedural_act"
+                        subtype="decision">acordaron</rs>, dar cumplimiento a lo acordado, en la <rs
+                        xml:id="cab-001-006_cab-001-006_s007_a003" type="normative_source"
+                        subtype="real_provision">Real Provisión</rs> .</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,0 +1,18 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d006,cab-001-006_s001,cab-001-006_cab-001-006_s001_r001,nuevas leyes,isMentionedIn,cab-001-006_s001,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s001,cab-001-006_cab-001-006_s001_r002,nuevas leyes,concernsCategory,descubridores,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s001,cab-001-006_cab-001-006_s001_r003,nuevas leyes,concernsCategory,comendaderos,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s001,cab-001-006_cab-001-006_s001_r004,nuevas leyes,concernsCategory,Indios,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s002,cab-001-006_cab-001-006_s002_r001,cab-001-006_s002,containsLegalAct,appointment,explicit,high,Expresión: Nombrar,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s003,cab-001-006_cab-001-006_s003_r001,cab-001-006_s003,invokesConcept,su majestad,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s004,cab-001-006_cab-001-006_s004_r001,cab-001-006_s004,containsLegalAct,punishment,explicit,high,Expresión: castigados,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r001,carta Real Provisión,isMentionedIn,cab-001-006_s005,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r002,Cabildo/autoridad competente,ordersOrPerforms,Proclamation,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r003,carta Real Provisión,concernsCategory,Indios,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r004,carta Real Provisión,concernsCategory,vecinos,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r005,cab-001-006_s005,invokesConcept,costumbre,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r006,cab-001-006_s005,containsLegalAct,penalty,explicit,high,Expresión: penas,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s005,cab-001-006_cab-001-006_s005_r007,cab-001-006_s005,containsLegalAct,punishment,explicit,high,Expresión: castigarlos,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s006,cab-001-006_cab-001-006_s006_r001,cab-001-006_s006,containsLegalAct,repartimiento,explicit,high,Expresión: repartimientos,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s007,cab-001-006_cab-001-006_s007_r001,Real Provisión,isMentionedIn,cab-001-006_s007,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d006/
+co-ahrb-cab-001-d006,cab-001-006_s007,cab-001-006_cab-001-006_s007_r002,cab-001-006_s007,containsLegalAct,decision,explicit,high,Expresión: acordaron,https://zasqua.org/co-ahrb-cab-001-d006/

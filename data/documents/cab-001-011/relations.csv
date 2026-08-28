@@ -1,0 +1,16 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0011,cab-001-011_s001,cab-001-011_cab-001-011_s001_r001,Cabildo Justicia y Regimiento,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s001,cab-001-011_cab-001-011_s001_r002,cab-001-011_s001,containsLegalAct,decision,explicit,high,Expresión: acordaron,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s001,cab-001-011_cab-001-011_s001_r003,cab-001-011_s001,containsLegalAct,prohibition,explicit,high,Expresión: prohibir,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s001,cab-001-011_cab-001-011_s001_r004,cab-001-011_s001,containsLegalAct,penalty,explicit,high,Expresión: pena,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s002,cab-001-011_cab-001-011_s002_r001,Cabildo/autoridad competente,ordersOrPerforms,Proclamation,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s002,cab-001-011_cab-001-011_s002_r002,cab-001-011_s002,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s002,cab-001-011_cab-001-011_s002_r003,cab-001-011_s002,containsLegalAct,proclamation,explicit,high,Expresión: pregonar,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s003,cab-001-011_cab-001-011_s003_r001,cab-001-011_s003,containsLegalAct,collection,explicit,high,Expresión: cobro,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s004,cab-001-011_cab-001-011_s004_r001,leyes,isMentionedIn,cab-001-011_s004,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s004,cab-001-011_cab-001-011_s004_r002,Hernán Suarez de Villalobos,holdsOrPerformsRole,Regidor,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s004,cab-001-011_cab-001-011_s004_r003,leyes,concernsCategory,naturales,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s004,cab-001-011_cab-001-011_s004_r004,leyes,concernsCategory,colonos,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s004,cab-001-011_cab-001-011_s004_r005,leyes,concernsCategory,Españoles,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s004,cab-001-011_cab-001-011_s004_r006,cab-001-011_s004,containsLegalAct,penalty,explicit,high,Expresión: penas,https://zasqua.org/co-ahrb-cab-001-d0011/
+co-ahrb-cab-001-d0011,cab-001-011_s005,cab-001-011_cab-001-011_s005_r001,Juan de Horozco,holdsOrPerformsRole,Regidor,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d0011/

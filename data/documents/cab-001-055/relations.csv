@@ -1,0 +1,11 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0055,cab-001-055_s002,cab-001-055_cab-001-055_s002_r001,Martin Sanchez Ropero,presentsOrRequests,Petition,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s002,cab-001-055_cab-001-055_s002_r002,cab-001-055_s002,containsLegalAct,presentation,explicit,high,Expresión: presentó,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s002,cab-001-055_cab-001-055_s002_r003,cab-001-055_s002,containsLegalAct,petition,explicit,high,Expresión: petición,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s003,cab-001-055_cab-001-055_s003_r001,Hernando Rojas,presentsOrRequests,Petition,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s003,cab-001-055_cab-001-055_s003_r002,cab-001-055_s003,containsLegalAct,petition,explicit,high,Expresión: petición,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s004,cab-001-055_cab-001-055_s004_r001,cab-001-055_s004,containsLegalAct,approval,explicit,high,Expresión: aprobaron,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s005,cab-001-055_cab-001-055_s005_r001,cab-001-055_s005,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s005,cab-001-055_cab-001-055_s005_r002,cab-001-055_s005,containsLegalAct,proclamation,explicit,high,Expresión: pregón,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s006,cab-001-055_cab-001-055_s006_r001,cab-001-055_s006,containsLegalAct,approval,explicit,high,Expresión: aprobó,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055_s006,cab-001-055_cab-001-055_s006_r002,cab-001-055_s006,containsLegalAct,collection,explicit,high,Expresión: cobrar,https://zasqua.org/co-ahrb-cab-001-d055/

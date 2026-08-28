@@ -1,0 +1,17 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d007,cab-001-007_s001,cab-001-007_cab-001-007_s001_r001,Provisión,isMentionedIn,cab-001-007_s001,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s001,cab-001-007_cab-001-007_s001_r002,Alonso Tellez,holdsOrPerformsRole,Procuradores,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s001,cab-001-007_cab-001-007_s001_r003,Cabildo,grantsPowerTo,Alonso Tellez,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s001,cab-001-007_cab-001-007_s001_r004,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s001,cab-001-007_cab-001-007_s001_r005,Justicia y Regimiento,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s001,cab-001-007_cab-001-007_s001_r006,cab-001-007_s001,containsLegalAct,grant_of_power,explicit,high,Expresión: poder,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r001,leyes,isMentionedIn,cab-001-007_s002,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r002,leyes,concernsCategory,naturales,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r003,leyes,concernsCategory,colonos,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r004,leyes,concernsCategory,vecinos,explicit,medium,"Coocurrencia normativa; relación temática, no atribución de identidad.",https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r005,cab-001-007_s002,invokesConcept,su Magestad,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r006,cab-001-007_s002,containsLegalAct,supplication,explicit,high,Expresión: suplicas,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s002,cab-001-007_cab-001-007_s002_r007,cab-001-007_s002,containsLegalAct,appeal,explicit,high,Expresión: apelaciones,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s003,cab-001-007_cab-001-007_s003_r001,cab-001-007_s003,invokesConcept,fidelidad,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s003,cab-001-007_cab-001-007_s003_r002,cab-001-007_s003,containsLegalAct,oath,explicit,high,Expresión: juramento,https://zasqua.org/co-ahrb-cab-001-d007/
+co-ahrb-cab-001-d007,cab-001-007_s003,cab-001-007_cab-001-007_s003_r003,cab-001-007_s003,containsLegalAct,power_of_representation,explicit,high,Expresión: poder de representación,https://zasqua.org/co-ahrb-cab-001-d007/

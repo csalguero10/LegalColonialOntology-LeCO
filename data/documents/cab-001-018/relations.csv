@@ -1,0 +1,14 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r001,orden,isMentionedIn,cab-001-018_s001,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r002,Juan Montaño,holdsOrPerformsRole,Oidor,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r003,Juan Montaño,holdsOrPerformsRole,Juez de Comisión,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r004,Luis Lanchero,holdsOrPerformsRole,capitán,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r005,Cabildo,grantsPowerTo,Luis Lanchero,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r006,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s001,cab-001-018_cab-001-018_s001_r007,cab-001-018_s001,containsLegalAct,grant_of_power,explicit,high,Expresión: poder,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s002,cab-001-018_cab-001-018_s002_r001,cab-001-018_s002,containsLegalAct,proclamation,explicit,high,Expresión: pregón,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s003,cab-001-018_cab-001-018_s003_r001,cab-001-018_s003,containsLegalAct,penalty,explicit,high,Expresión: pena,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s004,cab-001-018_cab-001-018_s004_r001,cab-001-018_s004,invokesConcept,fidelidad,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s004,cab-001-018_cab-001-018_s004_r002,cab-001-018_s004,containsLegalAct,oath,explicit,high,Expresión: juramento,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s005,cab-001-018_cab-001-018_s005_r001,Orden,isMentionedIn,cab-001-018_s005,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d018/
+co-ahrb-cab-001-d0018,cab-001-018_s005,cab-001-018_cab-001-018_s005_r002,Bartolomé Gonzalez de la Peña,holdsOrPerformsRole,Juez,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d018/

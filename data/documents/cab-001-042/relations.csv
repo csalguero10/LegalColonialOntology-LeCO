@@ -1,0 +1,15 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0042,cab-001-042_s001,cab-001-042_cab-001-042_s001_r001,carta,isMentionedIn,cab-001-042_s001,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s001,cab-001-042_cab-001-042_s001_r002,Martin Rojas,holdsOrPerformsRole,capitan,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s001,cab-001-042_cab-001-042_s001_r003,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s001,cab-001-042_cab-001-042_s001_r004,cab-001-042_s001,containsLegalAct,presentation,explicit,high,Expresión: presentó,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s002,cab-001-042_cab-001-042_s002_r001,Martin Galeano,holdsOrPerformsRole,capitan,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s002,cab-001-042_cab-001-042_s002_r002,cab-001-042_s002,containsLegalAct,approval,explicit,high,Expresión: aprobó,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s003,cab-001-042_cab-001-042_s003_r001,orden,isMentionedIn,cab-001-042_s003,explicit,high,Fuente normativa identificada en el segmento.,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s003,cab-001-042_cab-001-042_s003_r002,cab-001-042_s003,containsLegalAct,penalty,explicit,high,Expresión: pena,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s007,cab-001-042_cab-001-042_s007_r001,Vicente de Ruesga,presentsOrRequests,Petition,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s007,cab-001-042_cab-001-042_s007_r002,cab-001-042_s007,containsLegalAct,presentation,explicit,high,Expresión: presentó,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s007,cab-001-042_cab-001-042_s007_r003,cab-001-042_s007,containsLegalAct,petition,explicit,high,Expresión: petición,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s007,cab-001-042_cab-001-042_s007_r004,cab-001-042_s007,containsLegalAct,decision,explicit,high,Expresión: acordaron,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s008,cab-001-042_cab-001-042_s008_r001,cab-001-042_s008,containsLegalAct,reading,explicit,high,Expresión: leyó,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042_s008,cab-001-042_cab-001-042_s008_r002,cab-001-042_s008,containsLegalAct,petition,explicit,high,Expresión: petición,https://zasqua.org/co-ahrb-cab-001-d042/

@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-008">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-008</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d008/">
+                    https://zasqua.org/co-ahrb-cab-001-d008/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-008_acta">
+                <seg xml:id="cab-001-008_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-008_cab-001-008_s001_a001" type="historicalPlace">Tunja</placeName>
+                    del <placeName xml:id="cab-001-008_cab-001-008_s001_a002" type="historicalPlace">Nuevo
+                    Reino de Granada</placeName>, el día <date
+                        xml:id="cab-001-008_cab-001-008_s001_a003" type="sourceDate">20 de Diciembre
+                    1547</date> se reunió el <orgName xml:id="cab-001-008_cab-001-008_s001_a004"
+                        type="cabildo">Cabildo Justicia y Regimiento</orgName>.</seg>
+                <seg xml:id="cab-001-008_s002" type="juridical_discursive_segment">Los miembros del <orgName
+                        xml:id="cab-001-008_cab-001-008_s002_a001" type="cabildo">Cabildo</orgName>
+                    se reunieron para tratar asuntos y despachar negocios.</seg>
+                <seg xml:id="cab-001-008_s003" type="juridical_discursive_segment">Se <rs
+                        xml:id="cab-001-008_cab-001-008_s003_a001" type="legal_or_procedural_act"
+                        subtype="decision">acordó</rs> <rs xml:id="cab-001-008_cab-001-008_s003_a002"
+                        type="legal_or_procedural_act" subtype="appointment">nombrar</rs> por <rs
+                        xml:id="cab-001-008_cab-001-008_s003_a003" type="role_or_office"
+                        subtype="office_or_procedural_role">escribano público</rs> de <placeName
+                        xml:id="cab-001-008_cab-001-008_s003_a004" type="historicalPlace">Tunja</placeName>
+                    a Juan quien se le ordena hacer buen uso de su cargo.</seg>
+                <seg xml:id="cab-001-008_s004" type="juridical_discursive_segment">En esta reunión
+                    se platicó sobre la necesidad de traer los mercados a la plaza principal, el <rs
+                        xml:id="cab-001-008_cab-001-008_s004_a001" type="role_or_office"
+                        subtype="office_or_procedural_role">Alcalde ordinario</rs> considera el
+                    bienestar de los <term xml:id="cab-001-008_cab-001-008_s004_a002"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    y el aprovisamiento del mercado.</seg>
+                <seg xml:id="cab-001-008_s005" type="juridical_discursive_segment">Don <persName
+                        xml:id="cab-001-008_cab-001-008_s005_a001" type="historicalPerson">Martin de
+                    San Juan</persName> <rs xml:id="cab-001-008_cab-001-008_s005_a002"
+                        type="role_or_office" subtype="office_or_procedural_role">Alquacil Mayor</rs>
+                    , <rs xml:id="cab-001-008_cab-001-008_s005_a003" type="legal_or_procedural_act"
+                        subtype="presentation">presentó</rs> una <rs
+                        xml:id="cab-001-008_cab-001-008_s005_a004" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs>, solicitando el <rs
+                        xml:id="cab-001-008_cab-001-008_s005_a005" type="legal_or_procedural_act"
+                        subtype="appointment">nombramiento</rs> de un <rs
+                        xml:id="cab-001-008_cab-001-008_s005_a006" type="role_or_office"
+                        subtype="office_or_procedural_role">carcelero</rs>, para lo cual proponia el
+                    nombre de <persName xml:id="cab-001-008_cab-001-008_s005_a007"
+                        type="historicalPerson">Pedro Gómez</persName>.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

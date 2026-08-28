@@ -1,0 +1,14 @@
+﻿document_id,local_id,segment_id,annotation_id,surface,normalized,category,subtype,tei_element,evidence_status,certainty,start,end,note,source_url
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s001,cab-001-028_cab-001-028_s001_a001,Tunja,Tunja,place,historical_place,placeName,explicit,high,0,5,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s001,cab-001-028_cab-001-028_s001_a002,21 junio 1548,21 junio 1548,date,calendar_date,date,explicit,high,7,20,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s002,cab-001-028_cab-001-028_s002_a001,Justicia y Regimiento,Justicia y Regimiento,institutional_body,cabildo_body,orgName,explicit,high,12,33,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s002,cab-001-028_cab-001-028_s002_a002,Gobernador,Gobernador,role_or_office,office_or_procedural_role,rs,explicit,high,106,116,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s002,cab-001-028_cab-001-028_s002_a003,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,223,230,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s003,cab-001-028_cab-001-028_s003_a001,Tunja,Tunja,place,historical_place,placeName,explicit,high,16,21,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s003,cab-001-028_cab-001-028_s003_a002,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,88,95,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s003,cab-001-028_cab-001-028_s003_a003,Real Servicio,Real Servicio,historical_concept,real_service,term,explicit,high,125,138,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s004,cab-001-028_cab-001-028_s004_a001,Justicia y Regimiento,Justicia y Regimiento,institutional_body,cabildo_body,orgName,explicit,high,12,33,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s004,cab-001-028_cab-001-028_s004_a002,Gobernador,Gobernador,role_or_office,office_or_procedural_role,rs,explicit,high,52,62,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s004,cab-001-028_cab-001-028_s004_a003,Tunja,Tunja,place,historical_place,placeName,explicit,high,100,105,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s004,cab-001-028_cab-001-028_s004_a004,Velez,Velez,place,historical_place,placeName,explicit,high,108,113,,https://zasqua.org/co-ahrb-cab-001-d028/
+co-ahrb-cab-001-d0028,cab-001-028,cab-001-028_s004,cab-001-028_cab-001-028_s004_a005,bien de esta República,bien de esta República,historical_concept,common_good,term,explicit,high,210,232,,https://zasqua.org/co-ahrb-cab-001-d028/

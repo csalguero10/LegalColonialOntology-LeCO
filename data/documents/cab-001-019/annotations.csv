@@ -1,0 +1,24 @@
+﻿document_id,local_id,segment_id,annotation_id,surface,normalized,category,subtype,tei_element,evidence_status,certainty,start,end,note,source_url
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a001,Tunja,Tunja,place,historical_place,placeName,explicit,high,16,21,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a002,17 de Octubre 1553,17 de Octubre 1553,date,calendar_date,date,explicit,high,30,48,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a003,leyó,leyó,legal_or_procedural_act,reading,rs,explicit,high,53,57,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a004,Real Provisión,Real Provisión,normative_source,real_provision,rs,explicit,high,62,76,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a005,Consejos Justicia y Regimiento,Consejos Justicia y Regimiento,institutional_body,cabildo_body,orgName,explicit,high,103,133,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a006,Nuevo Reino de Granada,Nuevo Reino de Granada,place,historical_place,placeName,explicit,high,142,164,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a007,procuradores,procuradores,role_or_office,office_or_procedural_role,rs,explicit,high,177,189,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a008,Reino de España,Reino de España,place,historical_place,placeName,explicit,high,193,208,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a009,cabildo,cabildo,institution,cabildo,orgName,explicit,high,279,286,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s001,cab-001-019_cab-001-019_s001_a010,Consejo de Indias,Consejo de Indias,institution,council,orgName,explicit,high,297,314,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s002,cab-001-019_cab-001-019_s002_a001,Procurador,Procurador,role_or_office,office_or_procedural_role,rs,explicit,high,15,25,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s002,cab-001-019_cab-001-019_s002_a002,Tunja,Tunja,place,historical_place,placeName,explicit,high,29,34,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s002,cab-001-019_cab-001-019_s002_a003,Juan Gómez,Juan Gómez,person,historical_person,persName,explicit,high,39,49,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s002,cab-001-019_cab-001-019_s002_a004,España,España,place,historical_place,placeName,explicit,high,179,185,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s003,cab-001-019_cab-001-019_s003_a001,multa,multa,legal_or_procedural_act,fine,rs,explicit,high,19,24,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s003,cab-001-019_cab-001-019_s003_a002,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,74,81,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s003,cab-001-019_cab-001-019_s003_a003,Real Provisión,Real Provisión,normative_source,real_provision,rs,explicit,high,98,112,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s004,cab-001-019_cab-001-019_s004_a001,poder de representación,poder de representación,legal_or_procedural_act,power_of_representation,rs,explicit,high,31,54,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s004,cab-001-019_cab-001-019_s004_a002,capitan,capitan,role_or_office,office_or_procedural_role,rs,explicit,high,58,65,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s004,cab-001-019_cab-001-019_s004_a003,Gonzalo Suárez,Gonzalo Suárez,person,historical_person,persName,explicit,high,66,80,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s004,cab-001-019_cab-001-019_s004_a004,apele,apele,legal_or_procedural_act,appeal,rs,explicit,high,90,95,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s004,cab-001-019_cab-001-019_s004_a005,suplique,suplique,legal_or_procedural_act,supplication,rs,explicit,high,98,106,,https://zasqua.org/co-ahrb-cab-001-d019/
+co-ahrb-cab-001-d0019,cab-001-019,cab-001-019_s004,cab-001-019_cab-001-019_s004_a006,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,114,121,,https://zasqua.org/co-ahrb-cab-001-d019/

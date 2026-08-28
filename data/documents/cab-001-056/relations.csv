@@ -1,0 +1,9 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0056,cab-001-056_s001,cab-001-056_cab-001-056_s001_r001,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s002,cab-001-056_cab-001-056_s002_r001,cab-001-056_s002,containsLegalAct,approval,explicit,high,Expresión: aprobó,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s002,cab-001-056_cab-001-056_s002_r002,cab-001-056_s002,containsLegalAct,penalty,explicit,high,Expresión: pena,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s003,cab-001-056_cab-001-056_s003_r001,cab-001-056_s003,containsLegalAct,penalty,explicit,high,Expresión: pena,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s004,cab-001-056_cab-001-056_s004_r001,cab-001-056_s004,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s005,cab-001-056_cab-001-056_s005_r001,cab-001-056_s005,containsLegalAct,decision,explicit,high,Expresión: acordó,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s005,cab-001-056_cab-001-056_s005_r002,cab-001-056_s005,containsLegalAct,order_event,explicit,high,Expresión: mandó,https://zasqua.org/co-ahrb-cab-001-d056/
+co-ahrb-cab-001-d0056,cab-001-056_s005,cab-001-056_cab-001-056_s005_r003,cab-001-056_s005,containsLegalAct,repartimiento,explicit,high,Expresión: repartimientos,https://zasqua.org/co-ahrb-cab-001-d056/

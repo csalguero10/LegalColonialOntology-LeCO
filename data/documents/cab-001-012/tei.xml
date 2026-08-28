@@ -1,0 +1,100 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-012">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-012</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d0012/">
+                    https://zasqua.org/co-ahrb-cab-001-d0012/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-012_acta">
+                <seg xml:id="cab-001-012_s001" type="juridical_discursive_segment"><orgName
+                        xml:id="cab-001-012_cab-001-012_s001_a001" type="cabildo">Cabildo</orgName>
+                    del <date xml:id="cab-001-012_cab-001-012_s001_a002" type="sourceDate">6 de
+                    Junio 1549</date> en el que se reunieron los señores <orgName
+                        xml:id="cab-001-012_cab-001-012_s001_a003" type="cabildo_body">Justicia y
+                    Regimiento</orgName> para tratar los asuntos del <term
+                        xml:id="cab-001-012_cab-001-012_s001_a004" type="historical_concept"
+                        subtype="real_service">Real Servicio</term>.</seg>
+                <seg xml:id="cab-001-012_s002" type="juridical_discursive_segment">En la reunión se
+                    trató lo relacionado a la <rs xml:id="cab-001-012_cab-001-012_s002_a001"
+                        type="legal_or_procedural_act" subtype="petition">petición</rs> presentada
+                    por <persName xml:id="cab-001-012_cab-001-012_s002_a002" type="historicalPerson">Francisco
+                    Martinez</persName>, quien solicita la <rs
+                        xml:id="cab-001-012_cab-001-012_s002_a003" type="legal_or_procedural_act"
+                        subtype="land_grant">adjudicación</rs> de un pedazo de tierra en <placeName
+                        xml:id="cab-001-012_cab-001-012_s002_a004" type="historicalPlace">Sipatá</placeName>
+                    se <rs xml:id="cab-001-012_cab-001-012_s002_a005" type="legal_or_procedural_act"
+                        subtype="decision">acordó</rs> proveerla <rs
+                        xml:id="cab-001-012_cab-001-012_s002_a006" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs>, siempre y cuando no fuera lesivo para los <term
+                        xml:id="cab-001-012_cab-001-012_s002_a007"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    de <placeName xml:id="cab-001-012_cab-001-012_s002_a008" type="historicalPlace">
+                    Tunja</placeName>, ni para el paso de las yeguas al pueblo.</seg>
+                <seg xml:id="cab-001-012_s003" type="juridical_discursive_segment">También se <rs
+                        xml:id="cab-001-012_cab-001-012_s003_a001" type="legal_or_procedural_act"
+                        subtype="decision">acordó</rs> mandar a los <term
+                        xml:id="cab-001-012_cab-001-012_s003_a002"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    hierrantes no pasar con los caballos por dichas tierras, so <rs
+                        xml:id="cab-001-012_cab-001-012_s003_a003" type="legal_or_procedural_act"
+                        subtype="penalty">pena</rs> de $10 pesos; se <rs
+                        xml:id="cab-001-012_cab-001-012_s003_a004" type="legal_or_procedural_act"
+                        subtype="order_event">ordenó</rs> <rs
+                        xml:id="cab-001-012_cab-001-012_s003_a005" type="legal_or_procedural_act"
+                        subtype="proclamation">pregonar</rs> la <rs
+                        xml:id="cab-001-012_cab-001-012_s003_a006" type="normative_source"
+                        subtype="order">orden</rs>.</seg>
+                <seg xml:id="cab-001-012_s004" type="juridical_discursive_segment">En el <orgName
+                        xml:id="cab-001-012_cab-001-012_s004_a001" type="cabildo">cabildo</orgName>, <rs
+                        xml:id="cab-001-012_cab-001-012_s004_a002" type="legal_or_procedural_act"
+                        subtype="approval">aprobaron</rs> <rs
+                        xml:id="cab-001-012_cab-001-012_s004_a003" type="legal_or_procedural_act"
+                        subtype="collection">cobrar</rs> medio peso del buen oro, por cada vaca,
+                    yegua que se encontrara haciendo daño en las sementeras y en el sementerio.</seg>
+                <seg xml:id="cab-001-012_s005" type="juridical_discursive_segment"><date
+                        xml:id="cab-001-012_cab-001-012_s005_a001" type="sourceDate">15 de Junio de
+                    1549</date>, fecha en laque se dió cumplimiento al <rs
+                        xml:id="cab-001-012_cab-001-012_s005_a002" type="legal_or_procedural_act"
+                        subtype="proclamation">pregón</rs> ordenado en el <orgName
+                        xml:id="cab-001-012_cab-001-012_s005_a003" type="cabildo">Cabildo</orgName>
+                    del día <date xml:id="cab-001-012_cab-001-012_s005_a004" type="sourceDate">6 de
+                    Junio 1549</date>.</seg>
+                <seg xml:id="cab-001-012_s006" type="juridical_discursive_segment"><placeName
+                        xml:id="cab-001-012_cab-001-012_s006_a001" type="historicalPlace">Tunja</placeName>
+                    , <date xml:id="cab-001-012_cab-001-012_s006_a002" type="sourceDate">23 junio
+                    1549</date>, <orgName xml:id="cab-001-012_cab-001-012_s006_a003" type="cabildo">
+                    Cabildo</orgName> en el que se confiere un <rs
+                        xml:id="cab-001-012_cab-001-012_s006_a004" type="legal_or_procedural_act"
+                        subtype="grant_of_power">poder</rs> al <rs
+                        xml:id="cab-001-012_cab-001-012_s006_a005" type="role_or_office"
+                        subtype="office_or_procedural_role">Alcalde Ordinario</rs> <persName
+                        xml:id="cab-001-012_cab-001-012_s006_a006" type="historicalPerson">Juan de
+                    Orozco</persName> para que defienda las causas y negocios de la Ciudad en la <orgName
+                        xml:id="cab-001-012_cab-001-012_s006_a007" type="audiencia">Real Audencia</orgName>
+                    .</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

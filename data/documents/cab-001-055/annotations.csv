@@ -1,0 +1,18 @@
+﻿document_id,local_id,segment_id,annotation_id,surface,normalized,category,subtype,tei_element,evidence_status,certainty,start,end,note,source_url
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s001,cab-001-055_cab-001-055_s001_a001,Tunja,Tunja,place,historical_place,placeName,explicit,high,0,5,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s001,cab-001-055_cab-001-055_s001_a002,7 de Noviembre 1550,7 de Noviembre 1550,date,calendar_date,date,explicit,high,7,26,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s002,cab-001-055_cab-001-055_s002_a001,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,33,40,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s002,cab-001-055_cab-001-055_s002_a002,presentó,presentó,legal_or_procedural_act,presentation,rs,explicit,high,55,63,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s002,cab-001-055_cab-001-055_s002_a003,petición,petición,legal_or_procedural_act,petition,rs,explicit,high,67,75,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s002,cab-001-055_cab-001-055_s002_a004,Martin Sanchez Ropero,Martin Sanchez Ropero,person,historical_person,persName,explicit,high,79,100,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s003,cab-001-055_cab-001-055_s003_a001,petición,petición,legal_or_procedural_act,petition,rs,explicit,high,24,32,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s003,cab-001-055_cab-001-055_s003_a002,Hernando Rojas,Hernando Rojas,person,historical_person,persName,explicit,high,46,60,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s003,cab-001-055_cab-001-055_s003_a003,Tunja,Tunja,place,historical_place,placeName,explicit,high,124,129,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s004,cab-001-055_cab-001-055_s004_a001,Justicia y Regimiento,Justicia y Regimiento,institutional_body,cabildo_body,orgName,explicit,high,12,33,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s004,cab-001-055_cab-001-055_s004_a002,aprobaron,aprobaron,legal_or_procedural_act,approval,rs,explicit,high,34,43,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s004,cab-001-055_cab-001-055_s004_a003,naturales,naturales,historical_social_legal_category,colonial_legal_social_category,term,explicit,high,125,134,Categoría histórica del texto; no equivale automáticamente a una clase contemporánea de persona.,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s005,cab-001-055_cab-001-055_s005_a001,ordenó,ordenó,legal_or_procedural_act,order_event,rs,explicit,high,3,9,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s005,cab-001-055_cab-001-055_s005_a002,pregón,pregón,legal_or_procedural_act,proclamation,rs,explicit,high,17,23,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s006,cab-001-055_cab-001-055_s006_a001,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,8,15,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s006,cab-001-055_cab-001-055_s006_a002,aprobó,aprobó,legal_or_procedural_act,approval,rs,explicit,high,20,26,,https://zasqua.org/co-ahrb-cab-001-d055/
+co-ahrb-cab-001-d0055,cab-001-055,cab-001-055_s006,cab-001-055_cab-001-055_s006_a003,cobrar,cobrar,legal_or_procedural_act,collection,rs,explicit,high,27,33,,https://zasqua.org/co-ahrb-cab-001-d055/

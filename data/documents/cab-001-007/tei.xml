@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-007">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-007</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d007/">
+                    https://zasqua.org/co-ahrb-cab-001-d007/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-007_acta">
+                <seg xml:id="cab-001-007_s001" type="juridical_discursive_segment">Los miembros del <orgName
+                        xml:id="cab-001-007_cab-001-007_s001_a001" type="cabildo">Cabildo</orgName>, <orgName
+                        xml:id="cab-001-007_cab-001-007_s001_a002" type="cabildo_body">Justicia y
+                    Regimiento</orgName> otorgan el <rs xml:id="cab-001-007_cab-001-007_s001_a003"
+                        type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> de <rs
+                        xml:id="cab-001-007_cab-001-007_s001_a004" type="role_or_office"
+                        subtype="office_or_procedural_role">Procuradores</rs> a don Pedro de
+                    Colemenares y <persName xml:id="cab-001-007_cab-001-007_s001_a005"
+                        type="historicalPerson">Alonso Tellez</persName>, para que defiendan las
+                    causas de la ciudad de <placeName xml:id="cab-001-007_cab-001-007_s001_a006"
+                        type="historicalPlace">Tunja</placeName>, ante la <orgName
+                        xml:id="cab-001-007_cab-001-007_s001_a007" type="audiencia">Real Audiencia
+                    de Santafé</orgName>, <rs xml:id="cab-001-007_cab-001-007_s001_a008"
+                        type="normative_source" subtype="provision">Provisión</rs> fechada a <date
+                        xml:id="cab-001-007_cab-001-007_s001_a009" type="sourceDate">1 de diciembre
+                    de 1547</date>.</seg>
+                <seg xml:id="cab-001-007_s002" type="juridical_discursive_segment">Dentro de las
+                    funciones asignadas, deben realizar <rs
+                        xml:id="cab-001-007_cab-001-007_s002_a001" type="legal_or_procedural_act"
+                        subtype="supplication">suplicas</rs>, <rs
+                        xml:id="cab-001-007_cab-001-007_s002_a002" type="legal_or_procedural_act"
+                        subtype="appeal">apelaciones</rs>, velar por los negocios de la ciudad, dar
+                    cumplimiento de las <rs xml:id="cab-001-007_cab-001-007_s002_a003"
+                        type="normative_source" subtype="laws">leyes</rs> de <term
+                        xml:id="cab-001-007_cab-001-007_s002_a004" type="historical_concept"
+                        subtype="majesty">su Magestad</term>, poner remedio a los conflictos de los <term
+                        xml:id="cab-001-007_cab-001-007_s002_a005"
+                        type="historical_social_legal_category"
+                        subtype="colonial_legal_social_category">naturales</term> y de los <term
+                        xml:id="cab-001-007_cab-001-007_s002_a006"
+                        type="historical_social_legal_category" subtype="colonial_social_category">
+                    colonos</term>, para el bien de los <term
+                        xml:id="cab-001-007_cab-001-007_s002_a007"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    del <placeName xml:id="cab-001-007_cab-001-007_s002_a008" type="historicalPlace">Nuevo
+                    Reino de Granada</placeName>.</seg>
+                <seg xml:id="cab-001-007_s003" type="juridical_discursive_segment">Los miembros del <orgName
+                        xml:id="cab-001-007_cab-001-007_s003_a001" type="cabildo">cabildo</orgName>,
+                    procedieron a tomar el <rs xml:id="cab-001-007_cab-001-007_s003_a002"
+                        type="legal_or_procedural_act" subtype="oath">juramento</rs> de <term
+                        xml:id="cab-001-007_cab-001-007_s003_a003" type="historical_concept"
+                        subtype="fidelity">fidelidad</term> a los dos <rs
+                        xml:id="cab-001-007_cab-001-007_s003_a004" type="role_or_office"
+                        subtype="office_or_procedural_role">Procuradores Generales</rs> a quienes se
+                    les otorgo el <rs xml:id="cab-001-007_cab-001-007_s003_a005"
+                        type="legal_or_procedural_act" subtype="power_of_representation">poder de
+                    representación</rs> y defensa de las causas de la provincia.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

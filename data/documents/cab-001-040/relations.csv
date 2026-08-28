@@ -1,0 +1,13 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d0040,cab-001-040_s001,cab-001-040_cab-001-040_s001_r001,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s002,cab-001-040_cab-001-040_s002_r001,cab-001-040_s002,containsLegalAct,decision,explicit,high,Expresión: acordó,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r001,Miguel de Trujillo,holdsOrPerformsRole,corregidor,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r002,Justicia y Regimiento,appointsOrDesignates,Miguel de Trujillo,explicit,medium,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r003,Justicia y Regimiento,grantsPowerTo,Miguel de Trujillo,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r004,Justicia y Regimiento,grantsPowerTo,Trujillo,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r005,Cabildo/autoridad competente,ordersOrPerforms,Proclamation,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r006,Justicia y Regimiento,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r007,Cabildo,associatedWithPlace,Tunja,inferred,high,,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r008,cab-001-040_s003,containsLegalAct,grant_of_power,explicit,high,Expresión: poder,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r009,cab-001-040_s003,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d040/
+co-ahrb-cab-001-d0040,cab-001-040_s003,cab-001-040_cab-001-040_s003_r010,cab-001-040_s003,containsLegalAct,proclamation,explicit,high,Expresión: pregonar,https://zasqua.org/co-ahrb-cab-001-d040/

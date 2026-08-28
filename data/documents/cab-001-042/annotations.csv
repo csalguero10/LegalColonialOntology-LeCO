@@ -1,0 +1,26 @@
+﻿document_id,local_id,segment_id,annotation_id,surface,normalized,category,subtype,tei_element,evidence_status,certainty,start,end,note,source_url
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a001,Tunja,Tunja,place,historical_place,placeName,explicit,high,3,8,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a002,21 de diciembre 1549,21 de diciembre 1549,date,calendar_date,date,explicit,high,13,33,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a003,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,70,77,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a004,capitan,capitan,role_or_office,office_or_procedural_role,rs,explicit,high,88,95,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a005,Martin Rojas,Martin Rojas,person,historical_person,persName,explicit,high,96,108,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a006,presentó,presentó,legal_or_procedural_act,presentation,rs,explicit,high,109,117,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a007,carta,carta,normative_source,letter,rs,explicit,high,122,127,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a008,Cartagena,Cartagena,place,historical_place,placeName,explicit,high,143,152,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a009,Real Audiencia,Real Audiencia,institution,audiencia,orgName,explicit,high,204,218,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a010,Velez,Velez,place,historical_place,placeName,explicit,high,254,259,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s001,cab-001-042_cab-001-042_s001_a011,Tunja,Tunja,place,historical_place,placeName,explicit,high,262,267,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s002,cab-001-042_cab-001-042_s002_a001,aprobó,aprobó,legal_or_procedural_act,approval,rs,explicit,high,3,9,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s002,cab-001-042_cab-001-042_s002_a002,capitan,capitan,role_or_office,office_or_procedural_role,rs,explicit,high,55,62,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s002,cab-001-042_cab-001-042_s002_a003,Martin Galeano,Martin Galeano,person,historical_person,persName,explicit,high,63,77,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s003,cab-001-042_cab-001-042_s003_a001,pena,pena,legal_or_procedural_act,penalty,rs,explicit,high,24,28,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s003,cab-001-042_cab-001-042_s003_a002,orden,orden,normative_source,order,rs,explicit,high,82,87,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s004,cab-001-042_cab-001-042_s004_a001,Santafé,Santafé,place,historical_place,placeName,explicit,high,8,15,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s007,cab-001-042_cab-001-042_s007_a001,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,8,15,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s007,cab-001-042_cab-001-042_s007_a002,presentó,presentó,legal_or_procedural_act,presentation,rs,explicit,high,19,27,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s007,cab-001-042_cab-001-042_s007_a003,petición,petición,legal_or_procedural_act,petition,rs,explicit,high,32,40,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s007,cab-001-042_cab-001-042_s007_a004,Vicente de Ruesga,Vicente de Ruesga,person,historical_person,persName,explicit,high,48,65,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s007,cab-001-042_cab-001-042_s007_a005,Cabildo,Cabildo,institution,cabildo,orgName,explicit,high,134,141,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s007,cab-001-042_cab-001-042_s007_a006,acordaron,acordaron,legal_or_procedural_act,decision,rs,explicit,high,142,151,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s008,cab-001-042_cab-001-042_s008_a001,leyó,leyó,legal_or_procedural_act,reading,rs,explicit,high,3,7,,https://zasqua.org/co-ahrb-cab-001-d042/
+co-ahrb-cab-001-d0042,cab-001-042,cab-001-042_s008,cab-001-042_cab-001-042_s008_a002,petición,petición,legal_or_procedural_act,petition,rs,explicit,high,13,21,,https://zasqua.org/co-ahrb-cab-001-d042/
