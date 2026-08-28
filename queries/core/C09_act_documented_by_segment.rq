@@ -1,0 +1,9 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT DISTINCT ?document ?segment ?act WHERE {
+  ?segment a leco:LegalDocumentPart ;
+           rico:isDirectConstituentOf ?document ;
+           leco:documentsAct ?act .
+}
+ORDER BY ?document ?segment

@@ -1,0 +1,14 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT DISTINCT ?person ?act WHERE {
+  {
+    ?act a leco:JurisdictionalAct ; leco:hasParticipant ?person .
+  } UNION {
+    ?participation a leco:Participation ;
+                   leco:participationActor ?person ;
+                   leco:participationInAct ?act .
+  }
+  ?person a rico:Person .
+}
+ORDER BY ?person ?act

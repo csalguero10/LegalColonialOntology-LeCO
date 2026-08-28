@@ -1,0 +1,10 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT DISTINCT ?document ?concept ?use WHERE {
+  ?use a leco:HistoricalConceptUse ;
+       leco:conceptUsed ?concept ;
+       leco:attestedIn ?segment .
+  ?segment rico:isDirectConstituentOf+ ?document .
+}
+ORDER BY ?document ?concept

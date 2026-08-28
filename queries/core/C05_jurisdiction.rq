@@ -1,0 +1,9 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+
+SELECT DISTINCT ?authority ?act ?jurisdiction ?place WHERE {
+  OPTIONAL { ?authority leco:exercisesJurisdiction ?jurisdiction . }
+  OPTIONAL { ?act leco:withinJurisdiction ?jurisdiction . }
+  OPTIONAL { ?jurisdiction leco:territorialScope ?place . }
+  FILTER(BOUND(?authority) || BOUND(?act))
+}
+ORDER BY ?jurisdiction ?authority ?act

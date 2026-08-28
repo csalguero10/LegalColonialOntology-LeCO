@@ -1,0 +1,16 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+
+SELECT DISTINCT ?context ?rule ?mode WHERE {
+  {
+    ?context leco:invokesRule ?rule . BIND("invokes" AS ?mode)
+  } UNION {
+    ?context leco:citesRule ?rule . BIND("cites" AS ?mode)
+  } UNION {
+    ?context leco:appliesRule ?rule . BIND("applies" AS ?mode)
+  } UNION {
+    ?context leco:interpretsRule ?rule . BIND("interprets" AS ?mode)
+  } UNION {
+    ?context leco:argumentInvokesRule ?rule . BIND("argument" AS ?mode)
+  }
+}
+ORDER BY ?context ?rule

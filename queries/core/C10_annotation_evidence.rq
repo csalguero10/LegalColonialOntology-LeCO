@@ -1,0 +1,12 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+PREFIX prov: <http://www.w3.org/ns/prov#>
+
+SELECT DISTINCT ?annotation ?target ?body ?basis ?evidence ?activity WHERE {
+  ?annotation a leco:SemanticAnnotation ;
+              leco:annotationTarget ?target ;
+              leco:annotationBody ?body ;
+              leco:annotationBasis ?basis ;
+              leco:attestedIn ?evidence ;
+              prov:wasGeneratedBy ?activity .
+}
+ORDER BY ?annotation

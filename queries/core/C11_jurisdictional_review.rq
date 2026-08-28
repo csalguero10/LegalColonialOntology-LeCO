@@ -1,0 +1,10 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+
+SELECT DISTINCT ?decision ?originalAuthority ?appeal ?reviewAuthority WHERE {
+  ?decision a leco:LegalDecision ;
+            leco:decidedBy ?originalAuthority .
+  ?appeal a leco:Appeal ;
+          leco:appealsAgainst ?decision ;
+          leco:beforeAuthority ?reviewAuthority .
+}
+ORDER BY ?decision ?appeal

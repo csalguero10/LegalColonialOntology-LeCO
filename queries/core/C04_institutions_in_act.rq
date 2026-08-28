@@ -1,0 +1,17 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+PREFIX rico: <https://www.ica.org/standards/RiC/ontology#>
+
+SELECT DISTINCT ?act ?institution ?relation WHERE {
+  ?institution a rico:CorporateBody .
+  {
+    ?act leco:beforeAuthority ?institution .
+    BIND(leco:beforeAuthority AS ?relation)
+  } UNION {
+    ?act leco:decidedBy ?institution .
+    BIND(leco:decidedBy AS ?relation)
+  } UNION {
+    ?act leco:hasParticipant ?institution .
+    BIND(leco:hasParticipant AS ?relation)
+  }
+}
+ORDER BY ?act ?institution
