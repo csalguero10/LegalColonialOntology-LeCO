@@ -1,2 +1,108 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-039"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-039</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d039/">https://zasqua.org/co-ahrb-cab-001-d039/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-039_acta"><seg xml:id="cab-001-039_s001" type="juridical_discursive_segment"><placeName xml:id="cab-001-039_cab-001-039_s001_a001" type="historicalPlace">Tunja</placeName>, <date xml:id="cab-001-039_cab-001-039_s001_a002" type="sourceDate">4 de Noviembre de 1549</date>.</seg><seg xml:id="cab-001-039_s002" type="juridical_discursive_segment">Don <persName xml:id="cab-001-039_cab-001-039_s002_a001" type="historicalPerson">Diego de Robles</persName> <rs xml:id="cab-001-039_cab-001-039_s002_a002" type="legal_or_procedural_act" subtype="notification">notificó</rs> la <rs xml:id="cab-001-039_cab-001-039_s002_a003" type="normative_source" subtype="order">orden</rs> al Padre <persName xml:id="cab-001-039_cab-001-039_s002_a004" type="historicalPerson">Fray Diego Mynaya</persName>, en la se autoriza la construción de Monasterio.</seg><seg xml:id="cab-001-039_s003" type="juridical_discursive_segment">Después, a los 10 dias del mes de noviembre del mismo año, ante el noble señor <persName xml:id="cab-001-039_cab-001-039_s003_a001" type="historicalPerson">Alonso de Cabrera</persName> <rs xml:id="cab-001-039_cab-001-039_s003_a002" type="role_or_office" subtype="office_or_procedural_role">Alcalde Ordinario</rs> de <placeName xml:id="cab-001-039_cab-001-039_s003_a003" type="historicalPlace">Tunja</placeName> se <rs xml:id="cab-001-039_cab-001-039_s003_a004" type="legal_or_procedural_act" subtype="presentation">presentó</rs> <persName xml:id="cab-001-039_cab-001-039_s003_a005" type="historicalPerson">Fray Bernardino</persName> quien mostró la <rs xml:id="cab-001-039_cab-001-039_s003_a006" type="normative_source" subtype="provision">provisión</rs> para la construcción del Monasterio del señor San Salvador, firmaron por testigos y dieran fe: <rs xml:id="cab-001-039_cab-001-039_s003_a007" type="role_or_office" subtype="office_or_procedural_role">Cap</rs> <persName xml:id="cab-001-039_cab-001-039_s003_a008" type="historicalPerson">Gonzalo Suárez</persName>, el <rs xml:id="cab-001-039_cab-001-039_s003_a009" type="role_or_office" subtype="office_or_procedural_role">capitan</rs> <persName xml:id="cab-001-039_cab-001-039_s003_a010" type="historicalPerson">Baltazar Maldonado</persName>, <persName xml:id="cab-001-039_cab-001-039_s003_a011" type="historicalPerson">Hernando de Rojas</persName> y <persName xml:id="cab-001-039_cab-001-039_s003_a012" type="historicalPerson">Pedro Rodriguez</persName>.</seg><seg xml:id="cab-001-039_s004" type="juridical_discursive_segment">En la ciudad, el dia <date xml:id="cab-001-039_cab-001-039_s004_a001" type="sourceDate">14 de Noviembre 1549</date>, se pregonó las <rs xml:id="cab-001-039_cab-001-039_s004_a002" type="normative_source" subtype="new_laws">nuevas leyes</rs> y <rs xml:id="cab-001-039_cab-001-039_s004_a003" type="normative_source" subtype="royal_ordinances">ordenanzas Reales</rs> para el <term xml:id="cab-001-039_cab-001-039_s004_a004" type="historical_concept" subtype="common_good">bien del Reino</term> y de la <term xml:id="cab-001-039_cab-001-039_s004_a005" type="historical_concept" subtype="republic">República</term>.</seg><seg xml:id="cab-001-039_s005" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-039_cab-001-039_s005_a001" type="cabildo">Cabildo</orgName> <persName xml:id="cab-001-039_cab-001-039_s005_a002" type="historicalPerson">Hernando de Rojas</persName> <rs xml:id="cab-001-039_cab-001-039_s005_a003" type="role_or_office" subtype="office_or_procedural_role">Regidor</rs> <rs xml:id="cab-001-039_cab-001-039_s005_a004" type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs xml:id="cab-001-039_cab-001-039_s005_a005" type="legal_or_procedural_act" subtype="petition">petición</rs> en la que solicita se la haga <rs xml:id="cab-001-039_cab-001-039_s005_a006" type="legal_or_procedural_act" subtype="grant">merced</rs> de un Hegido en términos de la ciudad con el fin de hacer un molino de aguas frontero de un tejar los capituladores <rs xml:id="cab-001-039_cab-001-039_s005_a007" type="legal_or_procedural_act" subtype="approval">aprobaron</rs> la <rs xml:id="cab-001-039_cab-001-039_s005_a008" type="legal_or_procedural_act" subtype="petition">petición</rs>.</seg><seg xml:id="cab-001-039_s006" type="juridical_discursive_segment">En dicha reunión se vió otra <rs xml:id="cab-001-039_cab-001-039_s006_a001" type="legal_or_procedural_act" subtype="petition">petición</rs>, presentaba por <persName xml:id="cab-001-039_cab-001-039_s006_a002" type="historicalPerson">Sebastian Martin</persName> vecino de <placeName xml:id="cab-001-039_cab-001-039_s006_a003" type="historicalPlace">Tunja</placeName>, quien pide se le dé un solar cerca al arroyo de la ciudad.</seg><seg xml:id="cab-001-039_s007" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-039_cab-001-039_s007_a001" type="cabildo">Cabildo</orgName> los <orgName xml:id="cab-001-039_cab-001-039_s007_a002" type="cabildo_body">Justicia y Regimiento</orgName> dijeron que se mirara el precio del trigo, con el fin de subir el costo.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-039">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-039</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d039/">
+                    https://zasqua.org/co-ahrb-cab-001-d039/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-039_acta">
+                <seg xml:id="cab-001-039_s001" type="juridical_discursive_segment"><placeName
+                        xml:id="cab-001-039_cab-001-039_s001_a001" type="historicalPlace">Tunja</placeName>
+                    , <date xml:id="cab-001-039_cab-001-039_s001_a002" type="sourceDate">4 de
+                    Noviembre de 1549</date>.</seg>
+                <seg xml:id="cab-001-039_s002" type="juridical_discursive_segment">Don <persName
+                        xml:id="cab-001-039_cab-001-039_s002_a001" type="historicalPerson">Diego de
+                    Robles</persName> <rs xml:id="cab-001-039_cab-001-039_s002_a002"
+                        type="legal_or_procedural_act" subtype="notification">notificó</rs> la <rs
+                        xml:id="cab-001-039_cab-001-039_s002_a003" type="normative_source"
+                        subtype="order">orden</rs> al Padre <persName
+                        xml:id="cab-001-039_cab-001-039_s002_a004" type="historicalPerson">Fray
+                    Diego Mynaya</persName>, en la se autoriza la construción de Monasterio.</seg>
+                <seg xml:id="cab-001-039_s003" type="juridical_discursive_segment">Después, a los 10
+                    dias del mes de noviembre del mismo año, ante el noble señor <persName
+                        xml:id="cab-001-039_cab-001-039_s003_a001" type="historicalPerson">Alonso de
+                    Cabrera</persName> <rs xml:id="cab-001-039_cab-001-039_s003_a002"
+                        type="role_or_office" subtype="office_or_procedural_role">Alcalde Ordinario</rs>
+                    de <placeName xml:id="cab-001-039_cab-001-039_s003_a003" type="historicalPlace">
+                    Tunja</placeName> se <rs xml:id="cab-001-039_cab-001-039_s003_a004"
+                        type="legal_or_procedural_act" subtype="presentation">presentó</rs> <persName
+                        xml:id="cab-001-039_cab-001-039_s003_a005" type="historicalPerson">Fray
+                    Bernardino</persName> quien mostró la <rs
+                        xml:id="cab-001-039_cab-001-039_s003_a006" type="normative_source"
+                        subtype="provision">provisión</rs> para la construcción del Monasterio del
+                    señor San Salvador, firmaron por testigos y dieran fe: <rs
+                        xml:id="cab-001-039_cab-001-039_s003_a007" type="role_or_office"
+                        subtype="office_or_procedural_role">Cap</rs> <persName
+                        xml:id="cab-001-039_cab-001-039_s003_a008" type="historicalPerson">Gonzalo
+                    Suárez</persName>, el <rs xml:id="cab-001-039_cab-001-039_s003_a009"
+                        type="role_or_office" subtype="office_or_procedural_role">capitan</rs> <persName
+                        xml:id="cab-001-039_cab-001-039_s003_a010" type="historicalPerson">Baltazar
+                    Maldonado</persName>, <persName xml:id="cab-001-039_cab-001-039_s003_a011"
+                        type="historicalPerson">Hernando de Rojas</persName> y <persName
+                        xml:id="cab-001-039_cab-001-039_s003_a012" type="historicalPerson">Pedro
+                    Rodriguez</persName>.</seg>
+                <seg xml:id="cab-001-039_s004" type="juridical_discursive_segment">En la ciudad, el
+                    dia <date xml:id="cab-001-039_cab-001-039_s004_a001" type="sourceDate">14 de
+                    Noviembre 1549</date>, se pregonó las <rs
+                        xml:id="cab-001-039_cab-001-039_s004_a002" type="normative_source"
+                        subtype="new_laws">nuevas leyes</rs> y <rs
+                        xml:id="cab-001-039_cab-001-039_s004_a003" type="normative_source"
+                        subtype="royal_ordinances">ordenanzas Reales</rs> para el <term
+                        xml:id="cab-001-039_cab-001-039_s004_a004" type="historical_concept"
+                        subtype="common_good">bien del Reino</term> y de la <term
+                        xml:id="cab-001-039_cab-001-039_s004_a005" type="historical_concept"
+                        subtype="republic">República</term>.</seg>
+                <seg xml:id="cab-001-039_s005" type="juridical_discursive_segment">En este <orgName
+                        xml:id="cab-001-039_cab-001-039_s005_a001" type="cabildo">Cabildo</orgName> <persName
+                        xml:id="cab-001-039_cab-001-039_s005_a002" type="historicalPerson">Hernando
+                    de Rojas</persName> <rs xml:id="cab-001-039_cab-001-039_s005_a003"
+                        type="role_or_office" subtype="office_or_procedural_role">Regidor</rs> <rs
+                        xml:id="cab-001-039_cab-001-039_s005_a004" type="legal_or_procedural_act"
+                        subtype="presentation">presentó</rs> una <rs
+                        xml:id="cab-001-039_cab-001-039_s005_a005" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs> en la que solicita se la haga <rs
+                        xml:id="cab-001-039_cab-001-039_s005_a006" type="legal_or_procedural_act"
+                        subtype="grant">merced</rs> de un Hegido en términos de la ciudad con el fin
+                    de hacer un molino de aguas frontero de un tejar los capituladores <rs
+                        xml:id="cab-001-039_cab-001-039_s005_a007" type="legal_or_procedural_act"
+                        subtype="approval">aprobaron</rs> la <rs
+                        xml:id="cab-001-039_cab-001-039_s005_a008" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs>.</seg>
+                <seg xml:id="cab-001-039_s006" type="juridical_discursive_segment">En dicha reunión
+                    se vió otra <rs xml:id="cab-001-039_cab-001-039_s006_a001"
+                        type="legal_or_procedural_act" subtype="petition">petición</rs>, presentaba
+                    por <persName xml:id="cab-001-039_cab-001-039_s006_a002" type="historicalPerson">Sebastian
+                    Martin</persName> vecino de <placeName
+                        xml:id="cab-001-039_cab-001-039_s006_a003" type="historicalPlace">Tunja</placeName>,
+                    quien pide se le dé un solar cerca al arroyo de la ciudad.</seg>
+                <seg xml:id="cab-001-039_s007" type="juridical_discursive_segment">En este <orgName
+                        xml:id="cab-001-039_cab-001-039_s007_a001" type="cabildo">Cabildo</orgName>
+                    los <orgName xml:id="cab-001-039_cab-001-039_s007_a002" type="cabildo_body">Justicia
+                    y Regimiento</orgName> dijeron que se mirara el precio del trigo, con el fin de
+                    subir el costo.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

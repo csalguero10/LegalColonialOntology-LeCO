@@ -1,0 +1,96 @@
+@prefix ex: <https://w3id.org/leco/data/example/> .
+@prefix leco: <https://w3id.org/leco/ontology#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# Documento y segmentos
+ex:doc_d002
+    a leco:LegalDocument , prov:Entity ;
+    leco:hasDocumentType leco:ActaCabildoDocumentType .
+
+ex:segment_s3
+    a leco:LegalDocumentPart , prov:Entity ;
+    rico:isDirectConstituentOf ex:doc_d002 ;
+    leco:documentsAct ex:sanction_1547 .
+
+ex:segment_s4
+    a leco:LegalDocumentPart , prov:Entity ;
+    rico:isDirectConstituentOf ex:doc_d002 ;
+    leco:documentsAct ex:appeal_1547 .
+
+# Actores e instituciones
+ex:JuanDePineda
+    a rico:Person , rico:Agent .
+
+ex:CabildoDeTunja
+    a rico:CorporateBody , rico:Group , rico:Agent ;
+    leco:hasInstitutionType leco:CabildoType ;
+    leco:exercisesJurisdiction ex:JurisdiccionCabildoTunja .
+
+ex:RealAudiencia
+    a rico:CorporateBody , rico:Group , rico:Agent ;
+    leco:hasInstitutionType leco:AudienciaType ;
+    leco:exercisesJurisdiction ex:JurisdiccionAudiencia .
+
+ex:Tunja a rico:Place .
+
+# Jurisdicciones
+ex:JurisdiccionCabildoTunja
+    a leco:Jurisdiction ;
+    leco:jurisdictionExercisedBy ex:CabildoDeTunja ;
+    leco:territorialScope ex:Tunja .
+
+ex:JurisdiccionAudiencia
+    a leco:Jurisdiction ;
+    leco:jurisdictionExercisedBy ex:RealAudiencia ;
+    leco:territorialScope ex:Tunja .
+
+# Sanción
+ex:sanction_1547
+    a leco:Sanction , leco:LegalDecision , leco:JurisdictionalAct ;
+    leco:withinJurisdiction ex:JurisdiccionCabildoTunja ;
+    leco:decidedBy ex:CabildoDeTunja ;
+    leco:sanctions ex:JuanDePineda ;
+    leco:hasParticipant ex:JuanDePineda .
+
+# Apelación y participación contextualizada
+ex:appeal_1547
+    a leco:Appeal , leco:ProceduralAct , leco:JurisdictionalAct ;
+    leco:withinJurisdiction ex:JurisdiccionAudiencia ;
+    leco:appealsAgainst ex:sanction_1547 ;
+    leco:beforeAuthority ex:RealAudiencia ;
+    leco:hasParticipation ex:participation_pineda_appellant .
+
+ex:participation_pineda_appellant
+    a leco:Participation ;
+    leco:participationActor ex:JuanDePineda ;
+    leco:participationRole leco:AppellantRole ;
+    leco:participationInAct ex:appeal_1547 .
+
+# Oficio y ocupación temporalizada
+ex:AlcaldeOrdinarioTunja
+    a leco:Office ;
+    leco:hasOfficeType leco:OrdinaryMayorOfficeType ;
+    leco:officeExistsIn ex:CabildoDeTunja .
+
+ex:date1547 a rico:Date .
+
+ex:PinedaOfficeHolding1547
+    a rico:PositionHoldingRelation ;
+    rico:relationHasSource ex:JuanDePineda ;
+    rico:relationHasTarget ex:AlcaldeOrdinarioTunja ;
+    rico:relationHasDate ex:date1547 .
+
+# Anotación semántica: "apelante" es inferido del acto de apelar
+ex:annotation_appellant
+    a leco:SemanticAnnotation ;
+    leco:annotationTarget ex:segment_s4 ;
+    leco:annotationBody leco:AppellantRole ;
+    leco:annotationBasis leco:InferredFromText ;
+    leco:hasValidationStatus leco:HumanValidatedAnnotation ;
+    leco:confidenceScore "0.90"^^xsd:decimal ;
+    leco:attestedIn ex:segment_s4 ;
+    prov:wasGeneratedBy ex:annotation_activity_1 .
+
+ex:annotation_activity_1 a leco:AnnotationActivity .

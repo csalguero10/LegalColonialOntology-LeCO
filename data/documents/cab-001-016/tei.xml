@@ -1,2 +1,101 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-016"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-016</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d016/">https://zasqua.org/co-ahrb-cab-001-d016/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-016_acta"><seg xml:id="cab-001-016_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-016_cab-001-016_s001_a001" type="historicalPlace">Tunja</placeName>, <date xml:id="cab-001-016_cab-001-016_s001_a002" type="sourceDate">21 de Junio 1548</date> se reunieron los miembros del <orgName xml:id="cab-001-016_cab-001-016_s001_a003" type="cabildo">Cabildo</orgName> para tratar los asuntos del <term xml:id="cab-001-016_cab-001-016_s001_a004" type="historical_concept" subtype="real_service">Real Servicio</term>.</seg><seg xml:id="cab-001-016_s002" type="juridical_discursive_segment">En la reunión se <rs xml:id="cab-001-016_cab-001-016_s002_a001" type="legal_or_procedural_act" subtype="reading">leyó</rs> la <rs xml:id="cab-001-016_cab-001-016_s002_a002" type="normative_source" subtype="order">orden</rs> del <rs xml:id="cab-001-016_cab-001-016_s002_a003" type="role_or_office" subtype="office_or_procedural_role">Gobernador</rs> <persName xml:id="cab-001-016_cab-001-016_s002_a004" type="historicalPerson">Juan de Orozco</persName>, se <rs xml:id="cab-001-016_cab-001-016_s002_a005" type="legal_or_procedural_act" subtype="obedience">acató</rs> y mando <rs xml:id="cab-001-016_cab-001-016_s002_a006" type="legal_or_procedural_act" subtype="execution">ejecutar</rs> por parte de los señores <orgName xml:id="cab-001-016_cab-001-016_s002_a007" type="cabildo_body">Justicia y Regimiento</orgName>.</seg><seg xml:id="cab-001-016_s003" type="juridical_discursive_segment"><placeName xml:id="cab-001-016_cab-001-016_s003_a001" type="historicalPlace">Tunja</placeName>, <date xml:id="cab-001-016_cab-001-016_s003_a002" type="sourceDate">8 agosto 1548</date>, se <rs xml:id="cab-001-016_cab-001-016_s003_a003" type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs xml:id="cab-001-016_cab-001-016_s003_a004" type="legal_or_procedural_act" subtype="petition">petición</rs> por parte de <persName xml:id="cab-001-016_cab-001-016_s003_a005" type="historicalPerson">Baltazar Gómez de Avila</persName>, quien propone un nuevo precio para la venta de la arroba de Carne de Vaca a $1 tomine y $2 tomines para vender la arroba de carnero; ademas que se lleve un control de pesaje semanalmente.</seg><seg xml:id="cab-001-016_s004" type="juridical_discursive_segment">Se <rs xml:id="cab-001-016_cab-001-016_s004_a001" type="legal_or_procedural_act" subtype="approval">aprobó</rs>. <date xml:id="cab-001-016_cab-001-016_s004_a002" type="sourceDate">14 agosto 1548</date> se <rs xml:id="cab-001-016_cab-001-016_s004_a003" type="legal_or_procedural_act" subtype="order_event">mandó</rs> <rs xml:id="cab-001-016_cab-001-016_s004_a004" type="legal_or_procedural_act" subtype="auction_award">rematar</rs> la carne en favor de <persName xml:id="cab-001-016_cab-001-016_s004_a005" type="historicalPerson">Baltazar Gómez de Avila</persName> y se de cumplimiento al pesaje de los novillos cada 15 días.</seg><seg xml:id="cab-001-016_s005" type="juridical_discursive_segment">En este día se recibió por vecino de <placeName xml:id="cab-001-016_cab-001-016_s005_a001" type="historicalPlace">Tunja</placeName> a <persName xml:id="cab-001-016_cab-001-016_s005_a002" type="historicalPerson">Luis de Mallaca</persName> y se le proveyó una tenencia de 30 pies de largo por 30 pies de ancho en las tierras de <persName xml:id="cab-001-016_cab-001-016_s005_a003" type="historicalPerson">Pedro Gómez</persName>.</seg><seg xml:id="cab-001-016_s006" type="juridical_discursive_segment">Se <rs xml:id="cab-001-016_cab-001-016_s006_a001" type="legal_or_procedural_act" subtype="order_event">ordenó</rs> dar el <rs xml:id="cab-001-016_cab-001-016_s006_a002" type="normative_source" subtype="title">titulo</rs> de <rs xml:id="cab-001-016_cab-001-016_s006_a003" type="role_or_office" subtype="office_or_procedural_role">Regidor</rs> a las personas ó personas que comparecieren, por las razones y requisitos exigidos por la ley, en el sentido de no tener acusaciones ni delitos.</seg><seg xml:id="cab-001-016_s007" type="juridical_discursive_segment">En constancia firman los testigos <persName xml:id="cab-001-016_cab-001-016_s007_a001" type="historicalPerson">Juan de Chinchilla</persName>, <persName xml:id="cab-001-016_cab-001-016_s007_a002" type="historicalPerson">Juan de Fonseca</persName>, <persName xml:id="cab-001-016_cab-001-016_s007_a003" type="historicalPerson">Francisco Martin</persName> Carpintero y <persName xml:id="cab-001-016_cab-001-016_s007_a004" type="historicalPerson">Juan de Viscaino</persName>.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-016">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-016</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d016/">
+                    https://zasqua.org/co-ahrb-cab-001-d016/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-016_acta">
+                <seg xml:id="cab-001-016_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-016_cab-001-016_s001_a001" type="historicalPlace">Tunja</placeName>
+                    , <date xml:id="cab-001-016_cab-001-016_s001_a002" type="sourceDate">21 de Junio
+                    1548</date> se reunieron los miembros del <orgName
+                        xml:id="cab-001-016_cab-001-016_s001_a003" type="cabildo">Cabildo</orgName>
+                    para tratar los asuntos del <term xml:id="cab-001-016_cab-001-016_s001_a004"
+                        type="historical_concept" subtype="real_service">Real Servicio</term>.</seg>
+                <seg xml:id="cab-001-016_s002" type="juridical_discursive_segment">En la reunión se <rs
+                        xml:id="cab-001-016_cab-001-016_s002_a001" type="legal_or_procedural_act"
+                        subtype="reading">leyó</rs> la <rs
+                        xml:id="cab-001-016_cab-001-016_s002_a002" type="normative_source"
+                        subtype="order">orden</rs> del <rs
+                        xml:id="cab-001-016_cab-001-016_s002_a003" type="role_or_office"
+                        subtype="office_or_procedural_role">Gobernador</rs> <persName
+                        xml:id="cab-001-016_cab-001-016_s002_a004" type="historicalPerson">Juan de
+                    Orozco</persName>, se <rs xml:id="cab-001-016_cab-001-016_s002_a005"
+                        type="legal_or_procedural_act" subtype="obedience">acató</rs> y mando <rs
+                        xml:id="cab-001-016_cab-001-016_s002_a006" type="legal_or_procedural_act"
+                        subtype="execution">ejecutar</rs> por parte de los señores <orgName
+                        xml:id="cab-001-016_cab-001-016_s002_a007" type="cabildo_body">Justicia y
+                    Regimiento</orgName>.</seg>
+                <seg xml:id="cab-001-016_s003" type="juridical_discursive_segment"><placeName
+                        xml:id="cab-001-016_cab-001-016_s003_a001" type="historicalPlace">Tunja</placeName>
+                    , <date xml:id="cab-001-016_cab-001-016_s003_a002" type="sourceDate">8 agosto
+                    1548</date>, se <rs xml:id="cab-001-016_cab-001-016_s003_a003"
+                        type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs
+                        xml:id="cab-001-016_cab-001-016_s003_a004" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs> por parte de <persName
+                        xml:id="cab-001-016_cab-001-016_s003_a005" type="historicalPerson">Baltazar
+                    Gómez de Avila</persName>, quien propone un nuevo precio para la venta de la
+                    arroba de Carne de Vaca a $1 tomine y $2 tomines para vender la arroba de
+                    carnero; ademas que se lleve un control de pesaje semanalmente.</seg>
+                <seg xml:id="cab-001-016_s004" type="juridical_discursive_segment">Se <rs
+                        xml:id="cab-001-016_cab-001-016_s004_a001" type="legal_or_procedural_act"
+                        subtype="approval">aprobó</rs>. <date
+                        xml:id="cab-001-016_cab-001-016_s004_a002" type="sourceDate">14 agosto 1548</date>
+                    se <rs xml:id="cab-001-016_cab-001-016_s004_a003" type="legal_or_procedural_act"
+                        subtype="order_event">mandó</rs> <rs
+                        xml:id="cab-001-016_cab-001-016_s004_a004" type="legal_or_procedural_act"
+                        subtype="auction_award">rematar</rs> la carne en favor de <persName
+                        xml:id="cab-001-016_cab-001-016_s004_a005" type="historicalPerson">Baltazar
+                    Gómez de Avila</persName> y se de cumplimiento al pesaje de los novillos cada 15
+                    días.</seg>
+                <seg xml:id="cab-001-016_s005" type="juridical_discursive_segment">En este día se
+                    recibió por vecino de <placeName xml:id="cab-001-016_cab-001-016_s005_a001"
+                        type="historicalPlace">Tunja</placeName> a <persName
+                        xml:id="cab-001-016_cab-001-016_s005_a002" type="historicalPerson">Luis de
+                    Mallaca</persName> y se le proveyó una tenencia de 30 pies de largo por 30 pies
+                    de ancho en las tierras de <persName xml:id="cab-001-016_cab-001-016_s005_a003"
+                        type="historicalPerson">Pedro Gómez</persName>.</seg>
+                <seg xml:id="cab-001-016_s006" type="juridical_discursive_segment">Se <rs
+                        xml:id="cab-001-016_cab-001-016_s006_a001" type="legal_or_procedural_act"
+                        subtype="order_event">ordenó</rs> dar el <rs
+                        xml:id="cab-001-016_cab-001-016_s006_a002" type="normative_source"
+                        subtype="title">titulo</rs> de <rs
+                        xml:id="cab-001-016_cab-001-016_s006_a003" type="role_or_office"
+                        subtype="office_or_procedural_role">Regidor</rs> a las personas ó personas
+                    que comparecieren, por las razones y requisitos exigidos por la ley, en el
+                    sentido de no tener acusaciones ni delitos.</seg>
+                <seg xml:id="cab-001-016_s007" type="juridical_discursive_segment">En constancia
+                    firman los testigos <persName xml:id="cab-001-016_cab-001-016_s007_a001"
+                        type="historicalPerson">Juan de Chinchilla</persName>, <persName
+                        xml:id="cab-001-016_cab-001-016_s007_a002" type="historicalPerson">Juan de
+                    Fonseca</persName>, <persName xml:id="cab-001-016_cab-001-016_s007_a003"
+                        type="historicalPerson">Francisco Martin</persName> Carpintero y <persName
+                        xml:id="cab-001-016_cab-001-016_s007_a004" type="historicalPerson">Juan de
+                    Viscaino</persName>.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

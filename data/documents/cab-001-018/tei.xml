@@ -1,2 +1,96 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-018"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-018</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d018/">https://zasqua.org/co-ahrb-cab-001-d018/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-018_acta"><seg xml:id="cab-001-018_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-018_cab-001-018_s001_a001" type="historicalPlace">Tunja</placeName> del <placeName xml:id="cab-001-018_cab-001-018_s001_a002" type="historicalPlace">Nuevo Reino de Granada</placeName>, <date xml:id="cab-001-018_cab-001-018_s001_a003" type="sourceDate">12 de Septiembre de 1553</date> se reunieron los miembros del <orgName xml:id="cab-001-018_cab-001-018_s001_a004" type="cabildo">Cabildo</orgName>; allí el Licenciado <persName xml:id="cab-001-018_cab-001-018_s001_a005" type="historicalPerson">Juan Montaño</persName> <rs xml:id="cab-001-018_cab-001-018_s001_a006" type="role_or_office" subtype="office_or_procedural_role">Oidor</rs> de la Audencia y <rs xml:id="cab-001-018_cab-001-018_s001_a007" type="role_or_office" subtype="office_or_procedural_role">Juez de Comisión</rs> dá fé de la <rs xml:id="cab-001-018_cab-001-018_s001_a008" type="normative_source" subtype="order">orden</rs> que se le inpartió para hacer comparecer ante él, a un <rs xml:id="cab-001-018_cab-001-018_s001_a009" type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> y facultad al <rs xml:id="cab-001-018_cab-001-018_s001_a010" type="role_or_office" subtype="office_or_procedural_role">capitán</rs> <persName xml:id="cab-001-018_cab-001-018_s001_a011" type="historicalPerson">Luis Lanchero</persName> para que vaya a la ciudad de <placeName xml:id="cab-001-018_cab-001-018_s001_a012" type="historicalPlace">Tunja</placeName> y a otras ciudades del Reino hasta encontrarlo y remitirlo a esta ciudad.</seg><seg xml:id="cab-001-018_s002" type="juridical_discursive_segment">Se autoriza efectuar el <rs xml:id="cab-001-018_cab-001-018_s002_a001" type="legal_or_procedural_act" subtype="proclamation">pregón</rs>, con el fin de conocer información alguna sobre el <term xml:id="cab-001-018_cab-001-018_s002_a002" type="historical_social_legal_category" subtype="colonial_status_category">negro</term> Valenciano; quien habia sido traido al reino por parte del licenciado <persName xml:id="cab-001-018_cab-001-018_s002_a003" type="historicalPerson">Miguel Diaz de Armendaris</persName>, habia pertenecido a Don <persName xml:id="cab-001-018_cab-001-018_s002_a004" type="historicalPerson">Alonso Tellez</persName> y actualmente se encontraba fugitivo.</seg><seg xml:id="cab-001-018_s003" type="juridical_discursive_segment">Tambien se dispone que los señores Justicias de cada Provincia colaboren para encontrar al <term xml:id="cab-001-018_cab-001-018_s003_a001" type="historical_social_legal_category" subtype="colonial_status_category">negro</term> en mención y se estipula una <rs xml:id="cab-001-018_cab-001-018_s003_a002" type="legal_or_procedural_act" subtype="penalty">pena</rs> de $1.000 pesos a quién colocara algún impedimento, dicho dinero pasaria a la <orgName xml:id="cab-001-018_cab-001-018_s003_a003" type="royal_chamber">cámara del Rey</orgName>.</seg><seg xml:id="cab-001-018_s004" type="juridical_discursive_segment">Finalmente se ordena entregar la vara de Justicia al <rs xml:id="cab-001-018_cab-001-018_s004_a001" type="role_or_office" subtype="office_or_procedural_role">capitan</rs> Lanchero, quien tomo el <rs xml:id="cab-001-018_cab-001-018_s004_a002" type="legal_or_procedural_act" subtype="oath">juramento</rs> de <term xml:id="cab-001-018_cab-001-018_s004_a003" type="historical_concept" subtype="fidelity">fidelidad</term>, en prueba de su cumplimiento a la misión encomendada <placeName xml:id="cab-001-018_cab-001-018_s004_a004" type="historicalPlace">Santafé</placeName>, <date xml:id="cab-001-018_cab-001-018_s004_a005" type="sourceDate">9 Septiembre 1553</date>.</seg><seg xml:id="cab-001-018_s005" type="juridical_discursive_segment"><rs xml:id="cab-001-018_cab-001-018_s005_a001" type="normative_source" subtype="order">Orden</rs> dada por <persName xml:id="cab-001-018_cab-001-018_s005_a002" type="historicalPerson">Bartolomé Gonzalez de la Peña</persName> <rs xml:id="cab-001-018_cab-001-018_s005_a003" type="role_or_office" subtype="office_or_procedural_role">Juez</rs>.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-018">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-018</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d018/">
+                    https://zasqua.org/co-ahrb-cab-001-d018/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-018_acta">
+                <seg xml:id="cab-001-018_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-018_cab-001-018_s001_a001" type="historicalPlace">Tunja</placeName>
+                    del <placeName xml:id="cab-001-018_cab-001-018_s001_a002" type="historicalPlace">Nuevo
+                    Reino de Granada</placeName>, <date xml:id="cab-001-018_cab-001-018_s001_a003"
+                        type="sourceDate">12 de Septiembre de 1553</date> se reunieron los miembros
+                    del <orgName xml:id="cab-001-018_cab-001-018_s001_a004" type="cabildo">Cabildo</orgName>;
+                    allí el Licenciado <persName xml:id="cab-001-018_cab-001-018_s001_a005"
+                        type="historicalPerson">Juan Montaño</persName> <rs
+                        xml:id="cab-001-018_cab-001-018_s001_a006" type="role_or_office"
+                        subtype="office_or_procedural_role">Oidor</rs> de la Audencia y <rs
+                        xml:id="cab-001-018_cab-001-018_s001_a007" type="role_or_office"
+                        subtype="office_or_procedural_role">Juez de Comisión</rs> dá fé de la <rs
+                        xml:id="cab-001-018_cab-001-018_s001_a008" type="normative_source"
+                        subtype="order">orden</rs> que se le inpartió para hacer comparecer ante él,
+                    a un <rs xml:id="cab-001-018_cab-001-018_s001_a009"
+                        type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> y
+                    facultad al <rs xml:id="cab-001-018_cab-001-018_s001_a010" type="role_or_office"
+                        subtype="office_or_procedural_role">capitán</rs> <persName
+                        xml:id="cab-001-018_cab-001-018_s001_a011" type="historicalPerson">Luis
+                    Lanchero</persName> para que vaya a la ciudad de <placeName
+                        xml:id="cab-001-018_cab-001-018_s001_a012" type="historicalPlace">Tunja</placeName>
+                    y a otras ciudades del Reino hasta encontrarlo y remitirlo a esta ciudad.</seg>
+                <seg xml:id="cab-001-018_s002" type="juridical_discursive_segment">Se autoriza
+                    efectuar el <rs xml:id="cab-001-018_cab-001-018_s002_a001"
+                        type="legal_or_procedural_act" subtype="proclamation">pregón</rs>, con el
+                    fin de conocer información alguna sobre el <term
+                        xml:id="cab-001-018_cab-001-018_s002_a002"
+                        type="historical_social_legal_category" subtype="colonial_status_category">
+                    negro</term> Valenciano; quien habia sido traido al reino por parte del
+                    licenciado <persName xml:id="cab-001-018_cab-001-018_s002_a003"
+                        type="historicalPerson">Miguel Diaz de Armendaris</persName>, habia
+                    pertenecido a Don <persName xml:id="cab-001-018_cab-001-018_s002_a004"
+                        type="historicalPerson">Alonso Tellez</persName> y actualmente se encontraba
+                    fugitivo.</seg>
+                <seg xml:id="cab-001-018_s003" type="juridical_discursive_segment">Tambien se
+                    dispone que los señores Justicias de cada Provincia colaboren para encontrar al <term
+                        xml:id="cab-001-018_cab-001-018_s003_a001"
+                        type="historical_social_legal_category" subtype="colonial_status_category">
+                    negro</term> en mención y se estipula una <rs
+                        xml:id="cab-001-018_cab-001-018_s003_a002" type="legal_or_procedural_act"
+                        subtype="penalty">pena</rs> de $1.000 pesos a quién colocara algún
+                    impedimento, dicho dinero pasaria a la <orgName
+                        xml:id="cab-001-018_cab-001-018_s003_a003" type="royal_chamber">cámara del
+                    Rey</orgName>.</seg>
+                <seg xml:id="cab-001-018_s004" type="juridical_discursive_segment">Finalmente se
+                    ordena entregar la vara de Justicia al <rs
+                        xml:id="cab-001-018_cab-001-018_s004_a001" type="role_or_office"
+                        subtype="office_or_procedural_role">capitan</rs> Lanchero, quien tomo el <rs
+                        xml:id="cab-001-018_cab-001-018_s004_a002" type="legal_or_procedural_act"
+                        subtype="oath">juramento</rs> de <term
+                        xml:id="cab-001-018_cab-001-018_s004_a003" type="historical_concept"
+                        subtype="fidelity">fidelidad</term>, en prueba de su cumplimiento a la
+                    misión encomendada <placeName xml:id="cab-001-018_cab-001-018_s004_a004"
+                        type="historicalPlace">Santafé</placeName>, <date
+                        xml:id="cab-001-018_cab-001-018_s004_a005" type="sourceDate">9 Septiembre
+                    1553</date>.</seg>
+                <seg xml:id="cab-001-018_s005" type="juridical_discursive_segment"><rs
+                        xml:id="cab-001-018_cab-001-018_s005_a001" type="normative_source"
+                        subtype="order">Orden</rs> dada por <persName
+                        xml:id="cab-001-018_cab-001-018_s005_a002" type="historicalPerson">Bartolomé
+                    Gonzalez de la Peña</persName> <rs xml:id="cab-001-018_cab-001-018_s005_a003"
+                        type="role_or_office" subtype="office_or_procedural_role">Juez</rs>.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

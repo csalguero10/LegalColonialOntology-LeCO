@@ -1,2 +1,78 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-019"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-019</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d019/">https://zasqua.org/co-ahrb-cab-001-d019/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-019_acta"><seg xml:id="cab-001-019_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-019_cab-001-019_s001_a001" type="historicalPlace">Tunja</placeName>, el día <date xml:id="cab-001-019_cab-001-019_s001_a002" type="sourceDate">17 de Octubre 1553</date>, se <rs xml:id="cab-001-019_cab-001-019_s001_a003" type="legal_or_procedural_act" subtype="reading">leyó</rs> una <rs xml:id="cab-001-019_cab-001-019_s001_a004" type="normative_source" subtype="real_provision">Real Provisión</rs> en la que se dice que los <orgName xml:id="cab-001-019_cab-001-019_s001_a005" type="cabildo_body">Consejos Justicia y Regimiento</orgName> de este <placeName xml:id="cab-001-019_cab-001-019_s001_a006" type="historicalPlace">Nuevo Reino de Granada</placeName> no enviaron <rs xml:id="cab-001-019_cab-001-019_s001_a007" type="role_or_office" subtype="office_or_procedural_role">procuradores</rs> al <placeName xml:id="cab-001-019_cab-001-019_s001_a008" type="historicalPlace">Reino de España</placeName>, para que negociaran y solicitaran lo que conviniera a las ciudades y <orgName xml:id="cab-001-019_cab-001-019_s001_a009" type="cabildo">cabildo</orgName>s, ante el <orgName xml:id="cab-001-019_cab-001-019_s001_a010" type="council">Consejo de Indias</orgName>.</seg><seg xml:id="cab-001-019_s002" type="juridical_discursive_segment">En el caso del <rs xml:id="cab-001-019_cab-001-019_s002_a001" type="role_or_office" subtype="office_or_procedural_role">Procurador</rs> de <placeName xml:id="cab-001-019_cab-001-019_s002_a002" type="historicalPlace">Tunja</placeName> Don <persName xml:id="cab-001-019_cab-001-019_s002_a003" type="historicalPerson">Juan Gómez</persName> no asistió, asi mismo se causó daño para los beneficios de las ciudades aunque se diera un plazo amplia de 50 días para estar en <placeName xml:id="cab-001-019_cab-001-019_s002_a004" type="historicalPlace">España</placeName>.</seg><seg xml:id="cab-001-019_s003" type="juridical_discursive_segment">Por lo anterior se <rs xml:id="cab-001-019_cab-001-019_s003_a001" type="legal_or_procedural_act" subtype="fine">multa</rs> con $200 pesos del buen oro a quienes siendo del <orgName xml:id="cab-001-019_cab-001-019_s003_a002" type="cabildo">Cabildo</orgName> incumplieran la <rs xml:id="cab-001-019_cab-001-019_s003_a003" type="normative_source" subtype="real_provision">Real Provisión</rs>.</seg><seg xml:id="cab-001-019_s004" type="juridical_discursive_segment">En esta reunión se dió todo el <rs xml:id="cab-001-019_cab-001-019_s004_a001" type="legal_or_procedural_act" subtype="power_of_representation">poder de representación</rs> al <rs xml:id="cab-001-019_cab-001-019_s004_a002" type="role_or_office" subtype="office_or_procedural_role">capitan</rs> <persName xml:id="cab-001-019_cab-001-019_s004_a003" type="historicalPerson">Gonzalo Suárez</persName> para que <rs xml:id="cab-001-019_cab-001-019_s004_a004" type="legal_or_procedural_act" subtype="appeal">apele</rs> y <rs xml:id="cab-001-019_cab-001-019_s004_a005" type="legal_or_procedural_act" subtype="supplication">suplique</rs> por el <orgName xml:id="cab-001-019_cab-001-019_s004_a006" type="cabildo">Cabildo</orgName>.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-019">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-019</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d019/">
+                    https://zasqua.org/co-ahrb-cab-001-d019/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-019_acta">
+                <seg xml:id="cab-001-019_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-019_cab-001-019_s001_a001" type="historicalPlace">Tunja</placeName>,
+                    el día <date xml:id="cab-001-019_cab-001-019_s001_a002" type="sourceDate">17 de
+                    Octubre 1553</date>, se <rs xml:id="cab-001-019_cab-001-019_s001_a003"
+                        type="legal_or_procedural_act" subtype="reading">leyó</rs> una <rs
+                        xml:id="cab-001-019_cab-001-019_s001_a004" type="normative_source"
+                        subtype="real_provision">Real Provisión</rs> en la que se dice que los <orgName
+                        xml:id="cab-001-019_cab-001-019_s001_a005" type="cabildo_body">Consejos
+                    Justicia y Regimiento</orgName> de este <placeName
+                        xml:id="cab-001-019_cab-001-019_s001_a006" type="historicalPlace">Nuevo
+                    Reino de Granada</placeName> no enviaron <rs
+                        xml:id="cab-001-019_cab-001-019_s001_a007" type="role_or_office"
+                        subtype="office_or_procedural_role">procuradores</rs> al <placeName
+                        xml:id="cab-001-019_cab-001-019_s001_a008" type="historicalPlace">Reino de
+                    España</placeName>, para que negociaran y solicitaran lo que conviniera a las
+                    ciudades y <orgName xml:id="cab-001-019_cab-001-019_s001_a009" type="cabildo">
+                    cabildo</orgName>s, ante el <orgName xml:id="cab-001-019_cab-001-019_s001_a010"
+                        type="council">Consejo de Indias</orgName>.</seg>
+                <seg xml:id="cab-001-019_s002" type="juridical_discursive_segment">En el caso del <rs
+                        xml:id="cab-001-019_cab-001-019_s002_a001" type="role_or_office"
+                        subtype="office_or_procedural_role">Procurador</rs> de <placeName
+                        xml:id="cab-001-019_cab-001-019_s002_a002" type="historicalPlace">Tunja</placeName>
+                    Don <persName xml:id="cab-001-019_cab-001-019_s002_a003" type="historicalPerson">Juan
+                    Gómez</persName> no asistió, asi mismo se causó daño para los beneficios de las
+                    ciudades aunque se diera un plazo amplia de 50 días para estar en <placeName
+                        xml:id="cab-001-019_cab-001-019_s002_a004" type="historicalPlace">España</placeName>
+                    .</seg>
+                <seg xml:id="cab-001-019_s003" type="juridical_discursive_segment">Por lo anterior
+                    se <rs xml:id="cab-001-019_cab-001-019_s003_a001" type="legal_or_procedural_act"
+                        subtype="fine">multa</rs> con $200 pesos del buen oro a quienes siendo del <orgName
+                        xml:id="cab-001-019_cab-001-019_s003_a002" type="cabildo">Cabildo</orgName>
+                    incumplieran la <rs xml:id="cab-001-019_cab-001-019_s003_a003"
+                        type="normative_source" subtype="real_provision">Real Provisión</rs>.</seg>
+                <seg xml:id="cab-001-019_s004" type="juridical_discursive_segment">En esta reunión
+                    se dió todo el <rs xml:id="cab-001-019_cab-001-019_s004_a001"
+                        type="legal_or_procedural_act" subtype="power_of_representation">poder de
+                    representación</rs> al <rs xml:id="cab-001-019_cab-001-019_s004_a002"
+                        type="role_or_office" subtype="office_or_procedural_role">capitan</rs> <persName
+                        xml:id="cab-001-019_cab-001-019_s004_a003" type="historicalPerson">Gonzalo
+                    Suárez</persName> para que <rs xml:id="cab-001-019_cab-001-019_s004_a004"
+                        type="legal_or_procedural_act" subtype="appeal">apele</rs> y <rs
+                        xml:id="cab-001-019_cab-001-019_s004_a005" type="legal_or_procedural_act"
+                        subtype="supplication">suplique</rs> por el <orgName
+                        xml:id="cab-001-019_cab-001-019_s004_a006" type="cabildo">Cabildo</orgName>.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

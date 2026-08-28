@@ -1,2 +1,33 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-058"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-058</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion</bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-058_acta"><note type="missingTranscription">No se suministró transcripción en el TXT.</note></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-058">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-058</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion</bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-058_acta">
+                <note type="missingTranscription">No se suministró transcripción en el TXT.</note>
+            </div>
+        </body>
+    </text>
+</TEI>

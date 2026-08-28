@@ -1,2 +1,129 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-038"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-038</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d038/">https://zasqua.org/co-ahrb-cab-001-d038/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-038_acta"><seg xml:id="cab-001-038_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-038_cab-001-038_s001_a001" type="historicalPlace">Tunja</placeName> del <placeName xml:id="cab-001-038_cab-001-038_s001_a002" type="historicalPlace">Nuevo Reino de Granada</placeName>, se reunieron los miembros del <orgName xml:id="cab-001-038_cab-001-038_s001_a003" type="cabildo">Cabildo</orgName>, el día <date xml:id="cab-001-038_cab-001-038_s001_a004" type="sourceDate">17 de Mayo de 1549</date>.</seg><seg xml:id="cab-001-038_s002" type="juridical_discursive_segment">Se dijo que habia queponer remedio a las personas que estan hechando a perder los montes de esta <term xml:id="cab-001-038_cab-001-038_s002_a001" type="historical_concept" subtype="jurisdiction">jurisdicción</term>, para lo cual se deben <rs xml:id="cab-001-038_cab-001-038_s002_a002" type="legal_or_procedural_act" subtype="collection">cobrar</rs> <rs xml:id="cab-001-038_cab-001-038_s002_a003" type="legal_or_procedural_act" subtype="fine">multas</rs>. <date xml:id="cab-001-038_cab-001-038_s002_a004" type="sourceDate">24 mayo 1549</date>.</seg><seg xml:id="cab-001-038_s003" type="juridical_discursive_segment">Don <persName xml:id="cab-001-038_cab-001-038_s003_a001" type="historicalPerson">Juan de Montalvo</persName> solicita a los señores <orgName xml:id="cab-001-038_cab-001-038_s003_a002" type="cabildo_body">Justicia y Regimiento</orgName> un <rs xml:id="cab-001-038_cab-001-038_s003_a003" type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> para ocupar el cargo de <rs xml:id="cab-001-038_cab-001-038_s003_a004" type="role_or_office" subtype="office_or_procedural_role">contador</rs> mientras dure la ausencia del titular, quien viajó a la ciudad de <placeName xml:id="cab-001-038_cab-001-038_s003_a005" type="historicalPlace">Velez</placeName>.</seg><seg xml:id="cab-001-038_s004" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-038_cab-001-038_s004_a001" type="cabildo">Cabildo</orgName> se <rs xml:id="cab-001-038_cab-001-038_s004_a002" type="legal_or_procedural_act" subtype="reading">leyó</rs> una <rs xml:id="cab-001-038_cab-001-038_s004_a003" type="legal_or_procedural_act" subtype="petition">petición</rs> de Don <persName xml:id="cab-001-038_cab-001-038_s004_a004" type="historicalPerson">Juan de Chinchilla</persName> quien pide se le <rs xml:id="cab-001-038_cab-001-038_s004_a005" type="legal_or_procedural_act" subtype="land_grant">adjudique</rs> un pedazo de tierra, ubicada junto al Corral de <persName xml:id="cab-001-038_cab-001-038_s004_a006" type="historicalPerson">Pedro Cordoba</persName>. <date xml:id="cab-001-038_cab-001-038_s004_a007" type="sourceDate">20 octubre 1549</date> <orgName xml:id="cab-001-038_cab-001-038_s004_a008" type="cabildo">Cabildo</orgName> en el que se <rs xml:id="cab-001-038_cab-001-038_s004_a009" type="legal_or_procedural_act" subtype="reading">leyó</rs> la <rs xml:id="cab-001-038_cab-001-038_s004_a010" type="normative_source" subtype="order">orden</rs> del señor <rs xml:id="cab-001-038_cab-001-038_s004_a011" type="role_or_office" subtype="office_or_procedural_role">Gobernador</rs> Don <persName xml:id="cab-001-038_cab-001-038_s004_a012" type="historicalPerson">Miguel Diaz de Armendaris</persName>, para que se se represente en la <orgName xml:id="cab-001-038_cab-001-038_s004_a013" type="audiencia">Real Audencia</orgName> el <rs xml:id="cab-001-038_cab-001-038_s004_a014" type="role_or_office" subtype="office_or_procedural_role">Alcalde</rs> <persName xml:id="cab-001-038_cab-001-038_s004_a015" type="historicalPerson">Gómez de Cifuentes</persName>.</seg><seg xml:id="cab-001-038_s005" type="juridical_discursive_segment">Los miembros del <orgName xml:id="cab-001-038_cab-001-038_s005_a001" type="cabildo">Cabildo</orgName> <rs xml:id="cab-001-038_cab-001-038_s005_a002" type="legal_or_procedural_act" subtype="obedience">obedecieron</rs> y dieron fiel cumplimiento a lo dispuesto por su señoria.</seg><seg xml:id="cab-001-038_s006" type="juridical_discursive_segment"><rs xml:id="cab-001-038_cab-001-038_s006_a001" type="legal_or_procedural_act" subtype="decision">Acordaron</rs> <rs xml:id="cab-001-038_cab-001-038_s006_a002" type="legal_or_procedural_act" subtype="appointment">nombrar</rs> por <rs xml:id="cab-001-038_cab-001-038_s006_a003" type="role_or_office" subtype="office_or_procedural_role">alcalde</rs> a <persName xml:id="cab-001-038_cab-001-038_s006_a004" type="historicalPerson">Hernando de Rojas</persName>, mientras donde el titular fuera de <placeName xml:id="cab-001-038_cab-001-038_s006_a005" type="historicalPlace">Tunja</placeName>, razón por la cual se <rs xml:id="cab-001-038_cab-001-038_s006_a006" type="legal_or_procedural_act" subtype="order_event">ordenó</rs> realizar los preparativos del recibimiento.</seg><seg xml:id="cab-001-038_s007" type="juridical_discursive_segment">El <date xml:id="cab-001-038_cab-001-038_s007_a001" type="sourceDate">3 de Noviembre de 1549</date> el padre <persName xml:id="cab-001-038_cab-001-038_s007_a002" type="historicalPerson">Fray Bernardino Minaya de Paz</persName>, <rs xml:id="cab-001-038_cab-001-038_s007_a003" type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs xml:id="cab-001-038_cab-001-038_s007_a004" type="legal_or_procedural_act" subtype="petition">petición</rs> y un libro de la <rs xml:id="cab-001-038_cab-001-038_s007_a005" type="normative_source" subtype="papal_bull">bula</rs> del <persName xml:id="cab-001-038_cab-001-038_s007_a006" type="historicalPerson">papa Julio</persName>, en la que da fé el <rs xml:id="cab-001-038_cab-001-038_s007_a007" type="role_or_office" subtype="office_or_procedural_role">obispo</rs> de Austria <rs xml:id="cab-001-038_cab-001-038_s007_a008" type="role_or_office" subtype="office_or_procedural_role">cardenal</rs> de <persName xml:id="cab-001-038_cab-001-038_s007_a009" type="historicalPerson">San Jorge</persName>, en lo referente a la <rs xml:id="cab-001-038_cab-001-038_s007_a010" type="legal_or_procedural_act" subtype="petition">petición</rs>, solicitud la <rs xml:id="cab-001-038_cab-001-038_s007_a011" type="normative_source" subtype="order">orden</rs> para la fundación del Monasterio de la ciudad de <placeName xml:id="cab-001-038_cab-001-038_s007_a012" type="historicalPlace">Tunja</placeName>.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-038">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-038</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d038/">
+                    https://zasqua.org/co-ahrb-cab-001-d038/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-038_acta">
+                <seg xml:id="cab-001-038_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-038_cab-001-038_s001_a001" type="historicalPlace">Tunja</placeName>
+                    del <placeName xml:id="cab-001-038_cab-001-038_s001_a002" type="historicalPlace">Nuevo
+                    Reino de Granada</placeName>, se reunieron los miembros del <orgName
+                        xml:id="cab-001-038_cab-001-038_s001_a003" type="cabildo">Cabildo</orgName>,
+                    el día <date xml:id="cab-001-038_cab-001-038_s001_a004" type="sourceDate">17 de
+                    Mayo de 1549</date>.</seg>
+                <seg xml:id="cab-001-038_s002" type="juridical_discursive_segment">Se dijo que habia
+                    queponer remedio a las personas que estan hechando a perder los montes de esta <term
+                        xml:id="cab-001-038_cab-001-038_s002_a001" type="historical_concept"
+                        subtype="jurisdiction">jurisdicción</term>, para lo cual se deben <rs
+                        xml:id="cab-001-038_cab-001-038_s002_a002" type="legal_or_procedural_act"
+                        subtype="collection">cobrar</rs> <rs
+                        xml:id="cab-001-038_cab-001-038_s002_a003" type="legal_or_procedural_act"
+                        subtype="fine">multas</rs>. <date xml:id="cab-001-038_cab-001-038_s002_a004"
+                        type="sourceDate">24 mayo 1549</date>.</seg>
+                <seg xml:id="cab-001-038_s003" type="juridical_discursive_segment">Don <persName
+                        xml:id="cab-001-038_cab-001-038_s003_a001" type="historicalPerson">Juan de
+                    Montalvo</persName> solicita a los señores <orgName
+                        xml:id="cab-001-038_cab-001-038_s003_a002" type="cabildo_body">Justicia y
+                    Regimiento</orgName> un <rs xml:id="cab-001-038_cab-001-038_s003_a003"
+                        type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> para
+                    ocupar el cargo de <rs xml:id="cab-001-038_cab-001-038_s003_a004"
+                        type="role_or_office" subtype="office_or_procedural_role">contador</rs>
+                    mientras dure la ausencia del titular, quien viajó a la ciudad de <placeName
+                        xml:id="cab-001-038_cab-001-038_s003_a005" type="historicalPlace">Velez</placeName>
+                    .</seg>
+                <seg xml:id="cab-001-038_s004" type="juridical_discursive_segment">En este <orgName
+                        xml:id="cab-001-038_cab-001-038_s004_a001" type="cabildo">Cabildo</orgName>
+                    se <rs xml:id="cab-001-038_cab-001-038_s004_a002" type="legal_or_procedural_act"
+                        subtype="reading">leyó</rs> una <rs
+                        xml:id="cab-001-038_cab-001-038_s004_a003" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs> de Don <persName
+                        xml:id="cab-001-038_cab-001-038_s004_a004" type="historicalPerson">Juan de
+                    Chinchilla</persName> quien pide se le <rs
+                        xml:id="cab-001-038_cab-001-038_s004_a005" type="legal_or_procedural_act"
+                        subtype="land_grant">adjudique</rs> un pedazo de tierra, ubicada junto al
+                    Corral de <persName xml:id="cab-001-038_cab-001-038_s004_a006"
+                        type="historicalPerson">Pedro Cordoba</persName>. <date
+                        xml:id="cab-001-038_cab-001-038_s004_a007" type="sourceDate">20 octubre 1549</date> <orgName
+                        xml:id="cab-001-038_cab-001-038_s004_a008" type="cabildo">Cabildo</orgName>
+                    en el que se <rs xml:id="cab-001-038_cab-001-038_s004_a009"
+                        type="legal_or_procedural_act" subtype="reading">leyó</rs> la <rs
+                        xml:id="cab-001-038_cab-001-038_s004_a010" type="normative_source"
+                        subtype="order">orden</rs> del señor <rs
+                        xml:id="cab-001-038_cab-001-038_s004_a011" type="role_or_office"
+                        subtype="office_or_procedural_role">Gobernador</rs> Don <persName
+                        xml:id="cab-001-038_cab-001-038_s004_a012" type="historicalPerson">Miguel
+                    Diaz de Armendaris</persName>, para que se se represente en la <orgName
+                        xml:id="cab-001-038_cab-001-038_s004_a013" type="audiencia">Real Audencia</orgName>
+                    el <rs xml:id="cab-001-038_cab-001-038_s004_a014" type="role_or_office"
+                        subtype="office_or_procedural_role">Alcalde</rs> <persName
+                        xml:id="cab-001-038_cab-001-038_s004_a015" type="historicalPerson">Gómez de
+                    Cifuentes</persName>.</seg>
+                <seg xml:id="cab-001-038_s005" type="juridical_discursive_segment">Los miembros del <orgName
+                        xml:id="cab-001-038_cab-001-038_s005_a001" type="cabildo">Cabildo</orgName> <rs
+                        xml:id="cab-001-038_cab-001-038_s005_a002" type="legal_or_procedural_act"
+                        subtype="obedience">obedecieron</rs> y dieron fiel cumplimiento a lo
+                    dispuesto por su señoria.</seg>
+                <seg xml:id="cab-001-038_s006" type="juridical_discursive_segment"><rs
+                        xml:id="cab-001-038_cab-001-038_s006_a001" type="legal_or_procedural_act"
+                        subtype="decision">Acordaron</rs> <rs
+                        xml:id="cab-001-038_cab-001-038_s006_a002" type="legal_or_procedural_act"
+                        subtype="appointment">nombrar</rs> por <rs
+                        xml:id="cab-001-038_cab-001-038_s006_a003" type="role_or_office"
+                        subtype="office_or_procedural_role">alcalde</rs> a <persName
+                        xml:id="cab-001-038_cab-001-038_s006_a004" type="historicalPerson">Hernando
+                    de Rojas</persName>, mientras donde el titular fuera de <placeName
+                        xml:id="cab-001-038_cab-001-038_s006_a005" type="historicalPlace">Tunja</placeName>,
+                    razón por la cual se <rs xml:id="cab-001-038_cab-001-038_s006_a006"
+                        type="legal_or_procedural_act" subtype="order_event">ordenó</rs> realizar
+                    los preparativos del recibimiento.</seg>
+                <seg xml:id="cab-001-038_s007" type="juridical_discursive_segment">El <date
+                        xml:id="cab-001-038_cab-001-038_s007_a001" type="sourceDate">3 de Noviembre
+                    de 1549</date> el padre <persName xml:id="cab-001-038_cab-001-038_s007_a002"
+                        type="historicalPerson">Fray Bernardino Minaya de Paz</persName>, <rs
+                        xml:id="cab-001-038_cab-001-038_s007_a003" type="legal_or_procedural_act"
+                        subtype="presentation">presentó</rs> una <rs
+                        xml:id="cab-001-038_cab-001-038_s007_a004" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs> y un libro de la <rs
+                        xml:id="cab-001-038_cab-001-038_s007_a005" type="normative_source"
+                        subtype="papal_bull">bula</rs> del <persName
+                        xml:id="cab-001-038_cab-001-038_s007_a006" type="historicalPerson">papa
+                    Julio</persName>, en la que da fé el <rs
+                        xml:id="cab-001-038_cab-001-038_s007_a007" type="role_or_office"
+                        subtype="office_or_procedural_role">obispo</rs> de Austria <rs
+                        xml:id="cab-001-038_cab-001-038_s007_a008" type="role_or_office"
+                        subtype="office_or_procedural_role">cardenal</rs> de <persName
+                        xml:id="cab-001-038_cab-001-038_s007_a009" type="historicalPerson">San Jorge</persName>,
+                    en lo referente a la <rs xml:id="cab-001-038_cab-001-038_s007_a010"
+                        type="legal_or_procedural_act" subtype="petition">petición</rs>, solicitud
+                    la <rs xml:id="cab-001-038_cab-001-038_s007_a011" type="normative_source"
+                        subtype="order">orden</rs> para la fundación del Monasterio de la ciudad de <placeName
+                        xml:id="cab-001-038_cab-001-038_s007_a012" type="historicalPlace">Tunja</placeName>
+                    .</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,2 +1,78 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-040"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-040</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d040/">https://zasqua.org/co-ahrb-cab-001-d040/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-040_acta"><seg xml:id="cab-001-040_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-040_cab-001-040_s001_a001" type="historicalPlace">Tunja</placeName>, a <date xml:id="cab-001-040_cab-001-040_s001_a002" type="sourceDate">19 noviembre de 1549</date> se reunieron los miembros del <orgName xml:id="cab-001-040_cab-001-040_s001_a003" type="cabildo">Cabildo</orgName> en la casa del señor <persName xml:id="cab-001-040_cab-001-040_s001_a004" type="historicalPerson">Gómez de Cifuentes</persName>.</seg><seg xml:id="cab-001-040_s002" type="juridical_discursive_segment">Allí se <rs xml:id="cab-001-040_cab-001-040_s002_a001" type="legal_or_procedural_act" subtype="decision">acordó</rs> enviar señores de la ciudad a <placeName xml:id="cab-001-040_cab-001-040_s002_a002" type="historicalPlace">Santafé</placeName>, para pedir los propios; se <rs xml:id="cab-001-040_cab-001-040_s002_a003" type="legal_or_procedural_act" subtype="decision">acordó</rs> enviar a Don <persName xml:id="cab-001-040_cab-001-040_s002_a004" type="historicalPerson">Domingo de Aguirre</persName>.</seg><seg xml:id="cab-001-040_s003" type="juridical_discursive_segment">Los señores <orgName xml:id="cab-001-040_cab-001-040_s003_a001" type="cabildo_body">Justicia y Regimiento</orgName> en nombre del <orgName xml:id="cab-001-040_cab-001-040_s003_a002" type="cabildo">Cabildo</orgName> de la ciudad de <placeName xml:id="cab-001-040_cab-001-040_s003_a003" type="historicalPlace">Tunja</placeName> y sus <term xml:id="cab-001-040_cab-001-040_s003_a004" type="historical_social_legal_category" subtype="status_category">vecinos</term> dan todo su <rs xml:id="cab-001-040_cab-001-040_s003_a005" type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> cumplido a <persName xml:id="cab-001-040_cab-001-040_s003_a006" type="historicalPerson">Miguel de Trujillo</persName> vecino y <rs xml:id="cab-001-040_cab-001-040_s003_a007" type="role_or_office" subtype="office_or_procedural_role">corregidor</rs> de esta ciudad, se <rs xml:id="cab-001-040_cab-001-040_s003_a008" type="legal_or_procedural_act" subtype="order_event">ordenó</rs> <rs xml:id="cab-001-040_cab-001-040_s003_a009" type="legal_or_procedural_act" subtype="proclamation">pregonar</rs> la decisión en la plaza principal en prueba de testimonio dieron fé y firmaron: <persName xml:id="cab-001-040_cab-001-040_s003_a010" type="historicalPerson">Cabrera</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a011" type="historicalPerson">Cifuentes</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a012" type="historicalPerson">Suárez</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a013" type="historicalPerson">Orozco</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a014" type="historicalPerson">Rojas</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a015" type="historicalPerson">Beteita</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a016" type="historicalPerson">Trujillo</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a017" type="historicalPerson">Aguirre</persName>.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-040">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-040</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d040/">
+                    https://zasqua.org/co-ahrb-cab-001-d040/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-040_acta">
+                <seg xml:id="cab-001-040_s001" type="juridical_discursive_segment">En la ciudad de <placeName
+                        xml:id="cab-001-040_cab-001-040_s001_a001" type="historicalPlace">Tunja</placeName>,
+                    a <date xml:id="cab-001-040_cab-001-040_s001_a002" type="sourceDate">19
+                    noviembre de 1549</date> se reunieron los miembros del <orgName
+                        xml:id="cab-001-040_cab-001-040_s001_a003" type="cabildo">Cabildo</orgName>
+                    en la casa del señor <persName xml:id="cab-001-040_cab-001-040_s001_a004"
+                        type="historicalPerson">Gómez de Cifuentes</persName>.</seg>
+                <seg xml:id="cab-001-040_s002" type="juridical_discursive_segment">Allí se <rs
+                        xml:id="cab-001-040_cab-001-040_s002_a001" type="legal_or_procedural_act"
+                        subtype="decision">acordó</rs> enviar señores de la ciudad a <placeName
+                        xml:id="cab-001-040_cab-001-040_s002_a002" type="historicalPlace">Santafé</placeName>,
+                    para pedir los propios; se <rs xml:id="cab-001-040_cab-001-040_s002_a003"
+                        type="legal_or_procedural_act" subtype="decision">acordó</rs> enviar a Don <persName
+                        xml:id="cab-001-040_cab-001-040_s002_a004" type="historicalPerson">Domingo
+                    de Aguirre</persName>.</seg>
+                <seg xml:id="cab-001-040_s003" type="juridical_discursive_segment">Los señores <orgName
+                        xml:id="cab-001-040_cab-001-040_s003_a001" type="cabildo_body">Justicia y
+                    Regimiento</orgName> en nombre del <orgName
+                        xml:id="cab-001-040_cab-001-040_s003_a002" type="cabildo">Cabildo</orgName>
+                    de la ciudad de <placeName xml:id="cab-001-040_cab-001-040_s003_a003"
+                        type="historicalPlace">Tunja</placeName> y sus <term
+                        xml:id="cab-001-040_cab-001-040_s003_a004"
+                        type="historical_social_legal_category" subtype="status_category">vecinos</term>
+                    dan todo su <rs xml:id="cab-001-040_cab-001-040_s003_a005"
+                        type="legal_or_procedural_act" subtype="grant_of_power">poder</rs> cumplido
+                    a <persName xml:id="cab-001-040_cab-001-040_s003_a006" type="historicalPerson">Miguel
+                    de Trujillo</persName> vecino y <rs xml:id="cab-001-040_cab-001-040_s003_a007"
+                        type="role_or_office" subtype="office_or_procedural_role">corregidor</rs> de
+                    esta ciudad, se <rs xml:id="cab-001-040_cab-001-040_s003_a008"
+                        type="legal_or_procedural_act" subtype="order_event">ordenó</rs> <rs
+                        xml:id="cab-001-040_cab-001-040_s003_a009" type="legal_or_procedural_act"
+                        subtype="proclamation">pregonar</rs> la decisión en la plaza principal en
+                    prueba de testimonio dieron fé y firmaron: <persName
+                        xml:id="cab-001-040_cab-001-040_s003_a010" type="historicalPerson">Cabrera</persName>
+                    , <persName xml:id="cab-001-040_cab-001-040_s003_a011" type="historicalPerson">
+                    Cifuentes</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a012"
+                        type="historicalPerson">Suárez</persName>, <persName
+                        xml:id="cab-001-040_cab-001-040_s003_a013" type="historicalPerson">Orozco</persName>
+                    , <persName xml:id="cab-001-040_cab-001-040_s003_a014" type="historicalPerson">
+                    Rojas</persName>, <persName xml:id="cab-001-040_cab-001-040_s003_a015"
+                        type="historicalPerson">Beteita</persName>, <persName
+                        xml:id="cab-001-040_cab-001-040_s003_a016" type="historicalPerson">Trujillo</persName>
+                    , <persName xml:id="cab-001-040_cab-001-040_s003_a017" type="historicalPerson">
+                    Aguirre</persName>.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>

@@ -1,2 +1,96 @@
 <?xml version='1.0' encoding='utf-8'?>
-<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-042"><teiHeader><fileDesc><titleStmt><title>Corpus piloto — cab-001-042</title></titleStmt><publicationStmt><p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p></publicationStmt><sourceDesc><bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d042/">https://zasqua.org/co-ahrb-cab-001-d042/</ref></bibl></sourceDesc></fileDesc><profileDesc><langUsage><language ident="es">Español</language></langUsage></profileDesc><revisionDesc><change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change></revisionDesc></teiHeader><text><body><div type="acta" xml:id="cab-001-042_acta"><seg xml:id="cab-001-042_s001" type="juridical_discursive_segment">En <placeName xml:id="cab-001-042_cab-001-042_s001_a001" type="historicalPlace">Tunja</placeName>, el <date xml:id="cab-001-042_cab-001-042_s001_a002" type="sourceDate">21 de diciembre 1549</date> se llevó a cabo otra reeunión de su <orgName xml:id="cab-001-042_cab-001-042_s001_a003" type="cabildo">Cabildo</orgName>, donde el <rs xml:id="cab-001-042_cab-001-042_s001_a004" type="role_or_office" subtype="office_or_procedural_role">capitan</rs> <persName xml:id="cab-001-042_cab-001-042_s001_a005" type="historicalPerson">Martin Rojas</persName> <rs xml:id="cab-001-042_cab-001-042_s001_a006" type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs xml:id="cab-001-042_cab-001-042_s001_a007" type="normative_source" subtype="letter">carta</rs> de la costa de <placeName xml:id="cab-001-042_cab-001-042_s001_a008" type="historicalPlace">Cartagena</placeName>, en la que advierte la visita de los oidores de la <orgName xml:id="cab-001-042_cab-001-042_s001_a009" type="audiencia">Real Audiencia</orgName>, quien viene viajando, pasando por <placeName xml:id="cab-001-042_cab-001-042_s001_a010" type="historicalPlace">Velez</placeName> y <placeName xml:id="cab-001-042_cab-001-042_s001_a011" type="historicalPlace">Tunja</placeName>, por tal motivo hay lanecesidad de reparar los malos caminos y puentes; evitandoles asi algún accidente ó peligro.</seg><seg xml:id="cab-001-042_s002" type="juridical_discursive_segment">Se <rs xml:id="cab-001-042_cab-001-042_s002_a001" type="legal_or_procedural_act" subtype="approval">aprobó</rs> enviar ocho soldados y algunos peones con el <rs xml:id="cab-001-042_cab-001-042_s002_a002" type="role_or_office" subtype="office_or_procedural_role">capitan</rs> <persName xml:id="cab-001-042_cab-001-042_s002_a003" type="historicalPerson">Martin Galeano</persName>, quien debe llevar azadones y hachas, para reparar el camino.</seg><seg xml:id="cab-001-042_s003" type="juridical_discursive_segment">Los pasos y fuentes; so <rs xml:id="cab-001-042_cab-001-042_s003_a001" type="legal_or_procedural_act" subtype="penalty">pena</rs> de $1000 pesos del buen oro, al incumplimiento de la <rs xml:id="cab-001-042_cab-001-042_s003_a002" type="normative_source" subtype="order">orden</rs> dada.</seg><seg xml:id="cab-001-042_s004" type="juridical_discursive_segment">Dado en <placeName xml:id="cab-001-042_cab-001-042_s004_a001" type="historicalPlace">Santafé</placeName> a6 Diciembre de 1549.</seg><seg xml:id="cab-001-042_s005" type="juridical_discursive_segment">Se relaciona una lista de pedido, para cumplir con dicho trabajo: calzar una hacha $1 peso 1 Llave de hierro $2 pesos Guarnecer una espada $1.5 pesos. buen oro Total $200 pesos del buen oro.</seg><seg xml:id="cab-001-042_s006" type="juridical_discursive_segment">Compra de una daga 1/2 peso, Limpiar una espada $1 peso, 1 Ventana llena con un bastidor $6 pesos,-1 Caja de 7 palmos $ pesos.(sigue lista).</seg><seg xml:id="cab-001-042_s007" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-042_cab-001-042_s007_a001" type="cabildo">Cabildo</orgName> se <rs xml:id="cab-001-042_cab-001-042_s007_a002" type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs xml:id="cab-001-042_cab-001-042_s007_a003" type="legal_or_procedural_act" subtype="petition">petición</rs> de Don <persName xml:id="cab-001-042_cab-001-042_s007_a004" type="historicalPerson">Vicente de Ruesga</persName> solicita se le conceda una vencidad en esta ciudad los miembros del <orgName xml:id="cab-001-042_cab-001-042_s007_a005" type="cabildo">Cabildo</orgName> <rs xml:id="cab-001-042_cab-001-042_s007_a006" type="legal_or_procedural_act" subtype="decision">acordaron</rs> asignarle un solar de tierra.</seg><seg xml:id="cab-001-042_s008" type="juridical_discursive_segment">Se <rs xml:id="cab-001-042_cab-001-042_s008_a001" type="legal_or_procedural_act" subtype="reading">leyó</rs> otra <rs xml:id="cab-001-042_cab-001-042_s008_a002" type="legal_or_procedural_act" subtype="petition">petición</rs> de Juan R.</seg><seg xml:id="cab-001-042_s009" type="juridical_discursive_segment">Parra quien pide un hierro para ganados.</seg></div></body></text></TEI>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-042">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title>Corpus piloto — cab-001-042</title>
+            </titleStmt>
+            <publicationStmt>
+                <p>Codificación experimental para investigación; no sustituye la descripción
+                    archivística de Zasqua.</p>
+            </publicationStmt>
+            <sourceDesc>
+                <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador
+                    por Neogranadina.org, no esta presente la digitalizacion<ref
+                        target="https://zasqua.org/co-ahrb-cab-001-d042/">
+                    https://zasqua.org/co-ahrb-cab-001-d042/</ref></bibl>
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <langUsage>
+                <language ident="es">Español</language>
+            </langUsage>
+        </profileDesc>
+        <revisionDesc>
+            <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+        </revisionDesc>
+    </teiHeader>
+    <text>
+        <body>
+            <div type="acta" xml:id="cab-001-042_acta">
+                <seg xml:id="cab-001-042_s001" type="juridical_discursive_segment">En <placeName
+                        xml:id="cab-001-042_cab-001-042_s001_a001" type="historicalPlace">Tunja</placeName>,
+                    el <date xml:id="cab-001-042_cab-001-042_s001_a002" type="sourceDate">21 de
+                    diciembre 1549</date> se llevó a cabo otra reeunión de su <orgName
+                        xml:id="cab-001-042_cab-001-042_s001_a003" type="cabildo">Cabildo</orgName>,
+                    donde el <rs xml:id="cab-001-042_cab-001-042_s001_a004" type="role_or_office"
+                        subtype="office_or_procedural_role">capitan</rs> <persName
+                        xml:id="cab-001-042_cab-001-042_s001_a005" type="historicalPerson">Martin
+                    Rojas</persName> <rs xml:id="cab-001-042_cab-001-042_s001_a006"
+                        type="legal_or_procedural_act" subtype="presentation">presentó</rs> una <rs
+                        xml:id="cab-001-042_cab-001-042_s001_a007" type="normative_source"
+                        subtype="letter">carta</rs> de la costa de <placeName
+                        xml:id="cab-001-042_cab-001-042_s001_a008" type="historicalPlace">Cartagena</placeName>,
+                    en la que advierte la visita de los oidores de la <orgName
+                        xml:id="cab-001-042_cab-001-042_s001_a009" type="audiencia">Real Audiencia</orgName>,
+                    quien viene viajando, pasando por <placeName
+                        xml:id="cab-001-042_cab-001-042_s001_a010" type="historicalPlace">Velez</placeName>
+                    y <placeName xml:id="cab-001-042_cab-001-042_s001_a011" type="historicalPlace">
+                    Tunja</placeName>, por tal motivo hay lanecesidad de reparar los malos caminos y
+                    puentes; evitandoles asi algún accidente ó peligro.</seg>
+                <seg xml:id="cab-001-042_s002" type="juridical_discursive_segment">Se <rs
+                        xml:id="cab-001-042_cab-001-042_s002_a001" type="legal_or_procedural_act"
+                        subtype="approval">aprobó</rs> enviar ocho soldados y algunos peones con el <rs
+                        xml:id="cab-001-042_cab-001-042_s002_a002" type="role_or_office"
+                        subtype="office_or_procedural_role">capitan</rs> <persName
+                        xml:id="cab-001-042_cab-001-042_s002_a003" type="historicalPerson">Martin
+                    Galeano</persName>, quien debe llevar azadones y hachas, para reparar el camino.</seg>
+                <seg xml:id="cab-001-042_s003" type="juridical_discursive_segment">Los pasos y
+                    fuentes; so <rs xml:id="cab-001-042_cab-001-042_s003_a001"
+                        type="legal_or_procedural_act" subtype="penalty">pena</rs> de $1000 pesos
+                    del buen oro, al incumplimiento de la <rs
+                        xml:id="cab-001-042_cab-001-042_s003_a002" type="normative_source"
+                        subtype="order">orden</rs> dada.</seg>
+                <seg xml:id="cab-001-042_s004" type="juridical_discursive_segment">Dado en <placeName
+                        xml:id="cab-001-042_cab-001-042_s004_a001" type="historicalPlace">Santafé</placeName>
+                    a6 Diciembre de 1549.</seg>
+                <seg xml:id="cab-001-042_s005" type="juridical_discursive_segment">Se relaciona una
+                    lista de pedido, para cumplir con dicho trabajo: calzar una hacha $1 peso 1
+                    Llave de hierro $2 pesos Guarnecer una espada $1.5 pesos. buen oro Total $200
+                    pesos del buen oro.</seg>
+                <seg xml:id="cab-001-042_s006" type="juridical_discursive_segment">Compra de una
+                    daga 1/2 peso, Limpiar una espada $1 peso, 1 Ventana llena con un bastidor $6
+                    pesos,-1 Caja de 7 palmos $ pesos.(sigue lista).</seg>
+                <seg xml:id="cab-001-042_s007" type="juridical_discursive_segment">En este <orgName
+                        xml:id="cab-001-042_cab-001-042_s007_a001" type="cabildo">Cabildo</orgName>
+                    se <rs xml:id="cab-001-042_cab-001-042_s007_a002" type="legal_or_procedural_act"
+                        subtype="presentation">presentó</rs> una <rs
+                        xml:id="cab-001-042_cab-001-042_s007_a003" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs> de Don <persName
+                        xml:id="cab-001-042_cab-001-042_s007_a004" type="historicalPerson">Vicente
+                    de Ruesga</persName> solicita se le conceda una vencidad en esta ciudad los
+                    miembros del <orgName xml:id="cab-001-042_cab-001-042_s007_a005" type="cabildo">
+                    Cabildo</orgName> <rs xml:id="cab-001-042_cab-001-042_s007_a006"
+                        type="legal_or_procedural_act" subtype="decision">acordaron</rs> asignarle
+                    un solar de tierra.</seg>
+                <seg xml:id="cab-001-042_s008" type="juridical_discursive_segment">Se <rs
+                        xml:id="cab-001-042_cab-001-042_s008_a001" type="legal_or_procedural_act"
+                        subtype="reading">leyó</rs> otra <rs
+                        xml:id="cab-001-042_cab-001-042_s008_a002" type="legal_or_procedural_act"
+                        subtype="petition">petición</rs> de Juan R.</seg>
+                <seg xml:id="cab-001-042_s009" type="juridical_discursive_segment">Parra quien pide
+                    un hierro para ganados.</seg>
+            </div>
+        </body>
+    </text>
+</TEI>
