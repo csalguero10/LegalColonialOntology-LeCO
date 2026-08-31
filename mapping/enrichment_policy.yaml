@@ -1,5 +1,5 @@
 name: LeCO legacy-TEI enrichment policy
-version: 0.1.0
+version: 0.2.0
 source_bundle:
   - tei.xml
   - metadata.json
@@ -13,3 +13,8 @@ principles:
   do_not_silently_promote_ambiguous_relations: true
   inferred_relations_require_source: true
   inferred_relations_require_basis: true
+
+office_normalization:
+  profile: mapping/office_normalization.yaml
+  preserve_surface_form: true
+  note: Normalization changes the controlled LeCO concept, never the source transcription.

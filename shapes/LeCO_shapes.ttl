@@ -1,138 +1,313 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix leco: <https://w3id.org/leco/ontology#> .
 @prefix lecosh: <https://w3id.org/leco/shapes#> .
-@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
-@prefix crm: <http://www.cidoc-crm.org/cidoc-crm/> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix time: <http://www.w3.org/2006/time#> .
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-<https://w3id.org/leco/shapes>
-    a owl:Ontology ;
-    dcterms:title "LeCO SHACL Application Profile"@en ,
-                  "Perfil de validación SHACL de LeCO"@es ;
-    dcterms:description "Restricciones de integridad para validar grafos RDF instanciados con LegalColonialOntology (LeCO) v0.3. El perfil operacionaliza las Competency Questions del corpus piloto."@es ;
-    owl:versionInfo "0.1.0" ;
-    dcterms:created "2026-08-28"^^xsd:date ;
+<https://w3id.org/leco/shapes> a owl:Ontology ;
     dcterms:conformsTo <https://www.w3.org/TR/shacl/> ;
-    rdfs:comment "Debe validarse junto con la ontología LeCO y, cuando el motor lo permita, con inferencia RDFS/OWL habilitada para reconocer las subclases de LeCO y de las ontologías reutilizadas."@es .
+    dcterms:created "2026-08-28"^^xsd:date ;
+    dcterms:description "Perfil SHACL CORE de LeCO v0.2. Valida integridad estructural y tipológica sin convertir la ausencia de información histórica deseable en error. Las relaciones de completitud se evalúan en QUALITY y STRICT."@es ;
+    dcterms:title "LeCO SHACL Application Profile"@en,
+        "LeCO SHACL CORE profile"@en,
+        "LeCO SHACL STRICT profile"@en,
+        "Perfil SHACL CORE de LeCO"@es,
+        "Perfil SHACL STRICT de LeCO"@es,
+        "Perfil de validación SHACL de LeCO"@es ;
+    rdfs:comment "Debe validarse junto con la ontología LeCO y, cuando el motor lo permita, con inferencia RDFS/OWL habilitada para reconocer las subclases de LeCO y de las ontologías reutilizadas."@es ;
+    owl:versionInfo "0.2.1-core" .
 
-#################################################################
-# 1. DOCUMENTOS Y EVIDENCIA
-#################################################################
+lecosh:AnnotationBasisShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:AnnotationBasisScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:AnnotationBasis .
 
-lecosh:LegalDocumentShape
-    a sh:NodeShape ;
-    sh:targetClass leco:LegalDocument ;
-    sh:name "Documento jurídico LeCO"@es ;
-    sh:property [
-        sh:path leco:hasDocumentType ;
-        sh:minCount 1 ;
-        sh:class leco:DocumentType ;
-        sh:message "Todo documento jurídico del corpus debe tener al menos un tipo documental controlado."@es
-    ] .
+lecosh:AppealShape a sh:NodeShape ;
+    sh:name "Apelación"@es ;
+    sh:property [ sh:class leco:LegalDecision ;
+            sh:message "Una apelación debe identificar al menos una decisión jurídica apelada."@es ;
+            sh:path leco:appealsAgainst ],
+        [ sh:class rico:Agent ;
+            sh:message "Una apelación debe identificar la autoridad ante la cual se interpone."@es ;
+            sh:path leco:beforeAuthority ],
+        [ sh:class leco:Participation ;
+            sh:message "Una apelación debe contener al menos una participación contextualizada."@es ;
+            sh:path leco:hasParticipation ] ;
+    sh:targetClass leco:Appeal .
 
-lecosh:LegalDocumentPartShape
-    a sh:NodeShape ;
-    sh:targetClass leco:LegalDocumentPart ;
-    sh:name "Parte de documento jurídico"@es ;
-    sh:property [
-        sh:path rico:isDirectConstituentOf ;
-        sh:minCount 1 ;
-        sh:maxCount 1 ;
-        sh:or (
-            [ sh:class leco:LegalDocument ]
-            [ sh:class leco:LegalDocumentPart ]
-        ) ;
-        sh:message "Una parte documental debe identificar exactamente un contenedor documental directo."@es
-    ] .
+lecosh:AppointmentShape a sh:NodeShape ;
+    sh:property [ sh:class rico:Person ;
+            sh:message "Un nombramiento debe identificar al menos una persona nombrada."@es ;
+            sh:path leco:appointsPerson ],
+        [ sh:class leco:Office ;
+            sh:message "Un nombramiento debe indicar el oficio para el cual se designa a la persona."@es ;
+            sh:path leco:appointsToOffice ] ;
+    sh:targetClass leco:Appointment .
 
-lecosh:NormativeDocumentShape
-    a sh:NodeShape ;
-    sh:targetClass leco:NormativeDocument ;
-    sh:name "Documento normativo"@es ;
-    sh:property [
-        sh:path leco:expressesRule ;
-        sh:minCount 1 ;
-        sh:class leco:NormativeRule ;
-        sh:message "Un documento normativo debe expresar al menos una regla normativa."@es
-    ] .
+lecosh:ColonialOfficeStatusShape a sh:NodeShape ;
+    sh:property [ sh:hasValue leco:ColonialOfficeStatusScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:ColonialOfficeStatus .
 
-#################################################################
-# 2. ACTOS, PROCEDIMIENTOS Y PARTICIPACIONES
-#################################################################
+lecosh:DocumentTypeShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:DocumentTypeScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:DocumentType .
 
-lecosh:JurisdictionalActShape
-    a sh:NodeShape ;
-    sh:targetClass leco:JurisdictionalAct ;
+lecosh:EthnoLegalCategoryShape a sh:NodeShape ;
+    sh:property [ sh:hasValue leco:EthnoLegalCategoryScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:EthnoLegalCategory .
+
+lecosh:GrantOfPowerShape a sh:NodeShape ;
+    sh:property [ sh:class leco:RepresentationRelation ;
+            sh:maxCount 1 ;
+            sh:message "Un otorgamiento de poder debe crear exactamente una relación de representación contextualizada."@es ;
+            sh:path leco:createsRepresentation ] ;
+    sh:targetClass leco:GrantOfPower .
+
+lecosh:HistoricalCategoryAssignmentShape a sh:NodeShape ;
+    sh:name "Atribución de categoría histórico-jurídica"@es ;
+    sh:property [ sh:class leco:HistoricalLegalCategory ;
+            sh:maxCount 1 ;
+            sh:message "Cada atribución debe asignar exactamente una categoría histórica."@es ;
+            sh:minCount 1 ;
+            sh:path leco:assignsHistoricalCategory ],
+        [ sh:class rico:Agent ;
+            sh:maxCount 1 ;
+            sh:message "Cada atribución debe identificar exactamente al actor o colectivo al que la fuente atribuye la categoría."@es ;
+            sh:minCount 1 ;
+            sh:path leco:categoryAssignedTo ],
+        [ sh:message "Toda atribución histórico-jurídica debe estar anclada en evidencia documental."@es ;
+            sh:minCount 1 ;
+            sh:path leco:attestedIn ],
+        [ sh:class leco:Jurisdiction ;
+            sh:message "La atribución de categoría debe conservar su contexto jurisdiccional."@es ;
+            sh:minCount 1 ;
+            sh:path leco:categoryAssignmentJurisdiction ],
+        [ sh:message "La atribución de categoría debe conservar su contexto temporal."@es ;
+            sh:minCount 1 ;
+            sh:path leco:categoryAssignmentTime ],
+        [ sh:class leco:JurisdictionalAct ;
+            sh:maxCount 1 ;
+            sh:message "Cuando se conoce el acto en el que ocurre la atribución, debe enlazarse como un único contexto procesal."@es ;
+            sh:path leco:categoryAssignmentInAct ] ;
+    sh:targetClass leco:HistoricalCategoryAssignment .
+
+lecosh:HistoricalConceptUseShape a sh:NodeShape ;
+    sh:name "Uso histórico de concepto"@es ;
+    sh:property [ sh:class leco:HistoricalLegalConcept ;
+            sh:maxCount 1 ;
+            sh:message "Cada uso conceptual debe enlazar exactamente un concepto jurídico histórico."@es ;
+            sh:minCount 1 ;
+            sh:path leco:conceptUsed ],
+        [ sh:message "Cada uso conceptual debe conservar evidencia documental."@es ;
+            sh:minCount 1 ;
+            sh:path leco:attestedIn ],
+        [ sh:datatype xsd:string ;
+            sh:message "Debe conservarse la forma léxica observada en la fuente."@es ;
+            sh:minCount 1 ;
+            sh:path leco:lexicalForm ],
+        [ sh:class leco:Jurisdiction ;
+            sh:message "El uso conceptual debe contextualizarse jurisdiccionalmente."@es ;
+            sh:path leco:conceptUseJurisdiction ],
+        [ sh:message "Si se proporciona contexto temporal para un uso conceptual, debe ser un recurso temporal válido según el rango de LeCO."@es ;
+            sh:path leco:conceptUseTime ] ;
+    sh:targetClass leco:HistoricalConceptUse .
+
+lecosh:HistoricalLegalCategoryShape a sh:NodeShape ;
+    sh:property [ sh:message "Toda categoría histórica debe tener al menos una etiqueta preferida SKOS."@es ;
+            sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:HistoricalLegalCategoryScheme ;
+            sh:message "Toda categoría histórica debe pertenecer al vocabulario general de categorías de LeCO."@es ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:HistoricalLegalCategory .
+
+lecosh:HistoricalLegalConceptShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:HistoricalLegalConceptScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:HistoricalLegalConcept .
+
+lecosh:InstitutionTypeShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:InstitutionTypeScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:InstitutionType .
+
+lecosh:InvestigationShape a sh:NodeShape ;
+    sh:targetClass leco:Investigation .
+
+lecosh:JurisdictionShape a sh:NodeShape ;
+    sh:message "Una jurisdicción debe tener al menos un ámbito explícito: territorial, personal o material."@es ;
+    sh:name "Jurisdicción"@es ;
+    sh:or ( [ sh:property [ sh:minCount 1 ;
+                        sh:path leco:territorialScope ] ] [ sh:property [ sh:minCount 1 ;
+                        sh:path leco:personalScope ] ] [ sh:property [ sh:minCount 1 ;
+                        sh:path leco:subjectMatterScope ] ] ) ;
+    sh:property [ sh:class rico:Agent ;
+            sh:message "Se recomienda identificar al menos un agente que ejerce la jurisdicción."@es ;
+            sh:minCount 1 ;
+            sh:path leco:jurisdictionExercisedBy ;
+            sh:severity sh:Warning ] ;
+    sh:targetClass leco:Jurisdiction .
+
+lecosh:JurisdictionalActShape a sh:NodeShape ;
     sh:name "Acto jurisdiccional"@es ;
-    sh:property [
-        sh:path [ sh:inversePath leco:documentsAct ] ;
-        sh:minCount 1 ;
-        sh:message "Todo acto jurisdiccional derivado del corpus debe estar documentado por al menos un documento o segmento."@es
-    ] ;
-    sh:property [
-        sh:path leco:withinJurisdiction ;
-        sh:minCount 1 ;
-        sh:class leco:Jurisdiction ;
-        sh:message "Todo acto jurisdiccional debe situarse al menos en una jurisdicción."@es
-    ] ;
-    sh:or (
-        [ sh:property [ sh:path leco:hasParticipation ; sh:minCount 1 ] ]
-        [ sh:property [ sh:path leco:hasParticipant ; sh:minCount 1 ] ]
-    ) ;
-    sh:message "Todo acto jurisdiccional debe identificar al menos un participante, preferiblemente mediante una participación contextualizada."@es .
+    sh:property [ sh:class leco:Jurisdiction ;
+            sh:message "Todo acto jurisdiccional debe situarse al menos en una jurisdicción."@es ;
+            sh:path leco:withinJurisdiction ],
+        [ sh:message "Todo acto jurisdiccional derivado del corpus debe estar documentado por al menos un documento o segmento."@es ;
+            sh:minCount 1 ;
+            sh:path [ sh:inversePath leco:documentsAct ] ] ;
+    sh:targetClass leco:JurisdictionalAct .
 
-lecosh:ParticipationShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Participation ;
+lecosh:JurisdictionalMandateShape a sh:NodeShape ;
+    sh:name "Mandato jurisdiccional"@es ;
+    sh:property [ sh:class rico:Agent ;
+            sh:message "Un mandato jurisdiccional debe identificar la autoridad que lo emite."@es ;
+            sh:minCount 1 ;
+            sh:path rico:issuedBy ],
+        [ sh:class leco:Jurisdiction ;
+            sh:message "Un mandato jurisdiccional debe identificar la jurisdicción en la que aplica."@es ;
+            sh:minCount 1 ;
+            sh:path leco:appliesWithinJurisdiction ] ;
+    sh:targetClass leco:JurisdictionalMandate .
+
+lecosh:LegalArgumentShape a sh:NodeShape ;
+    sh:property [ sh:class leco:NormativeRule ;
+            sh:message "Toda regla invocada como fundamento de un argumento debe ser una NormativeRule."@es ;
+            sh:path leco:argumentInvokesRule ] ;
+    sh:targetClass leco:LegalArgument .
+
+lecosh:LegalDecisionShape a sh:NodeShape ;
+    sh:name "Decisión jurídica"@es ;
+    sh:property [ sh:class rico:Agent ;
+            sh:message "Una decisión jurídica debe identificar la autoridad o agente que la decide."@es ;
+            sh:path leco:decidedBy ] ;
+    sh:targetClass leco:LegalDecision .
+
+lecosh:LegalDocumentPartShape a sh:NodeShape ;
+    sh:name "Parte de documento jurídico"@es ;
+    sh:property [ sh:maxCount 1 ;
+            sh:message "Una parte documental debe identificar exactamente un contenedor documental directo."@es ;
+            sh:minCount 1 ;
+            sh:or ( [ sh:class leco:LegalDocument ] [ sh:class leco:LegalDocumentPart ] ) ;
+            sh:path rico:isDirectConstituentOf ] ;
+    sh:targetClass leco:LegalDocumentPart .
+
+lecosh:LegalDocumentShape a sh:NodeShape ;
+    sh:name "Documento jurídico LeCO"@es ;
+    sh:property [ sh:class leco:DocumentType ;
+            sh:message "Todo documento jurídico del corpus debe tener al menos un tipo documental controlado."@es ;
+            sh:minCount 1 ;
+            sh:path leco:hasDocumentType ] ;
+    sh:targetClass leco:LegalDocument .
+
+lecosh:LegalEntitlementShape a sh:NodeShape ;
+    sh:property [ sh:class rico:Agent ;
+            sh:message "Un derecho o beneficio concedido debe identificar al menos un beneficiario."@es ;
+            sh:minCount 1 ;
+            sh:path leco:grantedTo ] ;
+    sh:targetClass leco:LegalEntitlement .
+
+lecosh:LegalProceedingShape a sh:NodeShape ;
+    sh:name "Procedimiento jurídico"@es ;
+    sh:property [ sh:class leco:ProceduralAct ;
+            sh:message "Un procedimiento jurídico debe contener al menos un acto procesal."@es ;
+            sh:minCount 1 ;
+            sh:path leco:hasProceduralAct ] ;
+    sh:targetClass leco:LegalProceeding .
+
+lecosh:MercedGrantShape a sh:NodeShape ;
+    sh:property [ sh:class leco:LegalEntitlement ;
+            sh:message "Una merced como acto debe resultar en un derecho o beneficio jurídicamente representado."@es ;
+            sh:minCount 1 ;
+            sh:path leco:resultsInEntitlement ] ;
+    sh:targetClass leco:MercedGrant .
+
+lecosh:NormativeDocumentShape a sh:NodeShape ;
+    sh:name "Documento normativo"@es ;
+    sh:property [ sh:class leco:NormativeRule ;
+            sh:message "Un documento normativo debe expresar al menos una regla normativa."@es ;
+            sh:minCount 1 ;
+            sh:path leco:expressesRule ] ;
+    sh:targetClass leco:NormativeDocument .
+
+lecosh:OfficeShape a sh:NodeShape ;
+    sh:name "Oficio/cargo"@es ;
+    sh:property [ sh:class leco:OfficeType ;
+            sh:message "Todo oficio debe estar clasificado mediante al menos un tipo de oficio controlado."@es ;
+            sh:minCount 1 ;
+            sh:path leco:hasOfficeType ],
+        [ sh:class rico:Group ;
+            sh:message "Se recomienda identificar la institución en la que existe el oficio."@es ;
+            sh:minCount 1 ;
+            sh:path leco:officeExistsIn ;
+            sh:severity sh:Warning ] ;
+    sh:targetClass leco:Office .
+
+lecosh:OfficeTypeShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:OfficeTypeScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:OfficeType .
+
+lecosh:ParticipationShape a sh:NodeShape ;
     sh:name "Participación procesal contextualizada"@es ;
-    sh:property [
-        sh:path leco:participationActor ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Una participación debe tener exactamente un actor."@es
-    ] ;
-    sh:property [
-        sh:path leco:participationRole ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:ProceduralRole ;
-        sh:message "Una participación debe tener exactamente un rol procesal contextualizado."@es
-    ] ;
-    sh:property [
-        sh:path leco:participationInAct ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:JurisdictionalAct ;
-        sh:message "Una participación debe pertenecer exactamente a un acto jurisdiccional."@es
-    ] ;
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "El acto indicado por participationInAct debe enlazar de vuelta a esta participación mediante hasParticipation."@es ;
-        sh:select """
+    sh:property [ sh:class rico:Agent ;
+            sh:maxCount 1 ;
+            sh:message "Una participación debe tener exactamente un actor."@es ;
+            sh:minCount 1 ;
+            sh:path leco:participationActor ],
+        [ sh:class leco:ProceduralRole ;
+            sh:maxCount 1 ;
+            sh:message "Una participación debe tener exactamente un rol procesal contextualizado."@es ;
+            sh:minCount 1 ;
+            sh:path leco:participationRole ],
+        [ sh:class leco:JurisdictionalAct ;
+            sh:maxCount 1 ;
+            sh:message "Una participación debe pertenecer exactamente a un acto jurisdiccional."@es ;
+            sh:minCount 1 ;
+            sh:path leco:participationInAct ] ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+            sh:message "El acto indicado por participationInAct debe enlazar de vuelta a esta participación mediante hasParticipation."@es ;
+            sh:select """
             PREFIX leco: <https://w3id.org/leco/ontology#>
             SELECT $this WHERE {
               $this leco:participationInAct ?act .
               FILTER NOT EXISTS { ?act leco:hasParticipation $this }
             }
-        """
-    ] ;
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "Una participación no puede oponerse a sí misma."@es ;
-        sh:select """
+        """ ],
+        [ a sh:SPARQLConstraint ;
+            sh:message "Una participación no puede oponerse a sí misma."@es ;
+            sh:select """
             PREFIX leco: <https://w3id.org/leco/ontology#>
             SELECT $this WHERE { $this leco:opposesParticipation $this }
-        """
-    ] ;
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "Dos participaciones enfrentadas deben pertenecer a actos incluidos en el mismo procedimiento jurídico."@es ;
-        sh:select """
+        """ ],
+        [ a sh:SPARQLConstraint ;
+            sh:message "Dos participaciones enfrentadas deben pertenecer a actos incluidos en el mismo procedimiento jurídico."@es ;
+            sh:select """
             PREFIX leco: <https://w3id.org/leco/ontology#>
             SELECT $this ?other WHERE {
               $this leco:opposesParticipation ?other ;
@@ -143,471 +318,146 @@ lecosh:ParticipationShape
                 ?act2 leco:inProceeding ?proceeding .
               }
             }
-        """
-    ] .
+        """ ] ;
+    sh:targetClass leco:Participation .
 
-lecosh:LegalProceedingShape
-    a sh:NodeShape ;
-    sh:targetClass leco:LegalProceeding ;
-    sh:name "Procedimiento jurídico"@es ;
-    sh:property [
-        sh:path leco:hasProceduralAct ;
-        sh:minCount 1 ;
-        sh:class leco:ProceduralAct ;
-        sh:message "Un procedimiento jurídico debe contener al menos un acto procesal."@es
-    ] .
-
-lecosh:AppealShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Appeal ;
-    sh:name "Apelación"@es ;
-    sh:property [
-        sh:path leco:appealsAgainst ;
-        sh:minCount 1 ;
-        sh:class leco:LegalDecision ;
-        sh:message "Una apelación debe identificar al menos una decisión jurídica apelada."@es
-    ] ;
-    sh:property [
-        sh:path leco:beforeAuthority ;
-        sh:minCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Una apelación debe identificar la autoridad ante la cual se interpone."@es
-    ] ;
-    sh:property [
-        sh:path leco:hasParticipation ;
-        sh:minCount 1 ;
-        sh:class leco:Participation ;
-        sh:message "Una apelación debe contener al menos una participación contextualizada."@es
-    ] .
-
-lecosh:LegalDecisionShape
-    a sh:NodeShape ;
-    sh:targetClass leco:LegalDecision ;
-    sh:name "Decisión jurídica"@es ;
-    sh:property [
-        sh:path leco:decidedBy ;
-        sh:minCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Una decisión jurídica debe identificar la autoridad o agente que la decide."@es
-    ] .
-
-lecosh:SanctionShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Sanction ;
-    sh:property [
-        sh:path leco:sanctions ;
-        sh:minCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Una sanción debe identificar al menos al actor sancionado."@es
-    ] .
-
-lecosh:InvestigationShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Investigation ;
-    sh:property [
-        sh:path leco:investigates ;
-        sh:minCount 1 ;
-        sh:message "Una investigación debe identificar el objeto, actor o conducta investigada."@es
-    ] .
-
-lecosh:AppointmentShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Appointment ;
-    sh:property [
-        sh:path leco:appointsPerson ;
-        sh:minCount 1 ;
-        sh:class rico:Person ;
-        sh:message "Un nombramiento debe identificar al menos una persona nombrada."@es
-    ] ;
-    sh:property [
-        sh:path leco:appointsToOffice ;
-        sh:minCount 1 ;
-        sh:class leco:Office ;
-        sh:message "Un nombramiento debe indicar el oficio para el cual se designa a la persona."@es
-    ] .
-
-#################################################################
-# 3. OFICIOS E INSTITUCIONES
-#################################################################
-
-lecosh:OfficeShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Office ;
-    sh:name "Oficio/cargo"@es ;
-    sh:property [
-        sh:path leco:hasOfficeType ;
-        sh:minCount 1 ;
-        sh:class leco:OfficeType ;
-        sh:message "Todo oficio debe estar clasificado mediante al menos un tipo de oficio controlado."@es
-    ] ;
-    sh:property [
-        sh:path leco:officeExistsIn ;
-        sh:minCount 1 ;
-        sh:class rico:Group ;
-        sh:severity sh:Warning ;
-        sh:message "Se recomienda identificar la institución en la que existe el oficio."@es
-    ] .
-
-lecosh:PositionHoldingRelationShape
-    a sh:NodeShape ;
-    sh:targetClass rico:PositionHoldingRelation ;
+lecosh:PositionHoldingRelationShape a sh:NodeShape ;
     sh:name "Ocupación temporalizada de cargo"@es ;
-    sh:property [
-        sh:path rico:relationHasSource ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class rico:Person ;
-        sh:message "Una relación de ocupación de cargo debe identificar exactamente una persona como source."@es
-    ] ;
-    sh:property [
-        sh:path rico:relationHasTarget ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:Office ;
-        sh:message "Una relación de ocupación de cargo debe identificar exactamente un oficio como target."@es
-    ] ;
-    sh:property [
-        sh:path rico:relationHasDate ;
-        sh:minCount 1 ;
-        sh:message "Una ocupación de cargo debe tener contexto temporal mediante relationHasDate."@es
-    ] .
+    sh:property [ sh:class rico:Person ;
+            sh:maxCount 1 ;
+            sh:message "Una relación de ocupación de cargo debe identificar exactamente una persona como source."@es ;
+            sh:minCount 1 ;
+            sh:path rico:relationHasSource ],
+        [ sh:class leco:Office ;
+            sh:maxCount 1 ;
+            sh:message "Una relación de ocupación de cargo debe identificar exactamente un oficio como target."@es ;
+            sh:minCount 1 ;
+            sh:path rico:relationHasTarget ],
+        [ sh:message "Una ocupación de cargo debe tener contexto temporal mediante relationHasDate."@es ;
+            sh:minCount 1 ;
+            sh:path rico:relationHasDate ] ;
+    sh:targetClass rico:PositionHoldingRelation .
 
-#################################################################
-# 4. JURISDICCIÓN
-#################################################################
+lecosh:ProceduralRoleShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:ProceduralRoleScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:ProceduralRole .
 
-lecosh:JurisdictionShape
-    a sh:NodeShape ;
-    sh:targetClass leco:Jurisdiction ;
-    sh:name "Jurisdicción"@es ;
-    sh:property [
-        sh:path leco:jurisdictionExercisedBy ;
-        sh:minCount 1 ;
-        sh:class rico:Agent ;
-        sh:severity sh:Warning ;
-        sh:message "Se recomienda identificar al menos un agente que ejerce la jurisdicción."@es
-    ] ;
-    sh:or (
-        [ sh:property [ sh:path leco:territorialScope ; sh:minCount 1 ] ]
-        [ sh:property [ sh:path leco:personalScope ; sh:minCount 1 ] ]
-        [ sh:property [ sh:path leco:subjectMatterScope ; sh:minCount 1 ] ]
-    ) ;
-    sh:message "Una jurisdicción debe tener al menos un ámbito explícito: territorial, personal o material."@es .
-
-lecosh:JurisdictionalMandateShape
-    a sh:NodeShape ;
-    sh:targetClass leco:JurisdictionalMandate ;
-    sh:name "Mandato jurisdiccional"@es ;
-    sh:property [
-        sh:path rico:issuedBy ;
-        sh:minCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Un mandato jurisdiccional debe identificar la autoridad que lo emite."@es
-    ] ;
-    sh:property [
-        sh:path leco:appliesWithinJurisdiction ;
-        sh:minCount 1 ;
-        sh:class leco:Jurisdiction ;
-        sh:message "Un mandato jurisdiccional debe identificar la jurisdicción en la que aplica."@es
-    ] .
-
-#################################################################
-# 5. ARGUMENTACIÓN Y USO DE REGLAS
-#################################################################
-
-lecosh:LegalArgumentShape
-    a sh:NodeShape ;
-    sh:targetClass leco:LegalArgument ;
-    sh:property [
-        sh:path leco:argumentInvokesRule ;
-        sh:class leco:NormativeRule ;
-        sh:message "Toda regla invocada como fundamento de un argumento debe ser una NormativeRule."@es
-    ] .
-
-lecosh:RuleUseByActShape
-    a sh:NodeShape ;
-    sh:targetClass leco:JurisdictionalAct ;
-    sh:property [ sh:path leco:citesRule ; sh:class leco:NormativeRule ] ;
-    sh:property [ sh:path leco:appliesRule ; sh:class leco:NormativeRule ] ;
-    sh:property [ sh:path leco:interpretsRule ; sh:class leco:NormativeRule ] .
-
-#################################################################
-# 6. CONCEPTOS Y CATEGORÍAS HISTÓRICAS
-#################################################################
-
-lecosh:HistoricalConceptUseShape
-    a sh:NodeShape ;
-    sh:targetClass leco:HistoricalConceptUse ;
-    sh:name "Uso histórico de concepto"@es ;
-    sh:property [
-        sh:path leco:conceptUsed ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:HistoricalLegalConcept ;
-        sh:message "Cada uso conceptual debe enlazar exactamente un concepto jurídico histórico."@es
-    ] ;
-    sh:property [
-        sh:path leco:attestedIn ;
-        sh:minCount 1 ;
-        sh:message "Cada uso conceptual debe conservar evidencia documental."@es
-    ] ;
-    sh:property [
-        sh:path leco:lexicalForm ;
-        sh:minCount 1 ;
-        sh:datatype xsd:string ;
-        sh:message "Debe conservarse la forma léxica observada en la fuente."@es
-    ] ;
-    sh:property [
-        sh:path leco:conceptUseJurisdiction ;
-        sh:minCount 1 ;
-        sh:class leco:Jurisdiction ;
-        sh:message "El uso conceptual debe contextualizarse jurisdiccionalmente."@es
-    ] ;
-    sh:property [
-        sh:path leco:conceptUseTime ;
-        sh:minCount 1 ;
-        sh:message "El uso conceptual debe contextualizarse temporalmente."@es
-    ] .
-
-lecosh:HistoricalCategoryAssignmentShape
-    a sh:NodeShape ;
-    sh:targetClass leco:HistoricalCategoryAssignment ;
-    sh:name "Atribución de categoría histórico-jurídica"@es ;
-    sh:property [
-        sh:path leco:assignsHistoricalCategory ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:HistoricalLegalCategory ;
-        sh:message "Cada atribución debe asignar exactamente una categoría histórica."@es
-    ] ;
-    sh:property [
-        sh:path leco:categoryAssignedTo ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Cada atribución debe identificar exactamente al actor o colectivo al que la fuente atribuye la categoría."@es
-    ] ;
-    sh:property [
-        sh:path leco:attestedIn ;
-        sh:minCount 1 ;
-        sh:message "Toda atribución histórico-jurídica debe estar anclada en evidencia documental."@es
-    ] ;
-    sh:property [
-        sh:path leco:categoryAssignmentJurisdiction ;
-        sh:minCount 1 ;
-        sh:class leco:Jurisdiction ;
-        sh:message "La atribución de categoría debe conservar su contexto jurisdiccional."@es
-    ] ;
-    sh:property [
-        sh:path leco:categoryAssignmentTime ;
-        sh:minCount 1 ;
-        sh:message "La atribución de categoría debe conservar su contexto temporal."@es
-    ] ;
-    sh:property [
-        sh:path leco:categoryAssignmentInAct ;
-        sh:maxCount 1 ;
-        sh:class leco:JurisdictionalAct ;
-        sh:message "Cuando se conoce el acto en el que ocurre la atribución, debe enlazarse como un único contexto procesal."@es
-    ] .
-
-# SKOS governance for historical categories
-lecosh:HistoricalLegalCategoryShape
-    a sh:NodeShape ;
-    sh:targetClass leco:HistoricalLegalCategory ;
-    sh:property [
-        sh:path skos:prefLabel ;
-        sh:minCount 1 ;
-        sh:uniqueLang true ;
-        sh:message "Toda categoría histórica debe tener al menos una etiqueta preferida SKOS."@es
-    ] ;
-    sh:property [
-        sh:path skos:inScheme ;
-        sh:hasValue leco:HistoricalLegalCategoryScheme ;
-        sh:message "Toda categoría histórica debe pertenecer al vocabulario general de categorías de LeCO."@es
-    ] .
-
-lecosh:EthnoLegalCategoryShape a sh:NodeShape ;
-    sh:targetClass leco:EthnoLegalCategory ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:EthnoLegalCategoryScheme ] .
-lecosh:StatusCategoryShape a sh:NodeShape ;
-    sh:targetClass leco:StatusCategory ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:StatusCategoryScheme ] .
 lecosh:ReligiousLegalCategoryShape a sh:NodeShape ;
-    sh:targetClass leco:ReligiousLegalCategory ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:ReligiousLegalCategoryScheme ] .
-lecosh:SocioLegalCategoryShape a sh:NodeShape ;
-    sh:targetClass leco:SocioLegalCategory ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:SocioLegalCategoryScheme ] .
-lecosh:ColonialOfficeStatusShape a sh:NodeShape ;
-    sh:targetClass leco:ColonialOfficeStatus ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:ColonialOfficeStatusScheme ] .
+    sh:property [ sh:hasValue leco:ReligiousLegalCategoryScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:ReligiousLegalCategory .
 
-#################################################################
-# 7. DOBLE / MÚLTIPLE NATURALEZA
-#################################################################
+lecosh:RepartimientoActShape a sh:NodeShape ;
+    sh:property [ sh:class leco:LegalArrangement ;
+            sh:message "El repartimiento como acto/práctica debe poder enlazarse con el arreglo o régimen jurídico resultante."@es ;
+            sh:path leco:resultsInLegalArrangement ] ;
+    sh:targetClass leco:RepartimientoAct .
 
-lecosh:GrantOfPowerShape
-    a sh:NodeShape ;
-    sh:targetClass leco:GrantOfPower ;
-    sh:property [
-        sh:path leco:createsRepresentation ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:RepresentationRelation ;
-        sh:message "Un otorgamiento de poder debe crear exactamente una relación de representación contextualizada."@es
-    ] .
+lecosh:RepresentationRelationShape a sh:NodeShape ;
+    sh:property [ sh:class rico:Agent ;
+            sh:maxCount 1 ;
+            sh:message "Una relación de representación debe identificar un poderdante/representado."@es ;
+            sh:minCount 1 ;
+            sh:path leco:principal ],
+        [ sh:class rico:Agent ;
+            sh:maxCount 1 ;
+            sh:message "Una relación de representación debe identificar un representante/apoderado."@es ;
+            sh:minCount 1 ;
+            sh:path leco:representative ] ;
+    sh:targetClass leco:RepresentationRelation .
 
-lecosh:RepresentationRelationShape
-    a sh:NodeShape ;
-    sh:targetClass leco:RepresentationRelation ;
-    sh:property [
-        sh:path leco:principal ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Una relación de representación debe identificar un poderdante/representado."@es
-    ] ;
-    sh:property [
-        sh:path leco:representative ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Una relación de representación debe identificar un representante/apoderado."@es
-    ] .
+lecosh:RuleUseByActShape a sh:NodeShape ;
+    sh:property [ sh:class leco:NormativeRule ;
+            sh:path leco:citesRule ],
+        [ sh:class leco:NormativeRule ;
+            sh:path leco:appliesRule ],
+        [ sh:class leco:NormativeRule ;
+            sh:path leco:interpretsRule ] ;
+    sh:targetClass leco:JurisdictionalAct .
 
-lecosh:MercedGrantShape
-    a sh:NodeShape ;
-    sh:targetClass leco:MercedGrant ;
-    sh:property [
-        sh:path leco:resultsInEntitlement ;
-        sh:minCount 1 ;
-        sh:class leco:LegalEntitlement ;
-        sh:message "Una merced como acto debe resultar en un derecho o beneficio jurídicamente representado."@es
-    ] .
+lecosh:SanctionShape a sh:NodeShape ;
+    sh:property [ sh:class rico:Agent ;
+            sh:message "Una sanción debe identificar al menos al actor sancionado."@es ;
+            sh:path leco:sanctions ] ;
+    sh:targetClass leco:Sanction .
 
-lecosh:LegalEntitlementShape
-    a sh:NodeShape ;
-    sh:targetClass leco:LegalEntitlement ;
-    sh:property [
-        sh:path leco:grantedTo ;
-        sh:minCount 1 ;
-        sh:class rico:Agent ;
-        sh:message "Un derecho o beneficio concedido debe identificar al menos un beneficiario."@es
-    ] .
-
-lecosh:RepartimientoActShape
-    a sh:NodeShape ;
-    sh:targetClass leco:RepartimientoAct ;
-    sh:property [
-        sh:path leco:resultsInLegalArrangement ;
-        sh:minCount 1 ;
-        sh:class leco:LegalArrangement ;
-        sh:message "El repartimiento como acto/práctica debe poder enlazarse con el arreglo o régimen jurídico resultante."@es
-    ] .
-
-#################################################################
-# 8. ANOTACIÓN SEMÁNTICA, IA Y PROCEDENCIA
-#################################################################
-
-lecosh:SemanticAnnotationShape
-    a sh:NodeShape ;
-    sh:targetClass leco:SemanticAnnotation ;
+lecosh:SemanticAnnotationShape a sh:NodeShape ;
     sh:name "Anotación semántica"@es ;
-    sh:property [
-        sh:path leco:annotationTarget ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class prov:Entity ;
-        sh:message "Una anotación debe tener exactamente un objetivo de anotación."@es
-    ] ;
-    sh:property [
-        sh:path leco:annotationBody ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:message "Una anotación debe tener exactamente un contenido semántico."@es
-    ] ;
-    sh:property [
-        sh:path leco:annotationBasis ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:AnnotationBasis ;
-        sh:message "Una anotación debe declarar si procede de evidencia explícita, inferencia, metadatos o interpretación humana."@es
-    ] ;
-    sh:property [
-        sh:path leco:hasValidationStatus ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:ValidationStatus ;
-        sh:message "Una anotación debe tener exactamente un estado de validación."@es
-    ] ;
-    sh:property [
-        sh:path prov:wasGeneratedBy ;
-        sh:minCount 1 ; sh:maxCount 1 ;
-        sh:class leco:AnnotationActivity ;
-        sh:message "Una anotación debe identificar la actividad que la generó."@es
-    ] ;
-    sh:property [
-        sh:path leco:confidenceScore ;
-        sh:maxCount 1 ;
-        sh:datatype xsd:decimal ;
-        sh:minInclusive 0 ;
-        sh:maxInclusive 1 ;
-        sh:message "confidenceScore debe ser un decimal entre 0 y 1."@es
-    ] ;
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "Una anotación inferida a partir del texto debe incluir confidenceScore."@es ;
-        sh:select """
+    sh:property [ sh:class prov:Entity ;
+            sh:maxCount 1 ;
+            sh:message "Una anotación debe tener exactamente un objetivo de anotación."@es ;
+            sh:minCount 1 ;
+            sh:path leco:annotationTarget ],
+        [ sh:maxCount 1 ;
+            sh:message "Una anotación debe tener exactamente un contenido semántico."@es ;
+            sh:minCount 1 ;
+            sh:path leco:annotationBody ],
+        [ sh:class leco:AnnotationBasis ;
+            sh:maxCount 1 ;
+            sh:message "Una anotación debe declarar si procede de evidencia explícita, inferencia, metadatos o interpretación humana."@es ;
+            sh:minCount 1 ;
+            sh:path leco:annotationBasis ],
+        [ sh:class leco:ValidationStatus ;
+            sh:maxCount 1 ;
+            sh:message "Una anotación debe tener exactamente un estado de validación."@es ;
+            sh:minCount 1 ;
+            sh:path leco:hasValidationStatus ],
+        [ sh:class leco:AnnotationActivity ;
+            sh:maxCount 1 ;
+            sh:message "Una anotación debe identificar la actividad que la generó."@es ;
+            sh:minCount 1 ;
+            sh:path prov:wasGeneratedBy ],
+        [ sh:datatype xsd:decimal ;
+            sh:maxCount 1 ;
+            sh:maxInclusive 1 ;
+            sh:message "confidenceScore debe ser un decimal entre 0 y 1."@es ;
+            sh:minInclusive 0 ;
+            sh:path leco:confidenceScore ] ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+            sh:message "Una anotación inferida a partir del texto debe incluir confidenceScore."@es ;
+            sh:select """
             PREFIX leco: <https://w3id.org/leco/ontology#>
             SELECT $this WHERE {
               $this leco:annotationBasis leco:InferredFromText .
               FILTER NOT EXISTS { $this leco:confidenceScore ?score }
             }
-        """
-    ] ;
-    sh:sparql [
-        a sh:SPARQLConstraint ;
-        sh:message "Una anotación textual explícita o inferida debe conservar al menos un anclaje documental mediante attestedIn."@es ;
-        sh:select """
+        """ ],
+        [ a sh:SPARQLConstraint ;
+            sh:message "Una anotación textual explícita o inferida debe conservar al menos un anclaje documental mediante attestedIn."@es ;
+            sh:select """
             PREFIX leco: <https://w3id.org/leco/ontology#>
             SELECT $this WHERE {
               $this leco:annotationBasis ?basis .
               FILTER(?basis = leco:ExplicitTextualEvidence || ?basis = leco:InferredFromText)
               FILTER NOT EXISTS { $this leco:attestedIn ?evidence }
             }
-        """
-    ] .
+        """ ] ;
+    sh:targetClass leco:SemanticAnnotation .
 
-#################################################################
-# 9. VOCABULARIOS CONTROLADOS
-#################################################################
+lecosh:SocioLegalCategoryShape a sh:NodeShape ;
+    sh:property [ sh:hasValue leco:SocioLegalCategoryScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:SocioLegalCategory .
 
-lecosh:InstitutionTypeShape
-    a sh:NodeShape ;
-    sh:targetClass leco:InstitutionType ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:InstitutionTypeScheme ] .
+lecosh:StatusCategoryShape a sh:NodeShape ;
+    sh:property [ sh:hasValue leco:StatusCategoryScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:StatusCategory .
 
-lecosh:OfficeTypeShape
-    a sh:NodeShape ;
-    sh:targetClass leco:OfficeType ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:OfficeTypeScheme ] .
+lecosh:ValidationStatusShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:ValidationStatusScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:ValidationStatus .
 
-lecosh:ProceduralRoleShape
-    a sh:NodeShape ;
-    sh:targetClass leco:ProceduralRole ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:ProceduralRoleScheme ] .
+[] rdf:first [ sh:property [ sh:minCount 1 ;
+                    sh:path leco:hasParticipation ] ] ;
+    rdf:rest ( [ sh:property [ sh:minCount 1 ;
+                        sh:path leco:hasParticipant ] ] ) .
 
-lecosh:DocumentTypeShape
-    a sh:NodeShape ;
-    sh:targetClass leco:DocumentType ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:DocumentTypeScheme ] .
-
-lecosh:HistoricalLegalConceptShape
-    a sh:NodeShape ;
-    sh:targetClass leco:HistoricalLegalConcept ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:HistoricalLegalConceptScheme ] .
-
-lecosh:AnnotationBasisShape
-    a sh:NodeShape ;
-    sh:targetClass leco:AnnotationBasis ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:AnnotationBasisScheme ] .
-
-lecosh:ValidationStatusShape
-    a sh:NodeShape ;
-    sh:targetClass leco:ValidationStatus ;
-    sh:property [ sh:path skos:prefLabel ; sh:minCount 1 ; sh:uniqueLang true ] ;
-    sh:property [ sh:path skos:inScheme ; sh:hasValue leco:ValidationStatusScheme ] .

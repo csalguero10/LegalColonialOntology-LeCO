@@ -33,6 +33,11 @@ import yaml
 from rdflib import Graph, Literal, Namespace, URIRef
 from rdflib.namespace import RDF, RDFS, XSD, DCTERMS, SKOS
 
+try:
+    from leco_normalization import office_type_local_name
+except ImportError:  # imported as scripts.tei_to_rdf during tests
+    from scripts.leco_normalization import office_type_local_name
+
 TEI = "http://www.tei-c.org/ns/1.0"
 XML = "http://www.w3.org/XML/1998/namespace"
 NS = {"tei": TEI, "xml": XML}
@@ -64,22 +69,6 @@ LEGACY_ACT_CLASS = {
     "proclamation": LECO.Proclamation,
     "oath": LECO.Oath,
     "execution": LECO.Execution,
-}
-LEGACY_OFFICE_TYPE = {
-    "alcalde ordinario": LECO.OrdinaryMayorOfficeType,
-    "alcalde": LECO.MayorOfficeType,
-    "procurador": LECO.ProcuradorOfficeType,
-    "regidor": LECO.RegidorOfficeType,
-    "escribano": LECO.NotaryOfficeType,
-    "escribano público": LECO.PublicNotaryOfficeType,
-    "oidor": LECO.OidorOfficeType,
-    "gobernador": LECO.GovernorOfficeType,
-    "corregidor": LECO.CorregidorOfficeType,
-    "alguacil": LECO.BailiffOfficeType,
-    "alguacil mayor": LECO.ChiefBailiffOfficeType,
-    "teniente": LECO.LieutenantOfficeType,
-    "obispo": LECO.BishopOfficeType,
-    "capitán": LECO.CaptainOfficeType,
 }
 LEGACY_CONCEPT = {
     "real_service": LECO.RealServiceConcept,
@@ -397,9 +386,9 @@ class TEILeCOConverter:
             self.g.add((uri, SKOS.inScheme, LECO.HistoricalLegalConceptScheme))
             return uri
         if el.tag == qn("rs") and typ in {"role_or_office", "officetype"}:
-            office_type = LEGACY_OFFICE_TYPE.get(text.lower())
+            office_type = office_type_local_name(text)
             if office_type:
-                return office_type
+                return LECO[office_type]
             self.warn(f"Oficio/rol legacy sin correspondencia controlada: '{text}' ({xml_id})")
             return None
         if el.tag == qn("rs") and typ == "legal_or_procedural_act":
@@ -722,6 +711,8 @@ class TEILeCOConverter:
             advanced=True,
             meta_shacl=True,
             abort_on_first=False,
+            allow_infos=True,
+            allow_warnings=True,
         )
         report_path.parent.mkdir(parents=True, exist_ok=True)
         if isinstance(report_graph, Graph):
@@ -808,9 +799,34 @@ def main(argv: Optional[list[str]] = None) -> int:
     parser.add_argument("--strict", action="store_true", help="Convierte warnings de mapeo en errores")
     parser.add_argument("--validate", action="store_true", help="Ejecuta SHACL tras convertir")
     parser.add_argument("--ontology", type=Path, default=root / "ontology" / "LeCO.ttl")
-    parser.add_argument("--shapes", type=Path, default=root / "shapes" / "LeCO_shapes.ttl")
-    parser.add_argument("--report-dir", type=Path, default=root / "build" / "shacl_reports")
+    parser.add_argument(
+        "--shacl-profile", choices=("core", "quality", "strict"), default="core",
+        help="Perfil SHACL: core=integridad (default), quality=advertencias de completitud, strict=gold standard",
+    )
+    parser.add_argument(
+        "--shapes", type=Path, default=None,
+        help="Shapes explícitas; si se indica, reemplaza --shacl-profile",
+    )
+    parser.add_argument(
+        "--report-dir", type=Path, default=None,
+        help="Directorio de reportes. Por defecto se separa por perfil para evitar sobrescrituras.",
+    )
     args = parser.parse_args(argv)
+
+    profile_shapes = {
+        "core": root / "shapes" / "LeCO_shapes.ttl",
+        "quality": root / "shapes" / "LeCO_quality_shapes.ttl",
+        "strict": root / "shapes" / "LeCO_shapes_strict.ttl",
+    }
+    shapes_path = args.shapes or profile_shapes[args.shacl_profile]
+    if args.report_dir is not None:
+        report_dir = args.report_dir
+    elif args.shapes is not None:
+        report_dir = root / "build" / "shacl_reports_custom"
+    elif args.shacl_profile == "core":
+        report_dir = root / "build" / "shacl_reports"
+    else:
+        report_dir = root / "build" / f"shacl_reports_{args.shacl_profile}"
 
     if args.all:
         if not args.input.is_dir():
@@ -831,13 +847,13 @@ def main(argv: Optional[list[str]] = None) -> int:
         doc_name, _, _ = resolve_input(input_path, root)
         converter = TEILeCOConverter(args.mapping, strict=args.strict)
         out = args.output_dir / f"{doc_name}.ttl"
-        shacl_out = args.report_dir / f"{doc_name}.ttl"
+        shacl_out = report_dir / f"{doc_name}.ttl"
         try:
-            report = convert_one(converter, input_path, out, args.validate, args.ontology, args.shapes, shacl_out, root)
+            report = convert_one(converter, input_path, out, args.validate, args.ontology, shapes_path, shacl_out, root)
             reports.append(report)
             state = ""
             if args.validate:
-                state = " | SHACL: " + ("✓" if report.shacl_conforms else "✗")
+                state = f" | SHACL[{args.shacl_profile}]: " + ("✓" if report.shacl_conforms else "✗")
                 if not report.shacl_conforms: exit_code = 1
             print(f"✓ {report.document}: {report.triples} triples | {report.mode}{state}")
             for warning in report.warnings:

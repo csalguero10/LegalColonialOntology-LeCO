@@ -17,12 +17,13 @@
 
 <https://w3id.org/leco/ontology>
     a owl:Ontology ;
-    owl:versionIRI <https://w3id.org/leco/ontology/0.3.0> ;
-    owl:versionInfo "0.3.0" ;
+    owl:versionIRI <https://w3id.org/leco/ontology/0.3.1> ;
+    owl:versionInfo "0.3.1" ;
     dcterms:title "LegalColonialOntology (LeCO)"@en ;
     dcterms:title "Ontología Jurídica Colonial (LeCO)"@es ;
     dcterms:description "Ontología de dominio para representar la cultura jurisdiccional, los documentos, normas, actores, cargos, roles procesales, actos, jurisdicciones, categorías jurídico-sociales y conceptos históricos de fuentes jurídicas coloniales iberoamericanas."@es ;
     dcterms:created "2026-08-28"^^xsd:date ;
+    dcterms:modified "2026-08-31"^^xsd:date ;
     dcterms:conformsTo <https://www.ica.org/standards/RiC/ontology> ,
         <http://www.cidoc-crm.org/cidoc-crm/> ,
         <http://xmlns.com/foaf/0.1/> ,
@@ -790,21 +791,21 @@ leco:EcclesiasticalOfficeType a leco:OfficeType ; skos:prefLabel "Oficio eclesi�
 leco:FiscalOfficeType a leco:OfficeType ; skos:prefLabel "Oficio fiscal"@es ; skos:inScheme leco:OfficeTypeScheme .
 
 leco:GovernorOfficeType a leco:OfficeType ; skos:prefLabel "Gobernador"@es ; skos:broader leco:AdministrativeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:CaptainOfficeType a leco:OfficeType ; skos:prefLabel "Capitán"@es ; skos:broader leco:MilitaryOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:OrdinaryMayorOfficeType a leco:OfficeType ; skos:prefLabel "Alcalde Ordinario"@es ; skos:broader leco:MunicipalOfficeType , leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:MayorOfficeType a leco:OfficeType ; skos:prefLabel "Alcalde"@es ; skos:broader leco:MunicipalOfficeType , leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:CaptainOfficeType a leco:OfficeType ; skos:prefLabel "Capitán"@es ; skos:hiddenLabel "Cap"@es ; skos:broader leco:MilitaryOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:OrdinaryMayorOfficeType a leco:OfficeType ; skos:prefLabel "Alcalde Ordinario"@es ; skos:broader leco:MayorOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "legacy-compatibility" ; owl:deprecated true ; leco:modelingNote "Concepto legacy conservado para compatibilidad. En el corpus, las formas Alcalde, Alcalde Ordinario y otras especificaciones de alcalde se normalizan a MayorOfficeType; la forma histórica exacta permanece en TEI/evidencia."@es .
+leco:MayorOfficeType a leco:OfficeType ; skos:prefLabel "Alcalde"@es ; skos:altLabel "Alcalde Ordinario"@es ; skos:broader leco:MunicipalOfficeType , leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" ; leco:modelingNote "Tipo normalizado amplio para cargos de alcalde. Los calificadores históricos se conservan en la evidencia textual y no requieren necesariamente un OfficeType independiente."@es .
 leco:RegidorOfficeType a leco:OfficeType ; skos:prefLabel "Regidor"@es ; skos:broader leco:MunicipalOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:ProcuradorOfficeType a leco:OfficeType ; skos:prefLabel "Procurador (oficio)"@es ; skos:broader leco:AdministrativeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" ; skos:related leco:ProcuradorProceduralRole .
-leco:ProcuradorGeneralOfficeType a leco:OfficeType ; skos:prefLabel "Procurador General"@es ; skos:broader leco:ProcuradorOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:ProcuradorOfficeType a leco:OfficeType ; skos:prefLabel "Procurador (oficio)"@es ; skos:altLabel "Procurador General"@es ; skos:broader leco:AdministrativeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" ; skos:related leco:ProcuradorProceduralRole .
+leco:ProcuradorGeneralOfficeType a leco:OfficeType ; skos:prefLabel "Procurador General"@es ; skos:broader leco:ProcuradorOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "legacy-compatibility" ; owl:deprecated true ; leco:modelingNote "Concepto legacy conservado para compatibilidad. Cuando la expresión designa un oficio, el corpus normaliza Procurador General a ProcuradorOfficeType; la distinción con ProcuradorProceduralRole depende del contexto."@es .
 leco:JailerOfficeType a leco:OfficeType ; skos:prefLabel "Carcelero"@es ; skos:broader leco:AdministrativeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:PublicNotaryOfficeType a leco:OfficeType ; skos:prefLabel "Escribano público"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:NotaryOfficeType a leco:OfficeType ; skos:prefLabel "Escribano"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:PublicNotaryOfficeType a leco:OfficeType ; skos:prefLabel "Escribano público"@es ; skos:broader leco:NotaryOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "legacy-compatibility" ; owl:deprecated true ; leco:modelingNote "Concepto legacy conservado para compatibilidad. Las variantes Escribano y Escribano Público se normalizan a NotaryOfficeType salvo que una pregunta de investigación futura requiera distinguirlas."@es .
+leco:NotaryOfficeType a leco:OfficeType ; skos:prefLabel "Escribano"@es ; skos:altLabel "Escribano Público"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
 leco:DeputyOfficeType a leco:OfficeType ; skos:prefLabel "Diputado"@es ; skos:broader leco:AdministrativeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
 leco:LieutenantOfficeType a leco:OfficeType ; skos:prefLabel "Teniente"@es ; skos:broader leco:AdministrativeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:BailiffOfficeType a leco:OfficeType ; skos:prefLabel "Alguacil"@es ; skos:altLabel "Alquacil"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:ChiefBailiffOfficeType a leco:OfficeType ; skos:prefLabel "Alguacil Mayor"@es ; skos:altLabel "Alquacil Mayor"@es ; skos:broader leco:BailiffOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:BailiffOfficeType a leco:OfficeType ; skos:prefLabel "Alguacil"@es ; skos:altLabel "Alguacil Mayor"@es ; skos:hiddenLabel "Alquacil"@es, "Alquacil Mayor"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:ChiefBailiffOfficeType a leco:OfficeType ; skos:prefLabel "Alguacil Mayor"@es ; skos:hiddenLabel "Alquacil Mayor"@es ; skos:broader leco:BailiffOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "legacy-compatibility" ; owl:deprecated true ; leco:modelingNote "Concepto legacy conservado para compatibilidad. Alguacil Mayor se normaliza a BailiffOfficeType en el corpus piloto y la especificación Mayor se conserva en la evidencia."@es .
 leco:OidorOfficeType a leco:OfficeType ; skos:prefLabel "Oidor"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
-leco:CommissionJudgeOfficeType a leco:OfficeType ; skos:prefLabel "Juez de Comisión"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:CommissionJudgeOfficeType a leco:OfficeType ; skos:prefLabel "Juez de Comisión"@es ; skos:broader leco:JudgeOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" ; owl:deprecated true ; leco:modelingNote "Concepto legacy conservado por compatibilidad. En el corpus piloto actual, 'Juez de Comisión' se normaliza a JudgeOfficeType (Juez) y la forma fuente se conserva como evidencia."@es .
 leco:JudgeOfficeType a leco:OfficeType ; skos:prefLabel "Juez"@es ; skos:broader leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
 leco:AccountantOfficeType a leco:OfficeType ; skos:prefLabel "Contador"@es ; skos:broader leco:FiscalOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .
 leco:CorregidorOfficeType a leco:OfficeType ; skos:prefLabel "Corregidor"@es ; skos:broader leco:AdministrativeOfficeType , leco:JudicialOfficeType ; skos:inScheme leco:OfficeTypeScheme ; leco:sourceStatus "observed-in-pilot" .

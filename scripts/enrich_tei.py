@@ -34,6 +34,9 @@ from pathlib import Path
 from typing import Optional
 import xml.etree.ElementTree as ET
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from leco_normalization import office_type_local_name
+
 TEI = "http://www.tei-c.org/ns/1.0"
 XML = "http://www.w3.org/XML/1998/namespace"
 XML_ID = f"{{{XML}}}id"
@@ -100,24 +103,6 @@ ACT_CLASS = {
     "supplication": "Supplication",
     "auction_award": "AuctionAward",
     "grant": "AdministrativeAct",
-}
-
-OFFICE_TYPE = {
-    "alcalde ordinario": "OrdinaryMayorOfficeType",
-    "alcalde": "MayorOfficeType",
-    "procurador": "ProcuradorOfficeType",
-    "regidor": "RegidorOfficeType",
-    "escribano": "NotaryOfficeType",
-    "escribano publico": "PublicNotaryOfficeType",
-    "oidor": "OidorOfficeType",
-    "gobernador": "GovernorOfficeType",
-    "corregidor": "CorregidorOfficeType",
-    "alguacil": "BailiffOfficeType",
-    "alguacil mayor": "ChiefBailiffOfficeType",
-    "teniente": "LieutenantOfficeType",
-    "obispo": "BishopOfficeType",
-    "capitan": "CaptainOfficeType",
-    "carcelero": "JailerOfficeType",
 }
 
 CONCEPT_URI = {
@@ -461,7 +446,7 @@ class Enricher:
             if ann.get("category") != "role_or_office":
                 continue
             label = ann.get("normalized") or ann.get("surface") or ""
-            office = OFFICE_TYPE.get(plain_key(label))
+            office = office_type_local_name(label)
             inline = self._annotation_element(ann)
             if office and inline is not None:
                 inline.set("type", "officeType")
@@ -599,7 +584,7 @@ class Enricher:
 
             if pred == "holdsOrPerformsRole":
                 person = self._person(subj)
-                office = OFFICE_TYPE.get(plain_key(obj))
+                office = office_type_local_name(obj)
                 if person and office and cabildo:
                     self._relation(rid, type="officeHolding", active=f"#{person}", passive=f"#{cabildo}",
                                    ana=LECO + office, source=f"#{seg}", subtype=basis,

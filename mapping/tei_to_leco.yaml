@@ -1,9 +1,30 @@
 name: LeCO-TEI Mapping Profile
-version: 0.1.0
+version: 0.2.1
 ontology: https://w3id.org/leco/ontology
 ontology_prefix: https://w3id.org/leco/ontology#
 tei_namespace: http://www.tei-c.org/ns/1.0
 data_base_template: https://w3id.org/leco/data/{reference_code}/{xml_id}
+
+converter_profile:
+  canonical_input: data/documents/{local_id}/tei.xml
+  generated_output: build/rdf/{local_id}.ttl
+  modes:
+    mapping-profile: Full mapping when TEI includes standOff declarations and relations.
+    legacy-inline: Safe partial conversion of older pilot TEI; no complex relation is invented from prose.
+  sidecars:
+    metadata.json: Used as authoritative fallback for reference_code, archival title, source URL, and date.
+    annotations.csv: Reserved for migration/audit; not treated as a substitute for canonical standOff semantics.
+    relations.csv: Reserved for migration/audit; not silently promoted to LeCO assertions by the converter.
+
+derived_rules:
+  - id: D001
+    rule: If an act is decidedBy or beforeAuthority an authority that exercises a jurisdiction, add withinJurisdiction to that act.
+  - id: D002
+    rule: A decidedBy/beforeAuthority/sanctions/investigates/appointsPerson relation also records the involved agent as a broad hasParticipant when needed for the SHACL event profile.
+  - id: D003
+    rule: If an OrderAct orders another act and the ordered act has no jurisdiction, inherit the order jurisdiction as a structural derivation.
+  - id: D004
+    rule: For HistoricalConceptUse in an ActaCabildoDocumentType, if exactly one Cabildo authority with jurisdiction is declared, use that jurisdiction as document-level context when no explicit conceptUseJurisdiction exists.
 
 principles:
   - id: P01
@@ -101,6 +122,10 @@ controlled_types:
       - interpretsRule
       - argumentInvokesRule
       - hasLegalArgument
+      - appointsPerson
+      - appointsToOffice
+      - createsRepresentation
+      - resultsInLegalArrangement
       - inProceeding
       - hasProceduralAct
 

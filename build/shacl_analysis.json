@@ -1,0 +1,184 @@
+{
+  "report_directory": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports",
+  "report_count": 19,
+  "conforming_documents": 19,
+  "nonconforming_documents": 0,
+  "validation_result_count": 0,
+  "severity_counts": {},
+  "documents": [
+    {
+      "document": "cab-001-002",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-002.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-003",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-003.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-004",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-004.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-006",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-006.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-007",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-007.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-008",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-008.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-011",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-011.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-012",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-012.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-016",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-016.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-018",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-018.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-019",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-019.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-028",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-028.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-038",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-038.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-039",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-039.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-040",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-040.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-042",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-042.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-046",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-046.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-055",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-055.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    },
+    {
+      "document": "cab-001-056",
+      "report_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-056.ttl",
+      "conforms": true,
+      "result_count": 0,
+      "violation_count": 0,
+      "warning_count": 0,
+      "info_count": 0
+    }
+  ],
+  "corpus_patterns": [],
+  "document_patterns": [],
+  "results": []
+}

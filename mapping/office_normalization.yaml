@@ -1,0 +1,138 @@
+name: LeCO office normalization profile
+version: 0.2.0
+updated: '2026-08-31'
+principles:
+  preserve_surface_form: true
+  preserve_source_evidence: true
+  normalized_concept_does_not_replace_transcription: true
+  broader_normalization_is_not_claimed_as_exact_synonymy: true
+  prefer_stable_broad_office_types: true
+  create_narrow_type_only_when_analytically_necessary: true
+entries:
+- preferred_label: Alcalde
+  target: MayorOfficeType
+  variants:
+    Alcalde Ordinario: broader_normalization
+    Alcaldes Ordinarios: broader_normalization
+  note: '''Alcalde Ordinario'' se conserva como forma histórica/evidencia; para análisis
+    transversal se normaliza al tipo general Alcalde (MayorOfficeType).'
+- preferred_label: Alcalde
+  target: MayorOfficeType
+  variants:
+    Alcalde: exact
+    Alcaldes: inflection
+- preferred_label: Regidor
+  target: RegidorOfficeType
+  variants:
+    Regidor: exact
+    Regidores: inflection
+- preferred_label: Diputado
+  target: DeputyOfficeType
+  variants:
+    Diputado: exact
+    diputados: inflection
+    Diputados: inflection
+- preferred_label: Alguacil
+  target: BailiffOfficeType
+  variants:
+    Alguacil: exact
+    Alguaciles: inflection
+    Alquacil: transcription_error
+    Alquaciles: transcription_error
+  note: '''Alquacil'' se conserva como forma de la transcripción/evidencia, pero se
+    normaliza a Alguacil.'
+- preferred_label: Alguacil
+  target: BailiffOfficeType
+  variants:
+    Alguacil Mayor: broader_normalization
+    Alguaciles Mayores: broader_normalization
+    Alquacil Mayor: transcription_error_and_broader_normalization
+    Alquaciles Mayores: transcription_error_and_broader_normalization
+  note: '''Alguacil Mayor'' se conserva como forma histórica/evidencia; en el piloto
+    se normaliza al tipo general Alguacil para evitar proliferación de tipos.'
+- preferred_label: Procurador
+  target: ProcuradorOfficeType
+  variants:
+    Procurador: exact
+    Procuradores: inflection
+- preferred_label: Procurador
+  target: ProcuradorOfficeType
+  variants:
+    Procurador General: broader_normalization
+    Procuradores Generales: broader_normalization
+  note: '''Procurador General'' se conserva como forma histórica/evidencia; cuando
+    funciona como oficio se normaliza a ProcuradorOfficeType. El uso procesal sigue
+    distinguiéndose mediante ProcuradorProceduralRole.'
+- preferred_label: Escribano
+  target: NotaryOfficeType
+  variants:
+    Escribano: exact
+    Escribanos: inflection
+- preferred_label: Escribano
+  target: NotaryOfficeType
+  variants:
+    Escribano Público: broader_normalization
+    Escribano Publico: broader_normalization
+    Escribanos Públicos: broader_normalization
+    Escribanos Publicos: broader_normalization
+  note: '''Escribano Público'' se conserva como forma histórica/evidencia; se normaliza
+    al tipo general Escribano/Notario del corpus.'
+- preferred_label: Oidor
+  target: OidorOfficeType
+  variants:
+    Oidor: exact
+    Oidores: inflection
+- preferred_label: Gobernador
+  target: GovernorOfficeType
+  variants:
+    Gobernador: exact
+    Gobernadores: inflection
+- preferred_label: Corregidor
+  target: CorregidorOfficeType
+  variants:
+    Corregidor: exact
+    Corregidores: inflection
+- preferred_label: Teniente
+  target: LieutenantOfficeType
+  variants:
+    Teniente: exact
+    Tenientes: inflection
+- preferred_label: Obispo
+  target: BishopOfficeType
+  variants:
+    Obispo: exact
+    Obispos: inflection
+- preferred_label: Cardenal
+  target: CardinalOfficeType
+  variants:
+    Cardenal: exact
+    cardenal: case_normalization
+    Cardenales: inflection
+  note: Oficio/dignidad eclesiástica; no se reduce a una categoría social.
+- preferred_label: Capitán
+  target: CaptainOfficeType
+  variants:
+    Capitán: exact
+    Capitan: orthographic
+    Capitanes: inflection
+    Cap: abbreviation
+  note: '''Cap'' se interpreta como abreviación legacy de Capitán en este corpus piloto.'
+- preferred_label: Juez
+  target: JudgeOfficeType
+  variants:
+    Juez: exact
+    Jueces: inflection
+    Juez de Comisión: broader_normalization
+  note: Por decisión de curaduría del corpus, 'Juez de Comisión' se normaliza al tipo
+    general Juez; la forma fuente se conserva en la evidencia.
+- preferred_label: Contador
+  target: AccountantOfficeType
+  variants:
+    Contador: exact
+    contador: case_normalization
+    Contadores: inflection
+- preferred_label: Carcelero
+  target: JailerOfficeType
+  variants:
+    Carcelero: exact
+    Carceleros: inflection
