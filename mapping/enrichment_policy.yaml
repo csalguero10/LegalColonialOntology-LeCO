@@ -1,0 +1,15 @@
+name: LeCO legacy-TEI enrichment policy
+version: 0.1.0
+source_bundle:
+  - tei.xml
+  - metadata.json
+  - annotations.csv
+  - relations.csv
+output: build/tei_enriched/{local_id}.xml
+principles:
+  preserve_source_tei: true
+  preserve_transcription_text: true
+  add_standoff_as_derived_layer: true
+  do_not_silently_promote_ambiguous_relations: true
+  inferred_relations_require_source: true
+  inferred_relations_require_basis: true

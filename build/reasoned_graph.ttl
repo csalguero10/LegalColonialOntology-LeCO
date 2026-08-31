@@ -192,7 +192,7 @@ ex:PinedaOfficeHolding1547 a rico:PositionHoldingRelation ;
     rico:relationHasSource ex:JuanDePineda ;
     rico:relationHasTarget ex:AlcaldeOrdinarioTunja .
 
-ex:annotation_appellant a _:n4128ca683a8a441298fcab272a94b4deb19,
+ex:annotation_appellant a _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -205,10 +205,34 @@ ex:annotation_appellant a _:n4128ca683a8a441298fcab272a94b4deb19,
     leco:confidenceScore 0.90 ;
     leco:hasValidationStatus leco:HumanValidatedAnnotation .
 
-ex:segment_s3 a _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
+ex:annotation_investigation_authority a _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
+        owl:Thing,
+        prov:Entity,
+        leco:SemanticAnnotation ;
+    owl:sameAs ex:annotation_investigation_authority ;
+    prov:wasGeneratedBy ex:annotation_activity_2 ;
+    leco:annotationBasis leco:InferredFromText ;
+    leco:annotationBody ex:RealAudiencia ;
+    leco:annotationTarget ex:segment_s6 ;
+    leco:attestedIn ex:segment_s6 ;
+    leco:confidenceScore 0.80 ;
+    leco:hasValidationStatus leco:HumanValidatedAnnotation .
+
+ex:real_service_use_1547 a _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
+        owl:Thing,
+        prov:Entity,
+        leco:HistoricalConceptUse ;
+    owl:sameAs ex:real_service_use_1547 ;
+    leco:attestedIn ex:segment_s1 ;
+    leco:conceptUseJurisdiction ex:JurisdiccionCabildoTunja ;
+    leco:conceptUseTime ex:date1547 ;
+    leco:conceptUsed leco:RealServiceConcept ;
+    leco:lexicalForm "Real Servicio" .
+
+ex:segment_s3 a _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         owl:Thing,
         prov:Entity,
         leco:LegalDocumentPart,
@@ -824,15 +848,6 @@ leco:PublicNotaryOfficeType a owl:Thing,
     skos:prefLabel "Escribano público"@es ;
     leco:sourceStatus "observed-in-pilot" .
 
-leco:RealServiceConcept a owl:Thing,
-        skos:Concept,
-        leco:HistoricalLegalConcept,
-        rico:Concept ;
-    owl:sameAs leco:RealServiceConcept ;
-    skos:inScheme leco:HistoricalLegalConceptScheme ;
-    skos:prefLabel "Real Servicio"@es ;
-    leco:sourceStatus "observed-in-pilot" .
-
 leco:RegidorOfficeType a owl:Thing,
         skos:Concept,
         leco:OfficeType,
@@ -1014,8 +1029,32 @@ ex:annotation_activity_1 a owl:Thing,
         leco:AnnotationActivity ;
     owl:sameAs ex:annotation_activity_1 .
 
-ex:date1547 a rico:Date ;
-    owl:sameAs ex:date1547 .
+ex:annotation_activity_2 a owl:Thing,
+        prov:Activity,
+        leco:AnnotationActivity ;
+    owl:sameAs ex:annotation_activity_2 .
+
+ex:argument_incumplimiento_deber a _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E28_Conceptual_Object,
+        owl:Thing,
+        leco:LegalArgument ;
+    owl:sameAs ex:argument_incumplimiento_deber ;
+    leco:argumentInvokesRule ex:duty_alcalde_ordinario ;
+    leco:invokesRule ex:duty_alcalde_ordinario ;
+    rico:isAssociatedWithRule ex:duty_alcalde_ordinario .
+
+ex:segment_s1 a _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
+        owl:Thing,
+        prov:Entity,
+        leco:LegalDocumentPart,
+        rico:RecordPart ;
+    owl:sameAs ex:segment_s1 ;
+    rico:isDirectConstituentOf ex:doc_d002 .
 
 leco:BailiffOfficeType a owl:Thing,
         skos:Concept,
@@ -1036,20 +1075,6 @@ leco:FiscalOfficeType a owl:Thing,
     skos:inScheme leco:OfficeTypeScheme ;
     skos:prefLabel "Oficio fiscal"@es .
 
-leco:HumanValidatedAnnotation a owl:Thing,
-        skos:Concept,
-        leco:ValidationStatus ;
-    owl:sameAs leco:HumanValidatedAnnotation ;
-    skos:inScheme leco:ValidationStatusScheme ;
-    skos:prefLabel "validada por humano"@es .
-
-leco:InferredFromText a owl:Thing,
-        skos:Concept,
-        leco:AnnotationBasis ;
-    owl:sameAs leco:InferredFromText ;
-    skos:inScheme leco:AnnotationBasisScheme ;
-    skos:prefLabel "inferencia a partir del texto"@es .
-
 leco:MilitaryOfficeType a owl:Thing,
         skos:Concept,
         leco:OfficeType,
@@ -1067,6 +1092,15 @@ leco:ProcuradorProceduralRole a crm:E55_Type,
     skos:inScheme leco:ProceduralRoleScheme ;
     skos:prefLabel "Procurador (rol procesal)"@es ;
     skos:related leco:ProcuradorOfficeType ;
+    leco:sourceStatus "observed-in-pilot" .
+
+leco:RealServiceConcept a owl:Thing,
+        skos:Concept,
+        leco:HistoricalLegalConcept,
+        rico:Concept ;
+    owl:sameAs leco:RealServiceConcept ;
+    skos:inScheme leco:HistoricalLegalConceptScheme ;
+    skos:prefLabel "Real Servicio"@es ;
     leco:sourceStatus "observed-in-pilot" .
 
 leco:ReligiousLegalCategoryScheme a skos:ConceptScheme ;
@@ -1102,10 +1136,19 @@ rico:occupiesOrOccupied owl:sameAs rico:occupiesOrOccupied .
 "2026-08-28"^^xsd:date a xsd:date ;
     owl:sameAs "2026-08-28"^^xsd:date .
 
+0.80 a xsd:decimal ;
+    owl:sameAs 0.80 .
+
 0.90 a xsd:decimal ;
     owl:sameAs 0.90 .
 
 "0.3.0" owl:sameAs "0.3.0" .
+
+"Real Servicio" a xsd:string ;
+    owl:sameAs "Real Servicio" .
+
+"deber de Alcalde Ordinario" a xsd:string ;
+    owl:sameAs "deber de Alcalde Ordinario" .
 
 "Administrative Act"@en owl:sameAs "Administrative Act"@en .
 
@@ -1745,18 +1788,15 @@ rico:occupiesOrOccupied owl:sameAs rico:occupiesOrOccupied .
 
 "ordo"@la owl:sameAs "ordo"@la .
 
-xsd:decimal a rdfs:Datatype ;
-    owl:sameAs xsd:decimal .
-
 owl:Nothing a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
-        _:n4128ca683a8a441298fcab272a94b4deb19,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         crm:E13_Attribute_Assignment,
         crm:E28_Conceptual_Object,
         crm:E30_Right,
@@ -1865,43 +1905,31 @@ owl:Nothing a owl:Class ;
     owl:equivalentClass owl:Nothing ;
     owl:sameAs owl:Nothing .
 
-time:TemporalEntity owl:sameAs time:TemporalEntity .
-
-ex:JurisdiccionAudiencia a owl:Thing,
-        leco:Jurisdiction ;
-    owl:sameAs ex:JurisdiccionAudiencia ;
-    leco:jurisdictionExercisedBy ex:RealAudiencia ;
-    leco:territorialScope ex:Tunja .
-
-ex:JurisdiccionCabildoTunja a owl:Thing,
-        leco:Jurisdiction ;
-    owl:sameAs ex:JurisdiccionCabildoTunja ;
-    leco:jurisdictionExercisedBy ex:CabildoDeTunja ;
-    leco:territorialScope ex:Tunja .
-
-ex:RealAudiencia a rico:Agent,
-        rico:CorporateBody,
-        rico:Group ;
-    owl:sameAs ex:RealAudiencia ;
-    leco:exercisesJurisdiction ex:JurisdiccionAudiencia ;
-    leco:hasInstitutionType leco:AudienciaType ;
-    rico:hasOrHadCorporateBodyType leco:AudienciaType .
-
 ex:Tunja a rico:Place ;
     owl:sameAs ex:Tunja .
 
-ex:doc_d002 a _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
-        crm:E31_Document,
+ex:date1547 a time:TemporalEntity,
+        rico:Date ;
+    owl:sameAs ex:date1547 .
+
+ex:investigation_order_1547 a _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E7_Activity,
         owl:Thing,
-        prov:Entity,
-        leco:LegalDocument,
-        rico:Record ;
-    owl:sameAs ex:doc_d002 ;
-    leco:hasDocumentType leco:ActaCabildoDocumentType ;
-    rico:hasDocumentaryFormType leco:ActaCabildoDocumentType .
+        prov:Activity,
+        leco:JurisdictionalAct,
+        leco:LegalDecision,
+        leco:OrderAct,
+        rico:Activity ;
+    crm:P11_had_participant ex:JuanDePineda ;
+    crm:P14_carried_out_by ex:RealAudiencia ;
+    owl:sameAs ex:investigation_order_1547 ;
+    leco:decidedBy ex:RealAudiencia ;
+    leco:hasLegalArgument ex:argument_incumplimiento_deber ;
+    leco:hasParticipant ex:JuanDePineda ;
+    leco:ordersAct ex:investigation_1547 ;
+    leco:withinJurisdiction ex:JurisdiccionAudiencia .
 
 ex:participation_pineda_appellant a owl:Thing,
         prov:Association,
@@ -1913,10 +1941,10 @@ ex:participation_pineda_appellant a owl:Thing,
     leco:participationInAct ex:appeal_1547 ;
     leco:participationRole leco:AppellantRole .
 
-ex:segment_s4 a _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
+ex:segment_s4 a _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         owl:Thing,
         prov:Entity,
         leco:LegalDocumentPart,
@@ -1924,6 +1952,21 @@ ex:segment_s4 a _:n4128ca683a8a441298fcab272a94b4deb1,
     owl:sameAs ex:segment_s4 ;
     leco:documentsAct ex:appeal_1547 ;
     rico:documents ex:appeal_1547 ;
+    rico:isDirectConstituentOf ex:doc_d002 .
+
+ex:segment_s6 a _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
+        owl:Thing,
+        prov:Entity,
+        leco:LegalDocumentPart,
+        rico:RecordPart ;
+    owl:sameAs ex:segment_s6 ;
+    leco:documentsAct ex:investigation_1547,
+        ex:investigation_order_1547 ;
+    rico:documents ex:investigation_1547,
+        ex:investigation_order_1547 ;
     rico:isDirectConstituentOf ex:doc_d002 .
 
 leco:ActaCabildoDocumentType a owl:Thing,
@@ -1961,6 +2004,13 @@ leco:EcclesiasticalOfficeType a owl:Thing,
     skos:inScheme leco:OfficeTypeScheme ;
     skos:prefLabel "Oficio eclesiástico"@es .
 
+leco:HumanValidatedAnnotation a owl:Thing,
+        skos:Concept,
+        leco:ValidationStatus ;
+    owl:sameAs leco:HumanValidatedAnnotation ;
+    skos:inScheme leco:ValidationStatusScheme ;
+    skos:prefLabel "validada por humano"@es .
+
 leco:Indios a owl:Thing,
         skos:Concept,
         leco:EthnoLegalCategory,
@@ -1971,6 +2021,13 @@ leco:Indios a owl:Thing,
         leco:HistoricalLegalCategoryScheme ;
     skos:prefLabel "indios"@es ;
     leco:sourceStatus "observed-in-pilot" .
+
+leco:InferredFromText a owl:Thing,
+        skos:Concept,
+        leco:AnnotationBasis ;
+    owl:sameAs leco:InferredFromText ;
+    skos:inScheme leco:AnnotationBasisScheme ;
+    skos:prefLabel "inferencia a partir del texto"@es .
 
 leco:OrdinaryMayorOfficeType a owl:Thing,
         skos:Concept,
@@ -1996,7 +2053,7 @@ leco:ProcuradorOfficeType a owl:Thing,
 
 leco:annotationBasis a owl:ObjectProperty ;
     rdfs:label "tiene base de anotación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -2009,7 +2066,7 @@ leco:annotationBasis a owl:ObjectProperty ;
 
 leco:annotationBody a owl:ObjectProperty ;
     rdfs:label "contenido semántico de anotación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -2020,7 +2077,7 @@ leco:annotationBody a owl:ObjectProperty ;
 
 leco:annotationTarget a owl:ObjectProperty ;
     rdfs:label "objetivo de anotación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -2031,9 +2088,9 @@ leco:annotationTarget a owl:ObjectProperty ;
 
 leco:appealsAgainst a owl:ObjectProperty ;
     rdfs:label "apela contra"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2041,9 +2098,9 @@ leco:appealsAgainst a owl:ObjectProperty ;
         leco:JurisdictionalAct,
         leco:ProceduralAct,
         rico:Activity ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2056,9 +2113,9 @@ leco:appealsAgainst a owl:ObjectProperty ;
 
 leco:appliesRule a owl:ObjectProperty ;
     rdfs:label "aplica regla"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2087,9 +2144,9 @@ leco:appliesWithinJurisdiction a owl:ObjectProperty ;
 
 leco:appointsPerson a owl:ObjectProperty ;
     rdfs:label "nombra persona"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2104,9 +2161,9 @@ leco:appointsPerson a owl:ObjectProperty ;
 
 leco:appointsToOffice a owl:ObjectProperty ;
     rdfs:label "nombra para oficio"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2123,9 +2180,9 @@ leco:appointsToOffice a owl:ObjectProperty ;
 
 leco:argumentInvokesRule a owl:ObjectProperty ;
     rdfs:label "argumento invoca regla"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E28_Conceptual_Object,
         owl:Thing,
         leco:LegalArgument ;
@@ -2140,7 +2197,7 @@ leco:argumentInvokesRule a owl:ObjectProperty ;
 
 leco:assignsHistoricalCategory a owl:ObjectProperty ;
     rdfs:label "asigna categoría histórica"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         crm:E13_Attribute_Assignment,
         owl:Thing,
         prov:Entity,
@@ -2155,9 +2212,9 @@ leco:assignsHistoricalCategory a owl:ObjectProperty ;
 
 leco:attestedIn a owl:ObjectProperty ;
     rdfs:label "atestiguado en"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb23,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
         owl:Thing ;
     rdfs:subPropertyOf leco:attestedIn ;
     owl:equivalentProperty leco:attestedIn ;
@@ -2165,9 +2222,9 @@ leco:attestedIn a owl:ObjectProperty ;
 
 leco:beforeAuthority a owl:ObjectProperty ;
     rdfs:label "ante autoridad"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2181,7 +2238,7 @@ leco:beforeAuthority a owl:ObjectProperty ;
 
 leco:categoryAssignedTo a owl:ObjectProperty ;
     rdfs:label "categoría asignada a"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         crm:E13_Attribute_Assignment,
         owl:Thing,
         prov:Entity,
@@ -2193,14 +2250,14 @@ leco:categoryAssignedTo a owl:ObjectProperty ;
 
 leco:categoryAssignmentInAct a owl:ObjectProperty ;
     rdfs:label "atribución categorial en acto"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         crm:E13_Attribute_Assignment,
         owl:Thing,
         prov:Entity,
         leco:HistoricalCategoryAssignment ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2212,7 +2269,7 @@ leco:categoryAssignmentInAct a owl:ObjectProperty ;
 
 leco:categoryAssignmentJurisdiction a owl:ObjectProperty ;
     rdfs:label "jurisdicción de atribución categorial"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         crm:E13_Attribute_Assignment,
         owl:Thing,
         prov:Entity,
@@ -2225,7 +2282,7 @@ leco:categoryAssignmentJurisdiction a owl:ObjectProperty ;
 
 leco:categoryAssignmentTime a owl:ObjectProperty ;
     rdfs:label "contexto temporal de atribución categorial"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         crm:E13_Attribute_Assignment,
         owl:Thing,
         prov:Entity,
@@ -2237,8 +2294,8 @@ leco:categoryAssignmentTime a owl:ObjectProperty ;
 
 leco:citesRule a owl:ObjectProperty ;
     rdfs:label "cita regla"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
         owl:Thing ;
     rdfs:range owl:Thing,
         leco:NormativeRule,
@@ -2263,7 +2320,7 @@ leco:classifiedAsHistoricalCategory a owl:ObjectProperty ;
 
 leco:conceptUseJurisdiction a owl:ObjectProperty ;
     rdfs:label "jurisdicción del uso conceptual"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:HistoricalConceptUse ;
@@ -2275,7 +2332,7 @@ leco:conceptUseJurisdiction a owl:ObjectProperty ;
 
 leco:conceptUseTime a owl:ObjectProperty ;
     rdfs:label "contexto temporal del uso conceptual"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:HistoricalConceptUse ;
@@ -2286,7 +2343,7 @@ leco:conceptUseTime a owl:ObjectProperty ;
 
 leco:conceptUsed a owl:ObjectProperty ;
     rdfs:label "concepto utilizado"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:HistoricalConceptUse ;
@@ -2300,7 +2357,7 @@ leco:conceptUsed a owl:ObjectProperty ;
 
 leco:confidenceScore a owl:DatatypeProperty ;
     rdfs:label "nivel de confianza"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -2311,9 +2368,9 @@ leco:confidenceScore a owl:DatatypeProperty ;
 
 leco:createsRepresentation a owl:ObjectProperty ;
     rdfs:label "crea relación de representación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2332,9 +2389,9 @@ leco:createsRepresentation a owl:ObjectProperty ;
 
 leco:decidedBy a owl:ObjectProperty ;
     rdfs:label "decidido por"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2349,11 +2406,11 @@ leco:decidedBy a owl:ObjectProperty ;
 
 leco:documentsAct a owl:ObjectProperty ;
     rdfs:label "documenta acto"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb4,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
         owl:Thing ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2383,7 +2440,7 @@ leco:exercisesJurisdiction a owl:ObjectProperty ;
 
 leco:expressesRule a owl:ObjectProperty ;
     rdfs:label "expresa regla"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb7,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         owl:Thing ;
     rdfs:range owl:Thing,
         leco:NormativeRule,
@@ -2405,7 +2462,7 @@ leco:grantedTo a owl:ObjectProperty ;
 
 leco:hasDocumentType a owl:ObjectProperty ;
     rdfs:label "tiene tipo documental"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb1,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
         owl:Thing ;
     rdfs:range owl:Thing,
         skos:Concept,
@@ -2430,17 +2487,17 @@ leco:hasInstitutionType a owl:ObjectProperty ;
 
 leco:hasLegalArgument a owl:ObjectProperty ;
     rdfs:label "tiene argumento jurídico"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
         leco:JurisdictionalAct,
         rico:Activity ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E28_Conceptual_Object,
         owl:Thing,
         leco:LegalArgument ;
@@ -2450,9 +2507,9 @@ leco:hasLegalArgument a owl:ObjectProperty ;
 
 leco:hasObjectOfAct a owl:ObjectProperty ;
     rdfs:label "tiene objeto del acto"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2480,9 +2537,9 @@ leco:hasOfficeType a owl:ObjectProperty ;
 leco:hasParticipant a owl:ObjectProperty ;
     rdfs:label "tiene participante"@es ;
     rdfs:comment "Atajo. Para roles procesales contextualizados se recomienda leco:Participation."@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2496,9 +2553,9 @@ leco:hasParticipant a owl:ObjectProperty ;
 
 leco:hasParticipation a owl:ObjectProperty ;
     rdfs:label "tiene participación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2519,9 +2576,9 @@ leco:hasProceduralAct a owl:ObjectProperty ;
         prov:Activity,
         leco:LegalProceeding,
         rico:Activity ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2536,7 +2593,7 @@ leco:hasProceduralAct a owl:ObjectProperty ;
 
 leco:hasValidationStatus a owl:ObjectProperty ;
     rdfs:label "tiene estado de validación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -2549,7 +2606,7 @@ leco:hasValidationStatus a owl:ObjectProperty ;
 
 leco:historicalMeaningNote a owl:DatatypeProperty ;
     rdfs:label "nota de significado histórico"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:HistoricalConceptUse ;
@@ -2571,8 +2628,8 @@ leco:holdsOffice a owl:ObjectProperty ;
 
 leco:interpretsRule a owl:ObjectProperty ;
     rdfs:label "interpreta regla"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         owl:Thing ;
     rdfs:range owl:Thing,
         leco:NormativeRule,
@@ -2585,9 +2642,9 @@ leco:interpretsRule a owl:ObjectProperty ;
 
 leco:investigates a owl:ObjectProperty ;
     rdfs:label "investiga"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2641,9 +2698,9 @@ leco:opposesParticipation a owl:ObjectProperty,
 
 leco:ordersAct a owl:ObjectProperty ;
     rdfs:label "ordena acto"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2651,9 +2708,9 @@ leco:ordersAct a owl:ObjectProperty ;
         leco:LegalDecision,
         leco:OrderAct,
         rico:Activity ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2679,9 +2736,9 @@ leco:participationInAct a owl:ObjectProperty ;
     rdfs:domain owl:Thing,
         prov:Association,
         leco:Participation ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2731,9 +2788,9 @@ leco:principal a owl:ObjectProperty ;
 
 leco:replacesPerson a owl:ObjectProperty ;
     rdfs:label "reemplaza a persona"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2770,17 +2827,17 @@ leco:representative a owl:ObjectProperty ;
 
 leco:respondsTo a owl:ObjectProperty ;
     rdfs:label "responde a"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
         leco:JurisdictionalAct,
         rico:Activity ;
-    rdfs:range _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:range _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2792,9 +2849,9 @@ leco:respondsTo a owl:ObjectProperty ;
 
 leco:resultsInEntitlement a owl:ObjectProperty ;
     rdfs:label "resulta en derecho o beneficio"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2811,9 +2868,9 @@ leco:resultsInEntitlement a owl:ObjectProperty ;
 
 leco:resultsInLegalArrangement a owl:ObjectProperty ;
     rdfs:label "resulta en arreglo jurídico"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2827,9 +2884,9 @@ leco:resultsInLegalArrangement a owl:ObjectProperty ;
 
 leco:sanctions a owl:ObjectProperty ;
     rdfs:label "sanciona a"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2875,7 +2932,7 @@ leco:usesHistoricalConcept a owl:ObjectProperty ;
 
 leco:validationNote a owl:DatatypeProperty ;
     rdfs:label "nota de validación"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing,
         prov:Entity,
         leco:SemanticAnnotation ;
@@ -2886,9 +2943,9 @@ leco:validationNote a owl:DatatypeProperty ;
 
 leco:withinJurisdiction a owl:ObjectProperty ;
     rdfs:label "dentro de jurisdicción"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2904,9 +2961,20 @@ rico:Mandate owl:sameAs rico:Mandate .
 
 rico:Place owl:sameAs rico:Place .
 
-ex:appeal_1547 a _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+xsd:decimal a rdfs:Datatype ;
+    owl:sameAs xsd:decimal .
+
+time:TemporalEntity owl:sameAs time:TemporalEntity .
+
+ex:JurisdiccionCabildoTunja a owl:Thing,
+        leco:Jurisdiction ;
+    owl:sameAs ex:JurisdiccionCabildoTunja ;
+    leco:jurisdictionExercisedBy ex:CabildoDeTunja ;
+    leco:territorialScope ex:Tunja .
+
+ex:appeal_1547 a _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2921,9 +2989,32 @@ ex:appeal_1547 a _:n4128ca683a8a441298fcab272a94b4deb10,
     leco:hasParticipation ex:participation_pineda_appellant ;
     leco:withinJurisdiction ex:JurisdiccionAudiencia .
 
-ex:sanction_1547 a _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+ex:duty_alcalde_ordinario a owl:Thing,
+        leco:LegalDuty,
+        leco:NormativeRule,
+        rico:Rule ;
+    owl:sameAs ex:duty_alcalde_ordinario ;
+    leco:lexicalForm "deber de Alcalde Ordinario" .
+
+ex:investigation_1547 a _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E7_Activity,
+        owl:Thing,
+        prov:Activity,
+        leco:Investigation,
+        leco:JurisdictionalAct,
+        leco:ProceduralAct,
+        rico:Activity ;
+    crm:P11_had_participant ex:JuanDePineda ;
+    owl:sameAs ex:investigation_1547 ;
+    leco:hasParticipant ex:JuanDePineda ;
+    leco:investigates ex:JuanDePineda ;
+    leco:withinJurisdiction ex:JurisdiccionAudiencia .
+
+ex:sanction_1547 a _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2950,9 +3041,9 @@ leco:AIAnnotationActivity a owl:Class ;
 
 leco:Adjudication a owl:Class ;
     rdfs:label "Fallo / adjudicación decisoria"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2966,9 +3057,9 @@ leco:Adjudication a owl:Class ;
 
 leco:Appearance a owl:Class ;
     rdfs:label "Comparecencia"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -2993,9 +3084,9 @@ leco:AppellantRole a crm:E55_Type,
 
 leco:Approval a owl:Class ;
     rdfs:label "Aprobación"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3009,9 +3100,9 @@ leco:Approval a owl:Class ;
 
 leco:AuctionAward a owl:Class ;
     rdfs:label "Remate"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3025,9 +3116,9 @@ leco:AuctionAward a owl:Class ;
 
 leco:AutoDecision a owl:Class ;
     rdfs:label "Auto (decisión/acto)"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3041,9 +3132,9 @@ leco:AutoDecision a owl:Class ;
 
 leco:Collection a owl:Class ;
     rdfs:label "Cobro"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3062,9 +3153,9 @@ leco:ColonialOfficeStatusScheme a skos:ConceptScheme ;
 
 leco:Detention a owl:Class ;
     rdfs:label "Detención"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3079,9 +3170,9 @@ leco:Detention a owl:Class ;
 
 leco:Execution a owl:Class ;
     rdfs:label "Ejecución"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3095,9 +3186,9 @@ leco:Execution a owl:Class ;
 
 leco:Fine a owl:Class ;
     rdfs:label "Multa"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3142,9 +3233,9 @@ leco:JusticeAndRegimentBody a owl:Class ;
 
 leco:LandGrant a owl:Class ;
     rdfs:label "Adjudicación de tierra"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3155,16 +3246,6 @@ leco:LandGrant a owl:Class ;
     owl:equivalentClass leco:LandGrant ;
     owl:sameAs leco:LandGrant ;
     leco:sourceStatus "observed-in-pilot" .
-
-leco:LegalDuty a owl:Class ;
-    rdfs:label "Legal Duty"@en,
-        "Deber jurídico"@es ;
-    rdfs:subClassOf owl:Thing,
-        leco:LegalDuty,
-        leco:NormativeRule,
-        rico:Rule ;
-    owl:equivalentClass leco:LegalDuty ;
-    owl:sameAs leco:LegalDuty .
 
 leco:MercedBenefit a owl:Class ;
     rdfs:label "Merced (derecho o beneficio concedido)"@es ;
@@ -3194,9 +3275,9 @@ leco:MunicipalOfficeType a owl:Thing,
 leco:NormativeAct a owl:Class ;
     rdfs:label "Normative Act"@en,
         "Acto normativo"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3210,10 +3291,10 @@ leco:NormativeDocument a owl:Class ;
     rdfs:label "Normative Document"@en,
         "Documento normativo"@es ;
     rdfs:comment "Documento que expresa o evidencia una regla o mandato. No debe confundirse con la regla misma."@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         crm:E31_Document,
         owl:Thing,
         prov:Entity,
@@ -3225,9 +3306,9 @@ leco:NormativeDocument a owl:Class ;
 
 leco:Notification a owl:Class ;
     rdfs:label "Notificación"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3242,9 +3323,9 @@ leco:Notification a owl:Class ;
 
 leco:Oath a owl:Class ;
     rdfs:label "Juramento"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3258,9 +3339,9 @@ leco:Oath a owl:Class ;
 
 leco:Obedience a owl:Class ;
     rdfs:label "Obedecimiento / acatamiento"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3274,9 +3355,9 @@ leco:Obedience a owl:Class ;
 
 leco:Opposition a owl:Class ;
     rdfs:label "Oposición"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3298,9 +3379,9 @@ leco:PersonalJurisdiction a owl:Class ;
 
 leco:Petition a owl:Class ;
     rdfs:label "Petición"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3314,9 +3395,9 @@ leco:Petition a owl:Class ;
 
 leco:Presentation a owl:Class ;
     rdfs:label "Presentación"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3330,9 +3411,9 @@ leco:Presentation a owl:Class ;
 
 leco:Proclamation a owl:Class ;
     rdfs:label "Pregón"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3346,9 +3427,9 @@ leco:Proclamation a owl:Class ;
 
 leco:Prohibition a owl:Class ;
     rdfs:label "Prohibición"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3362,9 +3443,9 @@ leco:Prohibition a owl:Class ;
 
 leco:Punishment a owl:Class ;
     rdfs:label "Castigo"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3379,9 +3460,9 @@ leco:Punishment a owl:Class ;
 
 leco:ReadingAct a owl:Class ;
     rdfs:label "Lectura pública o jurídica"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3395,9 +3476,9 @@ leco:ReadingAct a owl:Class ;
 
 leco:RepartimientoAct a owl:Class ;
     rdfs:label "Repartimiento (acto/práctica)"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3427,9 +3508,9 @@ leco:SubjectMatterJurisdiction a owl:Class ;
 
 leco:Supplication a owl:Class ;
     rdfs:label "Súplica"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3451,9 +3532,9 @@ leco:TerritorialJurisdiction a owl:Class ;
 
 leco:Testimony a owl:Class ;
     rdfs:label "Testimonio"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3467,9 +3548,9 @@ leco:Testimony a owl:Class ;
 
 leco:inProceeding a owl:ObjectProperty ;
     rdfs:label "pertenece a procedimiento"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3497,9 +3578,26 @@ leco:jurisdictionExercisedBy a owl:ObjectProperty ;
 
 rico:Group owl:sameAs rico:Group .
 
-crm:E28_Conceptual_Object owl:sameAs crm:E28_Conceptual_Object .
-
 crm:E31_Document owl:sameAs crm:E31_Document .
+
+ex:JurisdiccionAudiencia a owl:Thing,
+        leco:Jurisdiction ;
+    owl:sameAs ex:JurisdiccionAudiencia ;
+    leco:jurisdictionExercisedBy ex:RealAudiencia ;
+    leco:territorialScope ex:Tunja .
+
+ex:doc_d002 a _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
+        crm:E31_Document,
+        owl:Thing,
+        prov:Entity,
+        leco:LegalDocument,
+        rico:Record ;
+    owl:sameAs ex:doc_d002 ;
+    leco:hasDocumentType leco:ActaCabildoDocumentType ;
+    rico:hasDocumentaryFormType leco:ActaCabildoDocumentType .
 
 leco:AnnotationBasisScheme a skos:ConceptScheme ;
     owl:sameAs leco:AnnotationBasisScheme ;
@@ -3508,9 +3606,9 @@ leco:AnnotationBasisScheme a skos:ConceptScheme ;
 leco:EnforcementAct a owl:Class ;
     rdfs:label "Enforcement Act"@en,
         "Acto de ejecución"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3523,9 +3621,9 @@ leco:EnforcementAct a owl:Class ;
 leco:FiscalAct a owl:Class ;
     rdfs:label "Fiscal Act"@en,
         "Acto fiscal"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3538,9 +3636,9 @@ leco:FiscalAct a owl:Class ;
 
 leco:GrantOfPower a owl:Class ;
     rdfs:label "Otorgamiento de poder"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3553,27 +3651,21 @@ leco:GrantOfPower a owl:Class ;
     owl:sameAs leco:GrantOfPower ;
     leco:sourceStatus "observed-in-pilot" .
 
-leco:Investigation a owl:Class ;
-    rdfs:label "Investigación"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
-        crm:E7_Activity,
-        owl:Thing,
-        prov:Activity,
-        leco:Investigation,
-        leco:JurisdictionalAct,
-        leco:ProceduralAct,
-        rico:Activity ;
-    owl:equivalentClass leco:Investigation ;
-    owl:sameAs leco:Investigation ;
-    leco:sourceStatus "observed-in-pilot" .
+leco:LegalDuty a owl:Class ;
+    rdfs:label "Legal Duty"@en,
+        "Deber jurídico"@es ;
+    rdfs:subClassOf owl:Thing,
+        leco:LegalDuty,
+        leco:NormativeRule,
+        rico:Rule ;
+    owl:equivalentClass leco:LegalDuty ;
+    owl:sameAs leco:LegalDuty .
 
 leco:MercedGrant a owl:Class ;
     rdfs:label "Merced (acto de concesión)"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3583,22 +3675,6 @@ leco:MercedGrant a owl:Class ;
         rico:Activity ;
     owl:equivalentClass leco:MercedGrant ;
     owl:sameAs leco:MercedGrant ;
-    leco:sourceStatus "observed-in-pilot" .
-
-leco:OrderAct a owl:Class ;
-    rdfs:label "Orden (acto)"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
-        crm:E7_Activity,
-        owl:Thing,
-        prov:Activity,
-        leco:JurisdictionalAct,
-        leco:LegalDecision,
-        leco:OrderAct,
-        rico:Activity ;
-    owl:equivalentClass leco:OrderAct ;
-    owl:sameAs leco:OrderAct ;
     leco:sourceStatus "observed-in-pilot" .
 
 leco:PartyRole a crm:E55_Type,
@@ -3633,12 +3709,9 @@ rico:Person owl:sameAs rico:Person .
 
 rico:Record owl:sameAs rico:Record .
 
-rico:RecordPart owl:sameAs rico:RecordPart .
+crm:E28_Conceptual_Object owl:sameAs crm:E28_Conceptual_Object .
 
 crm:E30_Right owl:sameAs crm:E30_Right .
-
-xsd:string a rdfs:Datatype ;
-    owl:sameAs xsd:string .
 
 ex:CabildoDeTunja a rico:Agent,
         rico:CorporateBody,
@@ -3648,11 +3721,20 @@ ex:CabildoDeTunja a rico:Agent,
     leco:hasInstitutionType leco:CabildoType ;
     rico:hasOrHadCorporateBodyType leco:CabildoType .
 
+ex:RealAudiencia a owl:Thing,
+        rico:Agent,
+        rico:CorporateBody,
+        rico:Group ;
+    owl:sameAs ex:RealAudiencia ;
+    leco:exercisesJurisdiction ex:JurisdiccionAudiencia ;
+    leco:hasInstitutionType leco:AudienciaType ;
+    rico:hasOrHadCorporateBodyType leco:AudienciaType .
+
 leco:Appeal a owl:Class ;
     rdfs:label "Apelación"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3667,9 +3749,9 @@ leco:Appeal a owl:Class ;
 leco:FormalAct a owl:Class ;
     rdfs:label "Formal Act"@en,
         "Acto formal"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3678,6 +3760,22 @@ leco:FormalAct a owl:Class ;
         rico:Activity ;
     owl:equivalentClass leco:FormalAct ;
     owl:sameAs leco:FormalAct .
+
+leco:Investigation a owl:Class ;
+    rdfs:label "Investigación"@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E7_Activity,
+        owl:Thing,
+        prov:Activity,
+        leco:Investigation,
+        leco:JurisdictionalAct,
+        leco:ProceduralAct,
+        rico:Activity ;
+    owl:equivalentClass leco:Investigation ;
+    owl:sameAs leco:Investigation ;
+    leco:sourceStatus "observed-in-pilot" .
 
 leco:LegalArrangement a owl:Class ;
     rdfs:label "Arreglo o institución jurídica"@es ;
@@ -3699,15 +3797,27 @@ leco:LegalProceeding a owl:Class ;
     owl:equivalentClass leco:LegalProceeding ;
     owl:sameAs leco:LegalProceeding .
 
+leco:OrderAct a owl:Class ;
+    rdfs:label "Orden (acto)"@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E7_Activity,
+        owl:Thing,
+        prov:Activity,
+        leco:JurisdictionalAct,
+        leco:LegalDecision,
+        leco:OrderAct,
+        rico:Activity ;
+    owl:equivalentClass leco:OrderAct ;
+    owl:sameAs leco:OrderAct ;
+    leco:sourceStatus "observed-in-pilot" .
+
 rico:CorporateBody owl:sameAs rico:CorporateBody .
 
 rico:isAssociatedWithRule owl:sameAs rico:isAssociatedWithRule .
 
 owl:DatatypeProperty owl:sameAs owl:DatatypeProperty .
-
-ex:JuanDePineda a rico:Agent,
-        rico:Person ;
-    owl:sameAs ex:JuanDePineda .
 
 leco:AdministrativeOfficeType a owl:Thing,
         skos:Concept,
@@ -3717,19 +3827,11 @@ leco:AdministrativeOfficeType a owl:Thing,
     skos:inScheme leco:OfficeTypeScheme ;
     skos:prefLabel "Oficio administrativo"@es .
 
-leco:AnnotationActivity a owl:Class ;
-    rdfs:label "Actividad de anotación"@es ;
-    rdfs:subClassOf owl:Thing,
-        prov:Activity,
-        leco:AnnotationActivity ;
-    owl:equivalentClass leco:AnnotationActivity ;
-    owl:sameAs leco:AnnotationActivity .
-
 leco:Appointment a owl:Class ;
     rdfs:label "Nombramiento"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3754,9 +3856,9 @@ leco:ColonialOfficeStatus a owl:Class ;
 leco:CommunicationAct a owl:Class ;
     rdfs:label "Legal Communication Act"@en,
         "Acto de comunicación jurídica"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3780,7 +3882,7 @@ leco:LegalEntitlement a owl:Class ;
 
 leco:invokesRule a owl:ObjectProperty ;
     rdfs:label "invoca regla"@es ;
-    rdfs:domain _:n4128ca683a8a441298fcab272a94b4deb10,
+    rdfs:domain _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
         owl:Thing ;
     rdfs:range rico:Rule ;
     rdfs:subPropertyOf leco:invokesRule,
@@ -3788,9 +3890,22 @@ leco:invokesRule a owl:ObjectProperty ;
     owl:equivalentProperty leco:invokesRule ;
     owl:sameAs leco:invokesRule .
 
+rico:RecordPart owl:sameAs rico:RecordPart .
+
 "seed-from-literature" owl:sameAs "seed-from-literature" .
 
 crm:E13_Attribute_Assignment owl:sameAs crm:E13_Attribute_Assignment .
+
+xsd:string a rdfs:Datatype ;
+    owl:sameAs xsd:string .
+
+leco:AnnotationActivity a owl:Class ;
+    rdfs:label "Actividad de anotación"@es ;
+    rdfs:subClassOf owl:Thing,
+        prov:Activity,
+        leco:AnnotationActivity ;
+    owl:equivalentClass leco:AnnotationActivity ;
+    owl:sameAs leco:AnnotationActivity .
 
 leco:InstitutionTypeScheme a skos:ConceptScheme ;
     owl:sameAs leco:InstitutionTypeScheme ;
@@ -3836,27 +3951,6 @@ leco:AnnotationBasis a owl:Class ;
     owl:equivalentClass leco:AnnotationBasis ;
     owl:sameAs leco:AnnotationBasis .
 
-leco:HistoricalConceptUse a owl:Class ;
-    rdfs:label "Uso histórico de concepto"@es ;
-    rdfs:comment "Representa una ocurrencia contextualizada de un concepto histórico, preservando forma léxica, documento, temporalidad, jurisdicción y significado interpretado."@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb19,
-        owl:Thing,
-        prov:Entity,
-        leco:HistoricalConceptUse ;
-    owl:equivalentClass leco:HistoricalConceptUse ;
-    owl:sameAs leco:HistoricalConceptUse .
-
-leco:LegalArgument a owl:Class ;
-    rdfs:label "Argumento jurídico"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
-        crm:E28_Conceptual_Object,
-        owl:Thing,
-        leco:LegalArgument ;
-    owl:equivalentClass leco:LegalArgument ;
-    owl:sameAs leco:LegalArgument .
-
 leco:LegalRelation a owl:Class ;
     rdfs:label "Relación jurídica"@es ;
     rdfs:subClassOf owl:Thing,
@@ -3871,9 +3965,9 @@ leco:ProceduralRoleScheme a skos:ConceptScheme ;
 
 leco:Sanction a owl:Class ;
     rdfs:label "Sanción"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -3908,13 +4002,23 @@ leco:EthnoLegalCategory a owl:Class ;
 leco:HistoricalCategoryAssignment a owl:Class ;
     rdfs:label "Atribución de categoría histórica"@es ;
     rdfs:comment "Permite afirmar que una fuente histórica atribuye una categoría a un actor, preservando quién/qué la atribuye y la evidencia documental."@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb19,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         crm:E13_Attribute_Assignment,
         owl:Thing,
         prov:Entity,
         leco:HistoricalCategoryAssignment ;
     owl:equivalentClass leco:HistoricalCategoryAssignment ;
     owl:sameAs leco:HistoricalCategoryAssignment .
+
+leco:HistoricalConceptUse a owl:Class ;
+    rdfs:label "Uso histórico de concepto"@es ;
+    rdfs:comment "Representa una ocurrencia contextualizada de un concepto histórico, preservando forma léxica, documento, temporalidad, jurisdicción y significado interpretado."@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
+        owl:Thing,
+        prov:Entity,
+        leco:HistoricalConceptUse ;
+    owl:equivalentClass leco:HistoricalConceptUse ;
+    owl:sameAs leco:HistoricalConceptUse .
 
 leco:JudicialOfficeType a owl:Thing,
         skos:Concept,
@@ -3924,14 +4028,25 @@ leco:JudicialOfficeType a owl:Thing,
     skos:inScheme leco:OfficeTypeScheme ;
     skos:prefLabel "Oficio judicial"@es .
 
+leco:LegalArgument a owl:Class ;
+    rdfs:label "Argumento jurídico"@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E28_Conceptual_Object,
+        owl:Thing,
+        leco:LegalArgument ;
+    owl:equivalentClass leco:LegalArgument ;
+    owl:sameAs leco:LegalArgument .
+
 leco:LegalDocument a owl:Class ;
     rdfs:label "Legal Document"@en,
         "Documento jurídico"@es ;
     rdfs:comment "Documento que desempeña una función jurídica, normativa, administrativa, procesal o jurisdiccional."@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         crm:E31_Document,
         owl:Thing,
         prov:Entity,
@@ -3939,20 +4054,6 @@ leco:LegalDocument a owl:Class ;
         rico:Record ;
     owl:equivalentClass leco:LegalDocument ;
     owl:sameAs leco:LegalDocument .
-
-leco:LegalDocumentPart a owl:Class ;
-    rdfs:label "Legal Document Part"@en,
-        "Parte de documento jurídico"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb1,
-        _:n4128ca683a8a441298fcab272a94b4deb23,
-        _:n4128ca683a8a441298fcab272a94b4deb4,
-        _:n4128ca683a8a441298fcab272a94b4deb7,
-        owl:Thing,
-        prov:Entity,
-        leco:LegalDocumentPart,
-        rico:RecordPart ;
-    owl:equivalentClass leco:LegalDocumentPart ;
-    owl:sameAs leco:LegalDocumentPart .
 
 leco:Office a owl:Class ;
     rdfs:label "Office"@en,
@@ -3991,6 +4092,11 @@ crm:E55_Type owl:sameAs crm:E55_Type .
 
 owl:AnnotationProperty owl:sameAs owl:AnnotationProperty .
 
+ex:JuanDePineda a owl:Thing,
+        rico:Agent,
+        rico:Person ;
+    owl:sameAs ex:JuanDePineda .
+
 leco:InstitutionType a owl:Class ;
     rdfs:label "Tipo institucional"@es ;
     rdfs:subClassOf owl:Thing,
@@ -3999,6 +4105,26 @@ leco:InstitutionType a owl:Class ;
         rico:CorporateBodyType ;
     owl:equivalentClass leco:InstitutionType ;
     owl:sameAs leco:InstitutionType .
+
+leco:LegalDocumentPart a owl:Class ;
+    rdfs:label "Legal Document Part"@en,
+        "Parte de documento jurídico"@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
+        owl:Thing,
+        prov:Entity,
+        leco:LegalDocumentPart,
+        rico:RecordPart ;
+    owl:equivalentClass leco:LegalDocumentPart ;
+    owl:sameAs leco:LegalDocumentPart .
+
+rico:RoleType owl:sameAs rico:RoleType .
+
+leco:HistoricalLegalConceptScheme a skos:ConceptScheme ;
+    owl:sameAs leco:HistoricalLegalConceptScheme ;
+    skos:prefLabel "Conceptos jurídico-históricos de LeCO"@es .
 
 leco:NormativeRule a owl:Class ;
     rdfs:label "Normative Rule"@en,
@@ -4009,23 +4135,6 @@ leco:NormativeRule a owl:Class ;
         rico:Rule ;
     owl:equivalentClass leco:NormativeRule ;
     owl:sameAs leco:NormativeRule .
-
-leco:SemanticAnnotation a owl:Class ;
-    rdfs:label "Anotación semántica"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb19,
-        owl:Thing,
-        prov:Entity,
-        leco:SemanticAnnotation ;
-    owl:equivalentClass leco:SemanticAnnotation ;
-    owl:sameAs leco:SemanticAnnotation .
-
-rico:RoleType owl:sameAs rico:RoleType .
-
-rico:Rule owl:sameAs rico:Rule .
-
-leco:HistoricalLegalConceptScheme a skos:ConceptScheme ;
-    owl:sameAs leco:HistoricalLegalConceptScheme ;
-    skos:prefLabel "Conceptos jurídico-históricos de LeCO"@es .
 
 leco:ProceduralRole a owl:Class ;
     rdfs:label "Procedural Role"@en,
@@ -4038,6 +4147,17 @@ leco:ProceduralRole a owl:Class ;
     owl:disjointWith leco:Office ;
     owl:equivalentClass leco:ProceduralRole ;
     owl:sameAs leco:ProceduralRole .
+
+leco:SemanticAnnotation a owl:Class ;
+    rdfs:label "Anotación semántica"@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
+        owl:Thing,
+        prov:Entity,
+        leco:SemanticAnnotation ;
+    owl:equivalentClass leco:SemanticAnnotation ;
+    owl:sameAs leco:SemanticAnnotation .
+
+rico:Rule owl:sameAs rico:Rule .
 
 skos:ConceptScheme owl:sameAs skos:ConceptScheme .
 
@@ -4054,9 +4174,9 @@ rico:Agent owl:sameAs rico:Agent .
 leco:AdministrativeAct a owl:Class ;
     rdfs:label "Administrative Act"@en,
         "Acto administrativo"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -4065,21 +4185,6 @@ leco:AdministrativeAct a owl:Class ;
         rico:Activity ;
     owl:equivalentClass leco:AdministrativeAct ;
     owl:sameAs leco:AdministrativeAct .
-
-leco:LegalDecision a owl:Class ;
-    rdfs:label "Legal Decision"@en,
-        "Decisión jurídica"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
-        crm:E7_Activity,
-        owl:Thing,
-        prov:Activity,
-        leco:JurisdictionalAct,
-        leco:LegalDecision,
-        rico:Activity ;
-    owl:equivalentClass leco:LegalDecision ;
-    owl:sameAs leco:LegalDecision .
 
 rico:Concept owl:sameAs rico:Concept .
 
@@ -4101,6 +4206,21 @@ leco:Jurisdiction a owl:Class ;
     owl:equivalentClass leco:Jurisdiction ;
     owl:sameAs leco:Jurisdiction .
 
+leco:LegalDecision a owl:Class ;
+    rdfs:label "Legal Decision"@en,
+        "Decisión jurídica"@es ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
+        crm:E7_Activity,
+        owl:Thing,
+        prov:Activity,
+        leco:JurisdictionalAct,
+        leco:LegalDecision,
+        rico:Activity ;
+    owl:equivalentClass leco:LegalDecision ;
+    owl:sameAs leco:LegalDecision .
+
 rico:DocumentaryFormType owl:sameAs rico:DocumentaryFormType .
 
 leco:DocumentType a owl:Class ;
@@ -4116,9 +4236,9 @@ leco:DocumentType a owl:Class ;
 leco:ProceduralAct a owl:Class ;
     rdfs:label "Procedural Act"@en,
         "Acto procesal"@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -4138,11 +4258,11 @@ leco:HistoricalLegalCategory a owl:Class ;
     owl:equivalentClass leco:HistoricalLegalCategory ;
     owl:sameAs leco:HistoricalLegalCategory .
 
-prov:Entity owl:sameAs prov:Entity .
-
 leco:OfficeTypeScheme a skos:ConceptScheme ;
     owl:sameAs leco:OfficeTypeScheme ;
     skos:prefLabel "Tipos de oficio de LeCO"@es .
+
+prov:Entity owl:sameAs prov:Entity .
 
 leco:OfficeType a owl:Class ;
     rdfs:label "Tipo de oficio"@es ;
@@ -4167,9 +4287,9 @@ leco:JurisdictionalAct a owl:Class ;
     rdfs:label "Jurisdictional Act"@en,
         "Acto jurisdiccional"@es ;
     rdfs:comment "Actividad históricamente situada realizada en ejercicio, aplicación, negociación o contexto de jurisdicción."@es ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
-        _:n4128ca683a8a441298fcab272a94b4deb13,
-        _:n4128ca683a8a441298fcab272a94b4deb16,
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
+        _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         crm:E7_Activity,
         owl:Thing,
         prov:Activity,
@@ -4191,127 +4311,127 @@ owl:Thing a owl:Class ;
     owl:equivalentClass owl:Thing ;
     owl:sameAs owl:Thing .
 
-_:n4128ca683a8a441298fcab272a94b4deb11 rdf:first leco:JurisdictionalAct ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb12 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb11 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab11 rdf:first leco:JurisdictionalAct ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab12 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab11 .
 
-_:n4128ca683a8a441298fcab272a94b4deb12 rdf:first leco:LegalArgument ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab12 rdf:first leco:LegalArgument ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb12 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab12 .
 
-_:n4128ca683a8a441298fcab272a94b4deb14 rdf:first leco:JurisdictionalAct ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb15 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb14 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab14 rdf:first leco:JurisdictionalAct ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab15 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab14 .
 
-_:n4128ca683a8a441298fcab272a94b4deb15 rdf:first leco:LegalArgument ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab15 rdf:first leco:LegalArgument ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb15 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab15 .
 
-_:n4128ca683a8a441298fcab272a94b4deb17 rdf:first leco:JurisdictionalAct ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb18 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb17 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab17 rdf:first leco:JurisdictionalAct ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab18 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab17 .
 
-_:n4128ca683a8a441298fcab272a94b4deb18 rdf:first leco:LegalArgument ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab18 rdf:first leco:LegalArgument ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb18 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab18 .
 
-_:n4128ca683a8a441298fcab272a94b4deb2 rdf:first leco:LegalDocument ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb3 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb2 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab2 rdf:first leco:LegalDocument ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab3 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab2 .
 
-_:n4128ca683a8a441298fcab272a94b4deb20 rdf:first leco:HistoricalConceptUse ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb21 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb20 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab20 rdf:first leco:HistoricalConceptUse ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab21 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab20 .
 
-_:n4128ca683a8a441298fcab272a94b4deb21 rdf:first leco:HistoricalCategoryAssignment ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb22 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb21 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab21 rdf:first leco:HistoricalCategoryAssignment ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab22 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab21 .
 
-_:n4128ca683a8a441298fcab272a94b4deb22 rdf:first leco:SemanticAnnotation ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab22 rdf:first leco:SemanticAnnotation ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb22 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab22 .
 
-_:n4128ca683a8a441298fcab272a94b4deb24 rdf:first leco:LegalDocument ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb25 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb24 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab24 rdf:first leco:LegalDocument ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab25 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab24 .
 
-_:n4128ca683a8a441298fcab272a94b4deb25 rdf:first leco:LegalDocumentPart ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab25 rdf:first leco:LegalDocumentPart ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb25 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab25 .
 
-_:n4128ca683a8a441298fcab272a94b4deb3 rdf:first leco:LegalDocumentPart ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab3 rdf:first leco:LegalDocumentPart ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb3 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab3 .
 
-_:n4128ca683a8a441298fcab272a94b4deb5 rdf:first leco:LegalDocument ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb6 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb5 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab5 rdf:first leco:LegalDocument ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab6 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab5 .
 
-_:n4128ca683a8a441298fcab272a94b4deb6 rdf:first leco:LegalDocumentPart ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab6 rdf:first leco:LegalDocumentPart ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb6 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab6 .
 
-_:n4128ca683a8a441298fcab272a94b4deb8 rdf:first leco:LegalDocument ;
-    rdf:rest _:n4128ca683a8a441298fcab272a94b4deb9 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb8 .
+_:n5dd9db528fc2440dbf74e3c6eb6864bab8 rdf:first leco:LegalDocument ;
+    rdf:rest _:n5dd9db528fc2440dbf74e3c6eb6864bab9 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab8 .
 
-_:n4128ca683a8a441298fcab272a94b4deb9 rdf:first leco:LegalDocumentPart ;
+_:n5dd9db528fc2440dbf74e3c6eb6864bab9 rdf:first leco:LegalDocumentPart ;
     rdf:rest () ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb9 .
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab9 .
 
-_:n4128ca683a8a441298fcab272a94b4deb1 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb1,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab1 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab1,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb1 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb1 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb2 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab1 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab1 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab2 .
 
-_:n4128ca683a8a441298fcab272a94b4deb23 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb23,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab23 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab23,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb23 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb23 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb24 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab23 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab23 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab24 .
 
-_:n4128ca683a8a441298fcab272a94b4deb4 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb4,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab4 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab4,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb4 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb4 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb5 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab4 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab4 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab5 .
 
-_:n4128ca683a8a441298fcab272a94b4deb7 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb7,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab7 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab7,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb7 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb7 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb8 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab7 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab7 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab8 .
 
-_:n4128ca683a8a441298fcab272a94b4deb19 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb19,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab19 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab19,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb19 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb19 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb20 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab19 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab19 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab20 .
 
-_:n4128ca683a8a441298fcab272a94b4deb13 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb13,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab13 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab13,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb13 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb13 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb14 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab13 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab13 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab14 .
 
-_:n4128ca683a8a441298fcab272a94b4deb16 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb16,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab16 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab16,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb16 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb16 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb17 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab16 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab16 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab17 .
 
-_:n4128ca683a8a441298fcab272a94b4deb10 a owl:Class ;
-    rdfs:subClassOf _:n4128ca683a8a441298fcab272a94b4deb10,
+_:n5dd9db528fc2440dbf74e3c6eb6864bab10 a owl:Class ;
+    rdfs:subClassOf _:n5dd9db528fc2440dbf74e3c6eb6864bab10,
         owl:Thing ;
-    owl:equivalentClass _:n4128ca683a8a441298fcab272a94b4deb10 ;
-    owl:sameAs _:n4128ca683a8a441298fcab272a94b4deb10 ;
-    owl:unionOf _:n4128ca683a8a441298fcab272a94b4deb11 .
+    owl:equivalentClass _:n5dd9db528fc2440dbf74e3c6eb6864bab10 ;
+    owl:sameAs _:n5dd9db528fc2440dbf74e3c6eb6864bab10 ;
+    owl:unionOf _:n5dd9db528fc2440dbf74e3c6eb6864bab11 .
 

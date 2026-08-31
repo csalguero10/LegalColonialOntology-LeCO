@@ -1,0 +1,14 @@
+﻿document_id,segment_id,relation_id,subject,predicate,object,basis,certainty,note,source_url
+co-ahrb-cab-001-d002,cab-001-002_s001,cab-001-002_cab-001-002_s001_r001,cab-001-002_s001,invokesConcept,Real Servicio,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s003,cab-001-002_cab-001-002_s003_r001,Autoridad implícita del segmento,appointsOrDesignates,Pedro Vasquez,inferred,medium,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s003,cab-001-002_cab-001-002_s003_r002,cab-001-002_s003,containsLegalAct,decision,explicit,high,Expresión: acordaron,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s003,cab-001-002_cab-001-002_s003_r003,cab-001-002_s003,containsLegalAct,detention,explicit,high,Expresión: ponerlo preso,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s004,cab-001-002_cab-001-002_s004_r001,Juan de Pineda,holdsOrPerformsRole,Alcalde,explicit,medium,Proximidad textual entre nombre y oficio/rol; requiere revisión histórica si la sintaxis es ambigua.,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s004,cab-001-002_cab-001-002_s004_r002,Juan de Pineda,performsAct,Appeal,inferred,medium,La relación se deriva de la construcción verbal de apelación; validar sujeto gramatical.,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s004,cab-001-002_cab-001-002_s004_r003,cab-001-002_s004,containsLegalAct,appearance,explicit,high,Expresión: compareció,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s004,cab-001-002_cab-001-002_s004_r004,cab-001-002_s004,containsLegalAct,appeal,explicit,high,Expresión: apelar,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s004,cab-001-002_cab-001-002_s004_r005,cab-001-002_s004,containsLegalAct,appointment,explicit,high,Expresión: nombramiento,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s005,cab-001-002_cab-001-002_s005_r001,cab-001-002_s005,invokesConcept,deber,explicit,high,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s005,cab-001-002_cab-001-002_s005_r002,cab-001-002_s005,containsLegalAct,order_event,explicit,high,Expresión: ordenó,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s005,cab-001-002_cab-001-002_s005_r003,cab-001-002_s005,containsLegalAct,investigation,explicit,high,Expresión: investigar,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002_s005,cab-001-002_cab-001-002_s005_r004,cab-001-002_s005,containsLegalAct,adjudication,explicit,high,Expresión: fallar,https://zasqua.org/co-ahrb-cab-001-d002/

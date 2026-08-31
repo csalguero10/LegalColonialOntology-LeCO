@@ -1,0 +1,21 @@
+﻿document_id,local_id,segment_id,annotation_id,surface,normalized,category,subtype,tei_element,evidence_status,certainty,start,end,note,source_url
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s001,cab-001-002_cab-001-002_s001_a001,2 de septiembre 1547,2 de septiembre 1547,date,calendar_date,date,explicit,high,7,27,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s001,cab-001-002_cab-001-002_s001_a002,Justicia y Regimiento,Justicia y Regimiento,institutional_body,cabildo_body,orgName,explicit,high,54,75,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s001,cab-001-002_cab-001-002_s001_a003,Real Servicio,Real Servicio,historical_concept,real_service,term,explicit,high,114,127,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s002,cab-001-002_cab-001-002_s002_a001,Alcalde Ordinario,Alcalde Ordinario,role_or_office,office_or_procedural_role,rs,explicit,high,25,42,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s002,cab-001-002_cab-001-002_s002_a002,Perú,Perú,place,historical_place,placeName,explicit,high,76,80,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s003,cab-001-002_cab-001-002_s003_a001,acordaron,acordaron,legal_or_procedural_act,decision,rs,explicit,high,25,34,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s003,cab-001-002_cab-001-002_s003_a002,ponerlo preso,ponerlo preso,legal_or_procedural_act,detention,rs,explicit,high,35,48,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s003,cab-001-002_cab-001-002_s003_a003,Pedro Vasquez,Pedro Vasquez,person,historical_person,persName,explicit,high,81,94,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a001,Alcalde,Alcalde,role_or_office,office_or_procedural_role,rs,explicit,high,3,10,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a002,Juan de Pineda,Juan de Pineda,person,historical_person,persName,explicit,high,11,25,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a003,compareció,compareció,legal_or_procedural_act,appearance,rs,explicit,high,26,36,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a004,Real Audencia,Real Audencia,institution,audiencia,orgName,explicit,high,45,58,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a005,apelar,apelar,legal_or_procedural_act,appeal,rs,explicit,high,64,70,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a006,nombramiento,nombramiento,legal_or_procedural_act,appointment,rs,explicit,high,131,143,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s004,cab-001-002_cab-001-002_s004_a007,Procurador,Procurador,role_or_office,office_or_procedural_role,rs,explicit,high,149,159,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s005,cab-001-002_cab-001-002_s005_a001,ordenó,ordenó,legal_or_procedural_act,order_event,rs,explicit,high,3,9,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s005,cab-001-002_cab-001-002_s005_a002,investigar,investigar,legal_or_procedural_act,investigation,rs,explicit,high,10,20,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s005,cab-001-002_cab-001-002_s005_a003,fallar,fallar,legal_or_procedural_act,adjudication,rs,explicit,high,74,80,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s005,cab-001-002_cab-001-002_s005_a004,deber,deber,historical_concept,duty,term,explicit,high,110,115,,https://zasqua.org/co-ahrb-cab-001-d002/
+co-ahrb-cab-001-d002,cab-001-002,cab-001-002_s005,cab-001-002_cab-001-002_s005_a005,Alcalde Ordinario,Alcalde Ordinario,role_or_office,office_or_procedural_role,rs,explicit,high,119,136,,https://zasqua.org/co-ahrb-cab-001-d002/

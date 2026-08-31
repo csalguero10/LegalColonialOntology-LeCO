@@ -1,0 +1,455 @@
+name: LeCO-TEI Mapping Profile
+version: 0.1.0
+ontology: https://w3id.org/leco/ontology
+ontology_prefix: https://w3id.org/leco/ontology#
+tei_namespace: http://www.tei-c.org/ns/1.0
+data_base_template: https://w3id.org/leco/data/{reference_code}/{xml_id}
+
+principles:
+  - id: P01
+    text: Inline TEI markup anchors explicit textual evidence; reusable entities, events, and complex relations are declared in standOff.
+  - id: P02
+    text: TEI structure and RDF semantics remain separate layers; no TEI element name is assumed to be an OWL class without a mapping rule.
+  - id: P03
+    text: Existing RiC-O, CIDOC CRM, FOAF, SKOS, PROV-O, and OWL-Time terms are reused before minting LeCO terms.
+  - id: P04
+    text: Historical categories are modeled as contextual SKOS concepts/assignments, never as essential person classes.
+  - id: P05
+    text: Every inferred assertion must point back to documentary evidence and be marked as inferred.
+  - id: P06
+    text: xml:id values are local stable identifiers; RDF URIs are minted from reference_code plus xml:id and never from mutable labels.
+
+uri_policy:
+  record:
+    source: TEI/@xml:id or teiHeader//idno[@type='reference_code']
+    template: https://w3id.org/leco/data/{reference_code}/record
+  local_resource:
+    template: https://w3id.org/leco/data/{reference_code}/{xml_id}
+  annotation_for_relation:
+    template: https://w3id.org/leco/data/{reference_code}/{xml_id}-annotation
+  statement_for_relation:
+    template: https://w3id.org/leco/data/{reference_code}/{xml_id}-statement
+  external_pointer:
+    rule: Absolute @ref/@ana URIs are preserved; local #xml-id pointers resolve with local_resource template.
+
+required_profile:
+  addressable_elements_require_xml_id:
+    - TEI
+    - div
+    - seg
+    - persName
+    - orgName
+    - placeName
+    - term
+    - rs
+    - person
+    - org
+    - place
+    - event
+    - relation
+    - interp
+  inline_annotation_elements:
+    - persName
+    - orgName
+    - placeName
+    - term
+    - rs
+  inline_annotation_requirements:
+    - xml:id
+    - ref_or_ana
+    - nearest_ancestor_div_or_seg_with_xml_id
+  standOff_authority_lists:
+    - listPerson
+    - listOrg
+    - listPlace
+    - listEvent
+    - listRelation
+    - interpGrp
+
+controlled_types:
+  rs:
+    - officeType
+    - proceduralRole
+    - historicalCategory
+    - normativeRule
+    - legalArgument
+  interpGrp:
+    - normativeRules
+    - legalArguments
+    - localHistoricalConcepts
+    - localHistoricalCategories
+  relation:
+    nary_patterns:
+      - participation
+      - officeHolding
+      - territorialJurisdiction
+      - historicalConceptUse
+      - historicalCategoryAssignment
+    direct_properties:
+      - appealsAgainst
+      - beforeAuthority
+      - decidedBy
+      - sanctions
+      - investigates
+      - ordersAct
+      - replacesPerson
+      - opposesParticipation
+      - directlyPrecedesInSequence
+      - invokesRule
+      - citesRule
+      - appliesRule
+      - interpretsRule
+      - argumentInvokesRule
+      - hasLegalArgument
+      - inProceeding
+      - hasProceduralAct
+
+annotation_policy:
+  explicit_inline:
+    rdf_type: leco:SemanticAnnotation
+    annotation_basis: leco:ExplicitTextualEvidence
+    validation_status_default: leco:HumanValidatedAnnotation
+    evidence_text: exact normalized string-value of TEI element
+    target: nearest ancestor seg/div with xml:id
+    body: resource resolved from @ref; if @ref absent, resource resolved from @ana only when @ana denotes a SKOS concept/individual
+  relation_assertion:
+    annotation_uri_suffix: -annotation
+    statement_uri_suffix: -statement
+    evidence_pointer_attribute: source
+    basis_from_subtype:
+      explicit: leco:ExplicitTextualEvidence
+      inferred: leco:InferredFromText
+      catalog: leco:CatalogMetadataBasis
+      humanInterpretation: leco:HumanInterpretationBasis
+    default_basis: leco:HumanInterpretationBasis
+    validation_status_default: leco:HumanValidatedAnnotation
+  confidence:
+    tei_source: precision[@target][@confidence]
+    rdf_property: leco:confidenceScore
+    datatype: xsd:decimal
+    range: [0.0, 1.0]
+
+mapping_rules:
+  - id: R001
+    source: /tei:TEI
+    condition: always
+    target:
+      uri: record URI
+      types: [leco:LegalDocument, rico:Record]
+      literals:
+        dcterms:identifier: teiHeader//idno[@type='reference_code']/text()
+        dcterms:title: teiHeader/fileDesc/titleStmt/title/string-value()
+    notes: The TEI document as an intellectual record; its digital file/serialization may later be modeled as rico:Instantiation.
+
+  - id: R002
+    source: //tei:div[@xml:id] | //tei:seg[@xml:id]
+    condition: structural unit selected for citation/evidence
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:LegalDocumentPart, rico:RecordPart]
+      parent_relation:
+        predicate: rico:hasDirectConstituent
+        inverse: rico:isDirectConstituentOf
+    notes: Parent is the nearest ancestor div/seg with xml:id; otherwise the record.
+
+  - id: R003
+    source: //tei:div[@ana]
+    condition: '@ana points to a leco:DocumentType individual'
+    target:
+      subject: mapped div/record resource
+      predicate: leco:hasDocumentType
+      object: resolve(@ana)
+
+  - id: R010
+    source: //tei:standOff//tei:listPerson/tei:person[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [rico:Person, crm:E21_Person, foaf:Person]
+      labels: child tei:persName string-value
+
+  - id: R011
+    source: //tei:standOff//tei:listOrg/tei:org[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [rico:CorporateBody, crm:E74_Group]
+      labels: child tei:orgName string-value
+      optional:
+        when_ana_is_InstitutionType:
+          predicate: leco:hasInstitutionType
+          object: resolve(@ana)
+
+  - id: R012
+    source: //tei:standOff//tei:listPlace/tei:place[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [rico:Place, crm:E53_Place]
+      labels: child tei:placeName string-value
+
+  - id: R013
+    source: //tei:standOff//tei:listEvent/tei:event[@xml:id]
+    condition: '@ana points to a LeCO OWL class under JurisdictionalAct or a compatible event class'
+    target:
+      uri: local_resource(xml:id)
+      rdf_type: resolve(@ana)
+      temporal:
+        when: time:inXSDDate or RiC-O date relation
+        from_to: time:Interval
+      evidence:
+        for_each_corresp_segment:
+          subject: resolved segment
+          predicate: leco:documentsAct
+          object: event URI
+
+  - id: R020
+    source: //tei:persName[@xml:id][@ref]
+    condition: inline mention
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+    notes: The referenced person must normally be declared in standOff/listPerson.
+
+  - id: R021
+    source: //tei:orgName[@xml:id][@ref]
+    condition: inline mention
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+
+  - id: R022
+    source: //tei:placeName[@xml:id][@ref]
+    condition: inline mention
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+
+  - id: R023
+    source: //tei:term[@xml:id][@ref]
+    condition: '@ref resolves to leco:HistoricalLegalConcept or local SKOS concept'
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+      additional_resource:
+        type: leco:HistoricalConceptUse
+        uri: local_resource(xml:id + '-use')
+        properties:
+          leco:conceptUsed: resolve(@ref)
+          leco:attestedIn: nearest evidence part
+
+  - id: R024
+    source: //tei:rs[@xml:id][@type='officeType'][@ref]
+    condition: inline office-type mention
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+    notes: This rule identifies the office type lexical mention; actual office holding is R041.
+
+  - id: R025
+    source: //tei:rs[@xml:id][@type='proceduralRole'][@ref]
+    condition: inline role mention
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+    notes: A role mention does not by itself assert that a person plays the role; participation is R040.
+
+  - id: R026
+    source: //tei:rs[@xml:id][@type='historicalCategory'][@ref]
+    condition: explicit historical category mention
+    target:
+      annotation: explicit_inline
+      body: resolve(@ref)
+    notes: Assignment to a person/group requires R043, not merely lexical occurrence.
+
+  - id: R030
+    source: //tei:standOff/tei:interpGrp[@type='normativeRules']/tei:interp[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:NormativeRule]
+      optional_types_from_ana: true
+      label: string-value()
+
+  - id: R031
+    source: //tei:standOff/tei:interpGrp[@type='legalArguments']/tei:interp[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:LegalArgument]
+      label: string-value()
+
+  - id: R032
+    source: //tei:standOff/tei:interpGrp[@type='localHistoricalConcepts']/tei:interp[@xml:id]
+    condition: concept not already represented by LeCO vocabulary
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:HistoricalLegalConcept, skos:Concept]
+      skos_prefLabel: string-value()
+
+  - id: R033
+    source: //tei:standOff/tei:interpGrp[@type='localHistoricalCategories']/tei:interp[@xml:id]
+    condition: category not already represented by LeCO vocabulary
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:HistoricalLegalCategory, skos:Concept]
+      optional_type_from_ana: one of EthnoLegalCategory, StatusCategory, ReligiousLegalCategory, SocioLegalCategory, ColonialOfficeStatus
+      skos_prefLabel: string-value()
+
+  - id: R040
+    source: //tei:standOff//tei:relation[@type='participation'][@xml:id]
+    condition: active=actor; passive=event; ana=ProceduralRole
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:Participation]
+      properties:
+        leco:participationActor: resolve(@active)
+        leco:participationInAct: resolve(@passive)
+        leco:participationRole: resolve(@ana)
+      reciprocal:
+        event_leco_hasParticipation: participation URI
+      provenance: relation_assertion
+
+  - id: R041
+    source: //tei:standOff//tei:relation[@type='officeHolding'][@xml:id]
+    condition: active=person; passive=institution; ana=OfficeType; date supplied by @when/@from/@to
+    target:
+      generated_office:
+        uri: local_resource(xml:id + '-office')
+        types: [leco:Office, rico:Position]
+        properties:
+          leco:hasOfficeType: resolve(@ana)
+          leco:officeExistsIn: resolve(@passive)
+      position_holding_relation:
+        uri: local_resource(xml:id)
+        type: rico:PositionHoldingRelation
+        properties:
+          rico:relationHasSource: resolve(@active)
+          rico:relationHasTarget: generated office URI
+          rico:relationHasDate: generated temporal resource
+      shortcut:
+        subject: resolve(@active)
+        predicate: leco:holdsOffice
+        object: generated office URI
+      provenance: relation_assertion
+
+  - id: R042
+    source: //tei:standOff//tei:relation[@type='territorialJurisdiction'][@xml:id]
+    condition: active=authority/institution; passive=place; ana=Jurisdiction subclass or omitted
+    target:
+      jurisdiction:
+        uri: local_resource(xml:id)
+        rdf_type: resolve(@ana) or leco:TerritorialJurisdiction
+        properties:
+          leco:territorialScope: resolve(@passive)
+      authority_relation:
+        subject: resolve(@active)
+        predicate: leco:exercisesJurisdiction
+        object: jurisdiction URI
+      provenance: relation_assertion
+
+  - id: R043
+    source: //tei:standOff//tei:relation[@type='historicalCategoryAssignment'][@xml:id]
+    condition: active=person/group; passive=HistoricalLegalCategory; source=evidence segment
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:HistoricalCategoryAssignment]
+      properties:
+        leco:categoryAssignedTo: resolve(@active)
+        leco:assignsHistoricalCategory: resolve(@passive)
+        leco:attestedIn: resolve(@source)
+      optional:
+        leco:categoryAssignmentTime: normalized relation date
+        leco:categoryAssignmentJurisdiction: resolve relation @corresp if it points to a jurisdiction resource
+      provenance: relation_assertion
+
+  - id: R044
+    source: //tei:standOff//tei:relation[@type='historicalConceptUse'][@xml:id]
+    condition: active=record/act/context; passive=HistoricalLegalConcept; source=evidence segment
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:HistoricalConceptUse]
+      properties:
+        leco:conceptUsed: resolve(@passive)
+        leco:attestedIn: resolve(@source)
+      optional:
+        leco:conceptUseTime: normalized relation date
+        leco:conceptUseJurisdiction: jurisdiction linked from context
+      provenance: relation_assertion
+
+  - id: R050
+    source: //tei:standOff//tei:relation[@type='objectProperty'][@name][@active][@passive][@xml:id]
+    condition: '@name is in controlled_types.relation.direct_properties'
+    target:
+      triple:
+        subject: resolve(@active)
+        predicate: leco_or_rico_property_from_name(@name)
+        object: resolve(@passive)
+      reification:
+        uri: statement_for_relation(xml:id)
+        types: [rdf:Statement]
+        rdf:subject: resolve(@active)
+        rdf:predicate: mapped predicate
+        rdf:object: resolve(@passive)
+      provenance_annotation:
+        uri: annotation_for_relation(xml:id)
+        type: leco:SemanticAnnotation
+        leco:annotationBody: statement URI
+        leco:attestedIn: each resolve(@source)
+        leco:annotationBasis: basis_from_subtype
+
+  - id: R051
+    source: //tei:standOff//tei:relation[@type='objectProperty'][@name='directlyPrecedesInSequence']
+    condition: active and passive are events/acts
+    target:
+      predicate_override: rico:directlyPrecedesInSequence
+    notes: This rule overrides R050 predicate namespace for RiC-O sequence semantics.
+
+  - id: R060
+    source: //tei:precision[@target][@confidence]
+    condition: target resolves to relation or annotation xml:id
+    target:
+      subject: annotation resource associated with target
+      predicate: leco:confidenceScore
+      object: decimal(@confidence)
+
+  - id: R061
+    source: //@resp
+    condition: pointer resolves to a TEI respStmt/name or person responsible for annotation
+    target:
+      provenance: map responsible agent/activity with PROV-O
+    status: phase-2
+    notes: Detailed PROV-O activity generation will be implemented in the converter after semantic transformation is stable.
+
+ambiguity_rules:
+  - id: A001
+    term: Auto
+    rule: Encode the decision/event as leco:AutoDecision and the documentary manifestation/type separately as leco:AutoDocumentType; link document part to event with leco:documentsAct.
+  - id: A002
+    term: Procurador
+    rule: Use leco:ProcuradorOfficeType for institutional office holding and leco:ProcuradorProceduralRole only when the procedural function is asserted in a specific act.
+  - id: A003
+    term: Justicia y Regimiento
+    rule: A concrete historical body is an organization individual; leco:JusticeAndRegimentType is only its institutional type. Do not equate automatically with every Cabildo occurrence.
+  - id: A004
+    term: Repartimiento
+    rule: Distinguish leco:RepartimientoAct from leco:RepartimientoRegime and connect the act to the resulting legal arrangement when supported.
+  - id: A005
+    term: Merced
+    rule: Distinguish leco:MercedGrant from leco:MercedBenefit; the grant may result in an entitlement/benefit.
+  - id: A006
+    term: Poder
+    rule: Distinguish leco:GrantOfPower, leco:RepresentationRelation, and leco:PowerDocumentType.
+  - id: A007
+    term: historical social categories
+    rule: Indios, Naturales, Vecinos, etc. are SKOS concepts and must be attached through leco:HistoricalCategoryAssignment when attributed to an actor or group.
+
+validation_expectations:
+  - Every URI-generating TEI element must have unique xml:id within the TEI document.
+  - Every local pointer beginning with '#' must resolve to an existing xml:id.
+  - Every inline semantic annotation must have an evidence-bearing ancestor div or seg with xml:id.
+  - Every inferred relation must provide @source and subtype='inferred'.
+  - Every participation must resolve an actor, act, and role.
+  - Every officeHolding must resolve a person, institution, office type, and date/interval.
+  - Every event with @corresp must point only to LegalDocumentPart candidates.
+  - RDF produced from the mapping must conform to shapes/LeCO_shapes.ttl.

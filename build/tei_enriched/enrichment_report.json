@@ -1,0 +1,348 @@
+[
+  {
+    "document": "cab-001-002",
+    "reference_code": "co-ahrb-cab-001-d002",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-002.xml",
+    "persons": 2,
+    "organizations": 3,
+    "places": 2,
+    "events": 8,
+    "relations": 12,
+    "warnings": [
+      "Relación appointsOrDesignates conservada solo en reporte: Autoridad implícita del segmento → Pedro Vasquez (cab-001-002_s003)."
+    ]
+  },
+  {
+    "document": "cab-001-003",
+    "reference_code": "co-ahrb-cab-001-d003",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-003.xml",
+    "persons": 7,
+    "organizations": 4,
+    "places": 1,
+    "events": 6,
+    "relations": 5,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: Alcaldes Ordinarios (cab-001-003_cab-001-003_s002_a004)",
+      "Oficio/rol no resuelto automáticamente: Regidores (cab-001-003_cab-001-003_s003_a004)",
+      "No se migró holdsOrPerformsRole: Garcia Maldonado → Alcaldes Ordinarios (cab-001-003_s002); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Pedro Vazquez → Alcaldes Ordinarios (cab-001-003_s002); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Juan de Horosco → Regidores (cab-001-003_s003); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Miguel de Trujillo → Regidores (cab-001-003_s003); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Hernando de Rojas → Regidores (cab-001-003_s003); falta persona/oficio/institución inequívoca.",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: carta → indios (cab-001-003_s004).",
+      "Predicado legacy pendiente de curaduría/mapeo: ordersOrPerforms: Cabildo/autoridad competente → Proclamation (cab-001-003_s007)."
+    ]
+  },
+  {
+    "document": "cab-001-004",
+    "reference_code": "co-ahrb-cab-001-d004",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-004.xml",
+    "persons": 9,
+    "organizations": 2,
+    "places": 1,
+    "events": 16,
+    "relations": 6,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: diputados (cab-001-004_cab-001-004_s004_a001)",
+      "Oficio/rol no resuelto automáticamente: Alquacil (cab-001-004_cab-001-004_s010_a003)",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: auto → vecinos (cab-001-004_s002).",
+      "No se migró performsAct: Hernan Suárez de Villalobos → Appeal (cab-001-004_s003); falta persona/evento inequívoco.",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Cabildo/autoridad implícita → Hernan Suárez de Villalobos (cab-001-004_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: auto → indios (cab-001-004_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: nuevas leyes → indios (cab-001-004_s003).",
+      "No se migró holdsOrPerformsRole: Juan Rodriguez → diputados (cab-001-004_s004); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Diego de Paredes → diputados (cab-001-004_s004); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Martin de San Juan → Alquacil (cab-001-004_s010); falta persona/oficio/institución inequívoca."
+    ]
+  },
+  {
+    "document": "cab-001-006",
+    "reference_code": "co-ahrb-cab-001-d006",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-006.xml",
+    "persons": 2,
+    "organizations": 2,
+    "places": 4,
+    "events": 6,
+    "relations": 5,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: regidores (cab-001-006_cab-001-006_s002_a002)",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: nuevas leyes → descubridores (cab-001-006_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: nuevas leyes → comendaderos (cab-001-006_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: nuevas leyes → Indios (cab-001-006_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: ordersOrPerforms: Cabildo/autoridad competente → Proclamation (cab-001-006_s005).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: carta Real Provisión → Indios (cab-001-006_s005).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: carta Real Provisión → vecinos (cab-001-006_s005)."
+    ]
+  },
+  {
+    "document": "cab-001-007",
+    "reference_code": "co-ahrb-cab-001-d007",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-007.xml",
+    "persons": 1,
+    "organizations": 3,
+    "places": 2,
+    "events": 5,
+    "relations": 4,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: Procuradores (cab-001-007_cab-001-007_s001_a004)",
+      "Oficio/rol no resuelto automáticamente: Procuradores Generales (cab-001-007_cab-001-007_s003_a004)",
+      "No se migró holdsOrPerformsRole: Alonso Tellez → Procuradores (cab-001-007_s001); falta persona/oficio/institución inequívoca.",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Cabildo → Alonso Tellez (cab-001-007_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-007_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Justicia y Regimiento → Tunja (cab-001-007_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: leyes → naturales (cab-001-007_s002).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: leyes → colonos (cab-001-007_s002).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: leyes → vecinos (cab-001-007_s002)."
+    ]
+  },
+  {
+    "document": "cab-001-008",
+    "reference_code": "co-ahrb-cab-001-d008",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-008.xml",
+    "persons": 2,
+    "organizations": 2,
+    "places": 2,
+    "events": 5,
+    "relations": 5,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: Alquacil Mayor (cab-001-008_cab-001-008_s005_a002)",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo Justicia y Regimiento → Tunja (cab-001-008_s001).",
+      "No se migró holdsOrPerformsRole: Martin de San Juan → Alquacil Mayor (cab-001-008_s005); falta persona/oficio/institución inequívoca."
+    ]
+  },
+  {
+    "document": "cab-001-011",
+    "reference_code": "co-ahrb-cab-001-d0011",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-011.xml",
+    "persons": 2,
+    "organizations": 2,
+    "places": 3,
+    "events": 7,
+    "relations": 4,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo Justicia y Regimiento → Tunja (cab-001-011_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: ordersOrPerforms: Cabildo/autoridad competente → Proclamation (cab-001-011_s002).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: leyes → naturales (cab-001-011_s004).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: leyes → colonos (cab-001-011_s004).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: leyes → Españoles (cab-001-011_s004)."
+    ]
+  },
+  {
+    "document": "cab-001-012",
+    "reference_code": "co-ahrb-cab-001-d0012",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-012.xml",
+    "persons": 2,
+    "organizations": 3,
+    "places": 2,
+    "events": 12,
+    "relations": 7,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: ordersOrPerforms: Cabildo/autoridad competente → Proclamation (cab-001-012_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: orden → vecinos (cab-001-012_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Cabildo → Juan de Orozco (cab-001-012_s006).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-012_s006)."
+    ]
+  },
+  {
+    "document": "cab-001-016",
+    "reference_code": "co-ahrb-cab-001-d0016",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-016.xml",
+    "persons": 8,
+    "organizations": 2,
+    "places": 1,
+    "events": 9,
+    "relations": 4,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-016_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: readsOrReceives: Cabildo/autoridad reunida → orden (cab-001-016_s002)."
+    ]
+  },
+  {
+    "document": "cab-001-018",
+    "reference_code": "co-ahrb-cab-001-d0018",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-018.xml",
+    "persons": 5,
+    "organizations": 2,
+    "places": 3,
+    "events": 4,
+    "relations": 4,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: Juez de Comisión (cab-001-018_cab-001-018_s001_a007)",
+      "Oficio/rol no resuelto automáticamente: Juez (cab-001-018_cab-001-018_s005_a003)",
+      "No se migró holdsOrPerformsRole: Juan Montaño → Juez de Comisión (cab-001-018_s001); falta persona/oficio/institución inequívoca.",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Cabildo → Luis Lanchero (cab-001-018_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-018_s001).",
+      "No se migró holdsOrPerformsRole: Bartolomé Gonzalez de la Peña → Juez (cab-001-018_s005); falta persona/oficio/institución inequívoca."
+    ]
+  },
+  {
+    "document": "cab-001-019",
+    "reference_code": "co-ahrb-cab-001-d0019",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-019.xml",
+    "persons": 2,
+    "organizations": 3,
+    "places": 4,
+    "events": 5,
+    "relations": 4,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: procuradores (cab-001-019_cab-001-019_s001_a007)",
+      "Predicado legacy pendiente de curaduría/mapeo: readsOrReceives: Cabildo/autoridad reunida → Real Provisión (cab-001-019_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Consejos Justicia y Regimiento → Tunja (cab-001-019_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Cabildo → Gonzalo Suárez (cab-001-019_s004)."
+    ]
+  },
+  {
+    "document": "cab-001-028",
+    "reference_code": "co-ahrb-cab-001-d0028",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-028.xml",
+    "persons": 0,
+    "organizations": 2,
+    "places": 2,
+    "events": 0,
+    "relations": 3,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-028_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Justicia y Regimiento → Tunja (cab-001-028_s004)."
+    ]
+  },
+  {
+    "document": "cab-001-038",
+    "reference_code": "co-ahrb-cab-001-d0038",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-038.xml",
+    "persons": 9,
+    "organizations": 3,
+    "places": 3,
+    "events": 14,
+    "relations": 12,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: contador (cab-001-038_cab-001-038_s003_a004)",
+      "Oficio/rol no resuelto automáticamente: cardenal (cab-001-038_cab-001-038_s007_a008)",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-038_s001).",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Justicia y Regimiento → Juan de Montalvo (cab-001-038_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: readsOrReceives: Cabildo/autoridad reunida → orden (cab-001-038_s004).",
+      "No se migró holdsOrPerformsRole: papa Julio → cardenal (cab-001-038_s007); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: San Jorge → cardenal (cab-001-038_s007); falta persona/oficio/institución inequívoca."
+    ]
+  },
+  {
+    "document": "cab-001-039",
+    "reference_code": "co-ahrb-cab-001-d0039",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-039.xml",
+    "persons": 9,
+    "organizations": 2,
+    "places": 1,
+    "events": 8,
+    "relations": 11,
+    "warnings": [
+      "Oficio/rol no resuelto automáticamente: Cap (cab-001-039_cab-001-039_s003_a007)",
+      "No se migró holdsOrPerformsRole: Gonzalo Suárez → Cap (cab-001-039_s003); falta persona/oficio/institución inequívoca.",
+      "No se migró holdsOrPerformsRole: Baltazar Maldonado → Cap (cab-001-039_s003); falta persona/oficio/institución inequívoca.",
+      "Predicado legacy pendiente de curaduría/mapeo: ordersOrPerforms: Cabildo/autoridad competente → Proclamation (cab-001-039_s004)."
+    ]
+  },
+  {
+    "document": "cab-001-040",
+    "reference_code": "co-ahrb-cab-001-d0040",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-040.xml",
+    "persons": 11,
+    "organizations": 2,
+    "places": 2,
+    "events": 5,
+    "relations": 4,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-040_s001).",
+      "Relación appointsOrDesignates conservada solo en reporte: Justicia y Regimiento → Miguel de Trujillo (cab-001-040_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Justicia y Regimiento → Miguel de Trujillo (cab-001-040_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: grantsPowerTo: Justicia y Regimiento → Trujillo (cab-001-040_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: ordersOrPerforms: Cabildo/autoridad competente → Proclamation (cab-001-040_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Justicia y Regimiento → Tunja (cab-001-040_s003).",
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-040_s003)."
+    ]
+  },
+  {
+    "document": "cab-001-042",
+    "reference_code": "co-ahrb-cab-001-d0042",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-042.xml",
+    "persons": 3,
+    "organizations": 2,
+    "places": 4,
+    "events": 8,
+    "relations": 6,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-042_s001)."
+    ]
+  },
+  {
+    "document": "cab-001-046",
+    "reference_code": "co-ahrb-cab-001-d0046",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-046.xml",
+    "persons": 3,
+    "organizations": 2,
+    "places": 5,
+    "events": 3,
+    "relations": 2,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: provisión → judios (cab-001-046_s008).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: orden → judios (cab-001-046_s008).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: cédula → judios (cab-001-046_s011).",
+      "Predicado legacy pendiente de curaduría/mapeo: concernsCategory: cédula → indios (cab-001-046_s011)."
+    ]
+  },
+  {
+    "document": "cab-001-055",
+    "reference_code": "co-ahrb-cab-001-d0055",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-055.xml",
+    "persons": 2,
+    "organizations": 2,
+    "places": 1,
+    "events": 8,
+    "relations": 3,
+    "warnings": []
+  },
+  {
+    "document": "cab-001-056",
+    "reference_code": "co-ahrb-cab-001-d0056",
+    "status": "enriched",
+    "output": "/mnt/data/_all_enriched/cab-001-056.xml",
+    "persons": 0,
+    "organizations": 1,
+    "places": 1,
+    "events": 7,
+    "relations": 2,
+    "warnings": [
+      "Predicado legacy pendiente de curaduría/mapeo: associatedWithPlace: Cabildo → Tunja (cab-001-056_s001)."
+    ]
+  },
+  {
+    "document": "cab-001-058",
+    "reference_code": "co-ahrb-cab-001-058",
+    "status": "skipped-no-transcription",
+    "output": null,
+    "persons": 0,
+    "organizations": 0,
+    "places": 0,
+    "events": 0,
+    "relations": 0,
+    "warnings": [
+      "metadata.json marca transcription_status=unavailable"
+    ]
+  }
+]

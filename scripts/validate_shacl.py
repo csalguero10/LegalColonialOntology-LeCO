@@ -19,14 +19,13 @@ def parse_args():
 
 def main() -> int:
     args = parse_args()
-    data = Graph().parse(args.data, format="turtle")
-    ontology = Graph().parse(args.ontology, format="turtle")
+    data = Graph().parse(args.ontology, format="turtle")
+    data.parse(args.data, format="turtle")
     shapes = Graph().parse(args.shapes, format="turtle")
 
     conforms, report_graph, report_text = validate(
         data_graph=data,
         shacl_graph=shapes,
-        ont_graph=ontology,
         inference="rdfs",
         abort_on_first=False,
         allow_infos=True,

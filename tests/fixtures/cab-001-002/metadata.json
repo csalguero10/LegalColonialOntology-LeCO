@@ -1,0 +1,46 @@
+{
+  "artifact": "metadata",
+  "record_uri": "https://zasqua.org/co-ahrb-cab-001-d002/",
+  "title": "Acta de Cabildo sobre castigo de Juan de Pineda y nombramiento de Pedro Vasquez",
+  "unit_type": "unidad documental",
+  "date": "1547",
+  "date_asserted_in_scope_and_content": "1547-09-02",
+  "reference_code": "co-ahrb-cab-001-d002",
+  "local_identifier": "cab-001-002",
+  "repository": "Archivo Histórico Regional de Boyacá",
+  "original_location": "Tunja, Colombia",
+  "extent": "005-006",
+  "language": "es",
+  "material_note": "Manuscrito. Original",
+  "finding_aid": "Índices del Archivo Histórico Regional de Boyacá. Libros de Cabildos.",
+  "related_entities": [
+    "Pedro Vázquez",
+    "Cabildo de Tunja",
+    "Juan de Pineda"
+  ],
+  "places": [
+    "Perú",
+    "Tunja"
+  ],
+  "access_note": "El registro indica que el documento no cuenta con copia digital disponible y que debe consultarse en el repositorio de origen.",
+  "metadata_last_updated": "2026-03-14",
+  "metadata_format": "METS",
+  "working_transcription_source": "Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion",
+  "methodological_note": "Los campos del catálogo se mantienen separados de las inferencias semánticas y jurídicas construidas para este piloto.",
+  "catalog_verification_status": "verified_directly_in_zasqua",
+  "working_data": {
+    "transcription_status": "available",
+    "dates_explicit_in_text": [
+      "2 de septiembre 1547"
+    ],
+    "related_entities_from_working_annotations": [
+      "Pedro Vasquez",
+      "Juan de Pineda",
+      "Real Audencia"
+    ],
+    "places_from_working_annotations": [
+      "Perú"
+    ],
+    "note": "Este bloque contiene datos derivados del texto/anotación de trabajo y no sustituye campos del catálogo de Zasqua."
+  }
+}

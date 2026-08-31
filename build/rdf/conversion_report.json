@@ -1,0 +1,218 @@
+[
+  {
+    "document": "cab-001-002",
+    "reference_code": "co-ahrb-cab-001-d002",
+    "mode": "mapping-profile",
+    "triples": 430,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-002.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-002.ttl"
+  },
+  {
+    "document": "cab-001-003",
+    "reference_code": "co-ahrb-cab-001-d003",
+    "mode": "mapping-profile",
+    "triples": 411,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-003.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'Alcaldes Ordinarios' (cab-001-003_cab-001-003_s002_a004)",
+      "Oficio/rol legacy sin correspondencia controlada: 'Regidores' (cab-001-003_cab-001-003_s003_a004)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-003.ttl"
+  },
+  {
+    "document": "cab-001-004",
+    "reference_code": "co-ahrb-cab-001-d004",
+    "mode": "mapping-profile",
+    "triples": 667,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-004.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'diputados' (cab-001-004_cab-001-004_s004_a001)",
+      "Oficio/rol legacy sin correspondencia controlada: 'Alquacil' (cab-001-004_cab-001-004_s010_a003)",
+      "Propiedad no autorizada por mapping YAML: appointsPerson (migrated_cab-001-004_cab-001-004_s011_r002)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-004.ttl"
+  },
+  {
+    "document": "cab-001-006",
+    "reference_code": "co-ahrb-cab-001-d006",
+    "mode": "mapping-profile",
+    "triples": 446,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-006.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'regidores' (cab-001-006_cab-001-006_s002_a002)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-006.ttl"
+  },
+  {
+    "document": "cab-001-007",
+    "reference_code": "co-ahrb-cab-001-d007",
+    "mode": "mapping-profile",
+    "triples": 297,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-007.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'Procuradores' (cab-001-007_cab-001-007_s001_a004)",
+      "Oficio/rol legacy sin correspondencia controlada: 'Procuradores Generales' (cab-001-007_cab-001-007_s003_a004)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-007.ttl"
+  },
+  {
+    "document": "cab-001-008",
+    "reference_code": "co-ahrb-cab-001-d008",
+    "mode": "mapping-profile",
+    "triples": 278,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-008.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'Alquacil Mayor' (cab-001-008_cab-001-008_s005_a002)",
+      "Propiedad no autorizada por mapping YAML: appointsPerson (migrated_cab-001-008_cab-001-008_s005_r004)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-008.ttl"
+  },
+  {
+    "document": "cab-001-011",
+    "reference_code": "co-ahrb-cab-001-d0011",
+    "mode": "mapping-profile",
+    "triples": 372,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-011.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-011.ttl"
+  },
+  {
+    "document": "cab-001-012",
+    "reference_code": "co-ahrb-cab-001-d0012",
+    "mode": "mapping-profile",
+    "triples": 452,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-012.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-012.ttl"
+  },
+  {
+    "document": "cab-001-016",
+    "reference_code": "co-ahrb-cab-001-d0016",
+    "mode": "mapping-profile",
+    "triples": 437,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-016.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-016.ttl"
+  },
+  {
+    "document": "cab-001-018",
+    "reference_code": "co-ahrb-cab-001-d0018",
+    "mode": "mapping-profile",
+    "triples": 364,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-018.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'Juez de Comisión' (cab-001-018_cab-001-018_s001_a007)",
+      "Oficio/rol legacy sin correspondencia controlada: 'Juez' (cab-001-018_cab-001-018_s005_a003)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-018.ttl"
+  },
+  {
+    "document": "cab-001-019",
+    "reference_code": "co-ahrb-cab-001-d0019",
+    "mode": "mapping-profile",
+    "triples": 334,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-019.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'procuradores' (cab-001-019_cab-001-019_s001_a007)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-019.ttl"
+  },
+  {
+    "document": "cab-001-028",
+    "reference_code": "co-ahrb-cab-001-d0028",
+    "mode": "mapping-profile",
+    "triples": 196,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-028.ttl",
+    "warnings": [],
+    "shacl_conforms": true,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-028.ttl"
+  },
+  {
+    "document": "cab-001-038",
+    "reference_code": "co-ahrb-cab-001-d0038",
+    "mode": "mapping-profile",
+    "triples": 701,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-038.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'contador' (cab-001-038_cab-001-038_s003_a004)",
+      "Oficio/rol legacy sin correspondencia controlada: 'cardenal' (cab-001-038_cab-001-038_s007_a008)",
+      "Propiedad no autorizada por mapping YAML: appointsPerson (migrated_cab-001-038_cab-001-038_s006_r002)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-038.ttl"
+  },
+  {
+    "document": "cab-001-039",
+    "reference_code": "co-ahrb-cab-001-d0039",
+    "mode": "mapping-profile",
+    "triples": 609,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-039.ttl",
+    "warnings": [
+      "Oficio/rol legacy sin correspondencia controlada: 'Cap' (cab-001-039_cab-001-039_s003_a007)"
+    ],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-039.ttl"
+  },
+  {
+    "document": "cab-001-040",
+    "reference_code": "co-ahrb-cab-001-d0040",
+    "mode": "mapping-profile",
+    "triples": 386,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-040.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-040.ttl"
+  },
+  {
+    "document": "cab-001-042",
+    "reference_code": "co-ahrb-cab-001-d0042",
+    "mode": "mapping-profile",
+    "triples": 424,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-042.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-042.ttl"
+  },
+  {
+    "document": "cab-001-046",
+    "reference_code": "co-ahrb-cab-001-d0046",
+    "mode": "mapping-profile",
+    "triples": 460,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-046.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-046.ttl"
+  },
+  {
+    "document": "cab-001-055",
+    "reference_code": "co-ahrb-cab-001-d0055",
+    "mode": "mapping-profile",
+    "triples": 269,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-055.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-055.ttl"
+  },
+  {
+    "document": "cab-001-056",
+    "reference_code": "co-ahrb-cab-001-d0056",
+    "mode": "mapping-profile",
+    "triples": 207,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-056.ttl",
+    "warnings": [],
+    "shacl_conforms": false,
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-056.ttl"
+  }
+]
