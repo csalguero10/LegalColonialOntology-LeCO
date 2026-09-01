@@ -21,7 +21,7 @@
         "Perfil SHACL STRICT de LeCO"@es,
         "Perfil de validación SHACL de LeCO"@es ;
     rdfs:comment "Debe validarse junto con la ontología LeCO y, cuando el motor lo permita, con inferencia RDFS/OWL habilitada para reconocer las subclases de LeCO y de las ontologías reutilizadas."@es ;
-    owl:versionInfo "0.2.1-core" .
+    owl:versionInfo "0.2.2-core" .
 
 lecosh:AnnotationBasisShape a sh:NodeShape ;
     sh:property [ sh:minCount 1 ;
@@ -418,21 +418,22 @@ lecosh:SemanticAnnotationShape a sh:NodeShape ;
             sh:minInclusive 0 ;
             sh:path leco:confidenceScore ] ;
     sh:sparql [ a sh:SPARQLConstraint ;
-            sh:message "Una anotación inferida a partir del texto debe incluir confidenceScore."@es ;
-            sh:select """
-            PREFIX leco: <https://w3id.org/leco/ontology#>
-            SELECT $this WHERE {
-              $this leco:annotationBasis leco:InferredFromText .
-              FILTER NOT EXISTS { $this leco:confidenceScore ?score }
-            }
-        """ ],
-        [ a sh:SPARQLConstraint ;
-            sh:message "Una anotación textual explícita o inferida debe conservar al menos un anclaje documental mediante attestedIn."@es ;
+            sh:message "Una anotación inferida debe incluir confidenceScore."@es ;
             sh:select """
             PREFIX leco: <https://w3id.org/leco/ontology#>
             SELECT $this WHERE {
               $this leco:annotationBasis ?basis .
-              FILTER(?basis = leco:ExplicitTextualEvidence || ?basis = leco:InferredFromText)
+              FILTER(?basis = leco:InferredFromText || ?basis = leco:ContextualInferenceBasis)
+              FILTER NOT EXISTS { $this leco:confidenceScore ?score }
+            }
+        """ ],
+        [ a sh:SPARQLConstraint ;
+            sh:message "Una anotación explícita o inferida debe conservar al menos un anclaje documental mediante attestedIn."@es ;
+            sh:select """
+            PREFIX leco: <https://w3id.org/leco/ontology#>
+            SELECT $this WHERE {
+              $this leco:annotationBasis ?basis .
+              FILTER(?basis = leco:ExplicitTextualEvidence || ?basis = leco:InferredFromText || ?basis = leco:ContextualInferenceBasis)
               FILTER NOT EXISTS { $this leco:attestedIn ?evidence }
             }
         """ ] ;

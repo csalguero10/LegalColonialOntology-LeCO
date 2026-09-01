@@ -1,0 +1,20 @@
+{
+  "warnings": 30,
+  "by_property": {
+    "leco:appealsAgainst": 2,
+    "leco:appointsPerson": 3,
+    "leco:appointsToOffice": 3,
+    "leco:beforeAuthority": 2,
+    "leco:decidedBy": 11,
+    "leco:sanctions": 9
+  },
+  "inputs": {
+    "analysis": "build/shacl_quality_participant_analysis.csv",
+    "tei_dir": "build/tei_participant_curated",
+    "rdf_dir": "build/rdf_participant_curated"
+  },
+  "outputs": {
+    "detail": "build/legal_relation_audit.csv",
+    "review_queue": "build/legal_relation_audit_review_queue.csv"
+  }
+}

@@ -7,7 +7,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-002.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-002.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-002.ttl"
   },
   {
     "document": "cab-001-003",
@@ -17,7 +17,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-003.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-003.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-003.ttl"
   },
   {
     "document": "cab-001-004",
@@ -27,7 +27,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-004.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-004.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-004.ttl"
   },
   {
     "document": "cab-001-006",
@@ -37,7 +37,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-006.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-006.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-006.ttl"
   },
   {
     "document": "cab-001-007",
@@ -47,7 +47,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-007.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-007.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-007.ttl"
   },
   {
     "document": "cab-001-008",
@@ -57,7 +57,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-008.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-008.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-008.ttl"
   },
   {
     "document": "cab-001-011",
@@ -67,7 +67,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-011.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-011.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-011.ttl"
   },
   {
     "document": "cab-001-012",
@@ -77,7 +77,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-012.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-012.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-012.ttl"
   },
   {
     "document": "cab-001-016",
@@ -87,7 +87,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-016.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-016.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-016.ttl"
   },
   {
     "document": "cab-001-018",
@@ -97,7 +97,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-018.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-018.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-018.ttl"
   },
   {
     "document": "cab-001-019",
@@ -107,7 +107,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-019.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-019.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-019.ttl"
   },
   {
     "document": "cab-001-028",
@@ -117,7 +117,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-028.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-028.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-028.ttl"
   },
   {
     "document": "cab-001-038",
@@ -127,7 +127,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-038.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-038.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-038.ttl"
   },
   {
     "document": "cab-001-039",
@@ -137,7 +137,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-039.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-039.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-039.ttl"
   },
   {
     "document": "cab-001-040",
@@ -147,7 +147,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-040.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-040.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-040.ttl"
   },
   {
     "document": "cab-001-042",
@@ -157,7 +157,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-042.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-042.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-042.ttl"
   },
   {
     "document": "cab-001-046",
@@ -167,7 +167,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-046.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-046.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-046.ttl"
   },
   {
     "document": "cab-001-055",
@@ -177,7 +177,7 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-055.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-055.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-055.ttl"
   },
   {
     "document": "cab-001-056",
@@ -187,6 +187,6 @@
     "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf/cab-001-056.ttl",
     "warnings": [],
     "shacl_conforms": true,
-    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports/cab-001-056.ttl"
+    "shacl_report": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/shacl_reports_quality/cab-001-056.ttl"
   }
 ]

@@ -1,5 +1,5 @@
 name: LeCO-TEI Mapping Profile
-version: 0.2.1
+version: 0.2.2
 ontology: https://w3id.org/leco/ontology
 ontology_prefix: https://w3id.org/leco/ontology#
 tei_namespace: http://www.tei-c.org/ns/1.0
@@ -25,6 +25,9 @@ derived_rules:
     rule: If an OrderAct orders another act and the ordered act has no jurisdiction, inherit the order jurisdiction as a structural derivation.
   - id: D004
     rule: For HistoricalConceptUse in an ActaCabildoDocumentType, if exactly one Cabildo authority with jurisdiction is declared, use that jurisdiction as document-level context when no explicit conceptUseJurisdiction exists.
+  - id: D005
+    rule: If a jurisdictional act has exactly one participating authority (direct hasParticipant or n-ary Participation actor) and that authority exercises exactly one jurisdiction, derive withinJurisdiction. Skip ambiguous multi-authority or multi-jurisdiction cases.
+    provenance: Derived assertions are reified, use leco:ContextualInferenceBasis, shacl-compatible evidence anchors, prov:wasGeneratedBy a rule-specific activity, ProposedAnnotation status, and a confidence score no greater than the weakest premise.
 
 principles:
   - id: P01
@@ -99,6 +102,9 @@ controlled_types:
     - legalArguments
     - localHistoricalConcepts
     - localHistoricalCategories
+    - offices
+    - legalArrangements
+    - representationRelations
   relation:
     nary_patterns:
       - participation
@@ -128,6 +134,10 @@ controlled_types:
       - resultsInLegalArrangement
       - inProceeding
       - hasProceduralAct
+      - hasParticipant
+      - withinJurisdiction
+      - principal
+      - representative
 
 annotation_policy:
   explicit_inline:
@@ -146,6 +156,7 @@ annotation_policy:
       inferred: leco:InferredFromText
       catalog: leco:CatalogMetadataBasis
       humanInterpretation: leco:HumanInterpretationBasis
+      contextual: leco:ContextualInferenceBasis
     default_basis: leco:HumanInterpretationBasis
     validation_status_default: leco:HumanValidatedAnnotation
   confidence:
@@ -320,6 +331,35 @@ mapping_rules:
       types: [leco:HistoricalLegalCategory, skos:Concept]
       optional_type_from_ana: one of EthnoLegalCategory, StatusCategory, ReligiousLegalCategory, SocioLegalCategory, ColonialOfficeStatus
       skos_prefLabel: string-value()
+
+
+  - id: R034
+    source: //tei:standOff/tei:interpGrp[@type='offices']/tei:interp[@xml:id]
+    condition: '@ana resolves to a controlled OfficeType'
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:Office, rico:Position]
+      properties:
+        leco:hasOfficeType: resolve(@ana)
+      label: string-value()
+
+  - id: R035
+    source: //tei:standOff/tei:interpGrp[@type='legalArrangements']/tei:interp[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:LegalArrangement]
+      optional_types_from_ana: true
+      label: string-value()
+
+  - id: R036
+    source: //tei:standOff/tei:interpGrp[@type='representationRelations']/tei:interp[@xml:id]
+    condition: always
+    target:
+      uri: local_resource(xml:id)
+      types: [leco:RepresentationRelation]
+      label: string-value()
+    notes: principal and representative are supplied through R050 objectProperty relations so that each assertion keeps its own provenance.
 
   - id: R040
     source: //tei:standOff//tei:relation[@type='participation'][@xml:id]

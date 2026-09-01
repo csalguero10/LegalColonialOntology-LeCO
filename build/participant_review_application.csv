@@ -1,0 +1,67 @@
+﻿row,document,focus_id,status,basis,approved_target_xml_id,outcome,removed_relation_ids,added_relation_id,reason
+2,cab-001-002,event_cab-001-002_cab-001-002_s004_a006,approved,explicit,person_cab-001-002_cab-001-002_s004_a002,applied,,participant_review_0002_hasParticipant,
+3,cab-001-002,event_cab-001-002_cab-001-002_s003_a002,approved,contextual,person_cab-001-002_cab-001-002_s004_a002,applied,review_0014_hasParticipant,participant_review_0003_hasParticipant,
+4,cab-001-003,event_cab-001-003_cab-001-003_s004_a006,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+5,cab-001-003,event_cab-001-003_cab-001-003_s007_a002,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+6,cab-001-003,event_cab-001-003_cab-001-003_s007_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+7,cab-001-004,event_cab-001-004_cab-001-004_s005_a004,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+8,cab-001-004,event_cab-001-004_cab-001-004_s003_a001,approved,explicit,person_cab-001-004_cab-001-004_s003_a002,applied,review_0041_hasParticipant,participant_review_0008_hasParticipant,
+9,cab-001-004,event_cab-001-004_cab-001-004_s002_a003,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+10,cab-001-004,event_cab-001-004_cab-001-004_s008_a004,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+11,cab-001-004,event_cab-001-004_cab-001-004_s007_a002,approved,explicit,person_cab-001-004_cab-001-004_s007_a003,applied,review_0044_hasParticipant,participant_review_0011_hasParticipant,
+12,cab-001-004,event_cab-001-004_cab-001-004_s008_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+13,cab-001-004,event_cab-001-004_cab-001-004_s002_a005,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+14,cab-001-004,event_cab-001-004_cab-001-004_s002_a008,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+15,cab-001-006,event_cab-001-006_cab-001-006_s006_a001,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+16,cab-001-006,event_cab-001-006_cab-001-006_s005_a004,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+17,cab-001-006,event_cab-001-006_cab-001-006_s004_a004,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+18,cab-001-006,event_cab-001-006_cab-001-006_s005_a002,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+19,cab-001-006,event_cab-001-006_cab-001-006_s002_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+20,cab-001-007,event_cab-001-007_cab-001-007_s002_a002,approved,contextual,person_cab-001-007_cab-001-007_s001_a005,applied,,participant_review_0020_hasParticipant,
+21,cab-001-007,event_cab-001-007_cab-001-007_s002_a001,approved,contextual,person_cab-001-007_cab-001-007_s001_a005,applied,,participant_review_0021_hasParticipant,
+22,cab-001-007,event_cab-001-007_cab-001-007_s001_a003,approved,explicit,person_cab-001-007_cab-001-007_s001_a005,applied,review_0093_hasParticipant,participant_review_0022_hasParticipant,
+23,cab-001-008,event_cab-001-008_cab-001-008_s005_a003,approved,explicit,person_cab-001-008_cab-001-008_s005_a001,applied,,participant_review_0023_hasParticipant,
+24,cab-001-008,event_cab-001-008_cab-001-008_s003_a002,approved,contextual,org_cab-001-008_cab-001-008_s002_a001,applied,,participant_review_0024_hasParticipant,
+25,cab-001-011,event_cab-001-011_cab-001-011_s002_a002,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+26,cab-001-011,event_cab-001-011_cab-001-011_s002_a001,approved,contextual,org_cab-001-011_cab-001-011_s001_a003,applied,,participant_review_0026_hasParticipant,
+27,cab-001-012,event_cab-001-012_cab-001-012_s006_a004,approved,explicit,person_cab-001-012_cab-001-012_s006_a006,applied,review_0133_hasParticipant,participant_review_0027_hasParticipant,
+28,cab-001-012,event_cab-001-012_cab-001-012_s005_a002,approved,contextual,org_cab-001-012_cab-001-012_s001_a001,applied,review_0136_hasParticipant,participant_review_0028_hasParticipant,
+29,cab-001-012,event_cab-001-012_cab-001-012_s003_a005,approved,contextual,org_cab-001-012_cab-001-012_s001_a001,applied,,participant_review_0029_hasParticipant,
+30,cab-001-012,event_cab-001-012_cab-001-012_s003_a003,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+31,cab-001-012,event_cab-001-012_cab-001-012_s003_a004,approved,contextual,org_cab-001-012_cab-001-012_s001_a001,applied,,participant_review_0031_hasParticipant,
+32,cab-001-016,event_cab-001-016_cab-001-016_s003_a003,approved,explicit,person_cab-001-016_cab-001-016_s003_a005,applied,review_0154_hasParticipant,participant_review_0032_hasParticipant,
+33,cab-001-016,event_cab-001-016_cab-001-016_s002_a001,keep_warning,unknown,,left_unasserted,review_0155_hasParticipant,,review decision deliberately leaves participant unasserted
+34,cab-001-016,event_cab-001-016_cab-001-016_s004_a004,approved,explicit,person_cab-001-016_cab-001-016_s003_a005,applied,review_0161_hasParticipant,participant_review_0034_hasParticipant,
+35,cab-001-016,event_cab-001-016_cab-001-016_s004_a003,approved,contextual,org_cab-001-016_cab-001-016_s001_a003,applied,review_0162_hasParticipant,participant_review_0035_hasParticipant,
+36,cab-001-016,event_cab-001-016_cab-001-016_s006_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+37,cab-001-016,event_cab-001-016_cab-001-016_s004_a001,approved,contextual,org_cab-001-016_cab-001-016_s001_a003,applied,review_0170_hasParticipant,participant_review_0037_hasParticipant,
+38,cab-001-018,event_cab-001-018_cab-001-018_s003_a002,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+39,cab-001-018,event_cab-001-018_cab-001-018_s002_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+40,cab-001-018,event_cab-001-018_cab-001-018_s004_a002,approved,contextual,person_cab-001-018_cab-001-018_s001_a011,applied,,participant_review_0040_hasParticipant,
+41,cab-001-019,event_cab-001-019_cab-001-019_s004_a001,approved,explicit,person_cab-001-019_cab-001-019_s004_a003,applied,review_0188_hasParticipant,participant_review_0041_hasParticipant,
+42,cab-001-019,event_cab-001-019_cab-001-019_s003_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+43,cab-001-019,event_cab-001-019_cab-001-019_s001_a003,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+44,cab-001-038,event_cab-001-038_cab-001-038_s006_a006,approved,contextual,org_cab-001-038_cab-001-038_s001_a003,applied,review_0199_hasParticipant,participant_review_0044_hasParticipant,
+45,cab-001-038,event_cab-001-038_cab-001-038_s003_a003,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+46,cab-001-038,event_cab-001-038_cab-001-038_s004_a005,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+47,cab-001-038,event_cab-001-038_cab-001-038_s002_a002,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+48,cab-001-038,event_cab-001-038_cab-001-038_s004_a002,approved,contextual,org_cab-001-038_cab-001-038_s001_a003,applied,,participant_review_0048_hasParticipant,
+49,cab-001-038,event_cab-001-038_cab-001-038_s004_a009,approved,contextual,org_cab-001-038_cab-001-038_s001_a003,applied,,participant_review_0049_hasParticipant,
+50,cab-001-038,event_cab-001-038_cab-001-038_s002_a003,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+51,cab-001-038,event_cab-001-038_cab-001-038_s007_a003,approved,explicit,person_cab-001-038_cab-001-038_s007_a002,applied,,participant_review_0051_hasParticipant,
+52,cab-001-038,event_cab-001-038_cab-001-038_s007_a010,approved,explicit,person_cab-001-038_cab-001-038_s007_a002,applied,,participant_review_0052_hasParticipant,
+53,cab-001-039,event_cab-001-039_cab-001-039_s003_a004,approved,explicit,person_cab-001-039_cab-001-039_s003_a005,applied,,participant_review_0053_hasParticipant,
+54,cab-001-039,event_cab-001-039_cab-001-039_s005_a007,approved,explicit,org_cab-001-039_cab-001-039_s005_a001,applied,review_0236_hasParticipant,participant_review_0054_hasParticipant,
+55,cab-001-039,event_cab-001-039_cab-001-039_s002_a002,approved,explicit,person_cab-001-039_cab-001-039_s002_a001,applied,,participant_review_0055_hasParticipant,
+56,cab-001-040,event_cab-001-040_cab-001-040_s003_a009,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+57,cab-001-040,event_cab-001-040_cab-001-040_s003_a005,approved,explicit,person_cab-001-040_cab-001-040_s003_a006,applied,,participant_review_0057_hasParticipant,
+58,cab-001-042,event_cab-001-042_cab-001-042_s008_a002,needs_review,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+59,cab-001-042,event_cab-001-042_cab-001-042_s007_a002,approved,explicit,person_cab-001-042_cab-001-042_s007_a004,applied,review_0259_hasParticipant,participant_review_0059_hasParticipant,
+60,cab-001-042,event_cab-001-042_cab-001-042_s003_a001,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+61,cab-001-042,event_cab-001-042_cab-001-042_s008_a001,approved,contextual,org_cab-001-042_cab-001-042_s001_a003,applied,,participant_review_0061_hasParticipant,
+62,cab-001-042,event_cab-001-042_cab-001-042_s002_a001,approved,contextual,org_cab-001-042_cab-001-042_s001_a003,applied,review_0262_hasParticipant,participant_review_0062_hasParticipant,
+63,cab-001-046,event_cab-001-046_cab-001-046_s001_a005,approved,explicit,person_cab-001-046_cab-001-046_s001_a004,applied,review_0272_hasParticipant,participant_review_0063_hasParticipant,
+64,cab-001-046,event_cab-001-046_cab-001-046_s002_a003,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+65,cab-001-055,event_cab-001-055_cab-001-055_s005_a002,keep_warning,unknown,,left_unasserted,,,review decision deliberately leaves participant unasserted
+66,cab-001-055,event_cab-001-055_cab-001-055_s002_a002,approved,explicit,person_cab-001-055_cab-001-055_s002_a004,applied,review_0290_hasParticipant,participant_review_0066_hasParticipant,
+67,cab-001-055,event_cab-001-055_cab-001-055_s005_a001,approved,contextual,org_cab-001-055_cab-001-055_s004_a001,applied,,participant_review_0067_hasParticipant,

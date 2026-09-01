@@ -19,6 +19,7 @@ from __future__ import annotations
 
 import argparse
 import csv
+import hashlib
 import json
 import re
 import sys
@@ -95,6 +96,8 @@ BASIS_MAP = {
     "catalog": LECO.CatalogMetadataBasis,
     "humaninterpretation": LECO.HumanInterpretationBasis,
     "human_interpretation": LECO.HumanInterpretationBasis,
+    "contextual": LECO.ContextualInferenceBasis,
+    "contextual_inference": LECO.ContextualInferenceBasis,
 }
 
 
@@ -432,6 +435,9 @@ class TEILeCOConverter:
             "legalArguments": LECO.LegalArgument,
             "localHistoricalConcepts": LECO.HistoricalLegalConcept,
             "localHistoricalCategories": LECO.HistoricalLegalCategory,
+            "offices": LECO.Office,
+            "legalArrangements": LECO.LegalArrangement,
+            "representationRelations": LECO.RepresentationRelation,
         }.items():
             for el in self.root.findall(f".//tei:standOff/tei:interpGrp[@type='{grp_type}']/tei:interp[@xml:id]", NS):
                 uri = self.local_uri(el.get(XML_ID)); text = norm_text(el)
@@ -446,6 +452,12 @@ class TEILeCOConverter:
                 else:
                     self.g.add((uri, RDFS.label, Literal(text, lang="es")))
                     self.g.add((uri, LECO.lexicalForm, Literal(text)))
+                if grp_type == "offices":
+                    self.g.add((uri, RDF.type, RICO.Position))
+                    ana = first(split_ptrs(el.get("ana")))
+                    office_type = self.resolve(ana) if ana else None
+                    if office_type:
+                        self.g.add((uri, LECO.hasOfficeType, office_type))
                 for ana in split_ptrs(el.get("ana")):
                     resolved = self.resolve(ana)
                     if resolved:
@@ -489,21 +501,31 @@ class TEILeCOConverter:
         evidence_uris: list[URIRef],
         evidence_text: Optional[str] = None,
         relation_xml_id: Optional[str] = None,
+        activity_uri: Optional[URIRef] = None,
+        validation_status: Optional[URIRef] = None,
+        confidence: Optional[Decimal] = None,
+        validation_note: Optional[str] = None,
     ):
         assert self.annotation_activity_uri is not None
+        activity_uri = activity_uri or self.annotation_activity_uri
+        validation_status = validation_status or LECO.HumanValidatedAnnotation
         self.g.add((ann_uri, RDF.type, LECO.SemanticAnnotation))
         self.g.add((ann_uri, LECO.annotationTarget, target))
         self.g.add((ann_uri, LECO.annotationBody, body))
         self.g.add((ann_uri, LECO.annotationBasis, basis))
-        self.g.add((ann_uri, LECO.hasValidationStatus, LECO.HumanValidatedAnnotation))
-        self.g.add((ann_uri, PROV.wasGeneratedBy, self.annotation_activity_uri))
+        self.g.add((ann_uri, LECO.hasValidationStatus, validation_status))
+        self.g.add((ann_uri, PROV.wasGeneratedBy, activity_uri))
         for ev in evidence_uris:
             self.g.add((ann_uri, LECO.attestedIn, ev))
         if evidence_text:
             self.g.add((ann_uri, LECO.evidenceText, Literal(evidence_text)))
-        if relation_xml_id and relation_xml_id in self.precision_by_target:
+        if validation_note:
+            self.g.add((ann_uri, LECO.validationNote, Literal(validation_note, lang="es")))
+        if confidence is not None:
+            self.g.add((ann_uri, LECO.confidenceScore, Literal(confidence, datatype=XSD.decimal)))
+        elif relation_xml_id and relation_xml_id in self.precision_by_target:
             self.g.add((ann_uri, LECO.confidenceScore, Literal(self.precision_by_target[relation_xml_id], datatype=XSD.decimal)))
-        if basis == LECO.InferredFromText and relation_xml_id not in self.precision_by_target:
+        if basis in {LECO.InferredFromText, LECO.ContextualInferenceBasis} and confidence is None and relation_xml_id not in self.precision_by_target:
             self.warn(f"Relación inferida sin <precision>: {relation_xml_id}")
 
     def _relation_annotation(self, el: ET.Element, body: URIRef):
@@ -653,32 +675,179 @@ class TEILeCOConverter:
                 "pero las relaciones jurisdiccionales/procesales complejas deben migrarse al perfil TEI-LeCO."
             )
 
+    def _derived_activity(self, rule_id: str, label: str, evidence_uris: list[URIRef]) -> URIRef:
+        activity = self.local_uri(f"inference-activity-{rule_id.lower()}")
+        self.g.add((activity, RDF.type, PROV.Activity))
+        self.g.add((activity, RDF.type, LECO.AnnotationActivity))
+        self.g.add((activity, DCTERMS.identifier, Literal(rule_id)))
+        self.g.add((activity, RDFS.label, Literal(label, lang="es")))
+        for evidence in evidence_uris:
+            self.g.add((activity, PROV.used, evidence))
+        return activity
+
+    def _statement_resource(self, subject: URIRef, predicate: URIRef, obj: URIRef, rule_id: str) -> URIRef:
+        digest = hashlib.sha1(f"{subject}|{predicate}|{obj}".encode("utf-8")).hexdigest()[:14]
+        return self.local_uri(f"derived-{rule_id.lower()}-{digest}-statement")
+
+    def _annotations_for_triple(self, subject: URIRef, predicate: URIRef, obj: URIRef) -> list[URIRef]:
+        annotations: list[URIRef] = []
+        for stmt in self.g.subjects(RDF.type, RDF.Statement):
+            if (stmt, RDF.subject, subject) in self.g and (stmt, RDF.predicate, predicate) in self.g and (stmt, RDF.object, obj) in self.g:
+                annotations.extend(self.g.subjects(LECO.annotationBody, stmt))
+        # Territorial-jurisdiction mapping annotates the jurisdiction resource rather
+        # than reifying the exercisesJurisdiction shortcut. This fallback recovers
+        # that source evidence without inventing a new documentary premise.
+        if predicate == LECO.exercisesJurisdiction:
+            annotations.extend(self.g.subjects(LECO.annotationBody, obj))
+        return list(dict.fromkeys(annotations))
+
+    def _premise_evidence_and_confidence(self, triples: list[tuple[URIRef, URIRef, URIRef]]) -> tuple[list[URIRef], Decimal]:
+        evidence: list[URIRef] = []
+        confidences: list[Decimal] = []
+        default_by_basis = {
+            LECO.ExplicitTextualEvidence: Decimal("1.00"),
+            LECO.HumanInterpretationBasis: Decimal("0.90"),
+            LECO.InferredFromText: Decimal("0.80"),
+            LECO.ContextualInferenceBasis: Decimal("0.80"),
+            LECO.CatalogMetadataBasis: Decimal("0.90"),
+        }
+        for subject, predicate, obj in triples:
+            anns = self._annotations_for_triple(subject, predicate, obj)
+            for ann in anns:
+                evidence.extend(self.g.objects(ann, LECO.attestedIn))
+                score = first(self.g.objects(ann, LECO.confidenceScore))
+                if score is not None:
+                    try:
+                        confidences.append(Decimal(str(score)))
+                    except InvalidOperation:
+                        pass
+                else:
+                    basis = first(self.g.objects(ann, LECO.annotationBasis))
+                    if basis in default_by_basis:
+                        confidences.append(default_by_basis[basis])
+        # If premise annotations were unavailable, use the documented act segment as
+        # a last-resort evidence anchor. The rule is not emitted if no evidence exists.
+        if triples:
+            act = triples[0][0]
+            evidence.extend(self.g.subjects(LECO.documentsAct, act))
+        evidence = list(dict.fromkeys(evidence))
+        premise_conf = min(confidences) if confidences else Decimal("0.85")
+        # A contextual derivation never receives greater epistemic confidence than .95.
+        return evidence, min(premise_conf, Decimal("0.95"))
+
+    def _add_derived_assertion(
+        self,
+        subject: URIRef,
+        predicate: URIRef,
+        obj: URIRef,
+        rule_id: str,
+        rule_label: str,
+        premises: list[tuple[URIRef, URIRef, URIRef]],
+        extra_evidence: Optional[list[URIRef]] = None,
+        confidence_override: Optional[Decimal] = None,
+    ) -> bool:
+        if (subject, predicate, obj) in self.g:
+            return False
+        evidence, confidence = self._premise_evidence_and_confidence(premises)
+        if extra_evidence:
+            evidence = list(dict.fromkeys(evidence + list(extra_evidence)))
+        if confidence_override is not None:
+            confidence = confidence_override
+        if not evidence:
+            self.warn(f"{rule_id}: no se derivó {predicate} para {subject}; faltó evidencia trazable.")
+            return False
+        self.g.add((subject, predicate, obj))
+        statement = self._statement_resource(subject, predicate, obj, rule_id)
+        self.g.add((statement, RDF.type, RDF.Statement))
+        self.g.add((statement, RDF.type, PROV.Entity))
+        self.g.add((statement, RDF.subject, subject))
+        self.g.add((statement, RDF.predicate, predicate))
+        self.g.add((statement, RDF.object, obj))
+        activity = self._derived_activity(rule_id, rule_label, evidence)
+        self.g.add((statement, PROV.wasGeneratedBy, activity))
+        ann = URIRef(str(statement).removesuffix("-statement") + "-annotation")
+        self._semantic_annotation(
+            ann_uri=ann,
+            target=evidence[0],
+            body=statement,
+            basis=LECO.ContextualInferenceBasis,
+            evidence_uris=evidence,
+            activity_uri=activity,
+            validation_status=LECO.ProposedAnnotation,
+            confidence=confidence,
+            validation_note=f"{rule_id}: {rule_label}",
+        )
+        return True
+
     def _derived_rules(self):
-        # Authority → jurisdiction lookup.
+        # D001 — authority-mediated jurisdiction.
         authority_juris: dict[URIRef, list[URIRef]] = {}
         for authority, _, juris in self.g.triples((None, LECO.exercisesJurisdiction, None)):
             authority_juris.setdefault(authority, []).append(juris)
 
-        # Decisions/appeals inherit jurisdiction from the authority encoded by the source.
         for predicate in (LECO.decidedBy, LECO.beforeAuthority):
             for act, _, authority in list(self.g.triples((None, predicate, None))):
                 for juris in authority_juris.get(authority, []):
-                    self.g.add((act, LECO.withinJurisdiction, juris))
-                self.g.add((act, LECO.hasParticipant, authority))
+                    self._add_derived_assertion(
+                        act, LECO.withinJurisdiction, juris, "D001",
+                        "La jurisdicción del acto se deriva de la autoridad decisora o de revisión y de la jurisdicción que esa autoridad ejerce.",
+                        [(act, predicate, authority), (authority, LECO.exercisesJurisdiction, juris)],
+                    )
 
-        # Persons who are targets of coercive/investigative acts are participants in the broad event sense.
-        for predicate in (LECO.sanctions, LECO.investigates, LECO.appointsPerson):
+        # D002 — broad participant shortcut from already asserted legal relations.
+        for predicate in (LECO.decidedBy, LECO.beforeAuthority, LECO.sanctions, LECO.investigates, LECO.appointsPerson):
             for act, _, actor in list(self.g.triples((None, predicate, None))):
-                self.g.add((act, LECO.hasParticipant, actor))
+                self._add_derived_assertion(
+                    act, LECO.hasParticipant, actor, "D002",
+                    "El participante amplio se deriva de una relación jurídica ya afirmada sobre el mismo acto.",
+                    [(act, predicate, actor)],
+                )
 
-        # Ordered acts inherit the jurisdiction of the order when no jurisdiction is explicitly present.
+        # D003 — an ordered act inherits the jurisdiction of the order when no more
+        # specific jurisdiction has been asserted for the ordered act.
         for order, _, ordered in list(self.g.triples((None, LECO.ordersAct, None))):
-            if not list(self.g.objects(ordered, LECO.withinJurisdiction)):
-                for juris in self.g.objects(order, LECO.withinJurisdiction):
-                    self.g.add((ordered, LECO.withinJurisdiction, juris))
+            if list(self.g.objects(ordered, LECO.withinJurisdiction)):
+                continue
+            for juris in self.g.objects(order, LECO.withinJurisdiction):
+                self._add_derived_assertion(
+                    ordered, LECO.withinJurisdiction, juris, "D003",
+                    "El acto ordenado hereda el contexto jurisdiccional de la orden que lo dispone.",
+                    [(order, LECO.ordersAct, ordered), (order, LECO.withinJurisdiction, juris)],
+                )
 
-        # Historical concept uses: if context is a Cabildo acta and there is exactly one Cabildo jurisdiction,
-        # use it as document-level jurisdictional context. This is a structural derivation, not NLP inference.
+        # D005 — when an act has exactly one participating authority (directly or via
+        # Participation) that exercises exactly one jurisdiction, use that jurisdiction
+        # as contextual jurisdiction. Multiple authorities/jurisdictions are deliberately
+        # left unresolved for human review.
+        acts = set(self.g.subjects(LECO.hasParticipant, None)) | set(self.g.subjects(LECO.hasParticipation, None))
+        for act in acts:
+            if list(self.g.objects(act, LECO.withinJurisdiction)):
+                continue
+            authority_premises: list[tuple[URIRef, URIRef, URIRef]] = []
+            authorities: set[URIRef] = set()
+            for actor in self.g.objects(act, LECO.hasParticipant):
+                if list(self.g.objects(actor, LECO.exercisesJurisdiction)):
+                    authorities.add(actor)
+                    authority_premises.append((act, LECO.hasParticipant, actor))
+            for participation in self.g.objects(act, LECO.hasParticipation):
+                for actor in self.g.objects(participation, LECO.participationActor):
+                    if list(self.g.objects(actor, LECO.exercisesJurisdiction)):
+                        authorities.add(actor)
+                        authority_premises.append((act, LECO.hasParticipation, participation))
+                        authority_premises.append((participation, LECO.participationActor, actor))
+            jurisdictions = {j for authority in authorities for j in self.g.objects(authority, LECO.exercisesJurisdiction)}
+            if len(jurisdictions) != 1:
+                continue
+            juris = next(iter(jurisdictions))
+            jurisdiction_premises = [(authority, LECO.exercisesJurisdiction, juris) for authority in authorities if (authority, LECO.exercisesJurisdiction, juris) in self.g]
+            self._add_derived_assertion(
+                act, LECO.withinJurisdiction, juris, "D005",
+                "La jurisdicción se deriva de una única autoridad participante que ejerce una única jurisdicción en el grafo documental.",
+                authority_premises + jurisdiction_premises,
+            )
+
+        # D004 — historical-concept context remains conservative: it is only derived
+        # when the document graph exposes exactly one Cabildo jurisdiction.
         cabildo_authorities = [
             s for s in self.g.subjects(LECO.hasInstitutionType, LECO.CabildoType)
             if list(self.g.objects(s, LECO.exercisesJurisdiction))
@@ -687,12 +856,29 @@ class TEILeCOConverter:
         if len(cabildo_juris) == 1:
             cabildo_j = next(iter(cabildo_juris))
             for use in self.g.subjects(RDF.type, LECO.HistoricalConceptUse):
-                if not list(self.g.objects(use, LECO.conceptUseJurisdiction)):
-                    self.g.add((use, LECO.conceptUseJurisdiction, cabildo_j))
+                if list(self.g.objects(use, LECO.conceptUseJurisdiction)):
+                    continue
+                evidence = list(self.g.objects(use, LECO.attestedIn))
+                if not evidence:
+                    continue
+                # conceptUseJurisdiction is not a JurisdictionalAct relation, but the
+                # same provenance machinery is valid for the derived RDF statement.
+                authority = cabildo_authorities[0]
+                self._add_derived_assertion(
+                    use, LECO.conceptUseJurisdiction, cabildo_j, "D004",
+                    "El contexto jurisdiccional del uso conceptual se deriva del único Cabildo con jurisdicción identificado en el documento.",
+                    [(authority, LECO.exercisesJurisdiction, cabildo_j)],
+                    extra_evidence=evidence,
+                )
         for use in self.g.subjects(RDF.type, LECO.HistoricalConceptUse):
-            if not list(self.g.objects(use, LECO.conceptUseTime)) and self.document_date_uri:
-                self.g.add((use, LECO.conceptUseTime, self.document_date_uri))
-
+            if not list(self.g.objects(use, LECO.conceptUseTime)) and self.document_date_uri and self.record_uri:
+                self._add_derived_assertion(
+                    use, LECO.conceptUseTime, self.document_date_uri, "D004T",
+                    "El contexto temporal del uso conceptual se deriva de la fecha documental normalizada.",
+                    [],
+                    extra_evidence=list(self.g.objects(use, LECO.attestedIn)) + [self.record_uri],
+                    confidence_override=Decimal("0.95"),
+                )
     def validate_shacl(self, ontology_path: Path, shapes_path: Path, report_path: Path) -> tuple[bool, str]:
         try:
             from pyshacl import validate

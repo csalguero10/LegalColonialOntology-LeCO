@@ -17,8 +17,8 @@
 
 <https://w3id.org/leco/ontology>
     a owl:Ontology ;
-    owl:versionIRI <https://w3id.org/leco/ontology/0.3.1> ;
-    owl:versionInfo "0.3.1" ;
+    owl:versionIRI <https://w3id.org/leco/ontology/0.3.2> ;
+    owl:versionInfo "0.3.2" ;
     dcterms:title "LegalColonialOntology (LeCO)"@en ;
     dcterms:title "Ontología Jurídica Colonial (LeCO)"@es ;
     dcterms:description "Ontología de dominio para representar la cultura jurisdiccional, los documentos, normas, actores, cargos, roles procesales, actos, jurisdicciones, categorías jurídico-sociales y conceptos históricos de fuentes jurídicas coloniales iberoamericanas."@es ;
@@ -764,6 +764,11 @@ leco:CatalogMetadataBasis a leco:AnnotationBasis ;
 
 leco:HumanInterpretationBasis a leco:AnnotationBasis ;
     skos:prefLabel "interpretación historiográfica humana"@es ;
+    skos:inScheme leco:AnnotationBasisScheme .
+
+leco:ContextualInferenceBasis a leco:AnnotationBasis ;
+    skos:prefLabel "inferencia contextual derivada"@es , "derived contextual inference"@en ;
+    skos:definition "Base de anotación para afirmaciones derivadas reproduciblemente de otras relaciones ya representadas en el grafo documental, sin afirmar que la relación derivada aparezca literalmente en el texto."@es ;
     skos:inScheme leco:AnnotationBasisScheme .
 
 #################################################################
