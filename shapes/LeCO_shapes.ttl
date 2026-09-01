@@ -58,6 +58,14 @@ lecosh:ColonialOfficeStatusShape a sh:NodeShape ;
             sh:path skos:inScheme ] ;
     sh:targetClass leco:ColonialOfficeStatus .
 
+lecosh:CurrencyUnitShape a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path skos:prefLabel ;
+            sh:uniqueLang true ],
+        [ sh:hasValue leco:CurrencyUnitScheme ;
+            sh:path skos:inScheme ] ;
+    sh:targetClass leco:CurrencyUnit .
+
 lecosh:DocumentTypeShape a sh:NodeShape ;
     sh:property [ sh:minCount 1 ;
             sh:path skos:prefLabel ;
@@ -65,6 +73,12 @@ lecosh:DocumentTypeShape a sh:NodeShape ;
         [ sh:hasValue leco:DocumentTypeScheme ;
             sh:path skos:inScheme ] ;
     sh:targetClass leco:DocumentType .
+
+lecosh:EncomiendaGrantShape a sh:NodeShape ;
+    sh:property [ sh:class leco:LegalArrangement ;
+            sh:message "La encomienda como acto puede enlazarse con el régimen/arreglo jurídico resultante."@es ;
+            sh:path leco:resultsInLegalArrangement ] ;
+    sh:targetClass leco:EncomiendaGrant .
 
 lecosh:EthnoLegalCategoryShape a sh:NodeShape ;
     sh:property [ sh:hasValue leco:EthnoLegalCategoryScheme ;

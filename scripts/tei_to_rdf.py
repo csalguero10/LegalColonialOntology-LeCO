@@ -232,6 +232,8 @@ class TEILeCOConverter:
                 else:
                     self.warn(f"confidence fuera de rango [0,1] en {target}: {score}")
 
+        self._monetary_amounts()
+
         self._record(metadata)
         self._document_date()
 
@@ -560,6 +562,28 @@ class TEILeCOConverter:
         if end:
             self.g.add((uri, LECO.normalizedForm, Literal(f"to:{end}")))
         return uri
+
+    def _monetary_amounts(self):
+        assert self.root is not None
+        unit_labels = self.mapping.get("controlled_types", {}).get("measure", {}).get("unit", {})
+        for meas in self.root.findall(".//tei:measure[@target][@quantity]", NS):
+            unit_key = (meas.get("unit") or "").strip().lower()
+            unit_ref = unit_labels.get(unit_key)
+            currency = LECO[unit_ref.split(":", 1)[1]] if unit_ref and ":" in unit_ref else None
+            for target in split_ptrs(meas.get("target")):
+                subject = self.resolve(target)
+                if subject is None:
+                    continue
+                try:
+                    amount = Decimal(meas.get("quantity"))
+                except (InvalidOperation, TypeError):
+                    self.warn(f"Valor quantity inválido en <measure> target={target}")
+                    continue
+                self.g.add((subject, LECO.monetaryAmount, Literal(amount, datatype=XSD.decimal)))
+                if currency:
+                    self.g.add((subject, LECO.hasCurrencyUnit, currency))
+                else:
+                    self.warn(f"Unidad monetaria no controlada en <measure unit=\"{meas.get('unit')}\"> target={target}")
 
     def _relations(self):
         assert self.root is not None

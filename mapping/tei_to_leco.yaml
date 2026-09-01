@@ -1,5 +1,5 @@
 name: LeCO-TEI Mapping Profile
-version: 0.2.2
+version: 0.2.3
 ontology: https://w3id.org/leco/ontology
 ontology_prefix: https://w3id.org/leco/ontology#
 tei_namespace: http://www.tei-c.org/ns/1.0
@@ -138,6 +138,15 @@ controlled_types:
       - withinJurisdiction
       - principal
       - representative
+  measure:
+    unit:
+      peso: leco:PesoUnit
+      pesos: leco:PesoUnit
+      tomin: leco:TominUnit
+      tomín: leco:TominUnit
+      tomines: leco:TominUnit
+      ducado: leco:DucadoUnit
+      ducados: leco:DucadoUnit
 
 annotation_policy:
   explicit_inline:
@@ -485,6 +494,20 @@ mapping_rules:
       provenance: map responsible agent/activity with PROV-O
     status: phase-2
     notes: Detailed PROV-O activity generation will be implemented in the converter after semantic transformation is stable.
+
+  - id: R062
+    source: //tei:measure[@target][@quantity]
+    condition: '@unit resolves to a controlled_types.measure.unit label (leco:CurrencyUnit)'
+    target:
+      subject: resolve(@target)
+      properties:
+        leco:monetaryAmount: decimal(@quantity)
+        leco:hasCurrencyUnit: resolve_currency_unit(@unit)
+    notes: Mirrors R060's use of a standalone TEI element to carry a supplementary
+      numeric value. @target is normally an event/act xml:id (sanción, multa, merced,
+      encomienda, cobro...). An unrecognized @unit is reported as a warning and no
+      leco:hasCurrencyUnit triple is produced; the amount is never guessed into a
+      currency that is not explicit in the source.
 
 ambiguity_rules:
   - id: A001

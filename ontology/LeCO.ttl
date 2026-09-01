@@ -17,13 +17,13 @@
 
 <https://w3id.org/leco/ontology>
     a owl:Ontology ;
-    owl:versionIRI <https://w3id.org/leco/ontology/0.3.2> ;
-    owl:versionInfo "0.3.2" ;
+    owl:versionIRI <https://w3id.org/leco/ontology/0.4.0> ;
+    owl:versionInfo "0.4.0" ;
     dcterms:title "LegalColonialOntology (LeCO)"@en ;
     dcterms:title "Ontología Jurídica Colonial (LeCO)"@es ;
     dcterms:description "Ontología de dominio para representar la cultura jurisdiccional, los documentos, normas, actores, cargos, roles procesales, actos, jurisdicciones, categorías jurídico-sociales y conceptos históricos de fuentes jurídicas coloniales iberoamericanas."@es ;
     dcterms:created "2026-08-28"^^xsd:date ;
-    dcterms:modified "2026-08-31"^^xsd:date ;
+    dcterms:modified "2026-09-01"^^xsd:date ;
     dcterms:conformsTo <https://www.ica.org/standards/RiC/ontology> ,
         <http://www.cidoc-crm.org/cidoc-crm/> ,
         <http://xmlns.com/foaf/0.1/> ,
@@ -218,6 +218,15 @@ leco:Participation a owl:Class ;
     rdfs:comment "Nodo n-ario para contextualizar un actor, un acto y el rol desempeñado en ese acto."@es .
 
 #################################################################
+# 5b. Monetary units (v0.4.0)
+#################################################################
+
+leco:CurrencyUnit a owl:Class ;
+    rdfs:label "Unidad monetaria"@es , "Currency Unit"@en ;
+    rdfs:subClassOf skos:Concept ;
+    rdfs:comment "Unidad de cuenta o moneda usada en el corpus para expresar multas, tributos u otras cuantías."@es .
+
+#################################################################
 # 6. Historical concepts and historical legal/social categories
 #################################################################
 
@@ -319,6 +328,21 @@ leco:MercedBenefit a owl:Class ;
     rdfs:label "Merced (derecho o beneficio concedido)"@es ;
     rdfs:subClassOf leco:LegalEntitlement .
 
+# ENCOMIENDA: grant act + resulting regime/arrangement. Modelada en paralelo a
+# Repartimiento/Merced. No atestiguada en el corpus piloto de cabildos; se
+# incorpora como seed-from-literature por ser la institución jurídica central
+# del régimen colonial hispánico de trabajo y tributo indígena.
+leco:EncomiendaGrant a owl:Class ;
+    rdfs:label "Encomienda (acto de encomendar)"@es ;
+    rdfs:subClassOf leco:AdministrativeAct ;
+    leco:sourceStatus "seed-from-literature" ;
+    leco:modelingNote "No atestiguada aún en el corpus piloto de cabildos. Modelada en paralelo a leco:RepartimientoAct/leco:RepartimientoRegime."@es .
+
+leco:EncomiendaRegime a owl:Class ;
+    rdfs:label "Encomienda (régimen/arreglo jurídico)"@es ;
+    rdfs:subClassOf leco:LegalArrangement ;
+    leco:sourceStatus "seed-from-literature" .
+
 # PODER: act + representation relation + documentary type
 leco:GrantOfPower a owl:Class ;
     rdfs:label "Otorgamiento de poder"@es ;
@@ -355,6 +379,35 @@ leco:AnnotationBasis a owl:Class ;
     rdfs:comment "Clasifica si una anotación deriva de evidencia textual explícita, inferencia, metadatos de catálogo u otra base interpretativa."@es .
 
 #################################################################
+# 9b. Class disjointness axioms (v0.4.0)
+#
+# Formaliza mediante owl:AllDisjointClasses la separación de niveles que la
+# ontología ya sigue implícitamente (ver sección 8: los casos de "doble
+# naturaleza" se modelan siempre con individuos distintos enlazados por una
+# propiedad, nunca con un único individuo tipado en dos clases de este grupo).
+# Se definen dos grupos porque son niveles ontológicos distintos: entidades de
+# dominio (documentos, actos, agentes...) frente a clases de vocabulario
+# controlado SKOS (tipos, roles, conceptos históricos...). No se declara
+# disyunción entre ambos grupos porque no aporta valor adicional: ningún caso
+# del corpus tipa un mismo individuo a la vez como entidad de dominio y como
+# concepto de vocabulario.
+#################################################################
+
+[] a owl:AllDisjointClasses ;
+    rdfs:comment "Clases de entidad de dominio mutuamente excluyentes."@es ;
+    owl:members ( leco:LegalDocument leco:LegalDocumentPart leco:NormativeRule
+        leco:JurisdictionalAct leco:LegalProceeding leco:Jurisdiction leco:Office
+        leco:LegalArgument leco:LegalRelation leco:LegalArrangement leco:LegalEntitlement
+        leco:SemanticAnnotation leco:AnnotationActivity leco:Participation
+        leco:HistoricalConceptUse leco:HistoricalCategoryAssignment ) .
+
+[] a owl:AllDisjointClasses ;
+    rdfs:comment "Clases de vocabulario controlado SKOS mutuamente excluyentes."@es ;
+    owl:members ( leco:InstitutionType leco:OfficeType leco:ProceduralRole leco:DocumentType
+        leco:HistoricalLegalConcept leco:HistoricalLegalCategory leco:ValidationStatus
+        leco:AnnotationBasis leco:CurrencyUnit ) .
+
+#################################################################
 # 10. Object properties
 #################################################################
 
@@ -369,7 +422,8 @@ leco:documentsAct a owl:ObjectProperty ;
     rdfs:label "documenta acto"@es ;
     rdfs:subPropertyOf rico:documents ;
     rdfs:domain [ a owl:Class ; owl:unionOf (leco:LegalDocument leco:LegalDocumentPart) ] ;
-    rdfs:range leco:JurisdictionalAct .
+    rdfs:range leco:JurisdictionalAct ;
+    owl:inverseOf leco:isActDocumentedIn .
 
 leco:expressesRule a owl:ObjectProperty ;
     rdfs:label "expresa regla"@es ;
@@ -381,7 +435,8 @@ leco:invokesRule a owl:ObjectProperty ;
     rdfs:label "invoca regla"@es ;
     rdfs:subPropertyOf rico:isAssociatedWithRule ;
     rdfs:domain [ a owl:Class ; owl:unionOf (leco:JurisdictionalAct leco:LegalArgument) ] ;
-    rdfs:range rico:Rule .
+    rdfs:range rico:Rule ;
+    owl:inverseOf leco:isInvokedIn .
 
 leco:argumentInvokesRule a owl:ObjectProperty ;
     rdfs:label "argumento invoca regla"@es ;
@@ -412,7 +467,8 @@ leco:hasParticipation a owl:ObjectProperty ;
     rdfs:label "tiene participación"@es ;
     rdfs:subPropertyOf prov:qualifiedAssociation ;
     rdfs:domain leco:JurisdictionalAct ;
-    rdfs:range leco:Participation .
+    rdfs:range leco:Participation ;
+    owl:inverseOf leco:participationInAct .
 
 leco:participationActor a owl:ObjectProperty ;
     rdfs:label "actor de la participación"@es ;
@@ -436,7 +492,8 @@ leco:hasParticipant a owl:ObjectProperty ;
     rdfs:subPropertyOf crm:P11_had_participant ;
     rdfs:domain leco:JurisdictionalAct ;
     rdfs:range rico:Agent ;
-    rdfs:comment "Atajo. Para roles procesales contextualizados se recomienda leco:Participation."@es .
+    rdfs:comment "Atajo. Para roles procesales contextualizados se recomienda leco:Participation."@es ;
+    owl:inverseOf leco:isParticipantIn .
 
 # Proceedings and adversarial structure
 leco:hasProceduralAct a owl:ObjectProperty ;
@@ -526,7 +583,8 @@ leco:decidedBy a owl:ObjectProperty ;
     rdfs:label "decidido por"@es ;
     rdfs:subPropertyOf crm:P14_carried_out_by ;
     rdfs:domain leco:LegalDecision ;
-    rdfs:range rico:Agent .
+    rdfs:range rico:Agent ;
+    owl:inverseOf leco:decides .
 
 leco:beforeAuthority a owl:ObjectProperty ;
     rdfs:label "ante autoridad"@es ;
@@ -536,7 +594,8 @@ leco:beforeAuthority a owl:ObjectProperty ;
 leco:appealsAgainst a owl:ObjectProperty ;
     rdfs:label "apela contra"@es ;
     rdfs:domain leco:Appeal ;
-    rdfs:range leco:LegalDecision .
+    rdfs:range leco:LegalDecision ;
+    owl:inverseOf leco:isAppealedBy .
 
 leco:respondsTo a owl:ObjectProperty ;
     rdfs:label "responde a"@es ;
@@ -546,7 +605,8 @@ leco:respondsTo a owl:ObjectProperty ;
 leco:ordersAct a owl:ObjectProperty ;
     rdfs:label "ordena acto"@es ;
     rdfs:domain leco:OrderAct ;
-    rdfs:range leco:JurisdictionalAct .
+    rdfs:range leco:JurisdictionalAct ;
+    owl:inverseOf leco:isOrderedByAct .
 
 leco:hasObjectOfAct a owl:ObjectProperty ;
     rdfs:label "tiene objeto del acto"@es ;
@@ -556,17 +616,20 @@ leco:hasObjectOfAct a owl:ObjectProperty ;
 leco:sanctions a owl:ObjectProperty ;
     rdfs:label "sanciona a"@es ;
     rdfs:domain leco:Sanction ;
-    rdfs:range rico:Agent .
+    rdfs:range rico:Agent ;
+    owl:inverseOf leco:isSubjectOfSanction .
 
 leco:investigates a owl:ObjectProperty ;
     rdfs:label "investiga"@es ;
     rdfs:domain leco:Investigation ;
-    rdfs:range owl:Thing .
+    rdfs:range owl:Thing ;
+    owl:inverseOf leco:isSubjectOfInvestigation .
 
 leco:appointsPerson a owl:ObjectProperty ;
     rdfs:label "nombra persona"@es ;
     rdfs:domain leco:Appointment ;
-    rdfs:range rico:Person .
+    rdfs:range rico:Person ;
+    owl:inverseOf leco:isAppointedIn .
 
 leco:appointsToOffice a owl:ObjectProperty ;
     rdfs:label "nombra para oficio"@es ;
@@ -698,6 +761,86 @@ leco:annotationBasis a owl:ObjectProperty ;
     rdfs:range leco:AnnotationBasis .
 
 #################################################################
+# 10b. Inverse properties (v0.4.0)
+#
+# Formalizan, para las relaciones agente-acto de mayor valor consultivo (CQs
+# C01, C04, C06, C07/C12), el sentido inverso de una propiedad ya existente.
+# leco:isInvokedIn se declara solo como inversa de la propiedad general
+# leco:invokesRule: bajo razonamiento OWL-RL completo (el que ya aplica
+# scripts/reason.py) también se infiere para sus subpropiedades
+# argumentInvokesRule/citesRule/appliesRule/interpretsRule por composición de
+# rdfs:subPropertyOf con owl:inverseOf, sin necesidad de una inversa dedicada
+# para cada una. No se añaden inversas para propiedades ya cubiertas por un
+# patrón n-ario más completo (p. ej. leco:holdsOffice, ver nota CQ06) ni para
+# propiedades puramente clasificatorias (hasOfficeType, hasInstitutionType...).
+#################################################################
+
+leco:decides a owl:ObjectProperty ;
+    rdfs:label "decide"@es ;
+    rdfs:subPropertyOf crm:P14i_performed ;
+    rdfs:domain rico:Agent ;
+    rdfs:range leco:LegalDecision ;
+    rdfs:comment "Propiedad inversa de leco:decidedBy."@es .
+
+leco:isParticipantIn a owl:ObjectProperty ;
+    rdfs:label "es participante en"@es ;
+    rdfs:subPropertyOf crm:P11i_participated_in ;
+    rdfs:domain rico:Agent ;
+    rdfs:range leco:JurisdictionalAct ;
+    rdfs:comment "Propiedad inversa de leco:hasParticipant."@es .
+
+leco:isInvokedIn a owl:ObjectProperty ;
+    rdfs:label "es invocada en"@es ;
+    rdfs:domain rico:Rule ;
+    rdfs:range [ a owl:Class ; owl:unionOf (leco:JurisdictionalAct leco:LegalArgument) ] ;
+    rdfs:comment "Propiedad inversa de leco:invokesRule."@es .
+
+leco:isAppealedBy a owl:ObjectProperty ;
+    rdfs:label "es apelada por"@es ;
+    rdfs:domain leco:LegalDecision ;
+    rdfs:range leco:Appeal ;
+    rdfs:comment "Propiedad inversa de leco:appealsAgainst."@es .
+
+leco:isOrderedByAct a owl:ObjectProperty ;
+    rdfs:label "es ordenado por"@es ;
+    rdfs:domain leco:JurisdictionalAct ;
+    rdfs:range leco:OrderAct ;
+    rdfs:comment "Propiedad inversa de leco:ordersAct."@es .
+
+leco:isSubjectOfSanction a owl:ObjectProperty ;
+    rdfs:label "es objeto de sanción en"@es ;
+    rdfs:domain rico:Agent ;
+    rdfs:range leco:Sanction ;
+    rdfs:comment "Propiedad inversa de leco:sanctions."@es .
+
+leco:isSubjectOfInvestigation a owl:ObjectProperty ;
+    rdfs:label "es objeto de investigación en"@es ;
+    rdfs:domain owl:Thing ;
+    rdfs:range leco:Investigation ;
+    rdfs:comment "Propiedad inversa de leco:investigates."@es .
+
+leco:isAppointedIn a owl:ObjectProperty ;
+    rdfs:label "es nombrado en"@es ;
+    rdfs:domain rico:Person ;
+    rdfs:range leco:Appointment ;
+    rdfs:comment "Propiedad inversa de leco:appointsPerson."@es .
+
+leco:isActDocumentedIn a owl:ObjectProperty ;
+    rdfs:label "está documentado en"@es ;
+    rdfs:domain leco:JurisdictionalAct ;
+    rdfs:range [ a owl:Class ; owl:unionOf (leco:LegalDocument leco:LegalDocumentPart) ] ;
+    rdfs:comment "Propiedad inversa de leco:documentsAct."@es .
+
+#################################################################
+# 10c. Monetary properties (v0.4.0)
+#################################################################
+
+leco:hasCurrencyUnit a owl:ObjectProperty ;
+    rdfs:label "tiene unidad monetaria"@es ;
+    rdfs:range leco:CurrencyUnit ;
+    rdfs:comment "Aplica a cualquier acto o derecho jurídico que exprese una cuantía (sanción, multa, merced, encomienda, cobro...), junto con leco:monetaryAmount."@es .
+
+#################################################################
 # 11. Datatype properties
 #################################################################
 
@@ -723,6 +866,11 @@ leco:evidenceText a owl:DatatypeProperty ;
     rdfs:label "texto de evidencia"@es ;
     rdfs:range xsd:string .
 
+leco:monetaryAmount a owl:DatatypeProperty ;
+    rdfs:label "cuantía monetaria"@es ;
+    rdfs:range xsd:decimal ;
+    rdfs:comment "Cuantía numérica en la unidad monetaria indicada por leco:hasCurrencyUnit."@es .
+
 leco:validationNote a owl:DatatypeProperty ;
     rdfs:label "nota de validación"@es ;
     rdfs:domain leco:SemanticAnnotation ;
@@ -743,6 +891,7 @@ leco:StatusCategoryScheme a skos:ConceptScheme ; skos:prefLabel "Subvocabulario 
 leco:ReligiousLegalCategoryScheme a skos:ConceptScheme ; skos:prefLabel "Subvocabulario de categorías jurídico-religiosas"@es .
 leco:SocioLegalCategoryScheme a skos:ConceptScheme ; skos:prefLabel "Subvocabulario de categorías socio-jurídicas"@es .
 leco:ColonialOfficeStatusScheme a skos:ConceptScheme ; skos:prefLabel "Subvocabulario de estatus coloniales vinculados a oficio, privilegio o función"@es .
+leco:CurrencyUnitScheme a skos:ConceptScheme ; skos:prefLabel "Unidades monetarias de LeCO"@es .
 leco:ValidationStatusScheme a skos:ConceptScheme ; skos:prefLabel "Estados de validación de anotaciones"@es .
 leco:AnnotationBasisScheme a skos:ConceptScheme ; skos:prefLabel "Bases de anotación de LeCO"@es .
 
@@ -782,6 +931,16 @@ leco:RoyalChamberType a leco:InstitutionType ; skos:prefLabel "Cámara Real"@es 
 leco:JusticeAndRegimentType a leco:InstitutionType ; skos:prefLabel "Justicia y Regimiento"@es ; skos:inScheme leco:InstitutionTypeScheme ; leco:sourceStatus "observed-in-pilot" ; leco:modelingNote "Tipo/denominación institucional; su ocurrencia concreta puede ser una instancia de leco:JusticeAndRegimentBody."@es .
 leco:GovernorateType a leco:InstitutionType ; skos:prefLabel "Gobernación"@es ; skos:inScheme leco:InstitutionTypeScheme ; leco:sourceStatus "seed-from-literature" .
 leco:ViceroyaltyType a leco:InstitutionType ; skos:prefLabel "Virreinato"@es ; skos:inScheme leco:InstitutionTypeScheme ; leco:sourceStatus "seed-from-literature" .
+
+#################################################################
+# 13b. Currency units (SKOS individuals, v0.4.0)
+# Las tres unidades están atestiguadas literalmente en el corpus piloto
+# (cifras en pesos, tomines y ducados en data/texts/*.txt).
+#################################################################
+
+leco:PesoUnit a leco:CurrencyUnit ; skos:prefLabel "peso"@es ; skos:inScheme leco:CurrencyUnitScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:TominUnit a leco:CurrencyUnit ; skos:prefLabel "tomín"@es ; skos:altLabel "tomine"@es ; skos:inScheme leco:CurrencyUnitScheme ; leco:sourceStatus "observed-in-pilot" .
+leco:DucadoUnit a leco:CurrencyUnit ; skos:prefLabel "ducado"@es ; skos:inScheme leco:CurrencyUnitScheme ; leco:sourceStatus "observed-in-pilot" .
 
 #################################################################
 # 14. Office types (SKOS individuals)
@@ -884,6 +1043,14 @@ leco:Colonos a leco:StatusCategory , leco:SocioLegalCategory ; skos:prefLabel "c
 leco:Descubridores a leco:StatusCategory , leco:ColonialOfficeStatus ; skos:prefLabel "descubridores"@es ; skos:inScheme leco:HistoricalLegalCategoryScheme , leco:StatusCategoryScheme , leco:ColonialOfficeStatusScheme ; leco:sourceStatus "observed-in-pilot" .
 leco:Conquistadores a leco:StatusCategory , leco:ColonialOfficeStatus ; skos:prefLabel "conquistadores"@es ; skos:inScheme leco:HistoricalLegalCategoryScheme , leco:StatusCategoryScheme , leco:ColonialOfficeStatusScheme ; leco:sourceStatus "observed-in-pilot" .
 leco:Encomenderos a leco:StatusCategory , leco:ColonialOfficeStatus ; skos:prefLabel "encomenderos"@es ; skos:altLabel "comendaderos"@es ; skos:inScheme leco:HistoricalLegalCategoryScheme , leco:StatusCategoryScheme , leco:ColonialOfficeStatusScheme ; leco:sourceStatus "observed-in-pilot" ; leco:modelingNote "La forma 'comendaderos' aparece en la anotación piloto; debe verificarse contra la transcripción/fuente."@es .
+
+# Estatus de sujeción/liberación servil (v0.4.0): no atestiguadas en el corpus
+# piloto de cabildos, pero ampliamente documentadas en el derecho castellano e
+# indiano de la época (regulación de la esclavitud y de la manumisión). Se
+# modelan como StatusCategory puro, sin conflicto con EthnoLegalCategory, para
+# no equiparar estatus jurídico de sujeción con categoría étnica.
+leco:Esclavos a leco:StatusCategory ; skos:prefLabel "esclavos"@es ; skos:inScheme leco:HistoricalLegalCategoryScheme , leco:StatusCategoryScheme ; leco:sourceStatus "seed-from-literature" ; leco:modelingNote "Categoría jurídica de sujeción servil; no atestiguada aún en el corpus piloto de cabildos."@es .
+leco:Libertos a leco:StatusCategory ; skos:prefLabel "libertos"@es ; skos:altLabel "horros"@es , "horras"@es ; skos:inScheme leco:HistoricalLegalCategoryScheme , leco:StatusCategoryScheme ; leco:sourceStatus "seed-from-literature" ; skos:related leco:Esclavos ; leco:modelingNote "Categoría jurídica de las personas manumitidas; no atestiguada aún en el corpus piloto de cabildos."@es .
 
 leco:Judios a leco:ReligiousLegalCategory ; skos:prefLabel "judíos"@es ; skos:inScheme leco:HistoricalLegalCategoryScheme , leco:ReligiousLegalCategoryScheme ; leco:sourceStatus "observed-in-pilot" .
 
