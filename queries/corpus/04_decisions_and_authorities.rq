@@ -1,0 +1,7 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+SELECT ?decision ?authority
+WHERE {
+  ?decision a leco:LegalDecision .
+  OPTIONAL { ?decision leco:decidedBy ?authority . }
+}
+ORDER BY ?decision

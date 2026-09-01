@@ -1,0 +1,66 @@
+document,severity,source_shape,constraint,result_path,message,count
+cab-001-002,Warning,_:n47bac71318624926ba219a2cbe955df7b5,sh:MinCountConstraintComponent,leco:appointsPerson,No se ha identificado la persona nombrada.,1
+cab-001-002,Warning,_:n47bac71318624926ba219a2cbe955df7b8,sh:MinCountConstraintComponent,leco:appointsToOffice,No se ha identificado el oficio al que se realiza el nombramiento.,1
+cab-001-002,Warning,_:n47bac71318624926ba219a2cbe955df7b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",6
+cab-001-003,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,3
+cab-001-003,Warning,_:nbde1802495cb45e19f1021b5f34df69ab5,sh:MinCountConstraintComponent,leco:conceptUseJurisdiction,El uso del concepto histórico no tiene todavía contexto jurisdiccional identificado.,1
+cab-001-003,Warning,_:nbde1802495cb45e19f1021b5f34df69ab18,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-003,Warning,_:nbde1802495cb45e19f1021b5f34df69ab10,sh:MinCountConstraintComponent,leco:resultsInLegalArrangement,El repartimiento no está enlazado todavía con el arreglo o régimen jurídico resultante.,2
+cab-001-003,Warning,_:nbde1802495cb45e19f1021b5f34df69ab3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",6
+cab-001-004,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,5
+cab-001-004,Warning,_:n17ca8ee7c98d4b32a9ef0d1403d2b562b27,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,1
+cab-001-004,Warning,_:n17ca8ee7c98d4b32a9ef0d1403d2b562b17,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-004,Warning,_:n17ca8ee7c98d4b32a9ef0d1403d2b562b6,sh:MinCountConstraintComponent,leco:resultsInLegalArrangement,El repartimiento no está enlazado todavía con el arreglo o régimen jurídico resultante.,1
+cab-001-004,Warning,_:n17ca8ee7c98d4b32a9ef0d1403d2b562b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",15
+cab-001-006,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,5
+cab-001-006,Warning,_:n6924a860a2a649108a0785f4890a9a56b13,sh:MinCountConstraintComponent,leco:appointsPerson,No se ha identificado la persona nombrada.,1
+cab-001-006,Warning,_:n6924a860a2a649108a0785f4890a9a56b18,sh:MinCountConstraintComponent,leco:conceptUseTime,El uso del concepto histórico no tiene todavía contexto temporal identificado. Mantener como incompletitud si la fuente o los metadatos no permiten fecharlo.,2
+cab-001-006,Warning,_:n6924a860a2a649108a0785f4890a9a56b7,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,3
+cab-001-006,Warning,_:n6924a860a2a649108a0785f4890a9a56b10,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,3
+cab-001-006,Warning,_:n6924a860a2a649108a0785f4890a9a56b4,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",5
+cab-001-007,Warning,_:n9f2eae370cfb4f7c8df416627e3ced35b7,sh:MinCountConstraintComponent,leco:appealsAgainst,No se ha identificado la decisión apelada.,1
+cab-001-007,Warning,_:n9f2eae370cfb4f7c8df416627e3ced35b10,sh:MinCountConstraintComponent,leco:beforeAuthority,No se ha identificado la autoridad ante la cual se presenta la apelación.,1
+cab-001-007,Warning,_:n9f2eae370cfb4f7c8df416627e3ced35b5,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,2
+cab-001-007,Warning,_:n9f2eae370cfb4f7c8df416627e3ced35b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",3
+cab-001-008,Warning,_:na48be7967fac4807b53ad37439046e0ab7,sh:MinCountConstraintComponent,leco:appointsPerson,No se ha identificado la persona nombrada.,1
+cab-001-008,Warning,_:na48be7967fac4807b53ad37439046e0ab9,sh:MinCountConstraintComponent,leco:appointsToOffice,No se ha identificado el oficio al que se realiza el nombramiento.,1
+cab-001-008,Warning,_:na48be7967fac4807b53ad37439046e0ab3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",3
+cab-001-011,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,1
+cab-001-011,Warning,_:n8edd2750c2ce4730a7aaffa7d61302a8b8,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-011,Warning,_:n8edd2750c2ce4730a7aaffa7d61302a8b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",5
+cab-001-012,Warning,_:n51497fd9609942aa993926b8864dcc58b10,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,1
+cab-001-012,Warning,_:n51497fd9609942aa993926b8864dcc58b3,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,1
+cab-001-012,Warning,_:n51497fd9609942aa993926b8864dcc58b5,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",4
+cab-001-016,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,1
+cab-001-016,Warning,_:nb2e2904ae87d4a78bda6f97f76eac878b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",6
+cab-001-018,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,2
+cab-001-018,Warning,_:n82dcfd1bb9ac41feb957a2d22e86ae68b12,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,1
+cab-001-018,Warning,_:n82dcfd1bb9ac41feb957a2d22e86ae68b7,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-018,Warning,_:n82dcfd1bb9ac41feb957a2d22e86ae68b10,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,1
+cab-001-018,Warning,_:n82dcfd1bb9ac41feb957a2d22e86ae68b5,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",3
+cab-001-019,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,2
+cab-001-019,Warning,_:n640cf89ac04f4c979216ab0d464ab1d6b14,sh:MinCountConstraintComponent,leco:appealsAgainst,No se ha identificado la decisión apelada.,1
+cab-001-019,Warning,_:n640cf89ac04f4c979216ab0d464ab1d6b11,sh:MinCountConstraintComponent,leco:beforeAuthority,No se ha identificado la autoridad ante la cual se presenta la apelación.,1
+cab-001-019,Warning,_:n640cf89ac04f4c979216ab0d464ab1d6b6,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,1
+cab-001-019,Warning,_:n640cf89ac04f4c979216ab0d464ab1d6b19,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-019,Warning,_:n640cf89ac04f4c979216ab0d464ab1d6b8,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,1
+cab-001-019,Warning,_:n640cf89ac04f4c979216ab0d464ab1d6b4,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",5
+cab-001-038,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,4
+cab-001-038,Warning,_:n4b7710bfaea843a7aaef754cba8cbf48b6,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,1
+cab-001-038,Warning,_:n4b7710bfaea843a7aaef754cba8cbf48b14,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-038,Warning,_:n4b7710bfaea843a7aaef754cba8cbf48b10,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,1
+cab-001-038,Warning,_:n4b7710bfaea843a7aaef754cba8cbf48b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",9
+cab-001-039,Warning,_:nde140d093c81447a89f275ff4c20e35db3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",7
+cab-001-040,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,1
+cab-001-040,Warning,_:nd41ba5ac735548cf89f50f15ed0c5772b6,sh:MinCountConstraintComponent,leco:createsRepresentation,El otorgamiento de poder no está enlazado todavía con una relación de representación.,1
+cab-001-040,Warning,_:nd41ba5ac735548cf89f50f15ed0c5772b3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",2
+cab-001-042,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,2
+cab-001-042,Warning,_:nea54ab207db649cb9ef861623717ec7eb12,sh:MinCountConstraintComponent,leco:decidedBy,No se ha identificado quién decidió esta decisión jurídica.,1
+cab-001-042,Warning,_:nea54ab207db649cb9ef861623717ec7eb8,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,1
+cab-001-042,Warning,_:nea54ab207db649cb9ef861623717ec7eb5,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",5
+cab-001-046,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,1
+cab-001-046,Warning,_:nd82ddfb518b042c8b40156a639153647b7,sh:MinCountConstraintComponent,leco:conceptUseJurisdiction,El uso del concepto histórico no tiene todavía contexto jurisdiccional identificado.,1
+cab-001-046,Warning,_:nd82ddfb518b042c8b40156a639153647b4,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",3
+cab-001-055,Warning,https://w3id.org/leco/shapes/quality#JurisdictionalActParticipantQualityShape,sh:OrConstraintComponent,,No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo.,1
+cab-001-055,Warning,_:n06a1a806ceb74b2a9858b0d4adfc709fb3,sh:MinCountConstraintComponent,leco:withinJurisdiction,"No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural.",5
+cab-001-056,Warning,_:n210984e3270b48ecb8721f48f05cdacbb3,sh:MinCountConstraintComponent,leco:sanctions,No se ha identificado el actor sancionado.,1

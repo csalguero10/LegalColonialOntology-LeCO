@@ -1,0 +1,7 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+SELECT ?act ?jurisdiction
+WHERE {
+  ?act a leco:JurisdictionalAct .
+  OPTIONAL { ?act leco:withinJurisdiction ?jurisdiction . }
+}
+ORDER BY ?act

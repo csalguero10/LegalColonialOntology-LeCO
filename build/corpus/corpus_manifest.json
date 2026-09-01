@@ -1,0 +1,279 @@
+{
+  "artifact": "LeCO corpus graph manifest",
+  "generated_at_utc": "2026-09-01T18:18:42.279831+00:00",
+  "input_directory": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated",
+  "document_count": 19,
+  "input_triple_sum": 11012,
+  "union_triples": 11012,
+  "deduplicated_triples": 0,
+  "distinct_subjects": 1751,
+  "distinct_predicates": 58,
+  "top_rdf_types": [
+    {
+      "class": "https://w3id.org/leco/ontology#SemanticAnnotation",
+      "count": 792
+    },
+    {
+      "class": "http://www.w3.org/ns/prov#Entity",
+      "count": 250
+    },
+    {
+      "class": "http://www.w3.org/1999/02/22-rdf-syntax-ns#Statement",
+      "count": 220
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#LegalDocumentPart",
+      "count": 139
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#RecordPart",
+      "count": 139
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Agent",
+      "count": 123
+    },
+    {
+      "class": "http://xmlns.com/foaf/0.1/Person",
+      "count": 79
+    },
+    {
+      "class": "http://www.cidoc-crm.org/cidoc-crm/E21_Person",
+      "count": 79
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Person",
+      "count": 79
+    },
+    {
+      "class": "http://www.w3.org/ns/prov#Activity",
+      "count": 65
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#AnnotationActivity",
+      "count": 65
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Date",
+      "count": 58
+    },
+    {
+      "class": "http://www.cidoc-crm.org/cidoc-crm/E53_Place",
+      "count": 44
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Group",
+      "count": 44
+    },
+    {
+      "class": "http://www.cidoc-crm.org/cidoc-crm/E74_Group",
+      "count": 44
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#CorporateBody",
+      "count": 44
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Place",
+      "count": 44
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#NormativeRule",
+      "count": 39
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Position",
+      "count": 30
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#Office",
+      "count": 30
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#PositionHoldingRelation",
+      "count": 26
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#TerritorialJurisdiction",
+      "count": 23
+    },
+    {
+      "class": "https://www.ica.org/standards/RiC/ontology#Record",
+      "count": 19
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#LegalDocument",
+      "count": 19
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#Petition",
+      "count": 18
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#HistoricalConceptUse",
+      "count": 16
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#OrderAct",
+      "count": 15
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#Participation",
+      "count": 15
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#LegalDecision",
+      "count": 13
+    },
+    {
+      "class": "https://w3id.org/leco/ontology#Presentation",
+      "count": 12
+    }
+  ],
+  "named_graph_policy": "https://w3id.org/leco/graph/{document_id}",
+  "cross_document_local_subject_count": 0,
+  "cross_document_local_subjects": {},
+  "core_global_conforms": true,
+  "reasoning": {
+    "input_union_plus_ontology_triples": 12344,
+    "reasoned_triples": 23945,
+    "added_by_reasoning": 11601,
+    "output": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/corpus/corpus_reasoned.ttl"
+  },
+  "documents": [
+    {
+      "document_id": "cab-001-002",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-002",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-002.ttl",
+      "source_sha256": "0e804fd99a0ca18fe007a437ee542c88e6854c7ba9b13de42b64dd8d90332980",
+      "source_triples": 723
+    },
+    {
+      "document_id": "cab-001-003",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-003",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-003.ttl",
+      "source_sha256": "2ff1608a86e1771e1704cc0fb16d3c4307ce34c1945ed780b0a7e6260e6d29ae",
+      "source_triples": 474
+    },
+    {
+      "document_id": "cab-001-004",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-004",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-004.ttl",
+      "source_sha256": "058269bbe84ef9ac7a25c2ae57ba77bb3f9d46ddba49c7dee4ed3c53e283c03c",
+      "source_triples": 890
+    },
+    {
+      "document_id": "cab-001-006",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-006",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-006.ttl",
+      "source_sha256": "b3ea66bedbaa277faa1289329f7d2e84eeb33838be6e34196c27ba7f73c27457",
+      "source_triples": 570
+    },
+    {
+      "document_id": "cab-001-007",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-007",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-007.ttl",
+      "source_sha256": "75308722aef1b05d2c04da608cbb812ff013397be726bd0704e3ecb7596e4f8d",
+      "source_triples": 455
+    },
+    {
+      "document_id": "cab-001-008",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-008",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-008.ttl",
+      "source_sha256": "d21f9d1d1538658cd135f96f5900bd60f62c8e9ebeaf70023bed6026dfdb319c",
+      "source_triples": 425
+    },
+    {
+      "document_id": "cab-001-011",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-011",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-011.ttl",
+      "source_sha256": "f643ef19ef9753e7c0988e290ad11782dfeeea8b2c965a9298de61116bb576c3",
+      "source_triples": 560
+    },
+    {
+      "document_id": "cab-001-012",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-012",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-012.ttl",
+      "source_sha256": "6b9a6557b9b68e5526a7eb396e17dc5414724737c4d8d3c0480a4531d140c2ec",
+      "source_triples": 815
+    },
+    {
+      "document_id": "cab-001-016",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-016",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-016.ttl",
+      "source_sha256": "617a0f7854d2dc11202f50b39ac4b107b6e05b78fd1634c172a5e7b551651ec4",
+      "source_triples": 653
+    },
+    {
+      "document_id": "cab-001-018",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-018",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-018.ttl",
+      "source_sha256": "05fa1d7c6e71bcf3c2c98d49679f86481af2e6a72ee712f7a0e0c54d3239ab7d",
+      "source_triples": 450
+    },
+    {
+      "document_id": "cab-001-019",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-019",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-019.ttl",
+      "source_sha256": "842729c964e598606949f4c0fc659100357fb9d4e9a7a531e958a35b3c5c0f63",
+      "source_triples": 367
+    },
+    {
+      "document_id": "cab-001-028",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-028",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-028.ttl",
+      "source_sha256": "54557bd066f1041ccbaa384e91fca758aefee0d14f5eb3fc30718c69227d6326",
+      "source_triples": 235
+    },
+    {
+      "document_id": "cab-001-038",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-038",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-038.ttl",
+      "source_sha256": "2469b9119e2ea8be0eeb15c59c40407347885184686b8c849101b6abf6ed9b7d",
+      "source_triples": 993
+    },
+    {
+      "document_id": "cab-001-039",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-039",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-039.ttl",
+      "source_sha256": "92fae57880fe5ab0b8674020b25edabf8654a0297b514c24f1618b1142aa1893",
+      "source_triples": 786
+    },
+    {
+      "document_id": "cab-001-040",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-040",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-040.ttl",
+      "source_sha256": "9b8b3ad40ad164b31c80ce818c97f4ed24e606c649d11053ec93c39b8d22b4ae",
+      "source_triples": 518
+    },
+    {
+      "document_id": "cab-001-042",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-042",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-042.ttl",
+      "source_sha256": "72dc1ffcadc4c960dbef11238a5449f87645423683830704c6d0e90cc354dd24",
+      "source_triples": 571
+    },
+    {
+      "document_id": "cab-001-046",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-046",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-046.ttl",
+      "source_sha256": "832081252ef8c301eec5ad152d25388a0ec57792bf5d225eda5e06a5987afac2",
+      "source_triples": 536
+    },
+    {
+      "document_id": "cab-001-055",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-055",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-055.ttl",
+      "source_sha256": "fe81fdee80f647b263548636d9e9fb8aacfe0f972aaa3b432e0b60d299b8b0df",
+      "source_triples": 454
+    },
+    {
+      "document_id": "cab-001-056",
+      "named_graph": "https://w3id.org/leco/graph/cab-001-056",
+      "source_file": "/Users/catalinasalgueropalacino/Documents/GitHub/LegalColonialOntology-LeCO/build/rdf_legal_curated/cab-001-056.ttl",
+      "source_sha256": "00c92ec8bbd28653fb39ee5f12b2e339f246b02a6d09c27677eae077afaef0cb",
+      "source_triples": 537
+    }
+  ],
+  "methodological_note": "corpus_graph.ttl contiene únicamente la unión de los RDF de instancia. corpus_dataset.trig conserva la procedencia documental mediante un named graph por documento. corpus_reasoned.ttl, cuando se genera, es un artefacto derivado que combina corpus + ontología + cierre OWL-RL y no sustituye la evidencia fuente."
+}

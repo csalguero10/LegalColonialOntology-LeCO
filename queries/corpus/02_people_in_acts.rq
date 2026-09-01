@@ -1,0 +1,14 @@
+PREFIX leco: <https://w3id.org/leco/ontology#>
+SELECT DISTINCT ?person ?act
+WHERE {
+  {
+    ?act leco:hasParticipant ?person .
+  }
+  UNION
+  {
+    ?participation a leco:Participation ;
+                   leco:participationActor ?person ;
+                   leco:participationInAct ?act .
+  }
+}
+ORDER BY ?person ?act

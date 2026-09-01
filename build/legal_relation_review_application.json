@@ -1,0 +1,278 @@
+{
+  "counts": {
+    "not_applied_by_policy": 28,
+    "applied": 2
+  },
+  "results": [
+    {
+      "document": "cab-001-002",
+      "property": "appointsToOffice",
+      "focus_xml_id": "event_cab-001-002_cab-001-002_s004_a006",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-002",
+      "property": "appointsPerson",
+      "focus_xml_id": "event_cab-001-002_cab-001-002_s004_a006",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-003",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-003_cab-001-003_s007_a001",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-004",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-004_cab-001-004_s002_a005",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s005_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s005_a004",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s004_a004",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s005_a004",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "appointsPerson",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s002_a001",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "appointsToOffice",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s002_a001",
+      "approved_target_xml_id": "cab-001-006_cab-001-006_s002_a002",
+      "status": "applied",
+      "generated_target_xml_id": "office_review_event_cab-001-006_cab-001-006_s002_a001_cab-001-006_cab-001-006_s002_a002",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s004_a004",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-006",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-006_cab-001-006_s005_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-007",
+      "property": "appealsAgainst",
+      "focus_xml_id": "event_cab-001-007_cab-001-007_s002_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-007",
+      "property": "beforeAuthority",
+      "focus_xml_id": "event_cab-001-007_cab-001-007_s002_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-008",
+      "property": "appointsPerson",
+      "focus_xml_id": "event_cab-001-008_cab-001-008_s003_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-008",
+      "property": "appointsToOffice",
+      "focus_xml_id": "event_cab-001-008_cab-001-008_s005_a005",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-011",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-011_cab-001-011_s002_a001",
+      "approved_target_xml_id": "org_cab-001-011_cab-001-011_s001_a003",
+      "status": "applied",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-011",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-011_cab-001-011_s004_a003",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-012",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-012_cab-001-012_s003_a003",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-018",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-018_cab-001-018_s003_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-018",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-018_cab-001-018_s003_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-019",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-019_cab-001-019_s003_a001",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-019",
+      "property": "beforeAuthority",
+      "focus_xml_id": "event_cab-001-019_cab-001-019_s004_a004",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-019",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-019_cab-001-019_s003_a001",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-019",
+      "property": "appealsAgainst",
+      "focus_xml_id": "event_cab-001-019_cab-001-019_s004_a004",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-038",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-038_cab-001-038_s002_a003",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-038",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-038_cab-001-038_s002_a003",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-042",
+      "property": "decidedBy",
+      "focus_xml_id": "event_cab-001-042_cab-001-042_s003_a001",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-042",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-042_cab-001-042_s003_a001",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    },
+    {
+      "document": "cab-001-056",
+      "property": "sanctions",
+      "focus_xml_id": "event_cab-001-056_cab-001-056_s002_a002",
+      "approved_target_xml_id": "",
+      "status": "not_applied_by_policy",
+      "generated_target_xml_id": "",
+      "message": ""
+    }
+  ]
+}
