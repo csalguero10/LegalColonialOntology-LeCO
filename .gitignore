@@ -2,3 +2,7 @@
 *.TXT
 *.ttl
 *.xml
+
+.venv/
+__pycache__/
+*.pyc
