@@ -1,0 +1,7 @@
+rdflib>=7.1,<8
+pyshacl>=0.30,<1
+owlrl>=7,<8
+pytest>=8,<10
+PyYAML>=6,<7
+streamlit>=1.36
+lxml>=5,<6

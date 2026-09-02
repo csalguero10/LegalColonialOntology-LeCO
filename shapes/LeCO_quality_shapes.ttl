@@ -1,0 +1,148 @@
+@prefix leco: <https://w3id.org/leco/ontology#> .
+@prefix lecoq: <https://w3id.org/leco/shapes/quality#> .
+@prefix rico: <https://www.ica.org/standards/RiC/ontology#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/leco/shapes/quality>
+    a owl:Ontology ;
+    owl:versionInfo "0.2.2-quality" ;
+    dcterms:title "Perfil SHACL QUALITY de LeCO"@es , "LeCO SHACL QUALITY profile"@en ;
+    dcterms:description "Advertencias de completitud histórica. La ausencia de estas relaciones no invalida el grafo CORE: señala información deseable que puede ser desconocida, implícita o no recuperable de la fuente."@es ;
+    dcterms:created "2026-08-31"^^xsd:date .
+
+# Q01. Contexto jurisdiccional del acto
+lecoq:JurisdictionalActJurisdictionQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:JurisdictionalAct ;
+    sh:property [
+        sh:path leco:withinJurisdiction ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado una jurisdicción para este acto. Es una laguna de completitud, no un error estructural."@es
+    ] .
+
+# Q02. Participante conocido del acto
+lecoq:JurisdictionalActParticipantQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:JurisdictionalAct ;
+    sh:severity sh:Warning ;
+    sh:or (
+        [ sh:property [ sh:path leco:hasParticipation ; sh:minCount 1 ] ]
+        [ sh:property [ sh:path leco:hasParticipant ; sh:minCount 1 ] ]
+    ) ;
+    sh:message "No se ha identificado ningún participante del acto. Mantener como incompletitud si la fuente no permite establecerlo."@es .
+
+# Q03. Autoridad decisora
+lecoq:LegalDecisionAuthorityQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:LegalDecision ;
+    sh:property [
+        sh:path leco:decidedBy ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado quién decidió esta decisión jurídica."@es
+    ] .
+
+# Q04. Actor sancionado
+lecoq:SanctionTargetQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:Sanction ;
+    sh:property [
+        sh:path leco:sanctions ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado el actor sancionado."@es
+    ] .
+
+# Q05. Poder y relación de representación
+lecoq:GrantOfPowerRepresentationQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:GrantOfPower ;
+    sh:property [
+        sh:path leco:createsRepresentation ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "El otorgamiento de poder no está enlazado todavía con una relación de representación."@es
+    ] .
+
+# Q06-Q07. Nombramiento
+lecoq:AppointmentCompletenessQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:Appointment ;
+    sh:property [
+        sh:path leco:appointsPerson ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado la persona nombrada."@es
+    ] ;
+    sh:property [
+        sh:path leco:appointsToOffice ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado el oficio al que se realiza el nombramiento."@es
+    ] .
+
+# Q08. Repartimiento como acto y arreglo resultante
+lecoq:RepartimientoArrangementQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:RepartimientoAct ;
+    sh:property [
+        sh:path leco:resultsInLegalArrangement ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "El repartimiento no está enlazado todavía con el arreglo o régimen jurídico resultante."@es
+    ] .
+
+# Q09-Q10. Apelación
+lecoq:AppealCompletenessQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:Appeal ;
+    sh:property [
+        sh:path leco:appealsAgainst ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado la decisión apelada."@es
+    ] ;
+    sh:property [
+        sh:path leco:beforeAuthority ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado la autoridad ante la cual se presenta la apelación."@es
+    ] .
+
+# Q11. Contexto jurisdiccional del uso conceptual
+lecoq:HistoricalConceptUseJurisdictionQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:HistoricalConceptUse ;
+    sh:property [
+        sh:path leco:conceptUseJurisdiction ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "El uso del concepto histórico no tiene todavía contexto jurisdiccional identificado."@es
+    ] .
+
+# Q12. Objeto de investigación
+lecoq:InvestigationObjectQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:Investigation ;
+    sh:property [
+        sh:path leco:investigates ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "No se ha identificado el objeto, actor o conducta investigada."@es
+    ] .
+
+
+# Q13. Contexto temporal del uso conceptual
+lecoq:HistoricalConceptUseTimeQualityShape
+    a sh:NodeShape ;
+    sh:targetClass leco:HistoricalConceptUse ;
+    sh:property [
+        sh:path leco:conceptUseTime ;
+        sh:minCount 1 ;
+        sh:severity sh:Warning ;
+        sh:message "El uso del concepto histórico no tiene todavía contexto temporal identificado. Mantener como incompletitud si la fuente o los metadatos no permiten fecharlo."@es
+    ] .
