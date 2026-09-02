@@ -1,3 +1,7 @@
+# leco:JurisdictionalAct solo se asigna directamente vía razonamiento OWL/RDFS
+# (los actos se afirman con su subclase específica: Appointment, Appeal, etc.).
+# Sobre corpus_graph.ttl (sin razonar) esta consulta no devuelve resultados;
+# ejecutarla sobre corpus_reasoned.ttl.
 PREFIX leco: <https://w3id.org/leco/ontology#>
 SELECT ?act ?jurisdiction
 WHERE {
