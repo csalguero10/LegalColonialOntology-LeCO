@@ -1,0 +1,140 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-042">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-042</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0042</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d042/">https://zasqua.org/co-ahrb-cab-001-d042/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>21 de diciembre 1549</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-042_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-042_s001" type="juridical_discursive_segment">En <placeName xml:id="cab-001-042_cab-001-042_s001_a001" type="historicalPlace" ref="#place_cab-001-042_cab-001-042_s001_a001">Tunja</placeName>, el <date xml:id="cab-001-042_cab-001-042_s001_a002" type="sourceDate">21 de diciembre 1549</date> se llevó a cabo otra reeunión de su <orgName xml:id="cab-001-042_cab-001-042_s001_a003" type="cabildo" ref="#org_cab-001-042_cab-001-042_s001_a003">Cabildo</orgName>, donde el <rs xml:id="cab-001-042_cab-001-042_s001_a004" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#CaptainOfficeType">capitan</rs>
+          <persName xml:id="cab-001-042_cab-001-042_s001_a005" type="historicalPerson" ref="#person_cab-001-042_cab-001-042_s001_a005">Martin Rojas</persName>
+          <rs xml:id="cab-001-042_cab-001-042_s001_a006" type="legal_or_procedural_act" subtype="presentation" ana="https://w3id.org/leco/ontology#Presentation" corresp="#event_cab-001-042_cab-001-042_s001_a006">presentó</rs> una <rs xml:id="cab-001-042_cab-001-042_s001_a007" type="normativeRule" subtype="letter" ref="#rule_cab-001-042_cab-001-042_s001_a007">carta</rs> de la costa de <placeName xml:id="cab-001-042_cab-001-042_s001_a008" type="historicalPlace" ref="#place_cab-001-042_cab-001-042_s001_a008">Cartagena</placeName>, en la que advierte la visita de los oidores de la <orgName xml:id="cab-001-042_cab-001-042_s001_a009" type="audiencia" ref="#org_cab-001-042_cab-001-042_s001_a009">Real Audiencia</orgName>, quien viene viajando, pasando por <placeName xml:id="cab-001-042_cab-001-042_s001_a010" type="historicalPlace" ref="#place_cab-001-042_cab-001-042_s001_a010">Velez</placeName> y <placeName xml:id="cab-001-042_cab-001-042_s001_a011" type="historicalPlace" ref="#place_cab-001-042_cab-001-042_s001_a001">Tunja</placeName>, por tal motivo hay lanecesidad de reparar los malos caminos y puentes; evitandoles asi algún accidente ó peligro.</seg>
+        <seg xml:id="cab-001-042_s002" type="juridical_discursive_segment">Se <rs xml:id="cab-001-042_cab-001-042_s002_a001" type="legal_or_procedural_act" subtype="approval" ana="https://w3id.org/leco/ontology#Approval" corresp="#event_cab-001-042_cab-001-042_s002_a001">aprobó</rs> enviar ocho soldados y algunos peones con el <rs xml:id="cab-001-042_cab-001-042_s002_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#CaptainOfficeType">capitan</rs>
+          <persName xml:id="cab-001-042_cab-001-042_s002_a003" type="historicalPerson" ref="#person_cab-001-042_cab-001-042_s002_a003">Martin Galeano</persName>, quien debe llevar azadones y hachas, para reparar el camino.</seg>
+        <seg xml:id="cab-001-042_s003" type="juridical_discursive_segment">Los pasos y fuentes; so <rs xml:id="cab-001-042_cab-001-042_s003_a001" type="legal_or_procedural_act" subtype="penalty" ana="https://w3id.org/leco/ontology#Sanction" corresp="#event_cab-001-042_cab-001-042_s003_a001">pena</rs> de $1000 pesos del buen oro, al incumplimiento de la <rs xml:id="cab-001-042_cab-001-042_s003_a002" type="normativeRule" subtype="order" ref="#rule_cab-001-042_cab-001-042_s003_a002">orden</rs> dada.</seg>
+        <seg xml:id="cab-001-042_s004" type="juridical_discursive_segment">Dado en <placeName xml:id="cab-001-042_cab-001-042_s004_a001" type="historicalPlace" ref="#place_cab-001-042_cab-001-042_s004_a001">Santafé</placeName> a6 Diciembre de 1549.</seg>
+        <seg xml:id="cab-001-042_s005" type="juridical_discursive_segment">Se relaciona una lista de pedido, para cumplir con dicho trabajo: calzar una hacha $1 peso 1 Llave de hierro $2 pesos Guarnecer una espada $1.5 pesos. buen oro Total $200 pesos del buen oro.</seg>
+        <seg xml:id="cab-001-042_s006" type="juridical_discursive_segment">Compra de una daga 1/2 peso, Limpiar una espada $1 peso, 1 Ventana llena con un bastidor $6 pesos,-1 Caja de 7 palmos $ pesos.(sigue lista).</seg>
+        <seg xml:id="cab-001-042_s007" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-042_cab-001-042_s007_a001" type="cabildo" ref="#org_cab-001-042_cab-001-042_s001_a003">Cabildo</orgName> se <rs xml:id="cab-001-042_cab-001-042_s007_a002" type="legal_or_procedural_act" subtype="presentation" ana="https://w3id.org/leco/ontology#Presentation" corresp="#event_cab-001-042_cab-001-042_s007_a002">presentó</rs> una <rs xml:id="cab-001-042_cab-001-042_s007_a003" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-042_cab-001-042_s007_a003">petición</rs> de Don <persName xml:id="cab-001-042_cab-001-042_s007_a004" type="historicalPerson" ref="#person_cab-001-042_cab-001-042_s007_a004">Vicente de Ruesga</persName> solicita se le conceda una vencidad en esta ciudad los miembros del <orgName xml:id="cab-001-042_cab-001-042_s007_a005" type="cabildo" ref="#org_cab-001-042_cab-001-042_s001_a003">Cabildo</orgName>
+          <rs xml:id="cab-001-042_cab-001-042_s007_a006" type="legal_or_procedural_act" subtype="decision" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#event_cab-001-042_cab-001-042_s007_a006">acordaron</rs> asignarle un solar de tierra.</seg>
+        <seg xml:id="cab-001-042_s008" type="juridical_discursive_segment">Se <rs xml:id="cab-001-042_cab-001-042_s008_a001" type="legal_or_procedural_act" subtype="reading" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#event_cab-001-042_cab-001-042_s008_a001">leyó</rs> otra <rs xml:id="cab-001-042_cab-001-042_s008_a002" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-042_cab-001-042_s008_a002">petición</rs> de Juan R.</seg>
+        <seg xml:id="cab-001-042_s009" type="juridical_discursive_segment">Parra quien pide un hierro para ganados.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-042_cab-001-042_s001_a005">
+        <persName>Martin Rojas</persName>
+      </person>
+      <person xml:id="person_cab-001-042_cab-001-042_s002_a003">
+        <persName>Martin Galeano</persName>
+      </person>
+      <person xml:id="person_cab-001-042_cab-001-042_s007_a004">
+        <persName>Vicente de Ruesga</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-042_cab-001-042_s001_a003" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-042_cab-001-042_s001_a009" ana="https://w3id.org/leco/ontology#AudienciaType">
+        <orgName>Real Audiencia</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-042_cab-001-042_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-042_cab-001-042_s001_a008">
+        <placeName>Cartagena</placeName>
+      </place>
+      <place xml:id="place_cab-001-042_cab-001-042_s001_a010">
+        <placeName>Velez</placeName>
+      </place>
+      <place xml:id="place_cab-001-042_cab-001-042_s004_a001">
+        <placeName>Santafé</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-042_cab-001-042_s001_a006" ana="https://w3id.org/leco/ontology#Presentation" corresp="#cab-001-042_s001">
+        <desc>presentó</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s002_a001" ana="https://w3id.org/leco/ontology#Approval" corresp="#cab-001-042_s002">
+        <desc>aprobó</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s003_a001" ana="https://w3id.org/leco/ontology#Sanction" corresp="#cab-001-042_s003">
+        <desc>pena</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s007_a002" ana="https://w3id.org/leco/ontology#Presentation" corresp="#cab-001-042_s007">
+        <desc>presentó</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s007_a003" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-042_s007">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s007_a006" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#cab-001-042_s007">
+        <desc>acordaron</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s008_a001" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#cab-001-042_s008">
+        <desc>leyó</desc>
+      </event>
+      <event xml:id="event_cab-001-042_cab-001-042_s008_a002" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-042_s008">
+        <desc>petición</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-042_cab-001-042_s001_a007">carta</interp>
+      <interp xml:id="rule_cab-001-042_cab-001-042_s003_a002">orden</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-042_cab-001-042_s001_a003" passive="#place_cab-001-042_cab-001-042_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-042_acta"/>
+      <relation xml:id="jurisdiction_audiencia_01" type="territorialJurisdiction" active="#org_cab-001-042_cab-001-042_s001_a009" passive="#place_cab-001-042_cab-001-042_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="inferred" source="#cab-001-042_s001"/>
+      <relation xml:id="migrated_cab-001-042_cab-001-042_s001_r002" type="officeHolding" active="#person_cab-001-042_cab-001-042_s001_a005" passive="#org_cab-001-042_cab-001-042_s001_a003" ana="https://w3id.org/leco/ontology#CaptainOfficeType" source="#cab-001-042_s001" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-042_cab-001-042_s002_r001" type="officeHolding" active="#person_cab-001-042_cab-001-042_s002_a003" passive="#org_cab-001-042_cab-001-042_s001_a003" ana="https://w3id.org/leco/ontology#CaptainOfficeType" source="#cab-001-042_s002" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-042_cab-001-042_s007_r001" type="participation" active="#person_cab-001-042_cab-001-042_s007_a004" passive="#event_cab-001-042_cab-001-042_s007_a003" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-042_s007" subtype="explicit"/>
+      <relation xml:id="derived_decided_event_cab-001-042_cab-001-042_s007_a006" type="objectProperty" name="decidedBy" active="#event_cab-001-042_cab-001-042_s007_a006" passive="#org_cab-001-042_cab-001-042_s001_a003" source="#cab-001-042_s007" subtype="humanInterpretation"/>
+      <relation xml:id="review_0254_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-042_cab-001-042_s001_a006" passive="#person_cab-001-042_cab-001-042_s001_a005" source="#cab-001-042_s001" subtype="explicit"/>
+      <relation xml:id="review_0256_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-042_cab-001-042_s002_a001" passive="#org_cab-001-042_cab-001-042_s001_a003" source="#cab-001-042_s002" subtype="inferred"/>
+      <relation xml:id="participant_review_0059_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-042_cab-001-042_s007_a002" passive="#person_cab-001-042_cab-001-042_s007_a004" source="#cab-001-042_s007" subtype="explicit"/>
+      <relation xml:id="participant_review_0061_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-042_cab-001-042_s008_a001" passive="#org_cab-001-042_cab-001-042_s001_a003" source="#cab-001-042_s008" subtype="contextual"/>
+      <relation xml:id="participant_review_0062_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-042_cab-001-042_s002_a001" passive="#org_cab-001-042_cab-001-042_s001_a003" source="#cab-001-042_s002" subtype="contextual"/>
+    </listRelation>
+    <precision target="#jurisdiction_audiencia_01" confidence="0.75"/>
+    <precision target="#migrated_cab-001-042_cab-001-042_s001_r002" confidence="0.75"/>
+    <precision target="#migrated_cab-001-042_cab-001-042_s002_r001" confidence="0.75"/>
+    <precision target="#migrated_cab-001-042_cab-001-042_s007_r001" confidence="0.95"/>
+    <precision target="#derived_decided_event_cab-001-042_cab-001-042_s007_a006" confidence="0.75"/>
+    <precision target="#review_0256_decidedBy" confidence="0.80"/>
+    <precision target="#participant_review_0059_hasParticipant" confidence="1.00"/>
+    <precision target="#participant_review_0061_hasParticipant" confidence="0.80"/>
+    <precision target="#participant_review_0062_hasParticipant" confidence="0.90"/>
+  </standOff>
+</TEI>

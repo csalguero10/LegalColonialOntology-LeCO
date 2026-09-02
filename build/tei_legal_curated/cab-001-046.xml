@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-046">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-046</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0046</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d046/">https://zasqua.org/co-ahrb-cab-001-d046/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>7 de Marzo de 1550</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-046_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-046_s001" type="juridical_discursive_segment">En el <orgName xml:id="cab-001-046_cab-001-046_s001_a001" type="cabildo" ref="#org_cab-001-046_cab-001-046_s001_a001">Cabildo</orgName> del <date xml:id="cab-001-046_cab-001-046_s001_a002" type="sourceDate">7 de Marzo de 1550</date> se trató lo relacionado al pago de aranceles por parte de los carpinteros, el <rs xml:id="cab-001-046_cab-001-046_s001_a003" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#GovernorOfficeType">Gobernador</rs>
+          <persName xml:id="cab-001-046_cab-001-046_s001_a004" type="historicalPerson" ref="#person_cab-001-046_cab-001-046_s001_a004">Miguel Diaz de Armendaris</persName>
+          <rs xml:id="cab-001-046_cab-001-046_s001_a005" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-046_cab-001-046_s001_a005">ordenó</rs> se cobrara dichos aranceles de acuerdo a lo establecido.</seg>
+        <seg xml:id="cab-001-046_s002" type="juridical_discursive_segment">
+          <date xml:id="cab-001-046_cab-001-046_s002_a001" type="sourceDate">8 de marzo 1550</date>, se <rs xml:id="cab-001-046_cab-001-046_s002_a002" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-046_cab-001-046_s002_a002">ordenó</rs> dar al <rs xml:id="cab-001-046_cab-001-046_s002_a003" type="legal_or_procedural_act" subtype="proclamation" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#event_cab-001-046_cab-001-046_s002_a003">pregón</rs> el valor de los aranceles que debian pagar los carpinteros.</seg>
+        <seg xml:id="cab-001-046_s003" type="juridical_discursive_segment">
+          <date xml:id="cab-001-046_cab-001-046_s003_a001" type="sourceDate">21 de marzo 1550</date>.</seg>
+        <seg xml:id="cab-001-046_s004" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-046_cab-001-046_s004_a001" type="cabildo" ref="#org_cab-001-046_cab-001-046_s001_a001">Cabildo</orgName>
+          <persName xml:id="cab-001-046_cab-001-046_s004_a002" type="historicalPerson" ref="#person_cab-001-046_cab-001-046_s004_a002">Alonso Tellez</persName> y <persName xml:id="cab-001-046_cab-001-046_s004_a003" type="historicalPerson" ref="#person_cab-001-046_cab-001-046_s004_a003">Pedro de Colmenares</persName> informaron de los negocios de la ciudad: Relación de lo que el señor ha negociado en la tocante a este reino.</seg>
+        <seg xml:id="cab-001-046_s005" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s005_a001" type="normativeRule" subtype="provision" ref="#rule_cab-001-046_cab-001-046_s005_a001">provisión</rs> para que la tierra se reparta de nuevo en ciertas condiciones.</seg>
+        <seg xml:id="cab-001-046_s006" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s006_a001" type="normativeRule" subtype="provision" ref="#rule_cab-001-046_cab-001-046_s006_a001">provisión</rs> en la mitad de los cuentos de cámara.</seg>
+        <seg xml:id="cab-001-046_s007" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s007_a001" type="normativeRule" subtype="royal_cedula" ref="#rule_cab-001-046_cab-001-046_s007_a001">cédula</rs> para que se de propios a las ciudades.</seg>
+        <seg xml:id="cab-001-046_s008" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s008_a001" type="normativeRule" subtype="provision" ref="#rule_cab-001-046_cab-001-046_s008_a001">provisión</rs> sobre la que había traído el <rs xml:id="cab-001-046_cab-001-046_s008_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#BishopOfficeType">obispo</rs> para que los <term xml:id="cab-001-046_cab-001-046_s008_a003" type="historicalCategory" subtype="religious_legal_category" ref="https://w3id.org/leco/ontology#Judios">judios</term> se pusieran en cabeza del Rey se retire la <rs xml:id="cab-001-046_cab-001-046_s008_a004" type="normativeRule" subtype="order" ref="#rule_cab-001-046_cab-001-046_s008_a004">orden</rs>.</seg>
+        <seg xml:id="cab-001-046_s009" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s009_a001" type="normativeRule" subtype="royal_cedula" ref="#rule_cab-001-046_cab-001-046_s009_a001">cédula</rs> para que haya buen recado en la fundición.</seg>
+        <seg xml:id="cab-001-046_s010" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s010_a001" type="normativeRule" subtype="royal_cedula" ref="#rule_cab-001-046_cab-001-046_s010_a001">cédula</rs> para que el <rs xml:id="cab-001-046_cab-001-046_s010_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#BishopOfficeType">obispo</rs> de <placeName xml:id="cab-001-046_cab-001-046_s010_a003" type="historicalPlace" ref="#place_cab-001-046_cab-001-046_s010_a003">Santa Marta</placeName> viaje al reino.</seg>
+        <seg xml:id="cab-001-046_s011" type="juridical_discursive_segment">Una <rs xml:id="cab-001-046_cab-001-046_s011_a001" type="normativeRule" subtype="royal_cedula" ref="#rule_cab-001-046_cab-001-046_s011_a001">cédula</rs> para traer a los <term xml:id="cab-001-046_cab-001-046_s011_a002" type="historicalCategory" subtype="religious_legal_category" ref="https://w3id.org/leco/ontology#Judios">judios</term> de esta Gobernación de la de <placeName xml:id="cab-001-046_cab-001-046_s011_a003" type="historicalPlace" ref="#place_cab-001-046_cab-001-046_s011_a003">Popayán</placeName>, Una <rs xml:id="cab-001-046_cab-001-046_s011_a004" type="normativeRule" subtype="royal_cedula" ref="#rule_cab-001-046_cab-001-046_s011_a004">cédula</rs> para que traigan los <term xml:id="cab-001-046_cab-001-046_s011_a005" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">indios</term> de esta Gobernación, que se encuentren en <placeName xml:id="cab-001-046_cab-001-046_s011_a006" type="historicalPlace" ref="#place_cab-001-046_cab-001-046_s011_a006">Cartagena</placeName>.</seg>
+        <seg xml:id="cab-001-046_s012" type="juridical_discursive_segment">Un <rs xml:id="cab-001-046_cab-001-046_s012_a001" type="normativeRule" subtype="title" ref="#rule_cab-001-046_cab-001-046_s012_a001">titulo</rs> de ciudad a <placeName xml:id="cab-001-046_cab-001-046_s012_a002" type="historicalPlace" ref="#place_cab-001-046_cab-001-046_s012_a002">Tocayma</placeName> y $400 "gms" ducados para la iglesia y 1000 ducados parala de <placeName xml:id="cab-001-046_cab-001-046_s012_a003" type="historicalPlace" ref="#place_cab-001-046_cab-001-046_s012_a003">Santa fé</placeName>.</seg>
+        <seg xml:id="cab-001-046_s013" type="juridical_discursive_segment">Los señores <orgName xml:id="cab-001-046_cab-001-046_s013_a001" type="cabildo_body" ref="#org_cab-001-046_cab-001-046_s013_a001">Justicia y Regimiento</orgName> dijeron se provea lo que mas conviene a la ciudad y la <term xml:id="cab-001-046_cab-001-046_s013_a002" type="historical_concept" subtype="republic" ref="https://w3id.org/leco/ontology#RepublicConcept">República</term>.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-046_cab-001-046_s001_a004">
+        <persName>Miguel Diaz de Armendaris</persName>
+      </person>
+      <person xml:id="person_cab-001-046_cab-001-046_s004_a002">
+        <persName>Alonso Tellez</persName>
+      </person>
+      <person xml:id="person_cab-001-046_cab-001-046_s004_a003">
+        <persName>Pedro de Colmenares</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-046_cab-001-046_s001_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-046_cab-001-046_s013_a001" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Justicia y Regimiento</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-046_cab-001-046_s010_a003">
+        <placeName>Santa Marta</placeName>
+      </place>
+      <place xml:id="place_cab-001-046_cab-001-046_s011_a003">
+        <placeName>Popayán</placeName>
+      </place>
+      <place xml:id="place_cab-001-046_cab-001-046_s011_a006">
+        <placeName>Cartagena</placeName>
+      </place>
+      <place xml:id="place_cab-001-046_cab-001-046_s012_a002">
+        <placeName>Tocayma</placeName>
+      </place>
+      <place xml:id="place_cab-001-046_cab-001-046_s012_a003">
+        <placeName>Santa fé</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-046_cab-001-046_s001_a005" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-046_s001">
+        <desc>ordenó</desc>
+      </event>
+      <event xml:id="event_cab-001-046_cab-001-046_s002_a002" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-046_s002">
+        <desc>ordenó</desc>
+      </event>
+      <event xml:id="event_cab-001-046_cab-001-046_s002_a003" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#cab-001-046_s002">
+        <desc>pregón</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-046_cab-001-046_s005_a001">provisión</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s006_a001">provisión</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s007_a001">cédula</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s008_a001">provisión</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s008_a004">orden</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s009_a001">cédula</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s010_a001">cédula</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s011_a001">cédula</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s011_a004">cédula</interp>
+      <interp xml:id="rule_cab-001-046_cab-001-046_s012_a001">titulo</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-046_cab-001-046_s013_a002" type="historicalConceptUse" active="#cab-001-046_acta" passive="https://w3id.org/leco/ontology#RepublicConcept" source="#cab-001-046_s013" subtype="explicit" when="7 de Marzo de 1550"/>
+      <relation xml:id="migrated_cab-001-046_cab-001-046_s001_r001" type="officeHolding" active="#person_cab-001-046_cab-001-046_s001_a004" passive="#org_cab-001-046_cab-001-046_s001_a001" ana="https://w3id.org/leco/ontology#GovernorOfficeType" source="#cab-001-046_s001" subtype="explicit" when="1550"/>
+      <relation xml:id="review_0269_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-046_cab-001-046_s001_a005" passive="#org_cab-001-046_cab-001-046_s013_a001" source="#cab-001-046_s001" subtype="explicit"/>
+      <relation xml:id="review_0273_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-046_cab-001-046_s002_a002" passive="#org_cab-001-046_cab-001-046_s001_a001" source="#cab-001-046_s002" subtype="inferred"/>
+      <relation xml:id="participant_review_0063_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-046_cab-001-046_s001_a005" passive="#person_cab-001-046_cab-001-046_s001_a004" source="#cab-001-046_s001" subtype="explicit"/>
+    </listRelation>
+    <precision target="#migrated_cab-001-046_cab-001-046_s001_r001" confidence="0.75"/>
+    <precision target="#review_0273_decidedBy" confidence="0.80"/>
+    <precision target="#participant_review_0063_hasParticipant" confidence="1.00"/>
+  </standOff>
+</TEI>

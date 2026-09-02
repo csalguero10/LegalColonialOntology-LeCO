@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-006">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-006</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d006</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d006/">https://zasqua.org/co-ahrb-cab-001-d006/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-006_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-006_s001" type="juridical_discursive_segment">Don <persName xml:id="cab-001-006_cab-001-006_s001_a001" type="historicalPerson" ref="#person_cab-001-006_cab-001-006_s001_a001">Pedro de Colmenares</persName> y <persName xml:id="cab-001-006_cab-001-006_s001_a002" type="historicalPerson" ref="#person_cab-001-006_cab-001-006_s001_a002">Alonso Tellez</persName> informan al Consejode Indias sobre la situación de los <term xml:id="cab-001-006_cab-001-006_s001_a003" type="historicalCategory" subtype="historical_status_category" ref="https://w3id.org/leco/ontology#Descubridores">descubridores</term> y <term xml:id="cab-001-006_cab-001-006_s001_a004" type="historicalCategory" subtype="office_status_category" ref="https://w3id.org/leco/ontology#Encomenderos">comendaderos</term> de la ciudad deTunja, para que cumplan las <rs xml:id="cab-001-006_cab-001-006_s001_a005" type="normativeRule" subtype="new_laws" ref="#rule_cab-001-006_cab-001-006_s001_a005">nuevas leyes</rs>, ante los motines de <term xml:id="cab-001-006_cab-001-006_s001_a006" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">Indios</term>, la perpetuidad de los repartimintos del Reino,el pago de las mitas, comprar negros para que ayuden a abrir el camino para el desembarco del <placeName xml:id="cab-001-006_cab-001-006_s001_a007" type="historicalPlace" ref="#place_cab-001-006_cab-001-006_s001_a007">Rio Grande</placeName> de este reino.</seg>
+        <seg xml:id="cab-001-006_s002" type="juridical_discursive_segment">
+          <rs xml:id="cab-001-006_cab-001-006_s002_a001" type="legal_or_procedural_act" subtype="appointment" ana="https://w3id.org/leco/ontology#Appointment" corresp="#event_cab-001-006_cab-001-006_s002_a001">Nombrar</rs>
+          <rs xml:id="cab-001-006_cab-001-006_s002_a002" type="role_or_office" subtype="office_or_procedural_role">regidores</rs> perpetuos a personas hábiles, idónes que sean pobladores y <term xml:id="cab-001-006_cab-001-006_s002_a003" type="historicalCategory" subtype="historical_status_category" ref="https://w3id.org/leco/ontology#Descubridores">descubridores</term> del <placeName xml:id="cab-001-006_cab-001-006_s002_a004" type="historicalPlace" ref="#place_cab-001-006_cab-001-006_s002_a004">Nuevo Reino</placeName>.</seg>
+        <seg xml:id="cab-001-006_s003" type="juridical_discursive_segment">Hacer relación de <term xml:id="cab-001-006_cab-001-006_s003_a001" type="historical_concept" subtype="majesty" ref="https://w3id.org/leco/ontology#MajestyConcept">su majestad</term> de la cantidad de oro,espadas, Piedras preciosas producidas en este reino, para que por medio de la <orgName xml:id="cab-001-006_cab-001-006_s003_a002" type="audiencia" ref="#org_cab-001-006_cab-001-006_s003_a002">Real Audencia</orgName> se entregue el informe, agregando las tierras mas fertiles de los <term xml:id="cab-001-006_cab-001-006_s003_a003" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indigenas">Indigenas</term> ó <term xml:id="cab-001-006_cab-001-006_s003_a004" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Naturales">naturales</term>.</seg>
+        <seg xml:id="cab-001-006_s004" type="juridical_discursive_segment">Por cuanto en los confines y términos de la ciudad de <placeName xml:id="cab-001-006_cab-001-006_s004_a001" type="historicalPlace" ref="#place_cab-001-006_cab-001-006_s004_a001">Tunja</placeName> y sus provincias y poblaciones de <term xml:id="cab-001-006_cab-001-006_s004_a002" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">Indios</term> hay guerras entre ellos con los <term xml:id="cab-001-006_cab-001-006_s004_a003" type="historicalCategory" subtype="ethnohistorical_category" ref="https://w3id.org/leco/ontology#Caribes">Caribes</term> los cuales comen carne humana, para que estos sean <rs xml:id="cab-001-006_cab-001-006_s004_a004" type="legal_or_procedural_act" subtype="punishment" ana="https://w3id.org/leco/ontology#Punishment" corresp="#event_cab-001-006_cab-001-006_s004_a004">castigados</rs> por los <term xml:id="cab-001-006_cab-001-006_s004_a005" type="historicalCategory" subtype="colonial_social_category" ref="https://w3id.org/leco/ontology#Espanoles">españoles</term>.</seg>
+        <seg xml:id="cab-001-006_s005" type="juridical_discursive_segment">Por cuanto es <term xml:id="cab-001-006_cab-001-006_s005_a001" type="historical_concept" subtype="custom" ref="https://w3id.org/leco/ontology#CustomConcept">costumbre</term> de los gobernantes del Reino y de las justicias, se pregona las <rs xml:id="cab-001-006_cab-001-006_s005_a002" type="legal_or_procedural_act" subtype="penalty" ana="https://w3id.org/leco/ontology#Sanction" corresp="#event_cab-001-006_cab-001-006_s005_a002">penas</rs> contra los <term xml:id="cab-001-006_cab-001-006_s005_a003" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">Indios</term>, Suspenderlos, <rs xml:id="cab-001-006_cab-001-006_s005_a004" type="legal_or_procedural_act" subtype="punishment" ana="https://w3id.org/leco/ontology#Punishment" corresp="#event_cab-001-006_cab-001-006_s005_a004">castigarlos</rs> por causar problemas con los <term xml:id="cab-001-006_cab-001-006_s005_a005" type="historicalCategory" subtype="status_category" ref="https://w3id.org/leco/ontology#Vecinos">vecinos</term> de la ciudad dónde se fiel cumplimiento a esta <rs xml:id="cab-001-006_cab-001-006_s005_a006" type="normativeRule" subtype="real_provision" ref="#rule_cab-001-006_cab-001-006_s005_a006">carta Real Provisión</rs>.</seg>
+        <seg xml:id="cab-001-006_s006" type="juridical_discursive_segment">Finalmente; seguir autorizando los <rs xml:id="cab-001-006_cab-001-006_s006_a001" type="legal_or_procedural_act" subtype="repartimiento" ana="https://w3id.org/leco/ontology#RepartimientoAct" corresp="#event_cab-001-006_cab-001-006_s006_a001">repartimientos</rs> de tierras e <term xml:id="cab-001-006_cab-001-006_s006_a002" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">Indios</term> a los primeros <term xml:id="cab-001-006_cab-001-006_s006_a003" type="historicalCategory" subtype="historical_status_category" ref="https://w3id.org/leco/ontology#Descubridores">descubridores</term> y <term xml:id="cab-001-006_cab-001-006_s006_a004" type="historicalCategory" subtype="historical_status_category" ref="https://w3id.org/leco/ontology#Conquistadores">conquistadores</term> del <placeName xml:id="cab-001-006_cab-001-006_s006_a005" type="historicalPlace" ref="#place_cab-001-006_cab-001-006_s006_a005">Nuevo Reino de Granada</placeName>.</seg>
+        <seg xml:id="cab-001-006_s007" type="juridical_discursive_segment">Los miembros del <orgName xml:id="cab-001-006_cab-001-006_s007_a001" type="cabildo" ref="#org_cab-001-006_cab-001-006_s007_a001">Cabildo</orgName>
+          <rs xml:id="cab-001-006_cab-001-006_s007_a002" type="legal_or_procedural_act" subtype="decision" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#event_cab-001-006_cab-001-006_s007_a002">acordaron</rs>, dar cumplimiento a lo acordado, en la <rs xml:id="cab-001-006_cab-001-006_s007_a003" type="normativeRule" subtype="real_provision" ref="#rule_cab-001-006_cab-001-006_s007_a003">Real Provisión</rs> .</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-006_cab-001-006_s001_a001">
+        <persName>Pedro de Colmenares</persName>
+      </person>
+      <person xml:id="person_cab-001-006_cab-001-006_s001_a002">
+        <persName>Alonso Tellez</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-006_cab-001-006_s003_a002" ana="https://w3id.org/leco/ontology#AudienciaType">
+        <orgName>Real Audencia</orgName>
+      </org>
+      <org xml:id="org_cab-001-006_cab-001-006_s007_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-006_cab-001-006_s001_a007">
+        <placeName>Rio Grande</placeName>
+      </place>
+      <place xml:id="place_cab-001-006_cab-001-006_s002_a004">
+        <placeName>Nuevo Reino</placeName>
+      </place>
+      <place xml:id="place_cab-001-006_cab-001-006_s004_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-006_cab-001-006_s006_a005">
+        <placeName>Nuevo Reino de Granada</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-006_cab-001-006_s002_a001" ana="https://w3id.org/leco/ontology#Appointment" corresp="#cab-001-006_s002">
+        <desc>Nombrar</desc>
+      </event>
+      <event xml:id="event_cab-001-006_cab-001-006_s004_a004" ana="https://w3id.org/leco/ontology#Punishment" corresp="#cab-001-006_s004">
+        <desc>castigados</desc>
+      </event>
+      <event xml:id="event_cab-001-006_cab-001-006_s005_a002" ana="https://w3id.org/leco/ontology#Sanction" corresp="#cab-001-006_s005">
+        <desc>penas</desc>
+      </event>
+      <event xml:id="event_cab-001-006_cab-001-006_s005_a004" ana="https://w3id.org/leco/ontology#Punishment" corresp="#cab-001-006_s005">
+        <desc>castigarlos</desc>
+      </event>
+      <event xml:id="event_cab-001-006_cab-001-006_s006_a001" ana="https://w3id.org/leco/ontology#RepartimientoAct" corresp="#cab-001-006_s006">
+        <desc>repartimientos</desc>
+      </event>
+      <event xml:id="event_cab-001-006_cab-001-006_s007_a002" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#cab-001-006_s007">
+        <desc>acordaron</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-006_cab-001-006_s001_a005">nuevas leyes</interp>
+      <interp xml:id="rule_cab-001-006_cab-001-006_s005_a006">carta Real Provisión</interp>
+      <interp xml:id="rule_cab-001-006_cab-001-006_s007_a003">Real Provisión</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-006_cab-001-006_s003_a001" type="historicalConceptUse" active="#cab-001-006_acta" passive="https://w3id.org/leco/ontology#MajestyConcept" source="#cab-001-006_s003" subtype="explicit"/>
+      <relation xml:id="concept_use_cab-001-006_cab-001-006_s005_a001" type="historicalConceptUse" active="#cab-001-006_acta" passive="https://w3id.org/leco/ontology#CustomConcept" source="#cab-001-006_s005" subtype="explicit"/>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-006_cab-001-006_s007_a001" passive="#place_cab-001-006_cab-001-006_s004_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-006_acta"/>
+      <relation xml:id="jurisdiction_audiencia_01" type="territorialJurisdiction" active="#org_cab-001-006_cab-001-006_s003_a002" passive="#place_cab-001-006_cab-001-006_s004_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="inferred" source="#cab-001-006_s003"/>
+      <relation xml:id="derived_decided_event_cab-001-006_cab-001-006_s007_a002" type="objectProperty" name="decidedBy" active="#event_cab-001-006_cab-001-006_s007_a002" passive="#org_cab-001-006_cab-001-006_s007_a001" source="#cab-001-006_s007" subtype="humanInterpretation"/>
+      <relation xml:id="review_0068_resultsInLegalArrangement" type="objectProperty" name="resultsInLegalArrangement" active="#event_cab-001-006_cab-001-006_s006_a001" passive="#review_arrangement_0068" source="#cab-001-006_s006" subtype="inferred"/>
+    <relation type="objectProperty" name="appointsToOffice" active="#event_cab-001-006_cab-001-006_s002_a001" passive="#office_review_event_cab-001-006_cab-001-006_s002_a001_cab-001-006_cab-001-006_s002_a002" subtype="explicit" source="#cab-001-006_s002" xml:id="review_appointsToOffice_event_cab-001-006_cab-001-006_s002_a001_office_review_event_cab-001-006_cab-001-006_s002_a001_cab-001-006_cab-001-006_s002_a002"/></listRelation>
+    <precision target="#jurisdiction_audiencia_01" confidence="0.75"/>
+    <precision target="#derived_decided_event_cab-001-006_cab-001-006_s007_a002" confidence="0.75"/>
+    <interpGrp type="legalArrangements">
+      <interp xml:id="review_arrangement_0068" ana="https://w3id.org/leco/ontology#LegalArrangement">Arreglo jurídico asociado a repartimientos</interp>
+    </interpGrp>
+    <precision target="#review_0068_resultsInLegalArrangement" confidence="0.80"/>
+  <interpGrp type="offices"><interp xml:id="office_review_event_cab-001-006_cab-001-006_s002_a001_cab-001-006_cab-001-006_s002_a002" ana="https://w3id.org/leco/ontology#RegidorOfficeType" corresp="#cab-001-006_cab-001-006_s002_a002">regidores</interp></interpGrp><precision target="#review_appointsToOffice_event_cab-001-006_cab-001-006_s002_a001_office_review_event_cab-001-006_cab-001-006_s002_a001_cab-001-006_cab-001-006_s002_a002" confidence="1.00"/><note type="legal-relation-review" target="#review_appointsToOffice_event_cab-001-006_cab-001-006_s002_a001_office_review_event_cab-001-006_cab-001-006_s002_a001_cab-001-006_cab-001-006_s002_a002">El cargo aparece explícitamente en el mismo segmento: «Nombrar regidores perpetuos». Se aprueba la mención de oficio xml:id cab-001-006_cab-001-006_s002_a002 como target de leco:appointsToOffice; la forma histórica «regidores» se normaliza a RegidorOfficeType.</note></standOff>
+</TEI>

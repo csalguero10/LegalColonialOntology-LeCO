@@ -1,0 +1,107 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-007">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-007</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d007</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d007/">https://zasqua.org/co-ahrb-cab-001-d007/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>1 de diciembre de 1547</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-007_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-007_s001" type="juridical_discursive_segment">Los miembros del <orgName xml:id="cab-001-007_cab-001-007_s001_a001" type="cabildo" ref="#org_cab-001-007_cab-001-007_s001_a001">Cabildo</orgName>, <orgName xml:id="cab-001-007_cab-001-007_s001_a002" type="cabildo_body" ref="#org_cab-001-007_cab-001-007_s001_a002">Justicia y Regimiento</orgName> otorgan el <rs xml:id="cab-001-007_cab-001-007_s001_a003" type="legal_or_procedural_act" subtype="grant_of_power" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#event_cab-001-007_cab-001-007_s001_a003">poder</rs> de <rs xml:id="cab-001-007_cab-001-007_s001_a004" type="role_or_office" subtype="office_or_procedural_role">Procuradores</rs> a don Pedro de Colemenares y <persName xml:id="cab-001-007_cab-001-007_s001_a005" type="historicalPerson" ref="#person_cab-001-007_cab-001-007_s001_a005">Alonso Tellez</persName>, para que defiendan las causas de la ciudad de <placeName xml:id="cab-001-007_cab-001-007_s001_a006" type="historicalPlace" ref="#place_cab-001-007_cab-001-007_s001_a006">Tunja</placeName>, ante la <orgName xml:id="cab-001-007_cab-001-007_s001_a007" type="audiencia" ref="#org_cab-001-007_cab-001-007_s001_a007">Real Audiencia de Santafé</orgName>, <rs xml:id="cab-001-007_cab-001-007_s001_a008" type="normativeRule" subtype="provision" ref="#rule_cab-001-007_cab-001-007_s001_a008">Provisión</rs> fechada a <date xml:id="cab-001-007_cab-001-007_s001_a009" type="sourceDate">1 de diciembre de 1547</date>.</seg>
+        <seg xml:id="cab-001-007_s002" type="juridical_discursive_segment">Dentro de las funciones asignadas, deben realizar <rs xml:id="cab-001-007_cab-001-007_s002_a001" type="legal_or_procedural_act" subtype="supplication" ana="https://w3id.org/leco/ontology#Supplication" corresp="#event_cab-001-007_cab-001-007_s002_a001">suplicas</rs>, <rs xml:id="cab-001-007_cab-001-007_s002_a002" type="legal_or_procedural_act" subtype="appeal" ana="https://w3id.org/leco/ontology#Appeal" corresp="#event_cab-001-007_cab-001-007_s002_a002">apelaciones</rs>, velar por los negocios de la ciudad, dar cumplimiento de las <rs xml:id="cab-001-007_cab-001-007_s002_a003" type="normativeRule" subtype="laws" ref="#rule_cab-001-007_cab-001-007_s002_a003">leyes</rs> de <term xml:id="cab-001-007_cab-001-007_s002_a004" type="historical_concept" subtype="majesty" ref="https://w3id.org/leco/ontology#MajestyConcept">su Magestad</term>, poner remedio a los conflictos de los <term xml:id="cab-001-007_cab-001-007_s002_a005" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Naturales">naturales</term> y de los <term xml:id="cab-001-007_cab-001-007_s002_a006" type="historicalCategory" subtype="colonial_social_category" ref="#category_cab-001-007_cab-001-007_s002_a006">colonos</term>, para el bien de los <term xml:id="cab-001-007_cab-001-007_s002_a007" type="historicalCategory" subtype="status_category" ref="https://w3id.org/leco/ontology#Vecinos">vecinos</term> del <placeName xml:id="cab-001-007_cab-001-007_s002_a008" type="historicalPlace" ref="#place_cab-001-007_cab-001-007_s002_a008">Nuevo Reino de Granada</placeName>.</seg>
+        <seg xml:id="cab-001-007_s003" type="juridical_discursive_segment">Los miembros del <orgName xml:id="cab-001-007_cab-001-007_s003_a001" type="cabildo" ref="#org_cab-001-007_cab-001-007_s001_a001">cabildo</orgName>, procedieron a tomar el <rs xml:id="cab-001-007_cab-001-007_s003_a002" type="legal_or_procedural_act" subtype="oath" ana="https://w3id.org/leco/ontology#Oath" corresp="#event_cab-001-007_cab-001-007_s003_a002">juramento</rs> de <term xml:id="cab-001-007_cab-001-007_s003_a003" type="historical_concept" subtype="fidelity" ref="https://w3id.org/leco/ontology#FidelityConcept">fidelidad</term> a los dos <rs xml:id="cab-001-007_cab-001-007_s003_a004" type="role_or_office" subtype="office_or_procedural_role">Procuradores Generales</rs> a quienes se les otorgo el <rs xml:id="cab-001-007_cab-001-007_s003_a005" type="legal_or_procedural_act" subtype="power_of_representation" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#event_cab-001-007_cab-001-007_s003_a005">poder de representación</rs> y defensa de las causas de la provincia.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-007_cab-001-007_s001_a005">
+        <persName>Alonso Tellez</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-007_cab-001-007_s001_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-007_cab-001-007_s001_a002" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-007_cab-001-007_s001_a007" ana="https://w3id.org/leco/ontology#AudienciaType">
+        <orgName>Real Audiencia de Santafé</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-007_cab-001-007_s001_a006">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-007_cab-001-007_s002_a008">
+        <placeName>Nuevo Reino de Granada</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-007_cab-001-007_s001_a003" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#cab-001-007_s001">
+        <desc>poder</desc>
+      </event>
+      <event xml:id="event_cab-001-007_cab-001-007_s002_a001" ana="https://w3id.org/leco/ontology#Supplication" corresp="#cab-001-007_s002">
+        <desc>suplicas</desc>
+      </event>
+      <event xml:id="event_cab-001-007_cab-001-007_s002_a002" ana="https://w3id.org/leco/ontology#Appeal" corresp="#cab-001-007_s002">
+        <desc>apelaciones</desc>
+      </event>
+      <event xml:id="event_cab-001-007_cab-001-007_s003_a002" ana="https://w3id.org/leco/ontology#Oath" corresp="#cab-001-007_s003">
+        <desc>juramento</desc>
+      </event>
+      <event xml:id="event_cab-001-007_cab-001-007_s003_a005" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#cab-001-007_s003">
+        <desc>poder de representación</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-007_cab-001-007_s001_a008">Provisión</interp>
+      <interp xml:id="rule_cab-001-007_cab-001-007_s002_a003">leyes</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories">
+      <interp xml:id="category_cab-001-007_cab-001-007_s002_a006" ana="https://w3id.org/leco/ontology#SocioLegalCategory">colonos</interp>
+    </interpGrp>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-007_cab-001-007_s002_a004" type="historicalConceptUse" active="#cab-001-007_acta" passive="https://w3id.org/leco/ontology#MajestyConcept" source="#cab-001-007_s002" subtype="explicit" when="1 de diciembre de 1547"/>
+      <relation xml:id="concept_use_cab-001-007_cab-001-007_s003_a003" type="historicalConceptUse" active="#cab-001-007_acta" passive="https://w3id.org/leco/ontology#FidelityConcept" source="#cab-001-007_s003" subtype="explicit" when="1 de diciembre de 1547"/>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-007_cab-001-007_s001_a001" passive="#place_cab-001-007_cab-001-007_s001_a006" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-007_s001"/>
+      <relation xml:id="jurisdiction_audiencia_01" type="territorialJurisdiction" active="#org_cab-001-007_cab-001-007_s001_a007" passive="#place_cab-001-007_cab-001-007_s001_a006" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="inferred" source="#cab-001-007_s001"/>
+      <relation xml:id="review_0097_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-007_cab-001-007_s003_a005" passive="#org_cab-001-007_cab-001-007_s001_a001" source="#cab-001-007_s003" subtype="explicit"/>
+      <relation xml:id="review_0099_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-007_cab-001-007_s003_a002" passive="#org_cab-001-007_cab-001-007_s001_a001" source="#cab-001-007_s003" subtype="explicit"/>
+      <relation xml:id="participant_review_0020_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-007_cab-001-007_s002_a002" passive="#person_cab-001-007_cab-001-007_s001_a005" source="#cab-001-007_s002" subtype="contextual"/>
+      <relation xml:id="participant_review_0021_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-007_cab-001-007_s002_a001" passive="#person_cab-001-007_cab-001-007_s001_a005" source="#cab-001-007_s002" subtype="contextual"/>
+      <relation xml:id="participant_review_0022_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-007_cab-001-007_s001_a003" passive="#person_cab-001-007_cab-001-007_s001_a005" source="#cab-001-007_s001" subtype="explicit"/>
+    </listRelation>
+    <precision target="#jurisdiction_audiencia_01" confidence="0.75"/>
+    <precision target="#participant_review_0020_hasParticipant" confidence="0.90"/>
+    <precision target="#participant_review_0021_hasParticipant" confidence="0.90"/>
+    <precision target="#participant_review_0022_hasParticipant" confidence="1.00"/>
+  </standOff>
+</TEI>

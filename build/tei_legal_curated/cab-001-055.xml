@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-055">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-055</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0055</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d055/">https://zasqua.org/co-ahrb-cab-001-d055/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>7 de Noviembre 1550</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-055_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-055_s001" type="juridical_discursive_segment">
+          <placeName xml:id="cab-001-055_cab-001-055_s001_a001" type="historicalPlace" ref="#place_cab-001-055_cab-001-055_s001_a001">Tunja</placeName>, <date xml:id="cab-001-055_cab-001-055_s001_a002" type="sourceDate">7 de Noviembre 1550</date>.</seg>
+        <seg xml:id="cab-001-055_s002" type="juridical_discursive_segment">Se llevó a cabo otra reunión del <orgName xml:id="cab-001-055_cab-001-055_s002_a001" type="cabildo" ref="#org_cab-001-055_cab-001-055_s002_a001">Cabildo</orgName>, en la que se <rs xml:id="cab-001-055_cab-001-055_s002_a002" type="legal_or_procedural_act" subtype="presentation" ana="https://w3id.org/leco/ontology#Presentation" corresp="#event_cab-001-055_cab-001-055_s002_a002">presentó</rs> ua <rs xml:id="cab-001-055_cab-001-055_s002_a003" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-055_cab-001-055_s002_a003">petición</rs> de <persName xml:id="cab-001-055_cab-001-055_s002_a004" type="historicalPerson" ref="#person_cab-001-055_cab-001-055_s002_a004">Martin Sanchez Ropero</persName>, quien pide un sitio para construir un molino cerca al puente del camino, real.</seg>
+        <seg xml:id="cab-001-055_s003" type="juridical_discursive_segment">Tambien sepresentó otra <rs xml:id="cab-001-055_cab-001-055_s003_a001" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-055_cab-001-055_s003_a001">petición</rs> por parte de <persName xml:id="cab-001-055_cab-001-055_s003_a002" type="historicalPerson" ref="#person_cab-001-055_cab-001-055_s003_a002">Hernando Rojas</persName>, quien solicita unas tierras para ganados mayor en términos de <placeName xml:id="cab-001-055_cab-001-055_s003_a003" type="historicalPlace" ref="#place_cab-001-055_cab-001-055_s001_a001">Tunja</placeName>.</seg>
+        <seg xml:id="cab-001-055_s004" type="juridical_discursive_segment">Los señores <orgName xml:id="cab-001-055_cab-001-055_s004_a001" type="cabildo_body" ref="#org_cab-001-055_cab-001-055_s004_a001">Justicia y Regimiento</orgName>
+          <rs xml:id="cab-001-055_cab-001-055_s004_a002" type="legal_or_procedural_act" subtype="approval" ana="https://w3id.org/leco/ontology#Approval" corresp="#event_cab-001-055_cab-001-055_s004_a002">aprobaron</rs> los titulos de tierra solicitados, siempre y cuando no existan problemas con los <term xml:id="cab-001-055_cab-001-055_s004_a003" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Naturales">naturales</term> ó terceros.</seg>
+        <seg xml:id="cab-001-055_s005" type="juridical_discursive_segment">Se <rs xml:id="cab-001-055_cab-001-055_s005_a001" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-055_cab-001-055_s005_a001">ordenó</rs> dar al <rs xml:id="cab-001-055_cab-001-055_s005_a002" type="legal_or_procedural_act" subtype="proclamation" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#event_cab-001-055_cab-001-055_s005_a002">pregón</rs> en la plaza principal.</seg>
+        <seg xml:id="cab-001-055_s006" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-055_cab-001-055_s006_a001" type="cabildo" ref="#org_cab-001-055_cab-001-055_s002_a001">Cabildo</orgName>, se <rs xml:id="cab-001-055_cab-001-055_s006_a002" type="legal_or_procedural_act" subtype="approval" ana="https://w3id.org/leco/ontology#Approval" corresp="#event_cab-001-055_cab-001-055_s006_a002">aprobó</rs>
+          <rs xml:id="cab-001-055_cab-001-055_s006_a003" type="legal_or_procedural_act" subtype="collection" ana="https://w3id.org/leco/ontology#Collection" corresp="#event_cab-001-055_cab-001-055_s006_a003">cobrar</rs> $40 pesos del buen oro en cada un año por los propios de la ciudad, en constancia firmaron los capituladores.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-055_cab-001-055_s002_a004">
+        <persName>Martin Sanchez Ropero</persName>
+      </person>
+      <person xml:id="person_cab-001-055_cab-001-055_s003_a002">
+        <persName>Hernando Rojas</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-055_cab-001-055_s002_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-055_cab-001-055_s004_a001" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Justicia y Regimiento</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-055_cab-001-055_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-055_cab-001-055_s002_a002" ana="https://w3id.org/leco/ontology#Presentation" corresp="#cab-001-055_s002">
+        <desc>presentó</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s002_a003" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-055_s002">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s003_a001" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-055_s003">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s004_a002" ana="https://w3id.org/leco/ontology#Approval" corresp="#cab-001-055_s004">
+        <desc>aprobaron</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s005_a001" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-055_s005">
+        <desc>ordenó</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s005_a002" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#cab-001-055_s005">
+        <desc>pregón</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s006_a002" ana="https://w3id.org/leco/ontology#Approval" corresp="#cab-001-055_s006">
+        <desc>aprobó</desc>
+      </event>
+      <event xml:id="event_cab-001-055_cab-001-055_s006_a003" ana="https://w3id.org/leco/ontology#Collection" corresp="#cab-001-055_s006">
+        <desc>cobrar</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules"/>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-055_cab-001-055_s002_a001" passive="#place_cab-001-055_cab-001-055_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-055_s004"/>
+      <relation xml:id="migrated_cab-001-055_cab-001-055_s002_r001" type="participation" active="#person_cab-001-055_cab-001-055_s002_a004" passive="#event_cab-001-055_cab-001-055_s002_a003" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-055_s002" subtype="explicit"/>
+      <relation xml:id="migrated_cab-001-055_cab-001-055_s003_r001" type="participation" active="#person_cab-001-055_cab-001-055_s003_a002" passive="#event_cab-001-055_cab-001-055_s003_a001" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-055_s003" subtype="explicit"/>
+      <relation xml:id="review_0275_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-055_cab-001-055_s004_a002" passive="#org_cab-001-055_cab-001-055_s004_a001" source="#cab-001-055_s004" subtype="explicit"/>
+      <relation xml:id="review_0278_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-055_cab-001-055_s005_a001" passive="#org_cab-001-055_cab-001-055_s002_a001" source="#cab-001-055_s005" subtype="inferred"/>
+      <relation xml:id="review_0281_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-055_cab-001-055_s004_a002" passive="#org_cab-001-055_cab-001-055_s004_a001" source="#cab-001-055_s004" subtype="explicit"/>
+      <relation xml:id="review_0282_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-055_cab-001-055_s006_a003" passive="#org_cab-001-055_cab-001-055_s002_a001" source="#cab-001-055_s006" subtype="explicit"/>
+      <relation xml:id="review_0284_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-055_cab-001-055_s006_a002" passive="#org_cab-001-055_cab-001-055_s002_a001" source="#cab-001-055_s006" subtype="explicit"/>
+      <relation xml:id="review_0287_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-055_cab-001-055_s006_a002" passive="#org_cab-001-055_cab-001-055_s002_a001" source="#cab-001-055_s006" subtype="inferred"/>
+      <relation xml:id="participant_review_0066_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-055_cab-001-055_s002_a002" passive="#person_cab-001-055_cab-001-055_s002_a004" source="#cab-001-055_s002" subtype="explicit"/>
+      <relation xml:id="participant_review_0067_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-055_cab-001-055_s005_a001" passive="#org_cab-001-055_cab-001-055_s004_a001" source="#cab-001-055_s005" subtype="contextual"/>
+    </listRelation>
+    <precision target="#migrated_cab-001-055_cab-001-055_s002_r001" confidence="0.95"/>
+    <precision target="#migrated_cab-001-055_cab-001-055_s003_r001" confidence="0.95"/>
+    <precision target="#review_0278_decidedBy" confidence="0.80"/>
+    <precision target="#review_0287_decidedBy" confidence="0.80"/>
+    <precision target="#participant_review_0066_hasParticipant" confidence="1.00"/>
+    <precision target="#participant_review_0067_hasParticipant" confidence="0.85"/>
+  </standOff>
+</TEI>

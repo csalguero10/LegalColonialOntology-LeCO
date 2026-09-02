@@ -1,0 +1,113 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-019">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-019</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0019</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d019/">https://zasqua.org/co-ahrb-cab-001-d019/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>17 de Octubre 1553</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-019_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-019_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-019_cab-001-019_s001_a001" type="historicalPlace" ref="#place_cab-001-019_cab-001-019_s001_a001">Tunja</placeName>, el día <date xml:id="cab-001-019_cab-001-019_s001_a002" type="sourceDate">17 de Octubre 1553</date>, se <rs xml:id="cab-001-019_cab-001-019_s001_a003" type="legal_or_procedural_act" subtype="reading" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#event_cab-001-019_cab-001-019_s001_a003">leyó</rs> una <rs xml:id="cab-001-019_cab-001-019_s001_a004" type="normativeRule" subtype="real_provision" ref="#rule_cab-001-019_cab-001-019_s001_a004">Real Provisión</rs> en la que se dice que los <orgName xml:id="cab-001-019_cab-001-019_s001_a005" type="cabildo_body" ref="#org_cab-001-019_cab-001-019_s001_a005">Consejos Justicia y Regimiento</orgName> de este <placeName xml:id="cab-001-019_cab-001-019_s001_a006" type="historicalPlace" ref="#place_cab-001-019_cab-001-019_s001_a006">Nuevo Reino de Granada</placeName> no enviaron <rs xml:id="cab-001-019_cab-001-019_s001_a007" type="role_or_office" subtype="office_or_procedural_role">procuradores</rs> al <placeName xml:id="cab-001-019_cab-001-019_s001_a008" type="historicalPlace" ref="#place_cab-001-019_cab-001-019_s001_a008">Reino de España</placeName>, para que negociaran y solicitaran lo que conviniera a las ciudades y <orgName xml:id="cab-001-019_cab-001-019_s001_a009" type="cabildo" ref="#org_cab-001-019_cab-001-019_s001_a009">cabildo</orgName>s, ante el <orgName xml:id="cab-001-019_cab-001-019_s001_a010" type="council" ref="#org_cab-001-019_cab-001-019_s001_a010">Consejo de Indias</orgName>.</seg>
+        <seg xml:id="cab-001-019_s002" type="juridical_discursive_segment">En el caso del <rs xml:id="cab-001-019_cab-001-019_s002_a001" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#ProcuradorOfficeType">Procurador</rs> de <placeName xml:id="cab-001-019_cab-001-019_s002_a002" type="historicalPlace" ref="#place_cab-001-019_cab-001-019_s001_a001">Tunja</placeName> Don <persName xml:id="cab-001-019_cab-001-019_s002_a003" type="historicalPerson" ref="#person_cab-001-019_cab-001-019_s002_a003">Juan Gómez</persName> no asistió, asi mismo se causó daño para los beneficios de las ciudades aunque se diera un plazo amplia de 50 días para estar en <placeName xml:id="cab-001-019_cab-001-019_s002_a004" type="historicalPlace" ref="#place_cab-001-019_cab-001-019_s002_a004">España</placeName>.</seg>
+        <seg xml:id="cab-001-019_s003" type="juridical_discursive_segment">Por lo anterior se <rs xml:id="cab-001-019_cab-001-019_s003_a001" type="legal_or_procedural_act" subtype="fine" ana="https://w3id.org/leco/ontology#Fine" corresp="#event_cab-001-019_cab-001-019_s003_a001">multa</rs> con $200 pesos del buen oro a quienes siendo del <orgName xml:id="cab-001-019_cab-001-019_s003_a002" type="cabildo" ref="#org_cab-001-019_cab-001-019_s001_a009">Cabildo</orgName> incumplieran la <rs xml:id="cab-001-019_cab-001-019_s003_a003" type="normativeRule" subtype="real_provision" ref="#rule_cab-001-019_cab-001-019_s003_a003">Real Provisión</rs>.</seg>
+        <seg xml:id="cab-001-019_s004" type="juridical_discursive_segment">En esta reunión se dió todo el <rs xml:id="cab-001-019_cab-001-019_s004_a001" type="legal_or_procedural_act" subtype="power_of_representation" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#event_cab-001-019_cab-001-019_s004_a001">poder de representación</rs> al <rs xml:id="cab-001-019_cab-001-019_s004_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#CaptainOfficeType">capitan</rs>
+          <persName xml:id="cab-001-019_cab-001-019_s004_a003" type="historicalPerson" ref="#person_cab-001-019_cab-001-019_s004_a003">Gonzalo Suárez</persName> para que <rs xml:id="cab-001-019_cab-001-019_s004_a004" type="legal_or_procedural_act" subtype="appeal" ana="https://w3id.org/leco/ontology#Appeal" corresp="#event_cab-001-019_cab-001-019_s004_a004">apele</rs> y <rs xml:id="cab-001-019_cab-001-019_s004_a005" type="legal_or_procedural_act" subtype="supplication" ana="https://w3id.org/leco/ontology#Supplication" corresp="#event_cab-001-019_cab-001-019_s004_a005">suplique</rs> por el <orgName xml:id="cab-001-019_cab-001-019_s004_a006" type="cabildo" ref="#org_cab-001-019_cab-001-019_s001_a009">Cabildo</orgName>.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-019_cab-001-019_s002_a003">
+        <persName>Juan Gómez</persName>
+      </person>
+      <person xml:id="person_cab-001-019_cab-001-019_s004_a003">
+        <persName>Gonzalo Suárez</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-019_cab-001-019_s001_a005" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Consejos Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-019_cab-001-019_s001_a009" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-019_cab-001-019_s001_a010" ana="https://w3id.org/leco/ontology#CouncilType">
+        <orgName>Consejo de Indias</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-019_cab-001-019_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-019_cab-001-019_s001_a006">
+        <placeName>Nuevo Reino de Granada</placeName>
+      </place>
+      <place xml:id="place_cab-001-019_cab-001-019_s001_a008">
+        <placeName>Reino de España</placeName>
+      </place>
+      <place xml:id="place_cab-001-019_cab-001-019_s002_a004">
+        <placeName>España</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-019_cab-001-019_s001_a003" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#cab-001-019_s001">
+        <desc>leyó</desc>
+      </event>
+      <event xml:id="event_cab-001-019_cab-001-019_s003_a001" ana="https://w3id.org/leco/ontology#Fine" corresp="#cab-001-019_s003">
+        <desc>multa</desc>
+      </event>
+      <event xml:id="event_cab-001-019_cab-001-019_s004_a001" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#cab-001-019_s004">
+        <desc>poder de representación</desc>
+      </event>
+      <event xml:id="event_cab-001-019_cab-001-019_s004_a004" ana="https://w3id.org/leco/ontology#Appeal" corresp="#cab-001-019_s004">
+        <desc>apele</desc>
+      </event>
+      <event xml:id="event_cab-001-019_cab-001-019_s004_a005" ana="https://w3id.org/leco/ontology#Supplication" corresp="#cab-001-019_s004">
+        <desc>suplique</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-019_cab-001-019_s001_a004">Real Provisión</interp>
+      <interp xml:id="rule_cab-001-019_cab-001-019_s003_a003">Real Provisión</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-019_cab-001-019_s001_a009" passive="#place_cab-001-019_cab-001-019_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-019_s001"/>
+      <relation xml:id="migrated_cab-001-019_cab-001-019_s002_r001" type="officeHolding" active="#person_cab-001-019_cab-001-019_s002_a003" passive="#org_cab-001-019_cab-001-019_s001_a009" ana="https://w3id.org/leco/ontology#ProcuradorOfficeType" source="#cab-001-019_s002" subtype="explicit" when="1553"/>
+      <relation xml:id="migrated_cab-001-019_cab-001-019_s004_r001" type="officeHolding" active="#person_cab-001-019_cab-001-019_s004_a003" passive="#org_cab-001-019_cab-001-019_s001_a009" ana="https://w3id.org/leco/ontology#CaptainOfficeType" source="#cab-001-019_s004" subtype="explicit" when="1553"/>
+      <relation xml:id="migrated_cab-001-019_cab-001-019_s004_r002" type="participation" active="#person_cab-001-019_cab-001-019_s004_a003" passive="#event_cab-001-019_cab-001-019_s004_a004" ana="https://w3id.org/leco/ontology#AppellantRole" source="#cab-001-019_s004" subtype="inferred"/>
+      <relation xml:id="review_0196_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-019_cab-001-019_s004_a005" passive="#person_cab-001-019_cab-001-019_s004_a003" source="#cab-001-019_s004" subtype="explicit"/>
+      <relation xml:id="participant_review_0041_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-019_cab-001-019_s004_a001" passive="#person_cab-001-019_cab-001-019_s004_a003" source="#cab-001-019_s004" subtype="explicit"/>
+    </listRelation>
+    <precision target="#migrated_cab-001-019_cab-001-019_s002_r001" confidence="0.75"/>
+    <precision target="#migrated_cab-001-019_cab-001-019_s004_r001" confidence="0.75"/>
+    <precision target="#migrated_cab-001-019_cab-001-019_s004_r002" confidence="0.75"/>
+    <precision target="#participant_review_0041_hasParticipant" confidence="1.00"/>
+  </standOff>
+</TEI>

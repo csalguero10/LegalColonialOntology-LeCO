@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-011">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-011</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0011</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d0011/">https://zasqua.org/co-ahrb-cab-001-d0011/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>16 de Mayo 1548</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-011_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-011_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-011_cab-001-011_s001_a001" type="historicalPlace" ref="#place_cab-001-011_cab-001-011_s001_a001">Tunja</placeName>, el día <date xml:id="cab-001-011_cab-001-011_s001_a002" type="sourceDate">16 de Mayo 1548</date>, se reunieron los miembros del <orgName xml:id="cab-001-011_cab-001-011_s001_a003" type="cabildo" ref="#org_cab-001-011_cab-001-011_s001_a003">Cabildo Justicia y Regimiento</orgName> quienes <rs xml:id="cab-001-011_cab-001-011_s001_a004" type="legal_or_procedural_act" subtype="decision" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#event_cab-001-011_cab-001-011_s001_a004">acordaron</rs>
+          <rs xml:id="cab-001-011_cab-001-011_s001_a005" type="legal_or_procedural_act" subtype="prohibition" ana="https://w3id.org/leco/ontology#Prohibition" corresp="#event_cab-001-011_cab-001-011_s001_a005">prohibir</rs> a los <term xml:id="cab-001-011_cab-001-011_s001_a006" type="historicalCategory" subtype="status_category" ref="https://w3id.org/leco/ontology#Vecinos">vecinos</term> de la ciudad permitir andar a los ganados por la calles y la plaza de la misma su <rs xml:id="cab-001-011_cab-001-011_s001_a007" type="legal_or_procedural_act" subtype="penalty" ana="https://w3id.org/leco/ontology#Sanction" corresp="#event_cab-001-011_cab-001-011_s001_a007">pena</rs>, de $2 tomines.</seg>
+        <seg xml:id="cab-001-011_s002" type="juridical_discursive_segment">Se <rs xml:id="cab-001-011_cab-001-011_s002_a001" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-011_cab-001-011_s002_a001">ordenó</rs>
+          <rs xml:id="cab-001-011_cab-001-011_s002_a002" type="legal_or_procedural_act" subtype="proclamation" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#event_cab-001-011_cab-001-011_s002_a002">pregonar</rs> en toda la ciudad lo acordado sobre los ganados y la probición de dejarlos sueltos.</seg>
+        <seg xml:id="cab-001-011_s003" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-011_cab-001-011_s003_a001" type="cabildo" ref="#org_cab-001-011_cab-001-011_s003_a001">Cabildo</orgName> los señores capitulares autoriza efectuar el <rs xml:id="cab-001-011_cab-001-011_s003_a002" type="legal_or_procedural_act" subtype="collection" ana="https://w3id.org/leco/ontology#Collection" corresp="#event_cab-001-011_cab-001-011_s003_a002">cobro</rs> de los propios de la ciudad en el valle de <placeName xml:id="cab-001-011_cab-001-011_s003_a003" type="historicalPlace" ref="#place_cab-001-011_cab-001-011_s003_a003">Cerinza</placeName>, donde estan los <term xml:id="cab-001-011_cab-001-011_s003_a004" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">Indios</term> de <placeName xml:id="cab-001-011_cab-001-011_s003_a005" type="historicalPlace" ref="#place_cab-001-011_cab-001-011_s003_a005">Honzaga</placeName>.</seg>
+        <seg xml:id="cab-001-011_s004" type="juridical_discursive_segment">En está reunión, dijo <persName xml:id="cab-001-011_cab-001-011_s004_a001" type="historicalPerson" ref="#person_cab-001-011_cab-001-011_s004_a001">Hernán Suarez de Villalobos</persName>
+          <rs xml:id="cab-001-011_cab-001-011_s004_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#RegidorOfficeType">Regidor</rs>, que las <rs xml:id="cab-001-011_cab-001-011_s004_a003" type="legal_or_procedural_act" subtype="penalty" ana="https://w3id.org/leco/ontology#Sanction" corresp="#event_cab-001-011_cab-001-011_s004_a003">penas</rs> que se impusieran en el <orgName xml:id="cab-001-011_cab-001-011_s004_a004" type="cabildo" ref="#org_cab-001-011_cab-001-011_s003_a001">Cabildo</orgName>, debian hacerse cumplir tanto por los <term xml:id="cab-001-011_cab-001-011_s004_a005" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Naturales">naturales</term> como por los <term xml:id="cab-001-011_cab-001-011_s004_a006" type="historicalCategory" subtype="colonial_social_category" ref="#category_cab-001-011_cab-001-011_s004_a006">colonos</term>
+          <term xml:id="cab-001-011_cab-001-011_s004_a007" type="historicalCategory" subtype="colonial_social_category" ref="https://w3id.org/leco/ontology#Espanoles">Españoles</term>, al infringir las <rs xml:id="cab-001-011_cab-001-011_s004_a008" type="normativeRule" subtype="laws" ref="#rule_cab-001-011_cab-001-011_s004_a008">leyes</rs> establecidas.</seg>
+        <seg xml:id="cab-001-011_s005" type="juridical_discursive_segment">Don <persName xml:id="cab-001-011_cab-001-011_s005_a001" type="historicalPerson" ref="#person_cab-001-011_cab-001-011_s005_a001">Juan de Horozco</persName>, <rs xml:id="cab-001-011_cab-001-011_s005_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#RegidorOfficeType">Regidor</rs> estuvo de acuerdo con la propuesta, sugiriendo un plazo de nueve días para el pago de sus deudas, en el caso de los propios.</seg>
+        <seg xml:id="cab-001-011_s006" type="juridical_discursive_segment">Los Señores capituladores, no se mostraron de acuerdo con la propuesta, por considerar diferentes las condiciones entre los <term xml:id="cab-001-011_cab-001-011_s006_a001" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Naturales">naturales</term> y los colonnos.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-011_cab-001-011_s004_a001">
+        <persName>Hernán Suarez de Villalobos</persName>
+      </person>
+      <person xml:id="person_cab-001-011_cab-001-011_s005_a001">
+        <persName>Juan de Horozco</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-011_cab-001-011_s001_a003" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-011_cab-001-011_s003_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-011_cab-001-011_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-011_cab-001-011_s003_a003">
+        <placeName>Cerinza</placeName>
+      </place>
+      <place xml:id="place_cab-001-011_cab-001-011_s003_a005">
+        <placeName>Honzaga</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-011_cab-001-011_s001_a004" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#cab-001-011_s001">
+        <desc>acordaron</desc>
+      </event>
+      <event xml:id="event_cab-001-011_cab-001-011_s001_a005" ana="https://w3id.org/leco/ontology#Prohibition" corresp="#cab-001-011_s001">
+        <desc>prohibir</desc>
+      </event>
+      <event xml:id="event_cab-001-011_cab-001-011_s001_a007" ana="https://w3id.org/leco/ontology#Sanction" corresp="#cab-001-011_s001">
+        <desc>pena</desc>
+      </event>
+      <event xml:id="event_cab-001-011_cab-001-011_s002_a001" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-011_s002">
+        <desc>ordenó</desc>
+      </event>
+      <event xml:id="event_cab-001-011_cab-001-011_s002_a002" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#cab-001-011_s002">
+        <desc>pregonar</desc>
+      </event>
+      <event xml:id="event_cab-001-011_cab-001-011_s003_a002" ana="https://w3id.org/leco/ontology#Collection" corresp="#cab-001-011_s003">
+        <desc>cobro</desc>
+      </event>
+      <event xml:id="event_cab-001-011_cab-001-011_s004_a003" ana="https://w3id.org/leco/ontology#Sanction" corresp="#cab-001-011_s004">
+        <desc>penas</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-011_cab-001-011_s004_a008">leyes</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories">
+      <interp xml:id="category_cab-001-011_cab-001-011_s004_a006" ana="https://w3id.org/leco/ontology#SocioLegalCategory">colonos</interp>
+    </interpGrp>
+    <listRelation>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-011_cab-001-011_s003_a001" passive="#place_cab-001-011_cab-001-011_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-011_acta"/>
+      <relation xml:id="migrated_cab-001-011_cab-001-011_s004_r002" type="officeHolding" active="#person_cab-001-011_cab-001-011_s004_a001" passive="#org_cab-001-011_cab-001-011_s003_a001" ana="https://w3id.org/leco/ontology#RegidorOfficeType" source="#cab-001-011_s004" subtype="explicit" when="1548"/>
+      <relation xml:id="migrated_cab-001-011_cab-001-011_s005_r001" type="officeHolding" active="#person_cab-001-011_cab-001-011_s005_a001" passive="#org_cab-001-011_cab-001-011_s003_a001" ana="https://w3id.org/leco/ontology#RegidorOfficeType" source="#cab-001-011_s005" subtype="explicit" when="1548"/>
+      <relation xml:id="derived_decided_event_cab-001-011_cab-001-011_s001_a004" type="objectProperty" name="decidedBy" active="#event_cab-001-011_cab-001-011_s001_a004" passive="#org_cab-001-011_cab-001-011_s003_a001" source="#cab-001-011_s001" subtype="humanInterpretation"/>
+      <relation xml:id="review_0112_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-011_cab-001-011_s004_a003" passive="#person_cab-001-011_cab-001-011_s004_a001" source="#cab-001-011_s004" subtype="explicit"/>
+      <relation xml:id="review_0117_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-011_cab-001-011_s003_a002" passive="#org_cab-001-011_cab-001-011_s003_a001" source="#cab-001-011_s003" subtype="explicit"/>
+      <relation xml:id="review_0118_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-011_cab-001-011_s001_a007" passive="#org_cab-001-011_cab-001-011_s001_a003" source="#cab-001-011_s001" subtype="explicit"/>
+      <relation xml:id="review_0120_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-011_cab-001-011_s001_a005" passive="#org_cab-001-011_cab-001-011_s001_a003" source="#cab-001-011_s001" subtype="explicit"/>
+      <relation xml:id="review_0123_sanctions" type="objectProperty" name="sanctions" active="#event_cab-001-011_cab-001-011_s004_a003" passive="#person_cab-001-011_cab-001-011_s004_a001" source="#cab-001-011_s004" subtype="explicit"/>
+      <relation xml:id="review_0126_sanctions" type="objectProperty" name="sanctions" active="#event_cab-001-011_cab-001-011_s001_a007" passive="#org_cab-001-011_cab-001-011_s001_a003" source="#cab-001-011_s001" subtype="explicit"/>
+      <relation xml:id="review_0128_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-011_cab-001-011_s001_a007" passive="#org_cab-001-011_cab-001-011_s001_a003" source="#cab-001-011_s001" subtype="explicit"/>
+      <relation xml:id="review_0129_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-011_cab-001-011_s001_a005" passive="#org_cab-001-011_cab-001-011_s001_a003" source="#cab-001-011_s001" subtype="explicit"/>
+      <relation xml:id="participant_review_0026_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-011_cab-001-011_s002_a001" passive="#org_cab-001-011_cab-001-011_s001_a003" source="#cab-001-011_s002" subtype="contextual"/>
+    <relation type="objectProperty" name="decidedBy" active="#event_cab-001-011_cab-001-011_s002_a001" passive="#org_cab-001-011_cab-001-011_s001_a003" subtype="contextual" source="#cab-001-011_s002 #cab-001-011_s001" xml:id="review_decidedBy_event_cab-001-011_cab-001-011_s002_a001_org_cab-001-011_cab-001-011_s001_a003"/></listRelation>
+    <precision target="#migrated_cab-001-011_cab-001-011_s004_r002" confidence="0.75"/>
+    <precision target="#migrated_cab-001-011_cab-001-011_s005_r001" confidence="0.75"/>
+    <precision target="#derived_decided_event_cab-001-011_cab-001-011_s001_a004" confidence="0.75"/>
+    <precision target="#participant_review_0026_hasParticipant" confidence="0.80"/>
+  <precision target="#review_decidedBy_event_cab-001-011_cab-001-011_s002_a001_org_cab-001-011_cab-001-011_s001_a003" confidence="0.90"/><note type="legal-relation-review" target="#review_decidedBy_event_cab-001-011_cab-001-011_s002_a001_org_cab-001-011_cab-001-011_s001_a003">«Se ordenó pregonar lo acordado» continúa directamente el acuerdo adoptado por los miembros del Cabildo Justicia y Regimiento en s001. Se aprueba esa institución como autoridad decisora contextual de la orden, sin confundirla con quien ejecuta materialmente el pregón.</note></standOff>
+</TEI>

@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-003">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-003</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d003</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d003/">https://zasqua.org/co-ahrb-cab-001-d003/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>3 de Septiembre de 1547</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-003_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-003_s001" type="juridical_discursive_segment">
+          <date xml:id="cab-001-003_cab-001-003_s001_a001" type="sourceDate">3 de Septiembre de 1547</date>.</seg>
+        <seg xml:id="cab-001-003_s002" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-003_cab-001-003_s002_a001" type="cabildo" ref="#org_cab-001-003_cab-001-003_s002_a001">Cabildo</orgName> se reunierón los señores <persName xml:id="cab-001-003_cab-001-003_s002_a002" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s002_a002">Garcia Maldonado</persName> y <persName xml:id="cab-001-003_cab-001-003_s002_a003" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s002_a003">Pedro Vazquez</persName>
+          <rs xml:id="cab-001-003_cab-001-003_s002_a004" type="role_or_office" subtype="office_or_procedural_role">Alcaldes Ordinarios</rs>.</seg>
+        <seg xml:id="cab-001-003_s003" type="juridical_discursive_segment">
+          <persName xml:id="cab-001-003_cab-001-003_s003_a001" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s003_a001">Juan de Horosco</persName>, <persName xml:id="cab-001-003_cab-001-003_s003_a002" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s003_a002">Miguel de Trujillo</persName>, <persName xml:id="cab-001-003_cab-001-003_s003_a003" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s003_a003">Hernando de Rojas</persName>
+          <rs xml:id="cab-001-003_cab-001-003_s003_a004" type="role_or_office" subtype="office_or_procedural_role">Regidores</rs>, para tratar lo relacionadocon el <term xml:id="cab-001-003_cab-001-003_s003_a005" type="historical_concept" subtype="real_service" ref="https://w3id.org/leco/ontology#RealServiceConcept">real servicio</term>.</seg>
+        <seg xml:id="cab-001-003_s004" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-003_cab-001-003_s004_a001" type="cabildo" ref="#org_cab-001-003_cab-001-003_s002_a001">Cabildo</orgName> se tratá por parte de los miembros del <orgName xml:id="cab-001-003_cab-001-003_s004_a002" type="cabildo" ref="#org_cab-001-003_cab-001-003_s004_a002">Cabildo Justicia y Regimiento</orgName>, el contenido de la <rs xml:id="cab-001-003_cab-001-003_s004_a003" type="normativeRule" subtype="letter" ref="#rule_cab-001-003_cab-001-003_s004_a003">carta</rs> enviada por el señor <rs xml:id="cab-001-003_cab-001-003_s004_a004" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#GovernorOfficeType">Gobernador</rs>, donde se estipula el tiempo que ha de permanecer los <term xml:id="cab-001-003_cab-001-003_s004_a005" type="historicalCategory" subtype="colonial_legal_social_category" ref="https://w3id.org/leco/ontology#Indios">indios</term> en sus <rs xml:id="cab-001-003_cab-001-003_s004_a006" type="legal_or_procedural_act" subtype="repartimiento" ana="https://w3id.org/leco/ontology#RepartimientoAct" corresp="#event_cab-001-003_cab-001-003_s004_a006">repartimientos</rs>.</seg>
+        <seg xml:id="cab-001-003_s005" type="juridical_discursive_segment">Se <rs xml:id="cab-001-003_cab-001-003_s005_a001" type="legal_or_procedural_act" subtype="decision" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#event_cab-001-003_cab-001-003_s005_a001">acordó</rs> expedir a <persName xml:id="cab-001-003_cab-001-003_s005_a002" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s005_a002">Hernan Suárez</persName> para que se encarguen de los asuntos de losnaturales y los <rs xml:id="cab-001-003_cab-001-003_s005_a003" type="legal_or_procedural_act" subtype="repartimiento" ana="https://w3id.org/leco/ontology#RepartimientoAct" corresp="#event_cab-001-003_cab-001-003_s005_a003">repartimientos</rs>, presente <rs xml:id="cab-001-003_cab-001-003_s005_a004" type="legal_or_procedural_act" subtype="appeal" ana="https://w3id.org/leco/ontology#Appeal" corresp="#event_cab-001-003_cab-001-003_s005_a004">apelación</rs> ante la <orgName xml:id="cab-001-003_cab-001-003_s005_a005" type="audiencia" ref="#org_cab-001-003_cab-001-003_s005_a005">Real Audencia de Santafé</orgName> y los Reinos de <placeName xml:id="cab-001-003_cab-001-003_s005_a006" type="historicalPlace" ref="#place_cab-001-003_cab-001-003_s005_a006">España</placeName>.</seg>
+        <seg xml:id="cab-001-003_s006" type="juridical_discursive_segment">Se presento otra <rs xml:id="cab-001-003_cab-001-003_s006_a001" type="normativeRule" subtype="letter" ref="#rule_cab-001-003_cab-001-003_s006_a001">carta</rs> del <orgName xml:id="cab-001-003_cab-001-003_s006_a002" type="cabildo" ref="#org_cab-001-003_cab-001-003_s006_a002">Cabildo de Santafé</orgName>, la cual fue leída, donde se ordena el envío de la respuesta por el <persName xml:id="cab-001-003_cab-001-003_s006_a003" type="historicalPerson" ref="#person_cab-001-003_cab-001-003_s006_a003">Licenciado Santiesteban</persName>.</seg>
+        <seg xml:id="cab-001-003_s007" type="juridical_discursive_segment">Se <rs xml:id="cab-001-003_cab-001-003_s007_a001" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-003_cab-001-003_s007_a001">ordenó</rs>
+          <rs xml:id="cab-001-003_cab-001-003_s007_a002" type="legal_or_procedural_act" subtype="proclamation" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#event_cab-001-003_cab-001-003_s007_a002">pregonar</rs> lo acordado.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-003_cab-001-003_s002_a002">
+        <persName>Garcia Maldonado</persName>
+      </person>
+      <person xml:id="person_cab-001-003_cab-001-003_s002_a003">
+        <persName>Pedro Vazquez</persName>
+      </person>
+      <person xml:id="person_cab-001-003_cab-001-003_s003_a001">
+        <persName>Juan de Horosco</persName>
+      </person>
+      <person xml:id="person_cab-001-003_cab-001-003_s003_a002">
+        <persName>Miguel de Trujillo</persName>
+      </person>
+      <person xml:id="person_cab-001-003_cab-001-003_s003_a003">
+        <persName>Hernando de Rojas</persName>
+      </person>
+      <person xml:id="person_cab-001-003_cab-001-003_s005_a002">
+        <persName>Hernan Suárez</persName>
+      </person>
+      <person xml:id="person_cab-001-003_cab-001-003_s006_a003">
+        <persName>Licenciado Santiesteban</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-003_cab-001-003_s002_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-003_cab-001-003_s004_a002" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-003_cab-001-003_s005_a005" ana="https://w3id.org/leco/ontology#AudienciaType">
+        <orgName>Real Audencia de Santafé</orgName>
+      </org>
+      <org xml:id="org_cab-001-003_cab-001-003_s006_a002" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo de Santafé</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-003_cab-001-003_s005_a006">
+        <placeName>España</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-003_cab-001-003_s004_a006" ana="https://w3id.org/leco/ontology#RepartimientoAct" corresp="#cab-001-003_s004">
+        <desc>repartimientos</desc>
+      </event>
+      <event xml:id="event_cab-001-003_cab-001-003_s005_a001" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#cab-001-003_s005">
+        <desc>acordó</desc>
+      </event>
+      <event xml:id="event_cab-001-003_cab-001-003_s005_a003" ana="https://w3id.org/leco/ontology#RepartimientoAct" corresp="#cab-001-003_s005">
+        <desc>repartimientos</desc>
+      </event>
+      <event xml:id="event_cab-001-003_cab-001-003_s005_a004" ana="https://w3id.org/leco/ontology#Appeal" corresp="#cab-001-003_s005">
+        <desc>apelación</desc>
+      </event>
+      <event xml:id="event_cab-001-003_cab-001-003_s007_a001" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-003_s007">
+        <desc>ordenó</desc>
+      </event>
+      <event xml:id="event_cab-001-003_cab-001-003_s007_a002" ana="https://w3id.org/leco/ontology#Proclamation" corresp="#cab-001-003_s007">
+        <desc>pregonar</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-003_cab-001-003_s004_a003">carta</interp>
+      <interp xml:id="rule_cab-001-003_cab-001-003_s006_a001">carta</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-003_cab-001-003_s003_a005" type="historicalConceptUse" active="#cab-001-003_acta" passive="https://w3id.org/leco/ontology#RealServiceConcept" source="#cab-001-003_s003" subtype="explicit" when="3 de Septiembre de 1547"/>
+      <relation xml:id="migrated_cab-001-003_cab-001-003_s005_r001" type="participation" active="#person_cab-001-003_cab-001-003_s005_a002" passive="#event_cab-001-003_cab-001-003_s005_a004" ana="https://w3id.org/leco/ontology#AppellantRole" source="#cab-001-003_s005" subtype="inferred"/>
+      <relation xml:id="derived_before_event_cab-001-003_cab-001-003_s005_a004" type="objectProperty" name="beforeAuthority" active="#event_cab-001-003_cab-001-003_s005_a004" passive="#org_cab-001-003_cab-001-003_s005_a005" source="#cab-001-003_s005" subtype="explicit"/>
+      <relation xml:id="derived_appeals_event_cab-001-003_cab-001-003_s005_a004" type="objectProperty" name="appealsAgainst" active="#event_cab-001-003_cab-001-003_s005_a004" passive="#event_cab-001-003_cab-001-003_s005_a001" source="#cab-001-003_s005" subtype="inferred"/>
+      <relation xml:id="derived_decided_event_cab-001-003_cab-001-003_s005_a001" type="objectProperty" name="decidedBy" active="#event_cab-001-003_cab-001-003_s005_a001" passive="#org_cab-001-003_cab-001-003_s002_a001" source="#cab-001-003_s005" subtype="humanInterpretation"/>
+      <relation xml:id="review_0029_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-003_cab-001-003_s005_a003" passive="#person_cab-001-003_cab-001-003_s005_a002" source="#cab-001-003_s005" subtype="explicit"/>
+    </listRelation>
+    <precision target="#migrated_cab-001-003_cab-001-003_s005_r001" confidence="0.75"/>
+    <precision target="#derived_appeals_event_cab-001-003_cab-001-003_s005_a004" confidence="0.75"/>
+    <precision target="#derived_decided_event_cab-001-003_cab-001-003_s005_a001" confidence="0.75"/>
+  </standOff>
+</TEI>

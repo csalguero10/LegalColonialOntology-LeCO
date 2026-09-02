@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-028">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-028</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0028</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d028/">https://zasqua.org/co-ahrb-cab-001-d028/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>21 junio 1548</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-028_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-028_s001" type="juridical_discursive_segment">
+          <placeName xml:id="cab-001-028_cab-001-028_s001_a001" type="historicalPlace" ref="#place_cab-001-028_cab-001-028_s001_a001">Tunja</placeName>, <date xml:id="cab-001-028_cab-001-028_s001_a002" type="sourceDate">21 junio 1548</date>.</seg>
+        <seg xml:id="cab-001-028_s002" type="juridical_discursive_segment">Los señores <orgName xml:id="cab-001-028_cab-001-028_s002_a001" type="cabildo_body" ref="#org_cab-001-028_cab-001-028_s002_a001">Justicia y Regimiento</orgName> trataron lo relacionado con un acuerdo y parecer respondio por el señor <rs xml:id="cab-001-028_cab-001-028_s002_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#GovernorOfficeType">Gobernador</rs> quien manifesto no ser obedecido para que se diera las fianzas y se obligaron ser cumplidas por parte del <orgName xml:id="cab-001-028_cab-001-028_s002_a003" type="cabildo" ref="#org_cab-001-028_cab-001-028_s002_a003">Cabildo</orgName>.</seg>
+        <seg xml:id="cab-001-028_s003" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-028_cab-001-028_s003_a001" type="historicalPlace" ref="#place_cab-001-028_cab-001-028_s001_a001">Tunja</placeName> a 11 días del mes de Julio de 1548, se reunieron los miembros del <orgName xml:id="cab-001-028_cab-001-028_s003_a002" type="cabildo" ref="#org_cab-001-028_cab-001-028_s002_a003">Cabildo</orgName>, para tratar los asuntos del <term xml:id="cab-001-028_cab-001-028_s003_a003" type="historical_concept" subtype="real_service" ref="https://w3id.org/leco/ontology#RealServiceConcept">Real Servicio</term>.</seg>
+        <seg xml:id="cab-001-028_s004" type="juridical_discursive_segment">Los señores <orgName xml:id="cab-001-028_cab-001-028_s004_a001" type="cabildo_body" ref="#org_cab-001-028_cab-001-028_s002_a001">Justicia y Regimiento</orgName> pidieron al señor <rs xml:id="cab-001-028_cab-001-028_s004_a002" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#GovernorOfficeType">Gobernador</rs> los quintos reales para la ciudad de <placeName xml:id="cab-001-028_cab-001-028_s004_a003" type="historicalPlace" ref="#place_cab-001-028_cab-001-028_s001_a001">Tunja</placeName> y <placeName xml:id="cab-001-028_cab-001-028_s004_a004" type="historicalPlace" ref="#place_cab-001-028_cab-001-028_s004_a004">Velez</placeName>, lo mismo que se nombra aun encargado para ello, incluyendo los cuatos de oro y bronce, para el <term xml:id="cab-001-028_cab-001-028_s004_a005" type="historical_concept" subtype="common_good" ref="https://w3id.org/leco/ontology#CommonGoodConcept">bien de esta República</term>.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson/>
+    <listOrg>
+      <org xml:id="org_cab-001-028_cab-001-028_s002_a001" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-028_cab-001-028_s002_a003" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-028_cab-001-028_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-028_cab-001-028_s004_a004">
+        <placeName>Velez</placeName>
+      </place>
+    </listPlace>
+    <listEvent/>
+    <interpGrp type="normativeRules"/>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-028_cab-001-028_s003_a003" type="historicalConceptUse" active="#cab-001-028_acta" passive="https://w3id.org/leco/ontology#RealServiceConcept" source="#cab-001-028_s003" subtype="explicit" when="21 junio 1548"/>
+      <relation xml:id="concept_use_cab-001-028_cab-001-028_s004_a005" type="historicalConceptUse" active="#cab-001-028_acta" passive="https://w3id.org/leco/ontology#CommonGoodConcept" source="#cab-001-028_s004" subtype="explicit" when="21 junio 1548"/>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-028_cab-001-028_s002_a003" passive="#place_cab-001-028_cab-001-028_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-028_s002"/>
+    </listRelation>
+  </standOff>
+</TEI>

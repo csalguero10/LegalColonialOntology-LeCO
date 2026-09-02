@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-038">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-038</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0038</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d038/">https://zasqua.org/co-ahrb-cab-001-d038/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>17 de Mayo de 1549</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-038_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-038_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-038_cab-001-038_s001_a001" type="historicalPlace" ref="#place_cab-001-038_cab-001-038_s001_a001">Tunja</placeName> del <placeName xml:id="cab-001-038_cab-001-038_s001_a002" type="historicalPlace" ref="#place_cab-001-038_cab-001-038_s001_a002">Nuevo Reino de Granada</placeName>, se reunieron los miembros del <orgName xml:id="cab-001-038_cab-001-038_s001_a003" type="cabildo" ref="#org_cab-001-038_cab-001-038_s001_a003">Cabildo</orgName>, el día <date xml:id="cab-001-038_cab-001-038_s001_a004" type="sourceDate">17 de Mayo de 1549</date>.</seg>
+        <seg xml:id="cab-001-038_s002" type="juridical_discursive_segment">Se dijo que habia queponer remedio a las personas que estan hechando a perder los montes de esta <term xml:id="cab-001-038_cab-001-038_s002_a001" type="historical_concept" subtype="jurisdiction" ref="https://w3id.org/leco/ontology#JurisdictionConcept">jurisdicción</term>, para lo cual se deben <rs xml:id="cab-001-038_cab-001-038_s002_a002" type="legal_or_procedural_act" subtype="collection" ana="https://w3id.org/leco/ontology#Collection" corresp="#event_cab-001-038_cab-001-038_s002_a002">cobrar</rs>
+          <rs xml:id="cab-001-038_cab-001-038_s002_a003" type="legal_or_procedural_act" subtype="fine" ana="https://w3id.org/leco/ontology#Fine" corresp="#event_cab-001-038_cab-001-038_s002_a003">multas</rs>. <date xml:id="cab-001-038_cab-001-038_s002_a004" type="sourceDate">24 mayo 1549</date>.</seg>
+        <seg xml:id="cab-001-038_s003" type="juridical_discursive_segment">Don <persName xml:id="cab-001-038_cab-001-038_s003_a001" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s003_a001">Juan de Montalvo</persName> solicita a los señores <orgName xml:id="cab-001-038_cab-001-038_s003_a002" type="cabildo_body" ref="#org_cab-001-038_cab-001-038_s003_a002">Justicia y Regimiento</orgName> un <rs xml:id="cab-001-038_cab-001-038_s003_a003" type="legal_or_procedural_act" subtype="grant_of_power" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#event_cab-001-038_cab-001-038_s003_a003">poder</rs> para ocupar el cargo de <rs xml:id="cab-001-038_cab-001-038_s003_a004" type="role_or_office" subtype="office_or_procedural_role">contador</rs> mientras dure la ausencia del titular, quien viajó a la ciudad de <placeName xml:id="cab-001-038_cab-001-038_s003_a005" type="historicalPlace" ref="#place_cab-001-038_cab-001-038_s003_a005">Velez</placeName>.</seg>
+        <seg xml:id="cab-001-038_s004" type="juridical_discursive_segment">En este <orgName xml:id="cab-001-038_cab-001-038_s004_a001" type="cabildo" ref="#org_cab-001-038_cab-001-038_s001_a003">Cabildo</orgName> se <rs xml:id="cab-001-038_cab-001-038_s004_a002" type="legal_or_procedural_act" subtype="reading" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#event_cab-001-038_cab-001-038_s004_a002">leyó</rs> una <rs xml:id="cab-001-038_cab-001-038_s004_a003" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-038_cab-001-038_s004_a003">petición</rs> de Don <persName xml:id="cab-001-038_cab-001-038_s004_a004" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s004_a004">Juan de Chinchilla</persName> quien pide se le <rs xml:id="cab-001-038_cab-001-038_s004_a005" type="legal_or_procedural_act" subtype="land_grant" ana="https://w3id.org/leco/ontology#LandGrant" corresp="#event_cab-001-038_cab-001-038_s004_a005">adjudique</rs> un pedazo de tierra, ubicada junto al Corral de <persName xml:id="cab-001-038_cab-001-038_s004_a006" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s004_a006">Pedro Cordoba</persName>. <date xml:id="cab-001-038_cab-001-038_s004_a007" type="sourceDate">20 octubre 1549</date>
+          <orgName xml:id="cab-001-038_cab-001-038_s004_a008" type="cabildo" ref="#org_cab-001-038_cab-001-038_s001_a003">Cabildo</orgName> en el que se <rs xml:id="cab-001-038_cab-001-038_s004_a009" type="legal_or_procedural_act" subtype="reading" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#event_cab-001-038_cab-001-038_s004_a009">leyó</rs> la <rs xml:id="cab-001-038_cab-001-038_s004_a010" type="normativeRule" subtype="order" ref="#rule_cab-001-038_cab-001-038_s004_a010">orden</rs> del señor <rs xml:id="cab-001-038_cab-001-038_s004_a011" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#GovernorOfficeType">Gobernador</rs> Don <persName xml:id="cab-001-038_cab-001-038_s004_a012" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s004_a012">Miguel Diaz de Armendaris</persName>, para que se se represente en la <orgName xml:id="cab-001-038_cab-001-038_s004_a013" type="audiencia" ref="#org_cab-001-038_cab-001-038_s004_a013">Real Audencia</orgName> el <rs xml:id="cab-001-038_cab-001-038_s004_a014" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#MayorOfficeType">Alcalde</rs>
+          <persName xml:id="cab-001-038_cab-001-038_s004_a015" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s004_a015">Gómez de Cifuentes</persName>.</seg>
+        <seg xml:id="cab-001-038_s005" type="juridical_discursive_segment">Los miembros del <orgName xml:id="cab-001-038_cab-001-038_s005_a001" type="cabildo" ref="#org_cab-001-038_cab-001-038_s001_a003">Cabildo</orgName>
+          <rs xml:id="cab-001-038_cab-001-038_s005_a002" type="legal_or_procedural_act" subtype="obedience" ana="https://w3id.org/leco/ontology#Obedience" corresp="#event_cab-001-038_cab-001-038_s005_a002">obedecieron</rs> y dieron fiel cumplimiento a lo dispuesto por su señoria.</seg>
+        <seg xml:id="cab-001-038_s006" type="juridical_discursive_segment">
+          <rs xml:id="cab-001-038_cab-001-038_s006_a001" type="legal_or_procedural_act" subtype="decision" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#event_cab-001-038_cab-001-038_s006_a001">Acordaron</rs>
+          <rs xml:id="cab-001-038_cab-001-038_s006_a002" type="legal_or_procedural_act" subtype="appointment" ana="https://w3id.org/leco/ontology#Appointment" corresp="#event_cab-001-038_cab-001-038_s006_a002">nombrar</rs> por <rs xml:id="cab-001-038_cab-001-038_s006_a003" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#MayorOfficeType">alcalde</rs> a <persName xml:id="cab-001-038_cab-001-038_s006_a004" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s006_a004">Hernando de Rojas</persName>, mientras donde el titular fuera de <placeName xml:id="cab-001-038_cab-001-038_s006_a005" type="historicalPlace" ref="#place_cab-001-038_cab-001-038_s001_a001">Tunja</placeName>, razón por la cual se <rs xml:id="cab-001-038_cab-001-038_s006_a006" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-038_cab-001-038_s006_a006">ordenó</rs> realizar los preparativos del recibimiento.</seg>
+        <seg xml:id="cab-001-038_s007" type="juridical_discursive_segment">El <date xml:id="cab-001-038_cab-001-038_s007_a001" type="sourceDate">3 de Noviembre de 1549</date> el padre <persName xml:id="cab-001-038_cab-001-038_s007_a002" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s007_a002">Fray Bernardino Minaya de Paz</persName>, <rs xml:id="cab-001-038_cab-001-038_s007_a003" type="legal_or_procedural_act" subtype="presentation" ana="https://w3id.org/leco/ontology#Presentation" corresp="#event_cab-001-038_cab-001-038_s007_a003">presentó</rs> una <rs xml:id="cab-001-038_cab-001-038_s007_a004" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-038_cab-001-038_s007_a004">petición</rs> y un libro de la <rs xml:id="cab-001-038_cab-001-038_s007_a005" type="normativeRule" subtype="papal_bull" ref="#rule_cab-001-038_cab-001-038_s007_a005">bula</rs> del <persName xml:id="cab-001-038_cab-001-038_s007_a006" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s007_a006">papa Julio</persName>, en la que da fé el <rs xml:id="cab-001-038_cab-001-038_s007_a007" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#BishopOfficeType">obispo</rs> de Austria <rs xml:id="cab-001-038_cab-001-038_s007_a008" type="role_or_office" subtype="office_or_procedural_role">cardenal</rs> de <persName xml:id="cab-001-038_cab-001-038_s007_a009" type="historicalPerson" ref="#person_cab-001-038_cab-001-038_s007_a009">San Jorge</persName>, en lo referente a la <rs xml:id="cab-001-038_cab-001-038_s007_a010" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-038_cab-001-038_s007_a010">petición</rs>, solicitud la <rs xml:id="cab-001-038_cab-001-038_s007_a011" type="normativeRule" subtype="order" ref="#rule_cab-001-038_cab-001-038_s007_a011">orden</rs> para la fundación del Monasterio de la ciudad de <placeName xml:id="cab-001-038_cab-001-038_s007_a012" type="historicalPlace" ref="#place_cab-001-038_cab-001-038_s001_a001">Tunja</placeName>.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-038_cab-001-038_s003_a001">
+        <persName>Juan de Montalvo</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s004_a004">
+        <persName>Juan de Chinchilla</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s004_a006">
+        <persName>Pedro Cordoba</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s004_a012">
+        <persName>Miguel Diaz de Armendaris</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s004_a015">
+        <persName>Gómez de Cifuentes</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s006_a004">
+        <persName>Hernando de Rojas</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s007_a002">
+        <persName>Fray Bernardino Minaya de Paz</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s007_a006">
+        <persName>papa Julio</persName>
+      </person>
+      <person xml:id="person_cab-001-038_cab-001-038_s007_a009">
+        <persName>San Jorge</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-038_cab-001-038_s001_a003" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-038_cab-001-038_s003_a002" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-038_cab-001-038_s004_a013" ana="https://w3id.org/leco/ontology#AudienciaType">
+        <orgName>Real Audencia</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-038_cab-001-038_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-038_cab-001-038_s001_a002">
+        <placeName>Nuevo Reino de Granada</placeName>
+      </place>
+      <place xml:id="place_cab-001-038_cab-001-038_s003_a005">
+        <placeName>Velez</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-038_cab-001-038_s002_a002" ana="https://w3id.org/leco/ontology#Collection" corresp="#cab-001-038_s002">
+        <desc>cobrar</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s002_a003" ana="https://w3id.org/leco/ontology#Fine" corresp="#cab-001-038_s002">
+        <desc>multas</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s003_a003" ana="https://w3id.org/leco/ontology#GrantOfPower" corresp="#cab-001-038_s003">
+        <desc>poder</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s004_a002" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#cab-001-038_s004">
+        <desc>leyó</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s004_a003" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-038_s004">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s004_a005" ana="https://w3id.org/leco/ontology#LandGrant" corresp="#cab-001-038_s004">
+        <desc>adjudique</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s004_a009" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#cab-001-038_s004">
+        <desc>leyó</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s005_a002" ana="https://w3id.org/leco/ontology#Obedience" corresp="#cab-001-038_s005">
+        <desc>obedecieron</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s006_a001" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#cab-001-038_s006">
+        <desc>Acordaron</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s006_a002" ana="https://w3id.org/leco/ontology#Appointment" corresp="#cab-001-038_s006">
+        <desc>nombrar</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s006_a006" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-038_s006">
+        <desc>ordenó</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s007_a003" ana="https://w3id.org/leco/ontology#Presentation" corresp="#cab-001-038_s007">
+        <desc>presentó</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s007_a004" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-038_s007">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-038_cab-001-038_s007_a010" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-038_s007">
+        <desc>petición</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-038_cab-001-038_s004_a010">orden</interp>
+      <interp xml:id="rule_cab-001-038_cab-001-038_s007_a005">bula</interp>
+      <interp xml:id="rule_cab-001-038_cab-001-038_s007_a011">orden</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-038_cab-001-038_s002_a001" type="historicalConceptUse" active="#cab-001-038_acta" passive="https://w3id.org/leco/ontology#JurisdictionConcept" source="#cab-001-038_s002" subtype="explicit" when="17 de Mayo de 1549"/>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-038_cab-001-038_s001_a003" passive="#place_cab-001-038_cab-001-038_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-038_s003"/>
+      <relation xml:id="jurisdiction_audiencia_01" type="territorialJurisdiction" active="#org_cab-001-038_cab-001-038_s004_a013" passive="#place_cab-001-038_cab-001-038_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="inferred" source="#cab-001-038_s004"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s004_r002" type="officeHolding" active="#person_cab-001-038_cab-001-038_s004_a012" passive="#org_cab-001-038_cab-001-038_s001_a003" ana="https://w3id.org/leco/ontology#GovernorOfficeType" source="#cab-001-038_s004" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s004_r003" type="officeHolding" active="#person_cab-001-038_cab-001-038_s004_a015" passive="#org_cab-001-038_cab-001-038_s001_a003" ana="https://w3id.org/leco/ontology#MayorOfficeType" source="#cab-001-038_s004" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s004_r004" type="participation" active="#person_cab-001-038_cab-001-038_s004_a004" passive="#event_cab-001-038_cab-001-038_s004_a003" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-038_s004" subtype="explicit"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s006_r001" type="officeHolding" active="#person_cab-001-038_cab-001-038_s006_a004" passive="#org_cab-001-038_cab-001-038_s001_a003" ana="https://w3id.org/leco/ontology#MayorOfficeType" source="#cab-001-038_s006" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s006_r002" type="objectProperty" name="appointsPerson" active="#event_cab-001-038_cab-001-038_s006_a002" passive="#person_cab-001-038_cab-001-038_s006_a004" source="#cab-001-038_s006" subtype="inferred"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s007_r003" type="officeHolding" active="#person_cab-001-038_cab-001-038_s007_a006" passive="#org_cab-001-038_cab-001-038_s001_a003" ana="https://w3id.org/leco/ontology#BishopOfficeType" source="#cab-001-038_s007" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s007_r005" type="officeHolding" active="#person_cab-001-038_cab-001-038_s007_a009" passive="#org_cab-001-038_cab-001-038_s001_a003" ana="https://w3id.org/leco/ontology#BishopOfficeType" source="#cab-001-038_s007" subtype="explicit" when="1549"/>
+      <relation xml:id="migrated_cab-001-038_cab-001-038_s007_r007" type="participation" active="#person_cab-001-038_cab-001-038_s007_a002" passive="#event_cab-001-038_cab-001-038_s007_a004" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-038_s007" subtype="explicit"/>
+      <relation xml:id="derived_decided_event_cab-001-038_cab-001-038_s006_a001" type="objectProperty" name="decidedBy" active="#event_cab-001-038_cab-001-038_s006_a001" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s006" subtype="humanInterpretation"/>
+      <relation xml:id="review_0200_appointsToOffice" type="objectProperty" name="appointsToOffice" active="#event_cab-001-038_cab-001-038_s006_a002" passive="#review_office_0200" source="#cab-001-038_s006" subtype="explicit"/>
+      <relation xml:id="review_0200_officeExistsIn" type="objectProperty" name="officeExistsIn" active="#review_office_0200" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s006" subtype="humanInterpretation"/>
+      <relation xml:id="review_0204_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-038_cab-001-038_s005_a002" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s005" subtype="explicit"/>
+      <relation xml:id="review_0222_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-038_cab-001-038_s006_a006" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s006" subtype="inferred"/>
+      <relation xml:id="participant_review_0044_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-038_cab-001-038_s006_a006" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s006" subtype="contextual"/>
+      <relation xml:id="participant_review_0048_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-038_cab-001-038_s004_a002" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s004" subtype="contextual"/>
+      <relation xml:id="participant_review_0049_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-038_cab-001-038_s004_a009" passive="#org_cab-001-038_cab-001-038_s001_a003" source="#cab-001-038_s004" subtype="contextual"/>
+      <relation xml:id="participant_review_0051_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-038_cab-001-038_s007_a003" passive="#person_cab-001-038_cab-001-038_s007_a002" source="#cab-001-038_s007" subtype="explicit"/>
+      <relation xml:id="participant_review_0052_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-038_cab-001-038_s007_a010" passive="#person_cab-001-038_cab-001-038_s007_a002" source="#cab-001-038_s007" subtype="explicit"/>
+    </listRelation>
+    <precision target="#jurisdiction_audiencia_01" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s004_r002" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s004_r003" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s004_r004" confidence="0.95"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s006_r001" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s006_r002" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s007_r003" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s007_r005" confidence="0.75"/>
+    <precision target="#migrated_cab-001-038_cab-001-038_s007_r007" confidence="0.95"/>
+    <precision target="#derived_decided_event_cab-001-038_cab-001-038_s006_a001" confidence="0.75"/>
+    <precision target="#review_0200_officeExistsIn" confidence="0.75"/>
+    <interpGrp type="offices">
+      <interp xml:id="review_office_0200" ana="https://w3id.org/leco/ontology#MayorOfficeType">alcalde</interp>
+    </interpGrp>
+    <precision target="#review_0222_decidedBy" confidence="0.80"/>
+    <precision target="#participant_review_0044_hasParticipant" confidence="0.90"/>
+    <precision target="#participant_review_0048_hasParticipant" confidence="0.80"/>
+    <precision target="#participant_review_0049_hasParticipant" confidence="0.85"/>
+    <precision target="#participant_review_0051_hasParticipant" confidence="1.00"/>
+    <precision target="#participant_review_0052_hasParticipant" confidence="1.00"/>
+  </standOff>
+</TEI>

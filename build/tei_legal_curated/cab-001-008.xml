@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-008">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-008</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d008</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d008/">https://zasqua.org/co-ahrb-cab-001-d008/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>20 de Diciembre 1547</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-008_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-008_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-008_cab-001-008_s001_a001" type="historicalPlace" ref="#place_cab-001-008_cab-001-008_s001_a001">Tunja</placeName> del <placeName xml:id="cab-001-008_cab-001-008_s001_a002" type="historicalPlace" ref="#place_cab-001-008_cab-001-008_s001_a002">Nuevo Reino de Granada</placeName>, el día <date xml:id="cab-001-008_cab-001-008_s001_a003" type="sourceDate">20 de Diciembre 1547</date> se reunió el <orgName xml:id="cab-001-008_cab-001-008_s001_a004" type="cabildo" ref="#org_cab-001-008_cab-001-008_s001_a004">Cabildo Justicia y Regimiento</orgName>.</seg>
+        <seg xml:id="cab-001-008_s002" type="juridical_discursive_segment">Los miembros del <orgName xml:id="cab-001-008_cab-001-008_s002_a001" type="cabildo" ref="#org_cab-001-008_cab-001-008_s002_a001">Cabildo</orgName> se reunieron para tratar asuntos y despachar negocios.</seg>
+        <seg xml:id="cab-001-008_s003" type="juridical_discursive_segment">Se <rs xml:id="cab-001-008_cab-001-008_s003_a001" type="legal_or_procedural_act" subtype="decision" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#event_cab-001-008_cab-001-008_s003_a001">acordó</rs>
+          <rs xml:id="cab-001-008_cab-001-008_s003_a002" type="legal_or_procedural_act" subtype="appointment" ana="https://w3id.org/leco/ontology#Appointment" corresp="#event_cab-001-008_cab-001-008_s003_a002">nombrar</rs> por <rs xml:id="cab-001-008_cab-001-008_s003_a003" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#PublicNotaryOfficeType">escribano público</rs> de <placeName xml:id="cab-001-008_cab-001-008_s003_a004" type="historicalPlace" ref="#place_cab-001-008_cab-001-008_s001_a001">Tunja</placeName> a Juan quien se le ordena hacer buen uso de su cargo.</seg>
+        <seg xml:id="cab-001-008_s004" type="juridical_discursive_segment">En esta reunión se platicó sobre la necesidad de traer los mercados a la plaza principal, el <rs xml:id="cab-001-008_cab-001-008_s004_a001" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#OrdinaryMayorOfficeType">Alcalde ordinario</rs> considera el bienestar de los <term xml:id="cab-001-008_cab-001-008_s004_a002" type="historicalCategory" subtype="status_category" ref="https://w3id.org/leco/ontology#Vecinos">vecinos</term> y el aprovisamiento del mercado.</seg>
+        <seg xml:id="cab-001-008_s005" type="juridical_discursive_segment">Don <persName xml:id="cab-001-008_cab-001-008_s005_a001" type="historicalPerson" ref="#person_cab-001-008_cab-001-008_s005_a001">Martin de San Juan</persName>
+          <rs xml:id="cab-001-008_cab-001-008_s005_a002" type="role_or_office" subtype="office_or_procedural_role">Alquacil Mayor</rs>, <rs xml:id="cab-001-008_cab-001-008_s005_a003" type="legal_or_procedural_act" subtype="presentation" ana="https://w3id.org/leco/ontology#Presentation" corresp="#event_cab-001-008_cab-001-008_s005_a003">presentó</rs> una <rs xml:id="cab-001-008_cab-001-008_s005_a004" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-008_cab-001-008_s005_a004">petición</rs>, solicitando el <rs xml:id="cab-001-008_cab-001-008_s005_a005" type="legal_or_procedural_act" subtype="appointment" ana="https://w3id.org/leco/ontology#Appointment" corresp="#event_cab-001-008_cab-001-008_s005_a005">nombramiento</rs> de un <rs xml:id="cab-001-008_cab-001-008_s005_a006" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#JailerOfficeType">carcelero</rs>, para lo cual proponia el nombre de <persName xml:id="cab-001-008_cab-001-008_s005_a007" type="historicalPerson" ref="#person_cab-001-008_cab-001-008_s005_a007">Pedro Gómez</persName>.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-008_cab-001-008_s005_a001">
+        <persName>Martin de San Juan</persName>
+      </person>
+      <person xml:id="person_cab-001-008_cab-001-008_s005_a007">
+        <persName>Pedro Gómez</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-008_cab-001-008_s001_a004" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo Justicia y Regimiento</orgName>
+      </org>
+      <org xml:id="org_cab-001-008_cab-001-008_s002_a001" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-008_cab-001-008_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+      <place xml:id="place_cab-001-008_cab-001-008_s001_a002">
+        <placeName>Nuevo Reino de Granada</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-008_cab-001-008_s003_a001" ana="https://w3id.org/leco/ontology#LegalDecision" corresp="#cab-001-008_s003">
+        <desc>acordó</desc>
+      </event>
+      <event xml:id="event_cab-001-008_cab-001-008_s003_a002" ana="https://w3id.org/leco/ontology#Appointment" corresp="#cab-001-008_s003">
+        <desc>nombrar</desc>
+      </event>
+      <event xml:id="event_cab-001-008_cab-001-008_s005_a003" ana="https://w3id.org/leco/ontology#Presentation" corresp="#cab-001-008_s005">
+        <desc>presentó</desc>
+      </event>
+      <event xml:id="event_cab-001-008_cab-001-008_s005_a004" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-008_s005">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-008_cab-001-008_s005_a005" ana="https://w3id.org/leco/ontology#Appointment" corresp="#cab-001-008_s005">
+        <desc>nombramiento</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules"/>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-008_cab-001-008_s002_a001" passive="#place_cab-001-008_cab-001-008_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-008_acta"/>
+      <relation xml:id="migrated_cab-001-008_cab-001-008_s005_r002" type="officeHolding" active="#person_cab-001-008_cab-001-008_s005_a007" passive="#org_cab-001-008_cab-001-008_s002_a001" ana="https://w3id.org/leco/ontology#JailerOfficeType" source="#cab-001-008_s005" subtype="explicit" when="1547"/>
+      <relation xml:id="migrated_cab-001-008_cab-001-008_s005_r003" type="participation" active="#person_cab-001-008_cab-001-008_s005_a001" passive="#event_cab-001-008_cab-001-008_s005_a004" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-008_s005" subtype="explicit"/>
+      <relation xml:id="migrated_cab-001-008_cab-001-008_s005_r004" type="objectProperty" name="appointsPerson" active="#event_cab-001-008_cab-001-008_s005_a005" passive="#person_cab-001-008_cab-001-008_s005_a007" source="#cab-001-008_s005" subtype="inferred"/>
+      <relation xml:id="derived_decided_event_cab-001-008_cab-001-008_s003_a001" type="objectProperty" name="decidedBy" active="#event_cab-001-008_cab-001-008_s003_a001" passive="#org_cab-001-008_cab-001-008_s002_a001" source="#cab-001-008_s003" subtype="humanInterpretation"/>
+      <relation xml:id="review_0107_appointsToOffice" type="objectProperty" name="appointsToOffice" active="#event_cab-001-008_cab-001-008_s003_a002" passive="#review_office_0107" source="#cab-001-008_s003" subtype="explicit"/>
+      <relation xml:id="review_0107_officeExistsIn" type="objectProperty" name="officeExistsIn" active="#review_office_0107" passive="#org_cab-001-008_cab-001-008_s002_a001" source="#cab-001-008_s003" subtype="humanInterpretation"/>
+      <relation xml:id="participant_review_0023_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-008_cab-001-008_s005_a003" passive="#person_cab-001-008_cab-001-008_s005_a001" source="#cab-001-008_s005" subtype="explicit"/>
+      <relation xml:id="participant_review_0024_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-008_cab-001-008_s003_a002" passive="#org_cab-001-008_cab-001-008_s002_a001" source="#cab-001-008_s003" subtype="contextual"/>
+    </listRelation>
+    <precision target="#migrated_cab-001-008_cab-001-008_s005_r002" confidence="0.75"/>
+    <precision target="#migrated_cab-001-008_cab-001-008_s005_r003" confidence="0.95"/>
+    <precision target="#migrated_cab-001-008_cab-001-008_s005_r004" confidence="0.75"/>
+    <precision target="#derived_decided_event_cab-001-008_cab-001-008_s003_a001" confidence="0.75"/>
+    <interpGrp type="offices">
+      <interp xml:id="review_office_0107" ana="https://w3id.org/leco/ontology#PublicNotaryOfficeType">escribano público</interp>
+    </interpGrp>
+    <precision target="#participant_review_0023_hasParticipant" confidence="1.00"/>
+    <precision target="#participant_review_0024_hasParticipant" confidence="0.85"/>
+    <precision target="#review_0107_officeExistsIn" confidence="0.75"/>
+  </standOff>
+</TEI>

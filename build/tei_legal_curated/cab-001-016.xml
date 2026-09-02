@@ -1,0 +1,148 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:id="cab-001-016">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title>Corpus piloto — cab-001-016</title>
+      </titleStmt>
+      <publicationStmt>
+        <p>Codificación experimental para investigación; no sustituye la descripción archivística de Zasqua.</p>
+        <idno type="reference_code">co-ahrb-cab-001-d0016</idno>
+      </publicationStmt>
+      <sourceDesc>
+        <bibl>Texto extraido de Zasqua, plataforma de conssulta de archivos digitalizador por Neogranadina.org, no esta presente la digitalizacion<ref target="https://zasqua.org/co-ahrb-cab-001-d016/">https://zasqua.org/co-ahrb-cab-001-d016/</ref>
+        </bibl>
+      </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+      <langUsage>
+        <language ident="es">Español</language>
+      </langUsage>
+      <creation>
+        <date>21 de Junio 1548</date>
+      </creation>
+    </profileDesc>
+    <revisionDesc>
+      <change when="2026-08-28">Primera codificación automática/asistida para revisión humana.</change>
+      <change when="2026-08-31" type="semantic-enrichment">Enriquecimiento TEI-LeCO: entidades reutilizables, eventos y relaciones stand-off generadas a partir de TEI, metadatos y sidecars del corpus piloto.</change>
+      <change when="2026-08-31" type="quality-review-application">Aplicación reproducible de decisiones humanas aprobadas del triage QUALITY de LeCO.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text>
+    <body>
+      <div type="acta" xml:id="cab-001-016_acta" ana="https://w3id.org/leco/ontology#ActaCabildoDocumentType">
+        <seg xml:id="cab-001-016_s001" type="juridical_discursive_segment">En la ciudad de <placeName xml:id="cab-001-016_cab-001-016_s001_a001" type="historicalPlace" ref="#place_cab-001-016_cab-001-016_s001_a001">Tunja</placeName>, <date xml:id="cab-001-016_cab-001-016_s001_a002" type="sourceDate">21 de Junio 1548</date> se reunieron los miembros del <orgName xml:id="cab-001-016_cab-001-016_s001_a003" type="cabildo" ref="#org_cab-001-016_cab-001-016_s001_a003">Cabildo</orgName> para tratar los asuntos del <term xml:id="cab-001-016_cab-001-016_s001_a004" type="historical_concept" subtype="real_service" ref="https://w3id.org/leco/ontology#RealServiceConcept">Real Servicio</term>.</seg>
+        <seg xml:id="cab-001-016_s002" type="juridical_discursive_segment">En la reunión se <rs xml:id="cab-001-016_cab-001-016_s002_a001" type="legal_or_procedural_act" subtype="reading" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#event_cab-001-016_cab-001-016_s002_a001">leyó</rs> la <rs xml:id="cab-001-016_cab-001-016_s002_a002" type="normativeRule" subtype="order" ref="#rule_cab-001-016_cab-001-016_s002_a002">orden</rs> del <rs xml:id="cab-001-016_cab-001-016_s002_a003" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#GovernorOfficeType">Gobernador</rs>
+          <persName xml:id="cab-001-016_cab-001-016_s002_a004" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s002_a004">Juan de Orozco</persName>, se <rs xml:id="cab-001-016_cab-001-016_s002_a005" type="legal_or_procedural_act" subtype="obedience" ana="https://w3id.org/leco/ontology#Obedience" corresp="#event_cab-001-016_cab-001-016_s002_a005">acató</rs> y mando <rs xml:id="cab-001-016_cab-001-016_s002_a006" type="legal_or_procedural_act" subtype="execution" ana="https://w3id.org/leco/ontology#Execution" corresp="#event_cab-001-016_cab-001-016_s002_a006">ejecutar</rs> por parte de los señores <orgName xml:id="cab-001-016_cab-001-016_s002_a007" type="cabildo_body" ref="#org_cab-001-016_cab-001-016_s002_a007">Justicia y Regimiento</orgName>.</seg>
+        <seg xml:id="cab-001-016_s003" type="juridical_discursive_segment">
+          <placeName xml:id="cab-001-016_cab-001-016_s003_a001" type="historicalPlace" ref="#place_cab-001-016_cab-001-016_s001_a001">Tunja</placeName>, <date xml:id="cab-001-016_cab-001-016_s003_a002" type="sourceDate">8 agosto 1548</date>, se <rs xml:id="cab-001-016_cab-001-016_s003_a003" type="legal_or_procedural_act" subtype="presentation" ana="https://w3id.org/leco/ontology#Presentation" corresp="#event_cab-001-016_cab-001-016_s003_a003">presentó</rs> una <rs xml:id="cab-001-016_cab-001-016_s003_a004" type="legal_or_procedural_act" subtype="petition" ana="https://w3id.org/leco/ontology#Petition" corresp="#event_cab-001-016_cab-001-016_s003_a004">petición</rs> por parte de <persName xml:id="cab-001-016_cab-001-016_s003_a005" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s003_a005">Baltazar Gómez de Avila</persName>, quien propone un nuevo precio para la venta de la arroba de Carne de Vaca a $1 tomine y $2 tomines para vender la arroba de carnero; ademas que se lleve un control de pesaje semanalmente.</seg>
+        <seg xml:id="cab-001-016_s004" type="juridical_discursive_segment">Se <rs xml:id="cab-001-016_cab-001-016_s004_a001" type="legal_or_procedural_act" subtype="approval" ana="https://w3id.org/leco/ontology#Approval" corresp="#event_cab-001-016_cab-001-016_s004_a001">aprobó</rs>. <date xml:id="cab-001-016_cab-001-016_s004_a002" type="sourceDate">14 agosto 1548</date> se <rs xml:id="cab-001-016_cab-001-016_s004_a003" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-016_cab-001-016_s004_a003">mandó</rs>
+          <rs xml:id="cab-001-016_cab-001-016_s004_a004" type="legal_or_procedural_act" subtype="auction_award" ana="https://w3id.org/leco/ontology#AuctionAward" corresp="#event_cab-001-016_cab-001-016_s004_a004">rematar</rs> la carne en favor de <persName xml:id="cab-001-016_cab-001-016_s004_a005" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s003_a005">Baltazar Gómez de Avila</persName> y se de cumplimiento al pesaje de los novillos cada 15 días.</seg>
+        <seg xml:id="cab-001-016_s005" type="juridical_discursive_segment">En este día se recibió por vecino de <placeName xml:id="cab-001-016_cab-001-016_s005_a001" type="historicalPlace" ref="#place_cab-001-016_cab-001-016_s001_a001">Tunja</placeName> a <persName xml:id="cab-001-016_cab-001-016_s005_a002" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s005_a002">Luis de Mallaca</persName> y se le proveyó una tenencia de 30 pies de largo por 30 pies de ancho en las tierras de <persName xml:id="cab-001-016_cab-001-016_s005_a003" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s005_a003">Pedro Gómez</persName>.</seg>
+        <seg xml:id="cab-001-016_s006" type="juridical_discursive_segment">Se <rs xml:id="cab-001-016_cab-001-016_s006_a001" type="legal_or_procedural_act" subtype="order_event" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#event_cab-001-016_cab-001-016_s006_a001">ordenó</rs> dar el <rs xml:id="cab-001-016_cab-001-016_s006_a002" type="normativeRule" subtype="title" ref="#rule_cab-001-016_cab-001-016_s006_a002">titulo</rs> de <rs xml:id="cab-001-016_cab-001-016_s006_a003" type="officeType" subtype="office_or_procedural_role" ref="https://w3id.org/leco/ontology#RegidorOfficeType">Regidor</rs> a las personas ó personas que comparecieren, por las razones y requisitos exigidos por la ley, en el sentido de no tener acusaciones ni delitos.</seg>
+        <seg xml:id="cab-001-016_s007" type="juridical_discursive_segment">En constancia firman los testigos <persName xml:id="cab-001-016_cab-001-016_s007_a001" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s007_a001">Juan de Chinchilla</persName>, <persName xml:id="cab-001-016_cab-001-016_s007_a002" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s007_a002">Juan de Fonseca</persName>, <persName xml:id="cab-001-016_cab-001-016_s007_a003" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s007_a003">Francisco Martin</persName> Carpintero y <persName xml:id="cab-001-016_cab-001-016_s007_a004" type="historicalPerson" ref="#person_cab-001-016_cab-001-016_s007_a004">Juan de Viscaino</persName>.</seg>
+      </div>
+    </body>
+  </text>
+  <standOff>
+    <listPerson>
+      <person xml:id="person_cab-001-016_cab-001-016_s002_a004">
+        <persName>Juan de Orozco</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s003_a005">
+        <persName>Baltazar Gómez de Avila</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s005_a002">
+        <persName>Luis de Mallaca</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s005_a003">
+        <persName>Pedro Gómez</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s007_a001">
+        <persName>Juan de Chinchilla</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s007_a002">
+        <persName>Juan de Fonseca</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s007_a003">
+        <persName>Francisco Martin</persName>
+      </person>
+      <person xml:id="person_cab-001-016_cab-001-016_s007_a004">
+        <persName>Juan de Viscaino</persName>
+      </person>
+    </listPerson>
+    <listOrg>
+      <org xml:id="org_cab-001-016_cab-001-016_s001_a003" ana="https://w3id.org/leco/ontology#CabildoType">
+        <orgName>Cabildo</orgName>
+      </org>
+      <org xml:id="org_cab-001-016_cab-001-016_s002_a007" ana="https://w3id.org/leco/ontology#JusticeAndRegimentType">
+        <orgName>Justicia y Regimiento</orgName>
+      </org>
+    </listOrg>
+    <listPlace>
+      <place xml:id="place_cab-001-016_cab-001-016_s001_a001">
+        <placeName>Tunja</placeName>
+      </place>
+    </listPlace>
+    <listEvent>
+      <event xml:id="event_cab-001-016_cab-001-016_s002_a001" ana="https://w3id.org/leco/ontology#ReadingAct" corresp="#cab-001-016_s002">
+        <desc>leyó</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s002_a005" ana="https://w3id.org/leco/ontology#Obedience" corresp="#cab-001-016_s002">
+        <desc>acató</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s002_a006" ana="https://w3id.org/leco/ontology#Execution" corresp="#cab-001-016_s002">
+        <desc>ejecutar</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s003_a003" ana="https://w3id.org/leco/ontology#Presentation" corresp="#cab-001-016_s003">
+        <desc>presentó</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s003_a004" ana="https://w3id.org/leco/ontology#Petition" corresp="#cab-001-016_s003">
+        <desc>petición</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s004_a001" ana="https://w3id.org/leco/ontology#Approval" corresp="#cab-001-016_s004">
+        <desc>aprobó</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s004_a003" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-016_s004">
+        <desc>mandó</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s004_a004" ana="https://w3id.org/leco/ontology#AuctionAward" corresp="#cab-001-016_s004">
+        <desc>rematar</desc>
+      </event>
+      <event xml:id="event_cab-001-016_cab-001-016_s006_a001" ana="https://w3id.org/leco/ontology#OrderAct" corresp="#cab-001-016_s006">
+        <desc>ordenó</desc>
+      </event>
+    </listEvent>
+    <interpGrp type="normativeRules">
+      <interp xml:id="rule_cab-001-016_cab-001-016_s002_a002">orden</interp>
+      <interp xml:id="rule_cab-001-016_cab-001-016_s006_a002">titulo</interp>
+    </interpGrp>
+    <interpGrp type="legalArguments"/>
+    <interpGrp type="localHistoricalConcepts"/>
+    <interpGrp type="localHistoricalCategories"/>
+    <listRelation>
+      <relation xml:id="concept_use_cab-001-016_cab-001-016_s001_a004" type="historicalConceptUse" active="#cab-001-016_acta" passive="https://w3id.org/leco/ontology#RealServiceConcept" source="#cab-001-016_s001" subtype="explicit" when="21 de Junio 1548"/>
+      <relation xml:id="jurisdiction_cabildo" type="territorialJurisdiction" active="#org_cab-001-016_cab-001-016_s001_a003" passive="#place_cab-001-016_cab-001-016_s001_a001" ana="https://w3id.org/leco/ontology#TerritorialJurisdiction" subtype="humanInterpretation" source="#cab-001-016_s002"/>
+      <relation xml:id="migrated_cab-001-016_cab-001-016_s002_r002" type="officeHolding" active="#person_cab-001-016_cab-001-016_s002_a004" passive="#org_cab-001-016_cab-001-016_s001_a003" ana="https://w3id.org/leco/ontology#GovernorOfficeType" source="#cab-001-016_s002" subtype="explicit" when="1548"/>
+      <relation xml:id="migrated_cab-001-016_cab-001-016_s003_r001" type="participation" active="#person_cab-001-016_cab-001-016_s003_a005" passive="#event_cab-001-016_cab-001-016_s003_a004" ana="https://w3id.org/leco/ontology#PetitionerRole" source="#cab-001-016_s003" subtype="explicit"/>
+      <relation xml:id="review_0156_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-016_cab-001-016_s002_a005" passive="#person_cab-001-016_cab-001-016_s002_a004" source="#cab-001-016_s002" subtype="explicit"/>
+      <relation xml:id="review_0163_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-016_cab-001-016_s004_a001" passive="#org_cab-001-016_cab-001-016_s001_a003" source="#cab-001-016_s004" subtype="inferred"/>
+      <relation xml:id="review_0169_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-016_cab-001-016_s004_a003" passive="#org_cab-001-016_cab-001-016_s001_a003" source="#cab-001-016_s004" subtype="inferred"/>
+      <relation xml:id="review_0171_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-016_cab-001-016_s002_a006" passive="#person_cab-001-016_cab-001-016_s002_a004" source="#cab-001-016_s002" subtype="explicit"/>
+      <relation xml:id="review_0172_decidedBy" type="objectProperty" name="decidedBy" active="#event_cab-001-016_cab-001-016_s006_a001" passive="#org_cab-001-016_cab-001-016_s001_a003" source="#cab-001-016_s006" subtype="inferred"/>
+      <relation xml:id="participant_review_0032_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-016_cab-001-016_s003_a003" passive="#person_cab-001-016_cab-001-016_s003_a005" source="#cab-001-016_s003" subtype="explicit"/>
+      <relation xml:id="participant_review_0034_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-016_cab-001-016_s004_a004" passive="#person_cab-001-016_cab-001-016_s003_a005" source="#cab-001-016_s004" subtype="explicit"/>
+      <relation xml:id="participant_review_0035_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-016_cab-001-016_s004_a003" passive="#org_cab-001-016_cab-001-016_s001_a003" source="#cab-001-016_s004" subtype="contextual"/>
+      <relation xml:id="participant_review_0037_hasParticipant" type="objectProperty" name="hasParticipant" active="#event_cab-001-016_cab-001-016_s004_a001" passive="#org_cab-001-016_cab-001-016_s001_a003" source="#cab-001-016_s004" subtype="contextual"/>
+    </listRelation>
+    <precision target="#migrated_cab-001-016_cab-001-016_s002_r002" confidence="0.75"/>
+    <precision target="#migrated_cab-001-016_cab-001-016_s003_r001" confidence="0.95"/>
+    <precision target="#review_0163_decidedBy" confidence="0.80"/>
+    <precision target="#review_0169_decidedBy" confidence="0.80"/>
+    <precision target="#review_0172_decidedBy" confidence="0.80"/>
+    <precision target="#participant_review_0032_hasParticipant" confidence="1.00"/>
+    <precision target="#participant_review_0034_hasParticipant" confidence="1.00"/>
+    <precision target="#participant_review_0035_hasParticipant" confidence="0.90"/>
+    <precision target="#participant_review_0037_hasParticipant" confidence="0.90"/>
+  </standOff>
+</TEI>
