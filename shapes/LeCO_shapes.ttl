@@ -471,8 +471,3 @@ lecosh:ValidationStatusShape a sh:NodeShape ;
             sh:path skos:inScheme ] ;
     sh:targetClass leco:ValidationStatus .
 
-[] rdf:first [ sh:property [ sh:minCount 1 ;
-                    sh:path leco:hasParticipation ] ] ;
-    rdf:rest ( [ sh:property [ sh:minCount 1 ;
-                        sh:path leco:hasParticipant ] ] ) .
-

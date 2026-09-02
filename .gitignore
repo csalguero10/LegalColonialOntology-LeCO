@@ -1,7 +1,7 @@
-*.txt
-*.TXT
-*.ttl
-*.xml
+build/**/*.txt
+build/**/*.TXT
+build/**/*.ttl
+build/**/*.xml
 
 .venv/
 __pycache__/

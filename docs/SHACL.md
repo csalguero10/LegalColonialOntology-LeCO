@@ -73,22 +73,22 @@ También se preservan las relaciones de doble naturaleza como `createsRepresenta
 
 ### 1.4 Ejecución recomendada
 
-Validación CORE del corpus:
+Validación CORE del corpus (capa final vigente, ver `QUALITY.md` §3):
 
 ```bash
-python scripts/tei_to_rdf.py build/tei_enriched --all --validate --shacl-profile core
+python scripts/tei_to_rdf.py build/tei_legal_curated --all --validate --shacl-profile core
 ```
 
 Diagnóstico QUALITY:
 
 ```bash
-python scripts/tei_to_rdf.py build/tei_enriched --all --validate --shacl-profile quality
+python scripts/tei_to_rdf.py build/tei_legal_curated --all --validate --shacl-profile quality
 ```
 
 Gold standard / validación estricta:
 
 ```bash
-python scripts/tei_to_rdf.py build/tei_enriched/cab-001-002.xml --validate --shacl-profile strict
+python scripts/tei_to_rdf.py build/tei_legal_curated/cab-001-002.xml --validate --shacl-profile strict
 ```
 
 Los reportes se separan por perfil para evitar sobrescrituras.
