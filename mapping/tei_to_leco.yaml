@@ -138,6 +138,7 @@ controlled_types:
       - withinJurisdiction
       - principal
       - representative
+      - officeExistsIn
   measure:
     unit:
       peso: leco:PesoUnit
