@@ -27,20 +27,23 @@
         <!--[if IE]>
             <script src="js/html5shiv.js"></script>
         <![endif]-->
-        <!-- placeholder sizing: reserves box height while images/placeholder.jpg don't exist yet -->
         <style>
-            .hover-box img { min-height: 380px; width: 100%; background: #e6e6e6; object-fit: cover; }
-            .post-thumbnail img { min-height: 220px; width: 100%; background: #e6e6e6; object-fit: cover; }
             pre.sparql { background: #2b2b2b; color: #e8e8e8; padding: 20px; font-size: 12.5px; line-height: 1.6; overflow-x: auto; border-radius: 2px; }
             pre.sparql .kw { color: #e0ac3a; }
             .cq-item { border-top: 1px solid #e5e5e5; padding: 18px 0; }
             .cq-item:last-child { border-bottom: 1px solid #e5e5e5; }
             .ontology-table td, .ontology-table th { vertical-align: top; }
+            .section-divider { height: 14px; width: 100%; background: linear-gradient(90deg, #8f6110, #c8860a 50%, #8f6110); }
+            .quality-evolution-table { width: 100% !important; font-size: 15px; }
+            .quality-evolution-table th, .quality-evolution-table td { padding: 14px 16px; vertical-align: top; }
+            .quality-evolution-table th { font-size: 12px; text-transform: uppercase; letter-spacing: 1px; }
             .ontology-diagram { width: 100%; height: auto; }
+            /* fixed, modest spacing instead of the theme's width-relative margin-nineteen (10%),
+               which stacked with section padding and produced oversized gaps between sections */
+            .tight-block { margin-top: 22px !important; margin-bottom: 22px !important; }
             /* ochre palette (replaces the theme's default pink accent on this page only) */
             .fast-pink-text { color: #c8860a !important; }
             .bg-fast-pink { background: #c8860a !important; }
-            .hover-box-text .title-medium:before { background: #c8860a !important; }
             #accordion-methodology .panel-title { background-color: #c8860a !important; transition: background-color .2s ease; }
             #accordion-methodology .panel-heading:hover .panel-title { background-color: #a66f08 !important; }
             #accordion-methodology .panel-default { border: none !important; margin-bottom: 4px; }
@@ -98,7 +101,7 @@
         <section id="home" class="no-padding">
             <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
                 <!-- slider item -->
-                <div class="item owl-bg-img bg-dark-gray">
+                <div class="item owl-bg-img" style="background-image: url('img/hero.jpg');">
                     <div class="opacity-medium bg-dark-gray"></div>
                     <div class="container full-screen position-relative">
                         <div class="col-md-12 slider-typography text-left">
@@ -120,60 +123,8 @@
             </div>
         </section>
         <!-- end slider -->
-        <!-- quick access section -->
-        <section class="about-spa no-padding wow fadeIn">
-            <div class="container-fluid">
-                <!-- section title -->
-                <div class="row padding-six no-padding-lr">
-                    <div class="col-md-12 col-sm-12 text-center">
-                        <span class="text-uppercase letter-spacing-1 alt-font gray-text display-block margin-one-half no-margin-top">Ontología  /  Knowledge Graph  /  Consulta</span>
-                        <span class="text-uppercase title-large alt-font font-weight-600 dark-gray-text letter-spacing-2 xs-title-medium">Accesos rápidos</span>
-                    </div>
-                </div>
-                <!-- end section title -->
-                <div class="row">
-                    <!-- quick access item -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding position-relative overflow-hidden hover-box">
-                        <img src="images/placeholder.jpg" alt=""/>
-                        <div class="opacity-light bg-dark-gray"></div>
-                        <div class="col-md-5 pull-right position-absolute hover-box-text bg-white z-index-1">
-                            <span class="text-uppercase title-medium alt-font font-weight-600 md-text-extra-large sm-text-large xs-text-extra-large">Principios</span>
-                        </div>
-                        <div class="hover-box-more bg-fast-pink position-absolute z-index-1">
-                            <a href="#about" class="white-text alt-font text-uppercase inner-link">Ver más</a>
-                        </div>
-                    </div>
-                    <!-- end quick access item -->
-                    <!-- quick access item -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding position-relative overflow-hidden hover-box">
-                        <img src="images/placeholder.jpg" alt=""/>
-                        <div class="opacity-light bg-dark-gray"></div>
-                        <div class="col-md-5 pull-right position-absolute hover-box-text bg-white z-index-1">
-                            <span class="text-uppercase title-medium alt-font font-weight-600 md-text-extra-large sm-text-large xs-text-extra-large">Pipeline XD</span>
-                        </div>
-                        <div class="hover-box-more bg-fast-pink position-absolute z-index-1">
-                            <a href="#treatments" class="white-text alt-font text-uppercase inner-link">Ver más</a>
-                        </div>
-                    </div>
-                    <!-- end quick access item -->
-                    <!-- quick access item -->
-                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding position-relative overflow-hidden hover-box">
-                        <img src="images/placeholder.jpg" alt=""/>
-                        <div class="opacity-light bg-dark-gray"></div>
-                        <div class="col-md-5 pull-right position-absolute hover-box-text bg-white z-index-1">
-                            <span class="text-uppercase title-medium alt-font font-weight-600 md-text-extra-large sm-text-large xs-text-extra-large">Knowledge Graph</span>
-                        </div>
-                        <div class="hover-box-more bg-fast-pink position-absolute z-index-1">
-                            <a href="#packages" class="white-text alt-font text-uppercase inner-link">Ver más</a>
-                        </div>
-                    </div>
-                    <!-- end quick access item -->
-                </div>
-            </div>
-        </section>
-        <!-- end quick access section -->
         <!-- about section -->
-        <section id="about" class="wow fadeIn cover-background spa-about">
+        <section id="about" class="wow fadeIn">
             <div class="container">
                 <!-- section title -->
                 <div class="row padding-thirteen no-padding-lr no-padding-top">
@@ -185,7 +136,10 @@
                 <!-- end section title -->
                 <!-- text -->
                 <div class="row">
-                    <div class="col-md-7 col-sm-8 pull-right">
+                    <div class="col-md-5 col-sm-4 sm-margin-eleven sm-no-margin-lr">
+                        <img src="img/intro.jpg" alt="Documentación jurídica colonial" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 col-sm-8">
                         <span class="text-extra-large margin-ten no-margin-lr no-margin-top display-inline-block alt-font black-text">Disponer de catálogos, transcripciones o imágenes no equivale a disponer de acceso semántico a instituciones, actuaciones, jurisdicciones, oficios y conceptos históricos.</span>
                         <p class="text-medium">LeCO se construyó con eXtreme Design (XD): desarrollo colaborativo, incremental y dirigido por Competency Questions, partiendo de un caso documental controlado — el acta de cab-001-002 sobre Juan de Pineda (1547) — antes de escalar al resto del corpus.</p>
                         <ul class="text-medium">
@@ -194,7 +148,10 @@
                             <li><strong>Evidencia explícita ≠ inferencia.</strong> Toda interpretación se vincula a un fragmento, su base y, cuando corresponde, confianza y validación humana.</li>
                             <li><strong>Ausencia de información ≠ error.</strong> La fragmentariedad se representa como incompletitud, no se completa el grafo con suposiciones.</li>
                         </ul>
-                        <a class="highlight-button-black-border btn btn-small button margin-ten no-margin-lr inner-link" href="#therapists">Ver perfiles SHACL</a>
+                        <p class="text-medium">Toda la información — ontología, corpus, pipeline, perfiles SHACL y consultas — está disponible en el repositorio del proyecto en GitHub.</p>
+                        <div class="text-center margin-ten no-margin-lr">
+                            <a class="highlight-button-black-border btn btn-small button" href="https://github.com/csalguero10/LegalColonialOntology-LeCO" target="_blank" rel="noopener">Consultar repositorio</a>
+                        </div>
                     </div>
                 </div>
                 <!-- end text -->
@@ -282,7 +239,7 @@
                             </div>
                             <!-- end accordion item -->
                         </div>
-                        <div class="row margin-nineteen no-margin-lr bg-gray padding-eight">
+                        <div class="row tight-block bg-gray padding-eight">
                             <div class="col-md-12">
                                 <span class="text-uppercase alt-font black-text display-block margin-five no-margin-lr">Criterio de gobernanza</span>
                                 <p class="no-margin-bottom">Las propuestas automáticas nunca sustituyeron la validación del dominio. Cuando una relación no podía resolverse de forma inequívoca, el pipeline conservó un warning o abrió una cola de revisión en lugar de convertir una conjetura en un triple.</p>
@@ -306,7 +263,7 @@
                     <div class="col-md-10 col-md-offset-1 col-sm-12">
                         <p class="text-medium">El corpus no se modeló probando esquemas sobre los 19 documentos a la vez. Se tomó <strong>uno solo</strong> — cab-001-002 — y se modeló manualmente de punta a punta: separación de metadatos, segmentación jurídico-discursiva, taxonomía de entidades y actos, anotación TEI, distinciones ontológicas (persona/oficio/rol, explícito/inferido, jurisdicción) y mapeo final a RDF. Ese modelado manual, ya probado y validado, fue después la base que se le dio a un LLM para asistir el modelado del resto del corpus con el mismo criterio.</p>
                         <p class="text-medium">Por eso este documento no aparece solo como un caso más: <strong>cada paso del pipeline en la sección siguiente incluye, marcado como "Ejemplo — cab-001-002", el fragmento real de este proceso manual</strong> — el mismo patrón que después se replicó, asistido por IA, en los otros 18 documentos.</p>
-                        <div class="table-responsive margin-nineteen no-margin-lr">
+                        <div class="table-responsive tight-block">
                             <table class="table table-bordered">
                                 <tbody>
                                     <tr><td><strong>Título</strong></td><td>Acta de Cabildo sobre castigo de Juan de Pineda y nombramiento de Pedro Vasquez</td></tr>
@@ -1037,7 +994,7 @@ ORDER BY ?decision ?argument</code></pre>
                 <div class="row">
                     <div class="col-md-10 col-md-offset-1 col-sm-12">
                         <p class="text-medium">El snapshot v0.3 gap-resolved documenta 88 OWL classes, 61 object properties y 6 datatype properties. El diagrama muestra únicamente el núcleo relacional en torno a <code>JurisdictionalAct</code> — la clase central del modelo; la tabla desplegable debajo cubre las clases y propiedades más usadas a través del corpus, con su definición y relaciones.</p>
-                        <div class="margin-nineteen no-margin-lr">
+                        <div class="tight-block">
 <svg viewBox="0 0 1000 710" class="ontology-diagram" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama simplificado de clases y propiedades centrales de LeCO">
   <defs>
     <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
@@ -1109,7 +1066,7 @@ ORDER BY ?decision ?argument</code></pre>
 </svg>
                         </div>
                         <span class="text-small medium-gray-text alt-font display-block text-center margin-eight no-margin-lr">Diagrama simplificado — línea punteada = rdfs:subClassOf, flechas = propiedad de objeto (dirección del predicado)</span>
-                        <div class="panel-group accordion-style2 margin-nineteen no-margin-lr" id="accordion-ontology">
+                        <div class="panel-group accordion-style2 tight-block" id="accordion-ontology">
                             <div class="panel panel-default no-border">
                                 <div class="panel-heading padding-three active-accordion">
                                     <a data-toggle="collapse" data-parent="#accordion-ontology" href="#onto-classes"><h4 class="panel-title">Clases centrales (16)<span class="pull-right"><i class="fa fa-minus"></i></span></h4></a>
@@ -1388,10 +1345,10 @@ ORDER BY ?decision ?argument</code></pre>
                     </div>
                     <!-- end metric item -->
                 </div>
-                <div class="row margin-nineteen no-margin-lr">
+                <div class="row tight-block">
                     <div class="col-md-12">
                         <span class="text-uppercase alt-font black-text display-block margin-eight no-margin-lr">Evolución de la deuda QUALITY (advertencias, no errores)</span>
-                        <table class="table text-small">
+                        <table class="table table-bordered quality-evolution-table">
                             <thead>
                                 <tr><th>Momento</th><th>Resultado</th><th>Lectura</th></tr>
                             </thead>
