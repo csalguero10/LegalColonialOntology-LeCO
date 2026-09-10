@@ -1,0 +1,1564 @@
+<!doctype html>
+<html class="no-js" lang="es">
+    <head>
+        <!-- title -->
+        <title>LegalColonialOntology (LeCO) — Documentación del proyecto</title>
+        <!-- description -->
+        <meta name="description" content="LeCO: ontología semántica para documentación jurídica colonial, construida con eXtreme Design (XD).">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1" />
+        <!-- animation -->
+        <link rel="stylesheet" href="css/animate.css" />
+        <!-- bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- et line icon -->
+        <link rel="stylesheet" href="css/et-line-icons.css" />
+        <!-- font-awesome icon -->
+        <link rel="stylesheet" href="css/font-awesome.min.css" />
+        <!-- owl carousel -->
+        <link rel="stylesheet" href="css/owl.transitions.css" />
+        <link rel="stylesheet" href="css/owl.carousel.css" />
+        <!-- magnific popup -->
+        <link rel="stylesheet" href="css/magnific-popup.css" />
+        <!-- style -->
+        <link rel="stylesheet" href="css/style.css" />
+        <!-- responsive css -->
+        <link rel="stylesheet" href="css/responsive.css" />
+        <!--[if IE]>
+            <script src="js/html5shiv.js"></script>
+        <![endif]-->
+        <!-- placeholder sizing: reserves box height while images/placeholder.jpg don't exist yet -->
+        <style>
+            .hover-box img { min-height: 380px; width: 100%; background: #e6e6e6; object-fit: cover; }
+            .post-thumbnail img { min-height: 220px; width: 100%; background: #e6e6e6; object-fit: cover; }
+            pre.sparql { background: #2b2b2b; color: #e8e8e8; padding: 20px; font-size: 12.5px; line-height: 1.6; overflow-x: auto; border-radius: 2px; }
+            pre.sparql .kw { color: #e0ac3a; }
+            .cq-item { border-top: 1px solid #e5e5e5; padding: 18px 0; }
+            .cq-item:last-child { border-bottom: 1px solid #e5e5e5; }
+            .ontology-table td, .ontology-table th { vertical-align: top; }
+            .ontology-diagram { width: 100%; height: auto; }
+            /* ochre palette (replaces the theme's default pink accent on this page only) */
+            .fast-pink-text { color: #c8860a !important; }
+            .bg-fast-pink { background: #c8860a !important; }
+            .hover-box-text .title-medium:before { background: #c8860a !important; }
+            #accordion-methodology .panel-title { background-color: #c8860a !important; transition: background-color .2s ease; }
+            #accordion-methodology .panel-heading:hover .panel-title { background-color: #a66f08 !important; }
+            #accordion-methodology .panel-default { border: none !important; margin-bottom: 4px; }
+            #accordion-ontology .panel-title { background-color: #8f6110 !important; transition: background-color .2s ease; }
+            #accordion-ontology .panel-heading:hover .panel-title { background-color: #75500d !important; }
+            #accordion-ontology .panel-default { border: none !important; margin-bottom: 4px; }
+            .section-tabs { display: flex; flex-wrap: wrap; justify-content: center; }
+            #treatments .section-tabs { margin-bottom: 35px !important; }
+            .section-tabs > li { float: none !important; margin: 3px !important; }
+            .section-tabs > li > a { background-color: #f0dfb5 !important; color: #5a4212 !important; border: none !important; border-radius: 2px; padding: 8px 14px !important; transition: background-color .2s ease, color .2s ease; }
+            .section-tabs > li > a:hover { background-color: #8f6110 !important; color: #fff !important; }
+            .section-tabs > li.active > a, .section-tabs > li.active > a:focus { background-color: #8f6110 !important; color: #fff !important; }
+            .example-box { background: #faf6ec; border-left: 4px solid #c8860a; padding: 18px 22px; margin: 22px 0; }
+            .example-box .example-label { text-transform: uppercase; letter-spacing: 1px; font-size: 11px; color: #8f6110; font-weight: 700; display: block; margin-bottom: 12px; }
+            .example-box blockquote { border-left: 3px solid #d8c9a3; margin: 8px 0; padding: 4px 16px; font-style: italic; color: #555; font-size: 14px; }
+            .example-box table { background: #fff; font-size: 13px; }
+            .example-box pre { background: #2b2b2b; color: #e8e8e8; padding: 16px; font-size: 12px; line-height: 1.5; overflow-x: auto; border-radius: 2px; }
+            .example-box .flow { background: #2b2b2b; color: #e8e8e8; padding: 16px; font-size: 12.5px; line-height: 1.7; overflow-x: auto; border-radius: 2px; white-space: pre; font-family: monospace; }
+            /* #treatments and #cqs tab panes hold variable-height text (incl. SPARQL blocks) that
+               can exceed the theme's 550px card assumption; the default absolute/translateY(-50%)
+               centering then overflows upward and covers the tab nav, blocking clicks. Force normal
+               document flow instead. */
+            #treatments .treatments-box-text, #cqs .treatments-box-text { min-height: 0; border: none; }
+            #treatments .treatments-box-text-sub, #cqs .treatments-box-text-sub { position: static; transform: none; }
+        </style>
+    </head>
+    <body>
+        <!-- navigation -->
+        <nav class="navbar no-margin-bottom alt-font without-button">
+            <div class="container navigation-menu">
+                <div class="row">
+                    <div class="col-lg-2 col-md-2 navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand inner-link text-uppercase alt-font font-weight-600 letter-spacing-2" href="#home">LeCO</a>
+                    </div>
+                    <div class="col-lg-10 col-md-9 col-sm-9 collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li><a href="#about" class="inner-link">Proyecto</a></li>
+                            <li><a href="#methodology" class="inner-link">Metodología</a></li>
+                            <li><a href="#treatments" class="inner-link">Pipeline</a></li>
+                            <li><a href="#ontology" class="inner-link">Ontología</a></li>
+                            <li><a href="#contact" class="inner-link">Consulta</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- end navigation -->
+        <!-- slider -->
+        <section id="home" class="no-padding">
+            <div class="owl-slider-full owl-carousel owl-theme light-pagination square-pagination dark-pagination-without-next-prev-arrow main-slider">
+                <!-- slider item -->
+                <div class="item owl-bg-img bg-dark-gray">
+                    <div class="opacity-medium bg-dark-gray"></div>
+                    <div class="container full-screen position-relative">
+                        <div class="col-md-12 slider-typography text-left">
+                            <div class="slider-text-middle-main">
+                                <div class="slider-text-middle slider-typography-option3">
+                                    <div class="col-md-1 no-padding">
+                                        <div class="bg-fast-pink separator-line-medium-thick"></div>
+                                    </div>
+                                    <div class="col-md-11 no-padding">
+                                        <p class="white-text text-uppercase letter-spacing-2 light-gray-text alt-font margin-four no-margin-lr no-margin-top">Ontología semántica para documentación jurídica colonial</p>
+                                        <span class="white-text font-weight-800 letter-spacing-3 alt-font text-uppercase xs-title-extra-large">LegalColonial<br>Ontology<br>(LeCO)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end slider item -->
+            </div>
+        </section>
+        <!-- end slider -->
+        <!-- quick access section -->
+        <section class="about-spa no-padding wow fadeIn">
+            <div class="container-fluid">
+                <!-- section title -->
+                <div class="row padding-six no-padding-lr">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase letter-spacing-1 alt-font gray-text display-block margin-one-half no-margin-top">Ontología  /  Knowledge Graph  /  Consulta</span>
+                        <span class="text-uppercase title-large alt-font font-weight-600 dark-gray-text letter-spacing-2 xs-title-medium">Accesos rápidos</span>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <div class="row">
+                    <!-- quick access item -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding position-relative overflow-hidden hover-box">
+                        <img src="images/placeholder.jpg" alt=""/>
+                        <div class="opacity-light bg-dark-gray"></div>
+                        <div class="col-md-5 pull-right position-absolute hover-box-text bg-white z-index-1">
+                            <span class="text-uppercase title-medium alt-font font-weight-600 md-text-extra-large sm-text-large xs-text-extra-large">Principios</span>
+                        </div>
+                        <div class="hover-box-more bg-fast-pink position-absolute z-index-1">
+                            <a href="#about" class="white-text alt-font text-uppercase inner-link">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- end quick access item -->
+                    <!-- quick access item -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding position-relative overflow-hidden hover-box">
+                        <img src="images/placeholder.jpg" alt=""/>
+                        <div class="opacity-light bg-dark-gray"></div>
+                        <div class="col-md-5 pull-right position-absolute hover-box-text bg-white z-index-1">
+                            <span class="text-uppercase title-medium alt-font font-weight-600 md-text-extra-large sm-text-large xs-text-extra-large">Pipeline XD</span>
+                        </div>
+                        <div class="hover-box-more bg-fast-pink position-absolute z-index-1">
+                            <a href="#treatments" class="white-text alt-font text-uppercase inner-link">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- end quick access item -->
+                    <!-- quick access item -->
+                    <div class="col-md-4 col-sm-4 col-xs-12 no-padding position-relative overflow-hidden hover-box">
+                        <img src="images/placeholder.jpg" alt=""/>
+                        <div class="opacity-light bg-dark-gray"></div>
+                        <div class="col-md-5 pull-right position-absolute hover-box-text bg-white z-index-1">
+                            <span class="text-uppercase title-medium alt-font font-weight-600 md-text-extra-large sm-text-large xs-text-extra-large">Knowledge Graph</span>
+                        </div>
+                        <div class="hover-box-more bg-fast-pink position-absolute z-index-1">
+                            <a href="#packages" class="white-text alt-font text-uppercase inner-link">Ver más</a>
+                        </div>
+                    </div>
+                    <!-- end quick access item -->
+                </div>
+            </div>
+        </section>
+        <!-- end quick access section -->
+        <!-- about section -->
+        <section id="about" class="wow fadeIn cover-background spa-about">
+            <div class="container">
+                <!-- section title -->
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">01</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Alcance y principios</span>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <!-- text -->
+                <div class="row">
+                    <div class="col-md-7 col-sm-8 pull-right">
+                        <span class="text-extra-large margin-ten no-margin-lr no-margin-top display-inline-block alt-font black-text">Disponer de catálogos, transcripciones o imágenes no equivale a disponer de acceso semántico a instituciones, actuaciones, jurisdicciones, oficios y conceptos históricos.</span>
+                        <p class="text-medium">LeCO se construyó con eXtreme Design (XD): desarrollo colaborativo, incremental y dirigido por Competency Questions, partiendo de un caso documental controlado — el acta de cab-001-002 sobre Juan de Pineda (1547) — antes de escalar al resto del corpus.</p>
+                        <ul class="text-medium">
+                            <li><strong>Jurisdicción no es lugar.</strong> Se modela como entidad jurídica separada de los lugares.</li>
+                            <li><strong>Persona, oficio y rol procesal son entidades distintas.</strong> Juan de Pineda es persona; Alcalde es oficio; Apelante es un rol contextual.</li>
+                            <li><strong>Evidencia explícita ≠ inferencia.</strong> Toda interpretación se vincula a un fragmento, su base y, cuando corresponde, confianza y validación humana.</li>
+                            <li><strong>Ausencia de información ≠ error.</strong> La fragmentariedad se representa como incompletitud, no se completa el grafo con suposiciones.</li>
+                        </ul>
+                        <a class="highlight-button-black-border btn btn-small button margin-ten no-margin-lr inner-link" href="#therapists">Ver perfiles SHACL</a>
+                    </div>
+                </div>
+                <!-- end text -->
+            </div>
+        </section>
+        <!-- about section -->
+        <!-- methodology section -->
+        <section id="methodology" class="wow fadeIn">
+            <div class="container">
+                <!-- section title -->
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">02</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Metodología: eXtreme Design (XD)</span>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12">
+                        <p class="text-medium">eXtreme Design (XD) es un método colaborativo, incremental, iterativo, modular y test-driven para diseño ontológico basado en patrones: divide el problema en pequeños requisitos, los expresa como historias y Competency Questions, busca soluciones de diseño reutilizables, produce módulos, los prueba y los reintegra continuamente. LeCO adaptó sus 12 tasks originales en cinco fases; cada una se documenta abajo.</p>
+                        <div class="panel-group accordion-style2 no-margin-bottom" id="accordion-methodology">
+                            <!-- accordion item -->
+                            <div class="panel panel-default no-border">
+                                <div class="panel-heading padding-three active-accordion">
+                                    <a data-toggle="collapse" data-parent="#accordion-methodology" href="#xd-phase1"><h4 class="panel-title">Fase XD 1 — Entrada en el contexto histórico-jurídico<span class="pull-right"><i class="fa fa-minus"></i></span></h4></a>
+                                </div>
+                                <div id="xd-phase1" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <p><strong>Task XD 1 — Get into the project context.</strong> Lectura del problema historiográfico, cultura jurisdiccional, legal pluralism y arquitectura documental. Premisa decisiva: la documentación jurídica de Antiguo Régimen no debe leerse como un sistema moderno de reglas homogéneas — justicia, autoridad, doctrina, costumbre y prácticas locales podían concurrir en una misma actuación.</p>
+                                        <p>Esto llevó a una arquitectura epistemológica de tres capas: <strong>1) catalogación/archivo</strong> (código de referencia, repositorio, fecha — nunca mezclada con inferencias jurídicas), <strong>2) texto/evidencia</strong> (transcripción TEI, segmentos, menciones — anotar no reescribe la fuente) y <strong>3) interpretación histórico-semántica</strong> (roles, relaciones, jurisdicción, provenance — toda inferencia debe señalar base y evidencia).</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion item -->
+                            <!-- accordion item -->
+                            <div class="panel panel-default no-border no-margin-top">
+                                <div class="panel-heading padding-three">
+                                    <a data-toggle="collapse" data-parent="#accordion-methodology" href="#xd-phase2"><h4 class="panel-title">Fase XD 2 — Corpus, historias de requisito y gold standard<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                </div>
+                                <div id="xd-phase2" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><strong>Tasks 2-3 — Collect requirement stories / Select a story.</strong> El corpus piloto se organizó alrededor de la colección de cabildos: 20 unidades documentales, 19 con transcripción utilizable, cada una como paquete de cuatro artefactos (metadata.json, tei.xml, annotations.csv, relations.csv).</p>
+                                        <p>Se priorizó cab-001-002 como primera story de modelado — un oficial del Cabildo es sancionado, apela ante la Real Audiencia, invoca su nombramiento como Procurador y queda sujeto a investigación. El caso obligó a distinguir persona/oficio/rol, autoridad/jurisdicción, acto/documento, argumento/norma y evidencia/inferencia, antes de escalar al resto del corpus.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion item -->
+                            <!-- accordion item -->
+                            <div class="panel panel-default no-border no-margin-top">
+                                <div class="panel-heading padding-three">
+                                    <a data-toggle="collapse" data-parent="#accordion-methodology" href="#xd-phase3"><h4 class="panel-title">Fases XD 3–5 — De las historias a las Competency Questions<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                </div>
+                                <div id="xd-phase3" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><strong>Tasks 4-5 — Transform story into CQs / Select a CQ.</strong> Las necesidades historiográficas se convirtieron en 37 Competency Questions, contrato de modelado y de prueba a la vez: una decisión ontológica se justificaba si permitía responder preguntas necesarias para la investigación.</p>
+                                        <p>Un subconjunto de 12 CQs núcleo (C01–C12) se materializó primero sobre Pineda y se convirtió en suite mínima de regresión — ver la sección "Competency Questions" más abajo para el detalle completo con SPARQL.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion item -->
+                            <!-- accordion item -->
+                            <div class="panel panel-default no-border no-margin-top">
+                                <div class="panel-heading padding-three">
+                                    <a data-toggle="collapse" data-parent="#accordion-methodology" href="#xd-phase4"><h4 class="panel-title">Fases XD 6–8 — Reutilización, patrones y diseño modular<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                </div>
+                                <div id="xd-phase4" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><strong>Tasks 6-8 — Match CQ to GUCs / Select patterns / Reuse and integrate.</strong> Reutilización directa de RiC-O (Records/RecordParts, Rule, CorporateBody, PositionHoldingRelation), alineación con CIDOC CRM (personas, eventos, lugares), y reutilización directa de SKOS (vocabularios controlados), PROV-O (provenance) y OWL-Time (contexto temporal).</p>
+                                        <p>Patrones de diseño propios: participación n-aria y rol procesal contextual (no se afirma que alguien "es apelante" en general — el rol queda limitado al acto); ocupación temporal de oficios vía <code>rico:PositionHoldingRelation</code>; jurisdicción como entidad jurídica separada de Place. Casos de doble naturaleza (Auto = acto + tipo documental; Procurador = oficio + rol procesal; Repartimiento = acto + arreglo jurídico) se resolvieron sin colapsar la distinción.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion item -->
+                            <!-- accordion item -->
+                            <div class="panel panel-default no-border no-margin-top">
+                                <div class="panel-heading padding-three">
+                                    <a data-toggle="collapse" data-parent="#accordion-methodology" href="#xd-phase5"><h4 class="panel-title">Fases XD 9–12 — Pruebas, integración, refactorización y releases<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                </div>
+                                <div id="xd-phase5" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        <p><strong>Tasks 9-12 — Test and fix / Release module / Integrate / Release new version.</strong> SHACL se incorporó como complemento de OWL: OWL expresa la semántica bajo mundo abierto, SHACL implementa perfiles ejecutables de integridad y calidad — el equivalente de unit/regression testing para el grafo de datos.</p>
+                                        <p>Evolución de versiones: v0.1 (esqueleto conceptual) → v0.2 (consolidación, 9 gaps identificados) → v0.3 gap-resolved (37 CQs cubiertas) → iteraciones 0.3.x (ContextualInferenceBasis, normalización de oficios, perfiles SHACL). La primera validación batch produjo 336 violaciones; tras refinar CORE y curar QUALITY quedaron 163 warnings documentados como deuda aceptada, no como bloqueo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end accordion item -->
+                        </div>
+                        <div class="row margin-nineteen no-margin-lr bg-gray padding-eight">
+                            <div class="col-md-12">
+                                <span class="text-uppercase alt-font black-text display-block margin-five no-margin-lr">Criterio de gobernanza</span>
+                                <p class="no-margin-bottom">Las propuestas automáticas nunca sustituyeron la validación del dominio. Cuando una relación no podía resolverse de forma inequívoca, el pipeline conservó un warning o abrió una cola de revisión en lugar de convertir una conjetura en un triple.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end methodology section -->
+        <!-- gold standard section -->
+        <section id="blog" class="wow fadeIn bg-gray">
+            <div class="container">
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">03</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Gold standard: por qué un solo documento</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12">
+                        <p class="text-medium">El corpus no se modeló probando esquemas sobre los 19 documentos a la vez. Se tomó <strong>uno solo</strong> — cab-001-002 — y se modeló manualmente de punta a punta: separación de metadatos, segmentación jurídico-discursiva, taxonomía de entidades y actos, anotación TEI, distinciones ontológicas (persona/oficio/rol, explícito/inferido, jurisdicción) y mapeo final a RDF. Ese modelado manual, ya probado y validado, fue después la base que se le dio a un LLM para asistir el modelado del resto del corpus con el mismo criterio.</p>
+                        <p class="text-medium">Por eso este documento no aparece solo como un caso más: <strong>cada paso del pipeline en la sección siguiente incluye, marcado como "Ejemplo — cab-001-002", el fragmento real de este proceso manual</strong> — el mismo patrón que después se replicó, asistido por IA, en los otros 18 documentos.</p>
+                        <div class="table-responsive margin-nineteen no-margin-lr">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr><td><strong>Título</strong></td><td>Acta de Cabildo sobre castigo de Juan de Pineda y nombramiento de Pedro Vasquez</td></tr>
+                                    <tr><td><strong>Fecha</strong></td><td>1547 (2 de septiembre de 1547)</td></tr>
+                                    <tr><td><strong>Código de referencia</strong></td><td><code>co-ahrb-cab-001-d002</code></td></tr>
+                                    <tr><td><strong>Identificador local</strong></td><td><code>cab-001-002</code></td></tr>
+                                    <tr><td><strong>Repositorio</strong></td><td>Archivo Histórico Regional de Boyacá</td></tr>
+                                    <tr><td><strong>Localización</strong></td><td>Tunja, Colombia</td></tr>
+                                    <tr><td><strong>Material</strong></td><td>Manuscrito, original — actualmente sin copia digital disponible</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <a class="highlight-button-black-border btn btn-small button margin-ten no-margin-lr inner-link" href="#treatments">Ver los ejemplos en el pipeline</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end gold standard section -->
+        <!-- treatments section -->
+        <section id="treatments" class="wow fadeIn">
+            <div class="container">
+                <!-- section title -->
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">04</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Pipeline TEI → LeCO/RDF</span>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 tab-style-2">
+                        <ul class="nav nav-tabs section-tabs alt-font text-uppercase letter-spacing-1 no-border text-center margin-fifteen no-margin-lr no-margin-bottom xs-margin-thirty-five xs-no-margin-lr xs-no-margin-bottom" role="tablist">
+                            <li role="presentation" class="active xs-display-block xs-no-margin"><a href="#fuentes" aria-controls="fuentes" role="tab" data-toggle="tab" class="xs-display-block">01 Fuentes</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#tei-fuente" aria-controls="tei-fuente" role="tab" data-toggle="tab" class="xs-display-block">02 TEI fuente</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#tei-curado" aria-controls="tei-curado" role="tab" data-toggle="tab" class="xs-display-block">03 TEI curado</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#rdf" aria-controls="rdf" role="tab" data-toggle="tab" class="xs-display-block">04 RDF</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#shacl" aria-controls="shacl" role="tab" data-toggle="tab" class="xs-display-block">05 SHACL</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#razonamiento" aria-controls="razonamiento" role="tab" data-toggle="tab" class="xs-display-block">06 Razonamiento</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#kg" aria-controls="kg" role="tab" data-toggle="tab" class="xs-display-block">07 KG</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#consulta" aria-controls="consulta" role="tab" data-toggle="tab" class="xs-display-block">08 Consulta</a></li>
+                        </ul>
+                        <div class="tab-content clearfix">
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade in active" id="fuentes">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>Fuentes y catálogo</span>
+                                            <p>Cada documento se organiza como un paquete de cuatro artefactos: <code>metadata.json</code> (código de referencia, repositorio, fecha, notas de acceso y descripción archivística), <code>tei.xml</code>, <code>annotations.csv</code> y <code>relations.csv</code>. Un quinto elemento transversal —el vocabulario/ontología— integra y normaliza relaciones a través de todo el corpus.</p>
+                                            <p>Regla metodológica: los campos catalográficos verificados nunca se mezclan con las inferencias jurídicas. Si el catálogo dice "fecha desconocida", eso no se completa mediante suposición.</p>
+                                            <span class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font display-block margin-eight no-margin-lr">Artefactos: data/documents/&lt;id&gt;/metadata.json + tei.xml</span>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>De Zasqua se recupera esto como metadato archivístico — no como algo que la IA tenga que inferir:</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr><td>Tipo de unidad</td><td>Unidad documental</td></tr>
+                                                            <tr><td>Título</td><td>Acta de Cabildo sobre castigo de Juan de Pineda y nombramiento de Pedro Vasquez</td></tr>
+                                                            <tr><td>Fecha</td><td>1547 (2 de septiembre de 1547)</td></tr>
+                                                            <tr><td>Código de referencia</td><td><code>co-ahrb-cab-001-d002</code></td></tr>
+                                                            <tr><td>Identificador local</td><td><code>cab-001-002</code></td></tr>
+                                                            <tr><td>Repositorio</td><td>Archivo Histórico Regional de Boyacá</td></tr>
+                                                            <tr><td>Localización</td><td>Tunja, Colombia</td></tr>
+                                                            <tr><td>Extensión</td><td>005–006</td></tr>
+                                                            <tr><td>Idioma</td><td>español</td></tr>
+                                                            <tr><td>Material</td><td>Manuscrito, original</td></tr>
+                                                            <tr><td>Instrumento de consulta</td><td>Índices del Archivo Histórico Regional de Boyacá, Libros de Cabildos</td></tr>
+                                                            <tr><td>Personas/entidades</td><td>Pedro Vázquez, Cabildo de Tunja, Juan de Pineda</td></tr>
+                                                            <tr><td>Lugares</td><td>Perú, Tunja</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="no-margin-bottom">Zasqua publica sus metadatos usando <strong>METS</strong> — una pista para un mapeo futuro de esos metadatos hacia RiC-O.</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">01</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="tei-fuente">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>TEI fuente</span>
+                                            <p>El texto inline identifica menciones y evidencia — personas, instituciones, lugares, oficios, actos y términos — mientras las entidades, eventos y relaciones complejas viven preferentemente en standOff. Esta separación permite enriquecer semánticamente el documento sin alterar la transcripción.</p>
+                                            <p>Los 20 TEI originales viven en <code>data/documents/&lt;id&gt;/tei.xml</code> y nunca se sobrescriben: toda corrección posterior se aplica en capas derivadas y regenerables, nunca sobre la fuente.</p>
+                                            <span class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font display-block margin-eight no-margin-lr">Capa 2 de la arquitectura de tres capas: catalogación / texto-evidencia / interpretación</span>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>No se tokeniza palabra por palabra. Primero se hace una <strong>segmentación jurídico-discursiva</strong>: el documento tiene seis unidades, cada una con su propio contenido jurídico.</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead><tr><th>Seg.</th><th>Texto</th><th>Elementos</th></tr></thead>
+                                                        <tbody>
+                                                            <tr><td>S1</td><td>"El día 2 de septiembre 1547, se reunierón los señores Justicia y Regimiento…"</td><td>fecha; institución/cuerpo; reunión; finalidad; Real Servicio</td></tr>
+                                                            <tr><td>S2</td><td>"En la reunión informó el Alcalde Ordinario, para viajar a las provincias de Perú."</td><td>actor; oficio; acción; desplazamiento; territorio</td></tr>
+                                                            <tr><td>S3</td><td>"Los señores capitulares, acordaron ponerlo preso y encargar en su remplazo a don Pedro Vasquez."</td><td>actor colectivo; decisión; sanción; nombramiento/reemplazo; nuevo funcionario</td></tr>
+                                                            <tr><td>S4</td><td>"El Alcalde Juan de Pineda compareció ante la Real Audencia para apelar la sanción…"</td><td>Pineda → parte/apelante → Audiencia → apelación → sanción</td></tr>
+                                                            <tr><td>S5</td><td>"argumento que se encontraba gestionado lo de su nombramiento como Procurador."</td><td>actor; argumento; nombramiento; oficio de procurador; justificación de conducta</td></tr>
+                                                            <tr><td>S6</td><td>"Se ordenó investigar las acciones y comportamiento del señor Pineda…"</td><td>acto procesal; investigación; objeto investigado; autoridad; eventual decisión</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="no-margin-bottom">Esto ya muestra algo importante: <strong>el documento no es una sola acción jurídica — es una secuencia de actos</strong>.</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">02</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="tei-curado">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>TEI-LeCO curado</span>
+                                            <p><code>enrich_tei.py</code> combina TEI + annotations.csv + relations.csv + metadata.json y genera una capa derivada con standOff formalizado: entidades reutilizables, eventos y relaciones. Curadurías sucesivas —triage QUALITY, auditoría de participantes, auditoría de relaciones legales— se aplican sobre esa capa, nunca editando RDF a mano.</p>
+                                            <p>El resultado es <code>build/tei_legal_curated/&lt;id&gt;.xml</code>: la capa TEI-LeCO definitiva y vigente del pipeline.</p>
+                                            <span class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font display-block margin-eight no-margin-lr">data/documents/tei.xml → enrich_tei.py → build/tei_enriched/ → curadurías → build/tei_legal_curated/</span>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>Antes de anotar, se prueba la taxonomía sobre el propio texto — no toda expresión relevante es una entidad nombrada: "apelar", "investigar" o "poner preso" son <strong>actos jurídicos</strong>, no personas ni instituciones.</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead><tr><th>Expresión</th><th>Categoría</th></tr></thead>
+                                                        <tbody>
+                                                            <tr><td>Justicia y Regimiento</td><td>institución/cuerpo</td></tr>
+                                                            <tr><td>Alcalde Ordinario</td><td>oficio/rol</td></tr>
+                                                            <tr><td>señores capitulares</td><td>actor colectivo/rol institucional</td></tr>
+                                                            <tr><td>Pedro Vasquez / Juan de Pineda</td><td>persona</td></tr>
+                                                            <tr><td>Real Audiencia</td><td>institución/jurisdicción</td></tr>
+                                                            <tr><td>Procurador</td><td>oficio/rol</td></tr>
+                                                            <tr><td>Perú / Tunja</td><td>lugar/territorio</td></tr>
+                                                            <tr><td>ponerlo preso</td><td>acto sancionatorio</td></tr>
+                                                            <tr><td>encargar en su reemplazo</td><td>acto de sustitución/nombramiento</td></tr>
+                                                            <tr><td>compareció / apelar / investigar</td><td>acto procesal</td></tr>
+                                                            <tr><td>deber de Alcalde Ordinario</td><td>obligación/deber normativo</td></tr>
+                                                            <tr><td>Real Servicio</td><td>concepto político-jurídico</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p>Convención de anotación — primero el criterio, no todavía el tag TEI definitivo:</p>
+                                                <pre>&lt;p&gt;
+  El día &lt;date when="1547-09-02"&gt;2 de septiembre 1547&lt;/date&gt;,
+  se reunieron los &lt;rs type="institutional_body" ref="#justicia_regimiento"&gt;
+    señores Justicia y Regimiento&lt;/rs&gt;,
+  con el fin de tratar los asuntos del &lt;term type="political_concept"&gt;Real Servicio&lt;/term&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+  Los &lt;rs type="institutional_role" ref="#capitulares"&gt;señores capitulares&lt;/rs&gt;
+  acordaron &lt;rs type="legal_act" subtype="sanction"&gt;ponerlo preso&lt;/rs&gt;
+  y &lt;rs type="legal_act" subtype="replacement"&gt;encargar en su reemplazo&lt;/rs&gt;
+  a &lt;persName ref="#pedro_vasquez"&gt;don Pedro Vasquez&lt;/persName&gt;.
+&lt;/p&gt;</pre>
+                                                <p><strong>Especialmente interesante: "Alcalde Ordinario".</strong> No es <code>Alcalde Ordinario = persona</code>. Son dos cosas: Juan de Pineda → persona; Alcalde Ordinario → oficio/rol; y una relación entre ambas — <code>Juan de Pineda → ocupa/desempeña → Alcalde Ordinario</code>. Esto permite modelar que una persona ocupa un oficio <em>en un momento determinado</em>: <code>Juan de Pineda → Alcalde Ordinario → 1547</code>.</p>
+                                                <p class="no-margin-bottom">Precisamente este documento sirvió para probar estos tags — no se asumieron como definitivos desde el inicio.</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">03</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="rdf">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>RDF por documento</span>
+                                            <p><code>tei_to_rdf.py</code> detecta dos modos automáticamente: <strong>legacy-inline</strong> extrae solo relaciones seguras de TEI tempranos sin standOff; <strong>mapping-profile</strong> aprovecha el standOff y el mapping formal (<code>mapping/tei_to_leco.yaml</code>) para generar instancias LeCO con provenance completa.</p>
+                                            <p>La identidad RDF no se basa en etiquetas como "Juan de Pineda" —que pueden cambiar por normalización ortográfica— sino en código documental + xml:id: <code>https://w3id.org/leco/data/{reference_code}/{xml_id}</code>.</p>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>El texto dice que Pineda "compareció ante la Real Audiencia para apelar la sanción" — nunca dice literalmente "parte" o "apelante". Que esté actuando como apelante es una <strong>interpretación histórica</strong>, no una extracción literal, y se marca distinto:</p>
+                                                <pre>Juan de Pineda
+  → textual role: Alcalde Ordinario                 (explícito, MayorOfficeType)
+  → inferred procedural role: AppellantRole         (inferido)
+      basis: InferredFromText
+      confidence: 0.75
+      evidence: cab-001-002_s004</pre>
+                                                <p>Esa distinción — <code>annotationBasis</code> + <code>confidenceScore</code> + <code>attestedIn</code> — es exactamente lo que permite usar IA sin confundir extracción con interpretación.</p>
+                                                <p>El mismo criterio aplica a la relación entre instituciones: Cabildo y Real Audiencia no son "dos instituciones" sueltas — hay una <strong>relación jurisdiccional</strong> (una decisión del Cabildo es apelada ante la Real Audiencia). Esto es el <strong>RDF real generado</strong> para este documento (<code>build/rdf_legal_curated/cab-001-002.ttl</code>, 723 triples), no una maqueta conceptual:</p>
+                                                <pre>data:person_..._s004_a002                        # Juan de Pineda
+    a leco:Person, foaf:Person ;
+    rdfs:label "Juan de Pineda" ;
+    leco:holdsOffice data:migrated_..._s004_r001-office .
+
+data:migrated_..._s004_r001-office
+    a leco:Office ;
+    leco:hasOfficeType leco:MayorOfficeType ;
+    leco:officeExistsIn data:catalog_org_002 .       # Cabildo de Tunja
+
+data:event_..._s004_a005                          # "apelar"
+    a leco:Appeal ;
+    leco:appealsAgainst data:event_..._s003_a001 ;   # "acordaron" (sanción)
+    leco:beforeAuthority data:org_..._s004_a004 ;    # Real Audencia
+    leco:withinJurisdiction data:jurisdiction_audiencia_01 ;
+    leco:hasParticipation data:migrated_..._s004_r002 .
+
+data:migrated_..._s004_r002
+    a leco:Participation ;
+    leco:participationActor data:person_..._s004_a002 ;
+    leco:participationRole leco:AppellantRole ;
+    leco:participationInAct data:event_..._s004_a005 .
+
+data:event_..._s003_a001                          # "acordaron"
+    a leco:LegalDecision ;
+    leco:decidedBy data:catalog_org_002 ;            # Cabildo de Tunja
+    leco:withinJurisdiction data:jurisdiction_cabildo .
+
+data:catalog_org_002
+    a leco:CorporateBody ;
+    rdfs:label "Cabildo de Tunja" ;
+    leco:exercisesJurisdiction data:jurisdiction_cabildo .</pre>
+                                                <p class="no-margin-bottom"><strong>Dato honesto, no maquillado:</strong> el evento de "nombramiento" de Pineda como Procurador (<code>event_..._s004_a006</code>) sí tiene <code>hasParticipant</code>, pero <strong>no</strong> tiene <code>appointsPerson</code> ni <code>appointsToOffice</code> resueltos — el texto no lo deja inequívoco, y el pipeline no lo inventa. Es exactamente uno de los 163 warnings QUALITY documentados; se puede ver el reporte real de este mismo documento en la pestaña "05 SHACL".</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">04</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="shacl">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>SHACL</span>
+                                            <p>Tres perfiles ejecutables, detallados en la sección "Perfiles SHACL" más abajo: <strong>CORE</strong> valida integridad estructural real y debe pasar siempre; <strong>QUALITY</strong> reporta como advertencia (no error) la incompletitud históricamente legítima; <strong>STRICT</strong> exige completitud fuerte, reservado para gold standards y fixtures curados.</p>
+                                            <p>SHACL se incorporó como complemento de OWL: OWL expresa la semántica bajo mundo abierto, SHACL implementa perfiles ejecutables de integridad y calidad — el equivalente de unit/regression testing para el grafo de datos.</p>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>Reporte real (<code>build/shacl_reports_core_legal/cab-001-002.ttl</code>):</p>
+                                                <pre>[] a sh:ValidationReport ;
+    sh:conforms true .</pre>
+                                                <p><strong>CORE conforme, cero resultados</strong> — ni una sola violación estructural en las 723 triples de este documento.</p>
+                                                <p>El perfil QUALITY, en cambio, sí reporta advertencias reales (<code>build/shacl_reports_quality_legal/cab-001-002.ttl</code>) — exactamente los mismos huecos que ya se vieron sin maquillar en la pestaña "04 RDF":</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead><tr><th>resultPath</th><th>Casos</th><th>Mensaje</th></tr></thead>
+                                                        <tbody>
+                                                            <tr><td><code>leco:withinJurisdiction</code></td><td>6</td><td>No se ha identificado una jurisdicción para este acto.</td></tr>
+                                                            <tr><td><code>leco:appointsPerson</code></td><td>1</td><td>No se ha identificado la persona nombrada (nombramiento de Procurador, s004_a006).</td></tr>
+                                                            <tr><td><code>leco:appointsToOffice</code></td><td>1</td><td>No se ha identificado el oficio al que se realiza el nombramiento.</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="no-margin-bottom">8 warnings, severidad <code>sh:Warning</code>, <strong>conforms sigue siendo true</strong>: el gold standard es CORE-válido y al mismo tiempo documenta su propia incompletitud, sin necesidad de ser "perfecto" para ser útil.</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">05</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="razonamiento">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>Razonamiento</span>
+                                            <p>OWL-RL materializa inferencias sobre corpus + ontología: 12.344 → 23.945 triples. Una regla conservadora deriva <code>withinJurisdiction</code> solo cuando el acto tiene una autoridad conocida que ejerce exactamente una jurisdicción compatible; cuando existen varias autoridades o jurisdicciones candidatas, no se infiere nada.</p>
+                                            <p>Toda inferencia queda marcada con <code>ContextualInferenceBasis</code> y <code>ProposedAnnotation</code>, evitando presentarla como evidencia textual explícita — nunca se confunde lo que el texto dice con lo que el grafo dedujo.</p>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>Este documento por sí solo dispara <strong>11 inferencias</strong> reales (extraídas directamente del RDF, con <code>dcterms:identifier</code>, <code>confidenceScore</code> y <code>validationNote</code> propios de cada una): 2 vía D001, 7 vía D002, 2 vía D004. Algunas:</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead><tr><th>Regla</th><th>Triple derivado</th><th>Conf.</th></tr></thead>
+                                                        <tbody>
+                                                            <tr><td>D001</td><td>event_..._s003_a001 (acordaron) <code>withinJurisdiction</code> jurisdiction_cabildo</td><td>0.75</td></tr>
+                                                            <tr><td>D001</td><td>event_..._s004_a005 (apelar) <code>withinJurisdiction</code> jurisdiction_audiencia_01</td><td>0.75</td></tr>
+                                                            <tr><td>D002</td><td>event_..._s004_a005 (apelar) <code>hasParticipant</code> Real Audencia</td><td>0.95</td></tr>
+                                                            <tr><td>D004</td><td>uso de "Real Servicio" <code>conceptUseJurisdiction</code> jurisdiction_cabildo</td><td>0.90</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="no-margin-bottom">D001 razona: "acordaron" fue decidido por el Cabildo de Tunja, y el Cabildo ejerce jurisdicción territorial sobre Tunja → el acto ocurre dentro de esa jurisdicción. Es exactamente el mismo razonamiento que un historiador haría a mano — solo que aquí queda trazable, con confianza explícita y sin presentarse nunca como si el texto lo dijera literalmente.</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">06</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="kg">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>Knowledge graph</span>
+                                            <p><code>build_corpus_graph.py</code> genera dos artefactos complementarios: un grafo unión para consultas sencillas (<code>corpus_graph.ttl</code>) y un RDF Dataset con un named graph por documento para conservar procedencia (<code>corpus_dataset.trig</code>). Un manifiesto (<code>corpus_manifest.json</code>) registra hashes SHA-256, triples, deduplicación y solapamientos para reproducibilidad exacta.</p>
+                                            <p><code>Cross-document local subjects = 0</code> confirma que no hubo colisiones accidentales de URI entre documentos — pero no significa que las entidades históricamente idénticas ya estén reconciliadas. "Cabildo de Tunja" puede existir todavía como recursos distintos entre documentos; la reconciliación interdocumental es una fase futura.</p>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>Encadenando las relaciones de S1–S6, cab-001-002 ya arma prácticamente un pequeño knowledge graph por sí solo:</p>
+                                                <div class="flow">Juan de Pineda
+    ↓ ocupa
+Alcalde Ordinario
+    ↓
+informa intención de viajar
+    ↓
+Cabildo
+    ↓ produce
+sanción
+    ↓
+Juan de Pineda
+    ↓ apela
+Real Audiencia
+    ↓ ordena
+investigación
+
+Pedro Vázquez
+    ↑
+designado como reemplazo
+    ↑
+Cabildo</div>
+                                                <p>Este es el patrón concreto — no solo la regla abstracta "modelar jurisdicción y participación" — que se usó como referencia al escalar al resto del corpus con asistencia de LLM.</p>
+                                                <p>Su huella real dentro del knowledge graph conjunto, tomada directamente de <code>corpus_manifest.json</code>:</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <tbody>
+                                                            <tr><td>Named graph</td><td><code>https://w3id.org/leco/graph/cab-001-002</code></td></tr>
+                                                            <tr><td>Triples aportadas</td><td>723 (de 11.012 en el grafo base)</td></tr>
+                                                            <tr><td>SHA-256 de origen</td><td><code>cd75c4c3…40a035a1</code></td></tr>
+                                                            <tr><td>Sujetos locales compartidos con otros documentos</td><td>0 (sin colisión de URI)</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="no-margin-bottom">Ese named graph es justamente lo que permite decir "esta afirmación viene de cab-001-002" incluso después de fusionar los 19 documentos en un solo grafo de consulta.</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">07</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                            <!-- tab item -->
+                            <div role="tabpanel" class="tab-pane fade" id="consulta">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>Consulta</span>
+                                            <p>LeCO Explorer (Streamlit) ofrece consulta guiada sin necesidad de escribir SPARQL, editor SPARQL con consultas guardadas, exploración de URIs con buscador por nombre, y una pestaña de deuda QUALITY. El SPARQL generado por la consulta guiada siempre queda visible: un investigador puede usar formularios sin conocer la sintaxis, pero la consulta formal nunca se oculta.</p>
+                                            <p>El selector Afirmado/Razonado permite comparar qué resultados están materializados directamente y cuáles solo aparecen tras el cierre OWL-RL.</p>
+                                            <div class="example-box">
+                                                <span class="example-label">Ejemplo — cab-001-002</span>
+                                                <p>La consulta C01 (personas en actos), filtrada a este documento:</p>
+                                                <pre>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX rico: &lt;https://www.ica.org/standards/RiC/ontology#&gt;
+
+SELECT DISTINCT ?person ?label ?act WHERE {
+  FILTER(STRSTARTS(STR(?act), "https://w3id.org/leco/data/co-ahrb-cab-001-d002/"))
+  { ?act a leco:JurisdictionalAct ; leco:hasParticipant ?person . }
+  UNION
+  { ?participation a leco:Participation ;
+                   leco:participationActor ?person ;
+                   leco:participationInAct ?act . }
+  ?person a rico:Person .
+  OPTIONAL { ?person rdfs:label ?label }
+}
+ORDER BY ?person ?act</pre>
+                                                <p>Sobre el grafo <strong>Afirmado</strong> (sin razonar): <strong>0 filas</strong> — ningún acto tiene asertado directamente <code>a leco:JurisdictionalAct</code>, solo sus subclases (Appeal, LegalDecision…). Sobre el grafo <strong>Razonado</strong>: <strong>8 filas reales</strong>, entre ellas:</p>
+                                                <div class="table-responsive">
+                                                    <table class="table table-bordered">
+                                                        <thead><tr><th>Persona</th><th>Acto</th></tr></thead>
+                                                        <tbody>
+                                                            <tr><td>Pedro Vasquez</td><td>event_..._s003_a002</td></tr>
+                                                            <tr><td>Juan de Pineda</td><td>event_..._s003_a002</td></tr>
+                                                            <tr><td>Juan de Pineda</td><td>event_..._s004_a003 (compareció)</td></tr>
+                                                            <tr><td>Juan de Pineda</td><td>event_..._s004_a005 (apelar)</td></tr>
+                                                            <tr><td>Juan de Pineda</td><td>event_..._s004_a006 (nombramiento)</td></tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <p class="no-margin-bottom">Este es justo el caso que motivó agregar el aviso Afirmado/Razonado a LeCO Explorer: sin él, alguien podría concluir —erróneamente— que este documento "no tiene actos con participantes".</p>
+                                            </div>
+                                            <div class="treatments-box-number alt-font fast-pink-text font-weight-600 position-relative">08</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end tab item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end treatments section -->
+        <!-- cqs section -->
+        <section id="cqs" class="wow fadeIn bg-gray">
+            <div class="container">
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">05</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Competency Questions</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12">
+                        <p class="text-medium">Las CQs son contrato de modelado y de prueba a la vez. LeCO documenta 37 en total; las 12 núcleo (C01–C12) se materializaron primero sobre el gold standard cab-001-002 y se convirtieron en <code>tests/test_core_cqs.py</code>, la suite mínima de regresión. Cada una abajo incluye la consulta SPARQL real usada como prueba (<code>queries/core/</code>).</p>
+                    </div>
+                    <div class="col-md-12 col-sm-12 tab-style-2">
+                        <ul class="nav nav-tabs section-tabs alt-font text-uppercase letter-spacing-1 no-border text-center margin-fifteen no-margin-lr no-margin-bottom" role="tablist">
+                            <li role="presentation" class="active xs-display-block xs-no-margin"><a href="#cq-c01" aria-controls="cq-c01" role="tab" data-toggle="tab" class="xs-display-block">C01</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c02" aria-controls="cq-c02" role="tab" data-toggle="tab" class="xs-display-block">C02</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c03" aria-controls="cq-c03" role="tab" data-toggle="tab" class="xs-display-block">C03</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c04" aria-controls="cq-c04" role="tab" data-toggle="tab" class="xs-display-block">C04</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c05" aria-controls="cq-c05" role="tab" data-toggle="tab" class="xs-display-block">C05</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c06" aria-controls="cq-c06" role="tab" data-toggle="tab" class="xs-display-block">C06</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c07" aria-controls="cq-c07" role="tab" data-toggle="tab" class="xs-display-block">C07</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c08" aria-controls="cq-c08" role="tab" data-toggle="tab" class="xs-display-block">C08</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c09" aria-controls="cq-c09" role="tab" data-toggle="tab" class="xs-display-block">C09</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c10" aria-controls="cq-c10" role="tab" data-toggle="tab" class="xs-display-block">C10</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c11" aria-controls="cq-c11" role="tab" data-toggle="tab" class="xs-display-block">C11</a></li>
+                            <li role="presentation" class="xs-display-block xs-no-margin"><a href="#cq-c12" aria-controls="cq-c12" role="tab" data-toggle="tab" class="xs-display-block">C12</a></li>
+                        </ul>
+                        <div class="tab-content clearfix">
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade in active" id="cq-c01">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C01 — ¿Qué personas participan en actos?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Pineda en apelación y actuaciones relacionadas.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX rico: &lt;https://www.ica.org/standards/RiC/ontology#&gt;
+
+SELECT DISTINCT ?person ?act WHERE {
+  {
+    ?act a leco:JurisdictionalAct ; leco:hasParticipant ?person .
+  } UNION {
+    ?participation a leco:Participation ;
+                   leco:participationActor ?person ;
+                   leco:participationInAct ?act .
+  }
+  ?person a rico:Person .
+}
+ORDER BY ?person ?act</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C01_people_in_acts.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c02">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C02 — ¿Qué oficio ocupa una persona y cuándo?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Pineda → oficio de alcalde → 1547.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX rico: &lt;https://www.ica.org/standards/RiC/ontology#&gt;
+
+SELECT DISTINCT ?person ?office ?officeType ?date WHERE {
+  ?holding a rico:PositionHoldingRelation ;
+           rico:relationHasSource ?person ;
+           rico:relationHasTarget ?office ;
+           rico:relationHasDate ?date .
+  ?office a leco:Office ; leco:hasOfficeType ?officeType .
+}
+ORDER BY ?person ?date</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C02_office_at_time.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c03">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C03 — ¿Qué rol procesal desempeña una persona en una actuación?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Pineda → AppellantRole → apelación.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+
+SELECT DISTINCT ?person ?role ?act WHERE {
+  ?participation a leco:Participation ;
+                 leco:participationActor ?person ;
+                 leco:participationRole ?role ;
+                 leco:participationInAct ?act .
+}
+ORDER BY ?person ?act</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C03_procedural_role.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c04">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C04 — ¿Qué instituciones intervienen en una actuación?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Cabildo / Real Audiencia según la actuación.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX rico: &lt;https://www.ica.org/standards/RiC/ontology#&gt;
+
+SELECT DISTINCT ?act ?institution ?relation WHERE {
+  ?institution a rico:CorporateBody .
+  {
+    ?act leco:beforeAuthority ?institution .
+    BIND(leco:beforeAuthority AS ?relation)
+  } UNION {
+    ?act leco:decidedBy ?institution .
+    BIND(leco:decidedBy AS ?relation)
+  } UNION {
+    ?act leco:hasParticipant ?institution .
+    BIND(leco:hasParticipant AS ?relation)
+  }
+}
+ORDER BY ?act ?institution</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C04_institutions_in_act.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c05">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C05 — ¿Qué jurisdicción se aplica a un acto o autoridad?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Jurisdicción local y/o de revisión según acto/autoridad.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+
+SELECT DISTINCT ?authority ?act ?jurisdiction ?place WHERE {
+  OPTIONAL { ?authority leco:exercisesJurisdiction ?jurisdiction . }
+  OPTIONAL { ?act leco:withinJurisdiction ?jurisdiction . }
+  OPTIONAL { ?jurisdiction leco:territorialScope ?place . }
+  FILTER(BOUND(?authority) || BOUND(?act))
+}
+ORDER BY ?jurisdiction ?authority ?act</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C05_jurisdiction.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c06">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C06 — ¿Qué decisión jurídica es objeto de una apelación?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Apelación → sanción/decisión previa.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+
+SELECT DISTINCT ?appeal ?decision ?authority WHERE {
+  ?appeal a leco:Appeal ;
+          leco:appealsAgainst ?decision ;
+          leco:beforeAuthority ?authority .
+}
+ORDER BY ?appeal</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C06_appealed_decision.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c07">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C07 — ¿Qué normas o reglas se invocan, citan, aplican o interpretan?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Regla/deber cuando existe evidencia suficiente.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+
+SELECT DISTINCT ?context ?rule ?mode WHERE {
+  {
+    ?context leco:invokesRule ?rule . BIND(&quot;invokes&quot; AS ?mode)
+  } UNION {
+    ?context leco:citesRule ?rule . BIND(&quot;cites&quot; AS ?mode)
+  } UNION {
+    ?context leco:appliesRule ?rule . BIND(&quot;applies&quot; AS ?mode)
+  } UNION {
+    ?context leco:interpretsRule ?rule . BIND(&quot;interprets&quot; AS ?mode)
+  } UNION {
+    ?context leco:argumentInvokesRule ?rule . BIND(&quot;argument&quot; AS ?mode)
+  }
+}
+ORDER BY ?context ?rule</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C07_normative_rules_invoked.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c08">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C08 — ¿Qué conceptos histórico-jurídicos aparecen en un documento?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Real Servicio.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX rico: &lt;https://www.ica.org/standards/RiC/ontology#&gt;
+
+SELECT DISTINCT ?document ?concept ?use WHERE {
+  ?use a leco:HistoricalConceptUse ;
+       leco:conceptUsed ?concept ;
+       leco:attestedIn ?segment .
+  ?segment rico:isDirectConstituentOf+ ?document .
+}
+ORDER BY ?document ?concept</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C08_historical_concepts_in_document.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c09">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C09 — ¿Qué segmento textual documenta cada acto?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): S3 sanción; S4 apelación; etc.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX rico: &lt;https://www.ica.org/standards/RiC/ontology#&gt;
+
+SELECT DISTINCT ?document ?segment ?act WHERE {
+  ?segment a leco:LegalDocumentPart ;
+           rico:isDirectConstituentOf ?document ;
+           leco:documentsAct ?act .
+}
+ORDER BY ?document ?segment</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C09_act_documented_by_segment.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c10">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C10 — ¿Qué evidencia sustenta una anotación semántica?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Segmento + basis + provenance.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+PREFIX prov: &lt;http://www.w3.org/ns/prov#&gt;
+
+SELECT DISTINCT ?annotation ?target ?body ?basis ?evidence ?activity WHERE {
+  ?annotation a leco:SemanticAnnotation ;
+              leco:annotationTarget ?target ;
+              leco:annotationBody ?body ;
+              leco:annotationBasis ?basis ;
+              leco:attestedIn ?evidence ;
+              prov:wasGeneratedBy ?activity .
+}
+ORDER BY ?annotation</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C10_annotation_evidence.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c11">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C11 — ¿Cómo circula una decisión entre autoridades (revisión jurisdiccional)?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Cabildo → apelación → Real Audiencia.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+
+SELECT DISTINCT ?decision ?originalAuthority ?appeal ?reviewAuthority WHERE {
+  ?decision a leco:LegalDecision ;
+            leco:decidedBy ?originalAuthority .
+  ?appeal a leco:Appeal ;
+          leco:appealsAgainst ?decision ;
+          leco:beforeAuthority ?reviewAuthority .
+}
+ORDER BY ?decision ?appeal</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C11_jurisdictional_review.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                            <!-- cq item -->
+                            <div role="tabpanel" class="tab-pane fade" id="cq-c12">
+                                <div class="col-md-12 col-sm-12 treatments-box position-relative">
+                                    <div class="col-md-10 col-md-offset-1 col-sm-12 treatments-box-text bg-gray">
+                                        <div class="treatments-box-text-sub padding-twenty text-left">
+                                            <span class="alt-font text-uppercase text-large letter-spacing-1 margin-twelve no-margin-top no-margin-lr display-block dark-gray-text"><span class="title-separator-line bg-fast-pink"></span>C12 — ¿Qué argumento jurídico invoca una norma?</span>
+                                            <p class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font">Gold standard esperado (cab-001-002): Argumento por incumplimiento del deber / regla.</p>
+                                            <pre class="sparql"><code>PREFIX leco: &lt;https://w3id.org/leco/ontology#&gt;
+
+SELECT DISTINCT ?decision ?argument ?rule WHERE {
+  ?decision leco:hasLegalArgument ?argument .
+  ?argument a leco:LegalArgument ;
+            leco:argumentInvokesRule ?rule .
+}
+ORDER BY ?decision ?argument</code></pre>
+                                            <span class="text-small medium-gray-text alt-font">Fuente: queries/core/C12_argument_uses_rule.rq</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end cq item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end cqs section -->
+        <!-- ontology section -->
+        <section id="ontology" class="wow fadeIn">
+            <div class="container">
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">06</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Clases y propiedades de LeCO</span>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1 col-sm-12">
+                        <p class="text-medium">El snapshot v0.3 gap-resolved documenta 88 OWL classes, 61 object properties y 6 datatype properties. El diagrama muestra únicamente el núcleo relacional en torno a <code>JurisdictionalAct</code> — la clase central del modelo; la tabla desplegable debajo cubre las clases y propiedades más usadas a través del corpus, con su definición y relaciones.</p>
+                        <div class="margin-nineteen no-margin-lr">
+<svg viewBox="0 0 1000 710" class="ontology-diagram" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagrama simplificado de clases y propiedades centrales de LeCO">
+  <defs>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#888"/>
+    </marker>
+  </defs>
+  <line x1="500.0" y1="319.0" x2="500.0" y2="183.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="553.7" y1="319.0" x2="624.7" y2="278.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="553.7" y1="381.0" x2="624.7" y2="422.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="500.0" y1="517.0" x2="500.0" y2="381.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="375.3" y1="422.0" x2="446.3" y2="381.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="446.3" y1="319.0" x2="375.3" y2="278.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)" stroke-dasharray="6,4"/>
+  <line x1="500.0" y1="137.0" x2="500.0" y2="60.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="704.4" y1="232.0" x2="733.8" y2="215.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="704.4" y1="468.0" x2="733.8" y2="485.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="500.0" y1="640.0" x2="500.0" y2="563.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="295.6" y1="468.0" x2="266.2" y2="485.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <line x1="266.2" y1="215.0" x2="295.6" y2="232.0" stroke="#aaaaaa" stroke-width="1.4" marker-end="url(#arrow)"/>
+  <rect x="442.0" y="242.0" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="500.0" y="254.0" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">withinJurisdiction</text>
+  <rect x="531.2" y="289.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="589.2" y="301.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">hasParticipant</text>
+  <rect x="531.2" y="392.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="589.2" y="404.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">hasLegalArgument</text>
+  <rect x="442.0" y="440.0" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="500.0" y="452.0" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">documentsAct</text>
+  <rect x="352.8" y="392.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="410.8" y="404.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">participationInAct</text>
+  <rect x="352.8" y="289.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="410.8" y="301.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">rdfs:subClassOf</text>
+  <rect x="442.0" y="89.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="500.0" y="101.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">territorialScope</text>
+  <rect x="661.1" y="214.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="719.1" y="226.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">holdsOffice</text>
+  <rect x="661.1" y="467.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="719.1" y="479.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">argumentInvokesRule</text>
+  <rect x="442.0" y="592.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="500.0" y="604.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">attestedIn</text>
+  <rect x="222.9" y="467.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="280.9" y="479.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">participationRole</text>
+  <rect x="222.9" y="214.5" width="116" height="16" fill="#ffffff" opacity="0.92"/>
+  <text x="280.9" y="226.5" text-anchor="middle" font-size="10.5" fill="#555555" font-family="Arial, sans-serif">appealsAgainst</text>
+  <rect x="395.0" y="319.0" width="210" height="62" rx="4" fill="#c8860a"/>
+  <text x="500.0" y="354.0" text-anchor="middle" font-size="14" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">JurisdictionalAct</text>
+  <rect x="421.0" y="137.0" width="158" height="46" rx="4" fill="#2b2b2b"/>
+  <text x="500.0" y="164.0" text-anchor="middle" font-size="12.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">Jurisdiction</text>
+  <rect x="585.5" y="232.0" width="158" height="46" rx="4" fill="#2b2b2b"/>
+  <text x="664.5" y="259.0" text-anchor="middle" font-size="12.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">Agent</text>
+  <rect x="585.5" y="422.0" width="158" height="46" rx="4" fill="#2b2b2b"/>
+  <text x="664.5" y="449.0" text-anchor="middle" font-size="12.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">LegalArgument</text>
+  <rect x="421.0" y="517.0" width="158" height="46" rx="4" fill="#2b2b2b"/>
+  <text x="500.0" y="544.0" text-anchor="middle" font-size="12.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">LegalDocumentPart</text>
+  <rect x="256.5" y="422.0" width="158" height="46" rx="4" fill="#2b2b2b"/>
+  <text x="335.5" y="449.0" text-anchor="middle" font-size="12.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">Participation</text>
+  <rect x="256.5" y="232.0" width="158" height="46" rx="4" fill="#2b2b2b"/>
+  <text x="335.5" y="259.0" text-anchor="middle" font-size="12.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">LegalDecision</text>
+  <rect x="426.0" y="20.0" width="148" height="40" rx="4" fill="#767676"/>
+  <text x="500.0" y="44.0" text-anchor="middle" font-size="11.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">Place</text>
+  <rect x="694.5" y="175.0" width="148" height="40" rx="4" fill="#767676"/>
+  <text x="768.5" y="199.0" text-anchor="middle" font-size="11.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">Office</text>
+  <rect x="694.5" y="485.0" width="148" height="40" rx="4" fill="#767676"/>
+  <text x="768.5" y="509.0" text-anchor="middle" font-size="11.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">NormativeRule</text>
+  <rect x="426.0" y="640.0" width="148" height="40" rx="4" fill="#767676"/>
+  <text x="500.0" y="664.0" text-anchor="middle" font-size="11.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">HistoricalConceptUse</text>
+  <rect x="157.5" y="485.0" width="148" height="40" rx="4" fill="#767676"/>
+  <text x="231.5" y="509.0" text-anchor="middle" font-size="11.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">ProceduralRole</text>
+  <rect x="157.5" y="175.0" width="148" height="40" rx="4" fill="#767676"/>
+  <text x="231.5" y="199.0" text-anchor="middle" font-size="11.5" fill="#ffffff" font-family="Arial, sans-serif" font-weight="600">Appeal</text>
+</svg>
+                        </div>
+                        <span class="text-small medium-gray-text alt-font display-block text-center margin-eight no-margin-lr">Diagrama simplificado — línea punteada = rdfs:subClassOf, flechas = propiedad de objeto (dirección del predicado)</span>
+                        <div class="panel-group accordion-style2 margin-nineteen no-margin-lr" id="accordion-ontology">
+                            <div class="panel panel-default no-border">
+                                <div class="panel-heading padding-three active-accordion">
+                                    <a data-toggle="collapse" data-parent="#accordion-ontology" href="#onto-classes"><h4 class="panel-title">Clases centrales (16)<span class="pull-right"><i class="fa fa-minus"></i></span></h4></a>
+                                </div>
+                                <div id="onto-classes" class="panel-collapse collapse in">
+                                    <div class="panel-body no-padding-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered ontology-table">
+                                                <thead>
+                                                    <tr><th>Clase</th><th>Definición</th><th>subClassOf</th></tr>
+                                                </thead>
+                                                <tbody>
+                                    <tr>
+                                        <td><code>leco:JurisdictionalAct</code><br><span class="text-small medium-gray-text">Acto jurisdiccional</span></td>
+                                        <td>Actividad jurisdiccional central del modelo — toda actuación se ancla aquí.</td>
+                                        <td class="text-small">E7_Activity</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:Jurisdiction</code><br><span class="text-small medium-gray-text">Jurisdicción</span></td>
+                                        <td>Separada deliberadamente de Place: territorial, personal y/o material.</td>
+                                        <td class="text-small">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:Participation</code><br><span class="text-small medium-gray-text">Participación procesal o jurisdiccional</span></td>
+                                        <td>Patrón n-ario: contextualiza actor + rol + acto sin afirmar el rol de forma general.</td>
+                                        <td class="text-small">Association</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:LegalDecision</code><br><span class="text-small medium-gray-text">Decisión jurídica</span></td>
+                                        <td>Subclase de JurisdictionalAct.</td>
+                                        <td class="text-small">JurisdictionalAct</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:Appeal</code><br><span class="text-small medium-gray-text">Apelación</span></td>
+                                        <td>Subclase de ProceduralAct; enlaza con la decisión apelada.</td>
+                                        <td class="text-small">ProceduralAct</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:Office</code><br><span class="text-small medium-gray-text">Oficio o cargo</span></td>
+                                        <td>Posición institucional independiente de quién la ocupa.</td>
+                                        <td class="text-small">Position</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:OfficeType</code><br><span class="text-small medium-gray-text">Tipo de oficio</span></td>
+                                        <td>Vocabulario SKOS controlado de tipos de oficio normalizados.</td>
+                                        <td class="text-small">Type</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:LegalArgument</code><br><span class="text-small medium-gray-text">Argumento jurídico</span></td>
+                                        <td>Enlaza con NormativeRule mediante argumentInvokesRule.</td>
+                                        <td class="text-small">E28_Conceptual_Object</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:NormativeRule</code><br><span class="text-small medium-gray-text">Regla normativa</span></td>
+                                        <td>Regla del orden normativo colonial, escrita o no escrita.</td>
+                                        <td class="text-small">Rule</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:LegalDocument</code><br><span class="text-small medium-gray-text">Documento jurídico</span></td>
+                                        <td>Documento con función jurídica, normativa, administrativa o procesal.</td>
+                                        <td class="text-small">E31_Document</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:HistoricalLegalConcept</code><br><span class="text-small medium-gray-text">Concepto jurídico histórico</span></td>
+                                        <td>El concepto en sí — no se confunde con su uso textual.</td>
+                                        <td class="text-small">Concept</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:HistoricalConceptUse</code><br><span class="text-small medium-gray-text">Uso histórico de concepto</span></td>
+                                        <td>Ocurrencia contextualizada de un concepto: forma léxica, documento, tiempo, jurisdicción.</td>
+                                        <td class="text-small">Entity</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:HistoricalCategoryAssignment</code><br><span class="text-small medium-gray-text">Atribución de categoría histórica</span></td>
+                                        <td>Atribución de categoría histórica a un actor, con evidencia y atribución preservadas.</td>
+                                        <td class="text-small">E13_Attribute_Assignment</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:RepresentationRelation</code><br><span class="text-small medium-gray-text">Relación de representación</span></td>
+                                        <td>Principal/representante resultante de un GrantOfPower.</td>
+                                        <td class="text-small">LegalRelation</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:LegalArrangement</code><br><span class="text-small medium-gray-text">Arreglo o institución jurídica</span></td>
+                                        <td>Configuración jurídica resultante de un acto (repartimiento, encomienda) sin reducirse al evento.</td>
+                                        <td class="text-small">—</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:SemanticAnnotation</code><br><span class="text-small medium-gray-text">Anotación semántica</span></td>
+                                        <td>Nodo de provenance: objetivo, cuerpo, base, validación y evidencia de cada afirmación.</td>
+                                        <td class="text-small">Entity</td>
+                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default no-border no-margin-top">
+                                <div class="panel-heading padding-three">
+                                    <a data-toggle="collapse" data-parent="#accordion-ontology" href="#onto-props"><h4 class="panel-title">Propiedades de objeto centrales (23)<span class="pull-right"><i class="fa fa-plus"></i></span></h4></a>
+                                </div>
+                                <div id="onto-props" class="panel-collapse collapse">
+                                    <div class="panel-body no-padding-top">
+                                        <div class="table-responsive">
+                                            <table class="table table-bordered ontology-table">
+                                                <thead>
+                                                    <tr><th>Propiedad</th><th>Definición</th><th>Domain → Range</th></tr>
+                                                </thead>
+                                                <tbody>
+                                    <tr>
+                                        <td><code>leco:hasParticipant</code></td>
+                                        <td>Atajo amplio; para roles contextualizados se recomienda Participation.</td>
+                                        <td class="text-small">JurisdictionalAct → Agent</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:participationActor</code></td>
+                                        <td>Actor de una Participation.</td>
+                                        <td class="text-small">Participation → Agent</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:participationRole</code></td>
+                                        <td>Rol procesal contextual de una Participation.</td>
+                                        <td class="text-small">Participation → ProceduralRole</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:participationInAct</code></td>
+                                        <td>Acto al que pertenece una Participation.</td>
+                                        <td class="text-small">Participation → JurisdictionalAct</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:withinJurisdiction</code></td>
+                                        <td>Jurisdicción en la que se sitúa un acto.</td>
+                                        <td class="text-small">JurisdictionalAct → Jurisdiction</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:exercisesJurisdiction</code></td>
+                                        <td>Jurisdicción que ejerce un agente.</td>
+                                        <td class="text-small">Agent → Jurisdiction</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:jurisdictionExercisedBy</code></td>
+                                        <td>Inversa de exercisesJurisdiction.</td>
+                                        <td class="text-small">Jurisdiction → Agent</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:decidedBy</code></td>
+                                        <td>Autoridad que decide una LegalDecision.</td>
+                                        <td class="text-small">LegalDecision → Agent</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:appealsAgainst</code></td>
+                                        <td>Decisión apelada por un Appeal.</td>
+                                        <td class="text-small">Appeal → LegalDecision</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:beforeAuthority</code></td>
+                                        <td>Autoridad ante la que se presenta un acto procesal.</td>
+                                        <td class="text-small">ProceduralAct → Agent</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:hasOfficeType</code></td>
+                                        <td>Tipo controlado de un Office.</td>
+                                        <td class="text-small">Office → OfficeType</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:officeExistsIn</code></td>
+                                        <td>Institución en la que existe un Office.</td>
+                                        <td class="text-small">Office → Group</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:holdsOffice</code></td>
+                                        <td>Persona que ocupa un Office.</td>
+                                        <td class="text-small">Person → Office</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:conceptUsed</code></td>
+                                        <td>Concepto histórico referido por un HistoricalConceptUse.</td>
+                                        <td class="text-small">HistoricalConceptUse → HistoricalLegalConcept</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:hasLegalArgument</code></td>
+                                        <td>Argumento asociado a un acto.</td>
+                                        <td class="text-small">JurisdictionalAct → LegalArgument</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:argumentInvokesRule</code></td>
+                                        <td>Norma invocada por un LegalArgument.</td>
+                                        <td class="text-small">LegalArgument → NormativeRule</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:sanctions</code></td>
+                                        <td>Actor sancionado por un Sanction.</td>
+                                        <td class="text-small">Sanction → Agent</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:appointsPerson</code></td>
+                                        <td>Persona nombrada por un Appointment.</td>
+                                        <td class="text-small">Appointment → Person</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:appointsToOffice</code></td>
+                                        <td>Oficio al que se nombra.</td>
+                                        <td class="text-small">Appointment → Office</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:createsRepresentation</code></td>
+                                        <td>Relación de representación creada por un GrantOfPower.</td>
+                                        <td class="text-small">GrantOfPower → RepresentationRelation</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:resultsInLegalArrangement</code></td>
+                                        <td>Arreglo jurídico resultante de un acto.</td>
+                                        <td class="text-small">JurisdictionalAct → LegalArrangement</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:attestedIn</code></td>
+                                        <td>Evidencia documental que sustenta una afirmación (dominio amplio).</td>
+                                        <td class="text-small">— → —</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>leco:documentsAct</code></td>
+                                        <td>Acto documentado por un segmento (dominio amplio).</td>
+                                        <td class="text-small">— → JurisdictionalAct</td>
+                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="highlight-button-black-border btn btn-small button margin-ten no-margin-lr inner-link" href="#contact">Ver ontología completa (repositorio)</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end ontology section -->
+
+        <!-- packages section -->
+        <section id="packages" class="wow fadeIn padding-twelve">
+            <div class="container">
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">07</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Métricas del proyecto</span>
+                    </div>
+                </div>
+                <div class="row xs-margin-nineteen xs-no-margin-lr">
+                    <!-- metric item -->
+                    <div class="col-md-3 col-sm-6 counter-style1 text-center border-right sm-margin-eleven sm-no-margin-lr sm-no-margin-top">
+                        <span class="counter-number alt-font font-weight-500">19<span class="text-medium">/20</span></span>
+                        <span class="text-small font-weight-200 letter-spacing-2 text-uppercase margin-one no-margin-lr display-block alt-font">Corpus piloto</span>
+                        <p class="text-small no-margin-lr">documentos con transcripción procesable. cab-001-058 se preserva en el inventario sin inventar contenido.</p>
+                    </div>
+                    <!-- end metric item -->
+                    <!-- metric item -->
+                    <div class="col-md-3 col-sm-6 counter-style1 text-center border-right sm-margin-eleven sm-no-margin-lr sm-no-margin-top sm-no-border">
+                        <span class="counter-number alt-font font-weight-500">11.012</span>
+                        <span class="text-small font-weight-200 letter-spacing-2 text-uppercase margin-one no-margin-lr display-block alt-font">Triples base</span>
+                        <p class="text-small no-margin-lr">en el grafo unión (corpus_graph.ttl), integrados en 19 named graphs (corpus_dataset.trig), 0 deduplicados.</p>
+                    </div>
+                    <!-- end metric item -->
+                    <!-- metric item -->
+                    <div class="col-md-3 col-sm-6 counter-style1 text-center border-right xs-margin-eleven xs-no-margin-lr xs-no-margin-top">
+                        <span class="counter-number alt-font font-weight-500">19/19</span>
+                        <span class="text-small font-weight-200 letter-spacing-2 text-uppercase margin-one no-margin-lr display-block alt-font">SHACL CORE</span>
+                        <p class="text-small no-margin-lr">documentos conformes individual y globalmente. 0 violaciones estructurales, 0 warnings de conversión.</p>
+                    </div>
+                    <!-- end metric item -->
+                    <!-- metric item -->
+                    <div class="col-md-3 col-sm-6 counter-style1 text-center">
+                        <span class="counter-number alt-font font-weight-500">23.945</span>
+                        <span class="text-small font-weight-200 letter-spacing-2 text-uppercase margin-one no-margin-lr display-block alt-font">Grafo razonado</span>
+                        <p class="text-small no-margin-lr">triples tras materializar OWL-RL sobre corpus + ontología (desde 12.344 antes de razonar).</p>
+                    </div>
+                    <!-- end metric item -->
+                </div>
+                <div class="row margin-nineteen no-margin-lr">
+                    <div class="col-md-12">
+                        <span class="text-uppercase alt-font black-text display-block margin-eight no-margin-lr">Evolución de la deuda QUALITY (advertencias, no errores)</span>
+                        <table class="table text-small">
+                            <thead>
+                                <tr><th>Momento</th><th>Resultado</th><th>Lectura</th></tr>
+                            </thead>
+                            <tbody>
+                                <tr><td>Batch inicial</td><td>336 violaciones</td><td>El perfil era demasiado estricto y mezclaba integridad con completitud.</td></tr>
+                                <tr><td>CORE refinado</td><td>19/19 conformes</td><td>La estructura RDF del corpus es válida.</td></tr>
+                                <tr><td>QUALITY base</td><td>309 warnings</td><td>Radiografía inicial de incompletitud semántica.</td></tr>
+                                <tr><td>Tras curaduría de participantes</td><td>165 warnings</td><td>Participación explícita/contextual recuperable materializada.</td></tr>
+                                <tr><td>Estado actual</td><td>163 warnings</td><td>Se aceptan como calidad/semántica pendiente, no como bloqueo — no se fijó QUALITY = 0 como objetivo.</td></tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end packages section -->
+        <!-- therapists section -->
+        <section id="therapists" class="wow fadeIn cover-background">
+            <div class="container">
+                <!-- section title -->
+                <div class="row padding-thirteen no-padding-lr no-padding-top">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">08</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Perfiles SHACL</span>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <div class="row">
+                    <!-- shacl profile item -->
+                    <div class="col-md-4 col-sm-4 text-left shacl-profile xs-margin-nineteen xs-no-margin-lr">
+                        <div class="bg-fast-pink separator-line-medium-thick no-margin-lr margin-eight no-margin-top"></div>
+                        <span class="alt-font text-uppercase black-text title-medium font-weight-600 margin-five display-block no-margin-lr no-margin-top">CORE</span>
+                        <span class="alt-font text-small text-uppercase fast-pink-text letter-spacing-1 display-block margin-eight no-margin-lr">Debe pasar siempre — condición mínima de validez</span>
+                        <p>Valida integridad estructural real: toda <code>Participation</code> debe declarar actor, rol y acto; toda anotación semántica debe declarar objetivo, cuerpo, base y estado de validación; todo concepto debe pertenecer a su scheme SKOS controlado; todo <code>confidenceScore</code> debe caer en [0,1].</p>
+                        <p>No exige que la fuente esté completa — solo que lo que sí se afirma esté bien formado. La ausencia de una autoridad o jurisdicción en un acto no es, por sí sola, un error CORE.</p>
+                        <span class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font display-block margin-eight no-margin-lr">Estado actual: 19/19 documentos conformes · validación global conforme</span>
+                    </div>
+                    <!-- end shacl profile item -->
+                    <!-- shacl profile item -->
+                    <div class="col-md-4 col-sm-4 text-left shacl-profile xs-margin-nineteen xs-no-margin-lr">
+                        <div class="bg-fast-pink separator-line-medium-thick no-margin-lr margin-eight no-margin-top"></div>
+                        <span class="alt-font text-uppercase black-text title-medium font-weight-600 margin-five display-block no-margin-lr no-margin-top">QUALITY</span>
+                        <span class="alt-font text-small text-uppercase fast-pink-text letter-spacing-1 display-block margin-eight no-margin-lr">sh:Warning — incompletitud históricamente legítima</span>
+                        <p>Reporta como advertencia, no como error, la ausencia de relaciones deseables que la fuente no siempre expresa: <code>withinJurisdiction</code>, <code>decidedBy</code>, <code>sanctions</code>, un participante identificado, <code>appealsAgainst</code>, <code>conceptUseTime</code>.</p>
+                        <p>Cada warning se conecta con su focus node, segmento TEI y texto de evidencia mediante <code>quality_triage.py</code>. La investigadora audita y decide caso por caso; nunca se agrega una relación solo para eliminar una advertencia.</p>
+                        <span class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font display-block margin-eight no-margin-lr">Estado actual: 163 warnings documentados (desde 336 violaciones en el batch inicial)</span>
+                    </div>
+                    <!-- end shacl profile item -->
+                    <!-- shacl profile item -->
+                    <div class="col-md-4 col-sm-4 text-left shacl-profile xs-margin-nineteen xs-no-margin-lr">
+                        <div class="bg-fast-pink separator-line-medium-thick no-margin-lr margin-eight no-margin-top"></div>
+                        <span class="alt-font text-uppercase black-text title-medium font-weight-600 margin-five display-block no-margin-lr no-margin-top">STRICT</span>
+                        <span class="alt-font text-small text-uppercase fast-pink-text letter-spacing-1 display-block margin-eight no-margin-lr">Gold standards y fixtures curados</span>
+                        <p>Exige relaciones contextuales fuertes que no deben imponerse a todas las fuentes — pensado para el gold standard y fixtures curados, no para el corpus general.</p>
+                        <p>El fixture de cab-001-002 (Juan de Pineda) se mantiene como caso STRICT y de regresión: cuando el pipeline automático produce algo menos completo que el fixture curado, esa divergencia se trata como señal de pérdida en el pipeline, nunca como razón para rebajar el estándar.</p>
+                        <span class="text-small medium-gray-text text-uppercase letter-spacing-1 alt-font display-block margin-eight no-margin-lr">Artefactos: LeCO_shapes_strict.ttl · test_shacl.py · test_core_cqs.py</span>
+                    </div>
+                    <!-- end shacl profile item -->
+                </div>
+            </div>
+        </section>
+        <!-- end therapists section -->
+        <!-- contact section -->
+        <section id="contact" class="cover-background">
+            <div class="container">
+                <!-- section title -->
+                <div class="row margin-six no-margin-top no-margin-lr">
+                    <div class="col-md-12 col-sm-12 text-center">
+                        <span class="text-uppercase title-extra-large alt-font text-decoration-line-through fast-pink-text "><span class="display-block">09</span></span>
+                        <span class="text-uppercase title-small alt-font font-weight-600 dark-gray-text letter-spacing-2">Consulta y reproducibilidad</span>
+                    </div>
+                </div>
+                <!-- end section title -->
+                <div class="row">
+                    <!-- links -->
+                    <div class="col-md-5 col-sm-12 margin-nine no-margin-bottom no-margin-lr xs-text-center xs-no-margin">
+                        <div class="col-md-1 col-sm-1">
+                            <i class="icon-globe icon-small margin-one-half no-margin-lr"></i>
+                        </div>
+                        <div class="col-md-11 col-sm-3 xs-margin-nine xs-no-margin-lr xs-no-margin-top sm-no-padding-left">
+                            <span class="text-uppercase alt-font black-text">Repositorio</span>
+                            <p class="text-medium"><a class="gray-text" href="#">LegalColonialOntology-LeCO</a></p>
+                        </div>
+                        <div class="col-md-1 col-sm-1 margin-twelve no-margin-lr sm-no-margin">
+                            <i class="icon-search icon-small margin-one-half no-margin-lr"></i>
+                        </div>
+                        <div class="col-md-11 col-sm-3 margin-twelve no-margin-lr sm-no-margin xs-margin-nine xs-no-margin-lr xs-no-margin-top sm-no-padding-left">
+                            <span class="text-uppercase alt-font black-text">LeCO Explorer</span>
+                            <p class="text-medium"><a class="gray-text" href="#">Consulta guiada + SPARQL</a></p>
+                        </div>
+                        <div class="col-md-1 col-sm-1">
+                            <i class="icon-document icon-small margin-one-half no-margin-lr"></i>
+                        </div>
+                        <div class="col-md-11 col-sm-3 sm-no-padding-left">
+                            <span class="text-uppercase alt-font black-text">Documentación completa</span>
+                            <p class="text-medium"><a class="gray-text" href="#">Metodología XD (PDF)</a></p>
+                        </div>
+                    </div>
+                    <!-- end links -->
+                    <!-- reproducibility -->
+                    <div class="col-md-7 col-sm-12 margin-nine no-margin-bottom no-margin-lr position-relative">
+                        <span class="text-uppercase alt-font black-text display-block margin-eight no-margin-lr no-margin-top">Pipeline reproducible</span>
+                        <pre class="text-small no-margin-lr">pytest -q
+
+python scripts/tei_to_rdf.py build/tei_legal_curated --all \
+  --validate --shacl-profile core
+
+python scripts/build_corpus_graph.py \
+  --input-dir build/rdf_legal_curated \
+  --validate-core --reason
+
+streamlit run app/leco_query_app.py</pre>
+                    </div>
+                    <!-- end reproducibility -->
+                </div>
+            </div>
+        </section>
+        <!-- end contact section -->
+        <!-- footer -->
+        <footer class="wow fadeIn">
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 text-center">
+                            <span class="text-small text-uppercase letter-spacing-1 alt-font">LegalColonialOntology (LeCO) · Versión 1.0 · 2 de septiembre de 2026</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end footer -->
+        <!-- scroll to top -->
+        <a href="javascript:;" class="scrollToTop"><i class="fa fa-angle-up"></i></a>
+        <!-- end scroll to top -->
+        <!-- javascript libraries -->
+        <script type="text/javascript" src="js/jquery.min.js"></script>
+        <script type="text/javascript" src="js/modernizr.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/skrollr.min.js"></script>
+        <script type="text/javascript" src="js/smooth-scroll.js"></script>
+        <script type="text/javascript" src="js/jquery.appear.js"></script>
+        <!-- menu navigation -->
+        <script type="text/javascript" src="js/jquery.nav.js"></script>
+        <!-- animation -->
+        <script type="text/javascript" src="js/wow.min.js"></script>
+        <!-- page scroll -->
+        <script type="text/javascript" src="js/page-scroll.js"></script>
+        <!-- owl carousel -->
+        <script type="text/javascript" src="js/owl.carousel.min.js"></script>
+        <!-- counter -->
+        <script type="text/javascript" src="js/jquery.countTo.js"></script>
+        <!-- parallax -->
+        <script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+        <!-- magnific popup -->
+        <script type="text/javascript" src="js/jquery.magnific-popup.min.js"></script>
+        <!-- portfolio with shorting tab -->
+        <script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+        <!-- images loaded -->
+        <script type="text/javascript" src="js/imagesloaded.pkgd.min.js"></script>
+        <!-- pull menu -->
+        <script type="text/javascript" src="js/classie.js"></script>
+        <!-- counter  -->
+        <script type="text/javascript" src="js/counter.js"></script>
+        <!-- fit video  -->
+        <script type="text/javascript" src="js/jquery.fitvids.js"></script>
+        <!-- setting -->
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
