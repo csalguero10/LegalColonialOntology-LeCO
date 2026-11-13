@@ -1,3 +1,121 @@
+# LeCO — participant audit and review application
+
+> 🌐 **English** · [Español](#version-en-espanol) — the original Spanish version is kept below.
+
+Consolidated document. These were previously two separate files (`PARTICIPANT_audit.md`,
+`PARTICIPANT_review_application.md`).
+
+## Contents
+
+1. [Participant audit v0.1 (`participant_audit.py`)](#1-participant-audit-v01-participant_auditpy)
+2. [Participant review application v0.1 (`apply_participant_reviews.py`)](#2-participant-review-application-v01-apply_participant_reviewspy)
+
+---
+
+## 1. Participant audit v0.1 (`participant_audit.py`)
+
+### Purpose
+
+Audit every original participant SHACL QUALITY warning, including cases that the previous
+curation pass appears to have resolved. This is necessary because free-text review notes are
+not a safe, machine-readable source for target identity.
+
+The audit is read-only. It never modifies TEI or RDF.
+
+### Inputs
+
+- `reviews/quality/quality_triage_reviewed.csv`
+- `build/tei_curated/*.xml`
+- `build/rdf_curated_inferred/*.ttl`
+
+> Note (2026-09-01): the last two paths belonged to the intermediate `tei_curated` stage,
+> since removed from `build/` because it was superseded by `build/tei_legal_curated`. The
+> script is still valid; to re-run it, that stage must first be regenerated with
+> `apply_quality_reviews.py` (see `QUALITY.md` §2).
+
+### Outputs
+
+- `build/participant_audit.csv`: all original participant warnings.
+- `build/participant_audit_unresolved.csv`: current resolutions that are unresolved or suspect.
+- `build/participant_audit.json`: counts per audit flag.
+
+### Human review columns
+
+Edit only these five columns:
+
+- `approved_target_xml_id`: exact `xml:id` of the approved person or institution.
+- `approved_basis`: `explicit`, `contextual`, or `unknown`.
+- `approved_confidence`: decimal 0–1 for contextual inferences; empty for explicit evidence.
+- `participant_review_status`: `approved`, `keep_warning`, or `needs_review`.
+- `participant_reviewer_note`: historical/semantic justification.
+
+Do not write just a name such as "Juan de Pineda" in `approved_target_xml_id`. Use the exact
+identifier shown in the entity candidate columns, for example
+`person_cab-001-002_cab-001-002_s004_a002`.
+
+### Why exact IDs are required
+
+A previous application pass tried to resolve targets from free-text notes and name aliases.
+Historical spelling variation can make that unsafe. An approved exact `xml:id` makes the
+human decision machine-actionable and reproducible without fuzzy matching.
+
+---
+
+## 2. Participant review application v0.1 (`apply_participant_reviews.py`)
+
+### Principle
+
+The script never resolves a participant from a name or free-text note. The only admissible
+object for an approved assertion is the exact, human-reviewed `approved_target_xml_id`.
+
+For each reviewed row it reconciles only the participant relations captured in the audit
+snapshot:
+
+- `approved`: removes the stale audited `hasParticipant` targets and writes exactly the
+  approved target;
+- `keep_warning`: removes any suspect audited target and intentionally leaves the act without
+  a participant assertion;
+- `needs_review`: same conservative behaviour; no new assertion is generated.
+
+The input `build/tei_curated` is never overwritten. Output goes to
+`build/tei_participant_curated`.
+
+> Note (2026-09-01): both directories (`build/tei_curated` as input,
+> `build/tei_participant_curated` as output) are no longer in `build/` — the output was
+> superseded by `build/tei_legal_curated` and removed together with its intermediate input. See
+> `QUALITY.md` §2 to regenerate `tei_curated` if this step needs to be repeated.
+
+### Provenance
+
+Approved relations are written as TEI `relation` nodes with:
+
+- `name="hasParticipant"`;
+- the exact `xml:id` of the `active` event;
+- the exact `xml:id` of the reviewed `passive` person/organisation;
+- `source` pointing to the evidence segment;
+- `subtype="explicit"` or `subtype="contextual"`;
+- a TEI `precision` containing the reviewed confidence.
+
+The existing TEI→RDF converter maps those basis values to `ExplicitTextualEvidence` and
+`ContextualInferenceBasis` and creates human-validated semantic annotations.
+
+### Running
+
+```bash
+python scripts/apply_participant_reviews.py
+```
+
+Expected reviewed decisions in the current ledger: 35 approved, 22 keep-warning and 9
+needs-review.
+
+Then regenerate RDF from the new layer and validate CORE and QUALITY.
+
+---
+
+<a id="version-en-espanol"></a>
+
+> 🌐 [English](#) · **Español** — versión original en español.
+
 # LeCO — auditoría y aplicación de revisiones de participantes
 
 Documento consolidado. Antes eran dos archivos separados (`PARTICIPANT_audit.md`,

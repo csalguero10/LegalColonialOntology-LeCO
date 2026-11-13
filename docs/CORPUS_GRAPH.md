@@ -1,3 +1,40 @@
+# LeCO — corpus graph (`build_corpus_graph.py`)
+
+> 🌐 **English** · [Español](#version-en-espanol) — the original Spanish version is kept below.
+
+## Future work: cross-document entity reconciliation
+
+`build_corpus_graph.py` reports `Cross-document local subjects: 0`, meaning no local subject
+matches by URI across documents. This confirms that per-document extraction does not
+produce accidental identity collisions — the desired behaviour during the extraction phase.
+
+However, the same historical entity may appear under different URIs in each document
+(e.g. `cab-001-002/CabildoDeTunja`, `cab-001-003/CabildoDeTunja`, `cab-001-004/CabildoDeTunja`,
+all referring to the same cabildo). Corpus-wide questions (CQs that span documents) will
+require an entity reconciliation layer that does not exist yet.
+
+Proposal for when this phase is tackled:
+
+- Do not merge identities in the per-document graphs — doing so would break traceability back
+  to the source folio/document.
+- Add a separate authority graph (e.g. `data/authority/institutions.ttl`) with canonical URIs
+  (`leco:inst/cabildo-tunja`).
+- Link each documentary entity to its canonical counterpart with `skos:exactMatch` /
+  `skos:closeMatch`, not `owl:sameAs` — safer and reversible if a link turns out to be wrong.
+- Reuse the existing human-review pattern (as in `PARTICIPANT.md`, `QUALITY.md`,
+  `LEGAL_RELATION.md`): generate reconciliation candidates, review them in a CSV, and apply
+  them with a script such as `apply_entity_reconciliation.py` that emits the
+  `skos:exactMatch` statements into the authority graph without touching the source graphs.
+
+Not yet implemented. This note records the design decision for when the phase is
+prioritised.
+
+---
+
+<a id="version-en-espanol"></a>
+
+> 🌐 [English](#) · **Español** — versión original en español.
+
 # LeCO — grafo de corpus (`build_corpus_graph.py`)
 
 ## Trabajo futuro: reconciliación de entidades entre documentos
